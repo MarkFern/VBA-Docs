@@ -14,7 +14,7 @@ localization_priority: Normal
 
 The **[Variant](../../reference/user-interface-help/variant-data-type.md)** data type is automatically specified if you don't specify a [data type](../../Glossary/vbe-glossary.md#data-type) when you declare a [constant](../../Glossary/vbe-glossary.md#constant), [variable](../../Glossary/vbe-glossary.md#variable), or [argument](../../Glossary/vbe-glossary.md#argument). 
 
-Variables declared as the **Variant** data type can contain string, date, time, Boolean, or numeric values, and can convert the values that they contain automatically. Numeric **Variant** values require 16 bytes of memory (which is significant only in large [procedures](../../Glossary/vbe-glossary.md#procedure) or complex [modules](../../Glossary/vbe-glossary.md#module)), and they are slower to access than explicitly typed variables of any other type. You rarely use the **Variant** data type for a constant. String **Variant** values require 22 bytes of memory.
+Variables declared as the **Variant** data type can contain string, date, time, Boolean, or numeric values, and can convert the values that they contain automatically. Such variables can store almost all data types (including all [object](../../reference/user-interface-help/object-data-type) & [user-defined](../../how-to/user-defined-data-type) data types). Numeric **Variant** values require 16 bytes of memory (which is significant only in large [procedures](../../Glossary/vbe-glossary.md#procedure) or complex [modules](../../Glossary/vbe-glossary.md#module)), and they are slower to access than explicitly typed variables of any other type. You rarely use the **Variant** data type for a constant. String **Variant** values require 22 bytes of memory.
 
 The following statements create **Variant** variables:
 
@@ -33,6 +33,7 @@ The last statement does not explicitly declare the variable, but rather declares
 
 ## See also
 
+- [Variant data type](../../reference/user-interface-help/variant-data-type.md)
 - [Visual Basic reference](../../reference/user-interface-help/visual-basic-language-reference.md)
 - [Visual Basic conceptual topics](../../reference/user-interface-help/visual-basic-conceptual-topics.md)
 
