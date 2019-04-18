@@ -36,8 +36,8 @@ The **If...Then...Else** statement syntax has these parts.
 
 |Part|Description|
 |:-----|:-----|
-| _condition_|Required. One or more of the following two types of expressions: <br/><br/>A numeric expression or string expression that evaluates to **True** or **False**. If _condition_ is Null, _condition_ is treated as **False**.<br/><br/>An expression of the form **TypeOf** _objectname_ **Is** _objecttype_. The _objectname_ is any object reference, and _objecttype_ is any valid object type.  The expression is **True** if _objectname_ is of the object type specified by _objecttype_; otherwise it is **False**.| 
-| _statements_|Optional in block form; required in single-line form that has no **Else** clause. One or more statements separated by colons; executed if _condition_ is **True**.|
+| _condition_|Required. An expression that evaluates to **True** or **False**. If _condition_ is Null, _condition_ is treated as **False**.<br/><br/>The expression can have the form **TypeOf** _varname_ **Is** _objectorudtype_. The _varname_ can be any object reference or value of a [user-defined type](../../glossary/vbe-glossary#user-defined-type.md) (UDT). The _objectorudtype_ is any valid object type or UDT. The expression is **True** if _varname_ is of the type specified by _objectorudtype_; otherwise it is **False**.| 
+| _statements_|Optional in block form; required in single-line form that has no **Else** clause. In single-line form, must be one or more statements separated by colons; executed if _condition_ is **True**.|
 | _condition-n_|Optional. Same as  _condition_.|
 | _elseifstatements_|Optional. One or more statements executed if associated  _condition-n_ is **True**.|
 | _elsestatements_|Optional. One or more statements executed if no previous  _condition_ or _condition-n_ expression is **True**.|
@@ -99,14 +99,16 @@ Use the **If TypeOf** construct to determine whether the Control passed into a p
 ```vb
 Sub ControlProcessor(MyControl As Control) 
  If TypeOf MyControl Is CommandButton Then 
- Debug.Print "You passed in a " & TypeName(MyControl) 
+  Debug.Print "You passed in a " & TypeName(MyControl) 
  ElseIf TypeOf MyControl Is CheckBox Then 
- Debug.Print "You passed in a " & TypeName(MyControl) 
+  Debug.Print "You passed in a " & TypeName(MyControl) 
  ElseIf TypeOf MyControl Is TextBox Then 
- Debug.Print "You passed in a " & TypeName(MyControl) 
+  Debug.Print "You passed in a " & TypeName(MyControl) 
  End If 
 End Sub
 ```
+> [!NOTE] 
+> **TypeOf...Is...** appears to be an operator that can be used apart from an **If** clause.
 
 ## See also
 
