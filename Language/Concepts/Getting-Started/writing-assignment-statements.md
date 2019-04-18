@@ -32,16 +32,21 @@ Let yourName = InputBox("What is your name?").
 
 ```
 
-The **[Set](../../reference/user-interface-help/set-statement.md)** statement is used to assign an object to a variable that has been declared as an object. The **Set** keyword is required. In the following example, the **Set** statement assigns a range on `Sheet1` to the object variable `myCell`.
+The **[Set](../../reference/user-interface-help/set-statement.md)** statement is used to assign an object to a variable that has been declared as an object or a variant. The **Set** keyword is required. In the following example, the **Set** statement assigns a range on `Sheet1` first to the object variable `myCell`, and then secondly to the variant variable `myVariantVariable`. Finally, the example shows an assignment of a value that is again a computation of `Worksheets("Sheet1").Range("A1")` however, because **Set** is not used, the value assigned is not the range object (the value assigned is probably the value returned by the default member of the range object).
 
 ```vb
-Sub ApplyFormat() 
-Dim myCell As Range 
-Set myCell = Worksheets("Sheet1").Range("A1") 
+Sub SetExample() 
+ Dim myCell As Range 
+ Set myCell = Worksheets("Sheet1").Range("A1")            ' Object assignment.
  With myCell.Font 
  .Bold = True 
  .Italic = True 
- End With 
+ End With
+ Dim myVariantVariable as Variant
+ Set myVariantVariable = Worksheets("Sheet1").Range("A1") ' Object assignment.
+
+' The following line doesn't assign the range object!
+ myVariantVariable = Worksheets("Sheet1").Range("A1")     ' Assignment of non-object value.
 End Sub
 ```
 
