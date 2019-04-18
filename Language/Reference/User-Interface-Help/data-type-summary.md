@@ -12,7 +12,7 @@ localization_priority: Priority
 
 # Data type summary
 
-A data type is the characteristic of a variable that determines what kind of data it can hold. Data types include those in the following table as well as user-defined types and specific types of objects.
+A data type is the characteristic of a variable that determines what kind of data it can hold. Data types include those in the following table as well as specific types of objects.
 
 ## Set intrinsic data types
 
@@ -38,7 +38,11 @@ The following table shows the supported [data types](../../Glossary/vbe-glossary
 |**String** (fixed-length)|Length of string|1 to approximately 65,400|
 |**[Variant](variant-data-type.md)** (with numbers)|16 bytes|Any numeric value up to the range of a **Double**|
 |**Variant** (with characters)|22 bytes + string length (24 bytes on 64-bit systems)|Same range as for variable-length **String**|
-|**[User-defined](../../How-to/user-defined-data-type.md)** (using **Type**) |Number required by elements|The range of each element is the same as the range of its data type.|
+|**Variant** (with objects)|Unknown|Same range as **Object**|
+|**Variant** (with user-defined type)|Unknown|Same range as **User-defined**|
+|**Variant** (with special values **Empty** or **Null**)|Unknown|Unknown|
+|**Variant** (with **Error** sub-type)|Unknown|Unknown|
+|**[User-defined](../../How-to/user-defined-data-type.md)** (using **Type** or other means) |Number required by elements|The range of each element is the same as the range of its data type.|
 
 
 <br/>
@@ -61,7 +65,9 @@ A **Variant** containing an array requires 12 bytes more than the array alone.
 
 See [Type conversion functions](../../concepts/getting-started/type-conversion-functions.md) for examples of how to use the following functions to coerce an expression to a specific data type: **CBool**, **CByte**, **CCur**, **CDate**, **CDbl**, **CDec**, **CInt**, **CLng**, **CLngLng**, **CLngPtr**, **CSng**, **[CStr](#returns-for-cstr)**, and **CVar**.
 
-For the following, see the respective function pages: **[CVErr](cverr-function.md)**, **[Fix](int-fix-functions.md)**, and **[Int](int-fix-functions.md)**.
+The [**Fix**, and **Int** functions](int-fix-functions.md) provide other forms of integeric conversion.
+
+**[CVErr](cverr-function.md)** can be used to create values of the **Variant** sub-type **Error**.
 
 > [!NOTE] 
 > **CLngLng** is valid on 64-bit platforms only.
@@ -78,6 +84,8 @@ To verify data types, see the following functions:
 - [IsNull](isnull-function.md)
 - [IsNumeric](isnumeric-function.md)
 - [IsObject](isobject-function.md)
+- [VarType](vartype-function.md)
+- [TypeName](typename-function)
 
 ## Returns for CStr
 
