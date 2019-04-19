@@ -26,27 +26,27 @@ The string returned by **TypeName** can be any one of the following:
 
 |String returned|Variable|
 |:-----|:-----|
-|[_objecttype_](../../Glossary/vbe-glossary.md#object-type)|An object whose type is _objecttype_|
-|[_udtype_](../../Glossary/vbe-glossary.md#user-defined-type)|A value of a user-defined type where the type has name _udtype_|
-|["Byte"](../../Glossary/vbe-glossary.md#byte-data-type)|Byte value|
-|["Integer"](../../Glossary/vbe-glossary.md#integer-data-type)|Integer|
-|["Long"](../../Glossary/vbe-glossary.md#long-data-type)|Long integer|
-|["Single"](../../Glossary/vbe-glossary.md#single-data-type)|Single-precision floating-point number|
-|["Double"](../../Glossary/vbe-glossary.md#double-data-type)|Double-precision floating-point number|
-|["Currency"](../../Glossary/vbe-glossary.md#currency-data-type)|Currency value|
-|["Decimal"](../../Glossary/vbe-glossary.md#decimal-data-type)|Decimal value|
-|["Date"](../../Glossary/vbe-glossary.md#date-data-type)|Date value|
-|["String"](../../Glossary/vbe-glossary.md#string-data-type)|String|
-|["Boolean"](../../Glossary/vbe-glossary.md#boolean-data-type)|Boolean value|
-|**["Error"](errors-keyword-summary.md)**|An error value|
-|["Empty"](../../Glossary/vbe-glossary.md#empty)|Uninitialized|
-|["Null"](../../Glossary/vbe-glossary.md#null)|No valid data|
-|"Unknown"|An object whose type is unknown|
-|**["Nothing"](nothing-keyword.md)**|Object variable that doesn't refer to an object|
+|_objecttype_|An [object](../../glossary/vbe-glossary.md#object) whose [object type](../../Glossary/vbe-glossary.md#object-type) is _objecttype_|
+|_udtype_|A value of a [user-defined type](../../Glossary/vbe-glossary.md#user-defined-type) where the type has name _udtype_|
+|"Byte"|[Byte](../../Glossary/vbe-glossary.md#byte-data-type) value|
+|"Integer"|Integer of data-type [**Integer**](../../Glossary/vbe-glossary.md#integer-data-type)|
+|"Long"|[Long](../../Glossary/vbe-glossary.md#long-data-type) integer|
+|"Single"|[Single](../../Glossary/vbe-glossary.md#single-data-type) value (single-precision floating-point number)|
+|"Double"|[Double](../../Glossary/vbe-glossary.md#double-data-type) value (double-precision floating-point number)|
+|"Currency"|[Currency](../../Glossary/vbe-glossary.md#currency-data-type) value|
+|"Decimal"|[Decimal](../../Glossary/vbe-glossary.md#decimal-data-type) value|
+|"Date"|[Date](../../Glossary/vbe-glossary.md#date-data-type) value|
+|"String"|[String](../../Glossary/vbe-glossary.md#string-data-type)|
+|"Boolean"|[Boolean](../../Glossary/vbe-glossary.md#boolean-data-type) value|
+|"Error"|An [**Error**](../../reference/user-interface-help/cverr-function.md) value|
+|"Empty"|[**Empty**](../../Glossary/vbe-glossary.md#empty) (variable uninitialized) (Variant special value)|
+|"Null"|[**Null**](../../Glossary/vbe-glossary.md#null) (no valid data) (Variant special value)|
+|"Unknown"|An [object](../../glossary/vbe-glossary.md#object) whose type is unknown|
+|"Nothing"|[**Nothing**](nothing-keyword.md) (object variable that doesn't refer to an object) (special value)|
 
 <br>
 
-If _varname_ is an [array](../../Glossary/vbe-glossary.md#array), the returned string can be any one of the possible returned strings (or **Variant**) with empty parentheses appended. For example, if _varname_ is an array of integers, **TypeName** returns `"Integer()`".
+If _varname_ is an [array](../../Glossary/vbe-glossary.md#array), the returned string is a string from the above table (indicating the array type) with empty parentheses appended to it. For example, if _varname_ is an array of integers, **TypeName** returns "Integer()".
 
 ## Example
 
