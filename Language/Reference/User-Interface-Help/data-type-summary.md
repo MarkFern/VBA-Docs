@@ -21,8 +21,8 @@ Non-intrinsic data types include those in the following table as well as all oth
 |Non-intrinsic data type|Storage size|Range|
 |:--------|:-----------|:----|
 |**[User-defined](../../How-to/user-defined-data-type.md)** (using **Type** or other means) |Number required by elements|The range of each element is the same as the range of its data type.|
-|[**Collection**](../../reference/user-interface-help/collection-object.md)|Unknown|Unknown|
-|[**Dictionary**](../../reference/user-interface-help/dictionary-object.md)|Unknown|Unknown|
+|[**Collection** object](../../reference/user-interface-help/collection-object.md)|Unknown|Unknown|
+|[**Dictionary** object](../../reference/user-interface-help/dictionary-object.md)|Unknown|Unknown|
 
 ## Intrinsic data types
 
