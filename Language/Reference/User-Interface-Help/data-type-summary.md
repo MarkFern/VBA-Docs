@@ -12,17 +12,26 @@ localization_priority: Priority
 
 # Data type summary
 
-A data type is the characteristic of a variable that determines what kind of data it can hold. Data types include those in the following table as well as specific types of objects.
+A data type is the characteristic of a variable that determines what kind of data it can hold.
 
-## Set intrinsic data types
+## Non-intrinsic data types
 
-The following table shows the supported [data types](../../Glossary/vbe-glossary.md#data-type), including storage sizes and ranges.
+Non-intrinsic data types include those in the following table as well as all other specific types of object.
+ 
+|Non-intrinsic data type|Storage size|Range|
+|:--------|:-----------|:----|
+|**[User-defined](../../How-to/user-defined-data-type.md)** (using **Type** or other means) |Number required by elements|The range of each element is the same as the range of its data type.|
+|[**Collection**](../../reference/user-interface-help/collection-object.md)|Unknown|Unknown|
+|[**Dictionary**](../../reference/user-interface-help/dictionary-object.md)|Unknown|Unknown|
 
-|Data type|Storage size|Range|
+## Intrinsic data types
+
+The following table shows the supported intrinsic [data types](../../Glossary/vbe-glossary.md#data-type), including storage sizes and ranges.
+
+|Intrinsic data type|Storage size|Range|
 |:--------|:-----------|:----|
 |**[Boolean](boolean-data-type.md)**|2 bytes|**True** or **False**|
 |**[Byte](byte-data-type.md)**|1 byte|0 to 255|
-|**Collection**|Unknown|Unknown|
 |**[Currency](currency-data-type.md)** (scaled integer)|8 bytes|-922,337,203,685,477.5808 to 922,337,203,685,477.5807|
 |**[Date](date-data-type.md)**|8 bytes|January 1, 100, to December 31, 9999|
 |**[Decimal](decimal-data-type.md)**|14 bytes|+/-79,228,162,514,264,337,593,543,950,335 with no decimal point<br/><br/>+/-7.9228162514264337593543950335 with 28 places to the right of the decimal<br/><br/>Smallest non-zero number is+/-0.0000000000000000000000000001|
@@ -38,10 +47,9 @@ The following table shows the supported [data types](../../Glossary/vbe-glossary
 |**[Variant](variant-data-type.md)** (with numbers)|16 bytes|Any numeric value up to the range of a **Double**|
 |**Variant** (with characters)|22 bytes + string length (24 bytes on 64-bit systems)|Same range as for variable-length **String**|
 |**Variant** (with objects)|Unknown|Same range as **Object**|
-|**Variant** (with user-defined type)|Unknown|Same range as **User-defined**|
-|**Variant** (with special values **Empty** or **Null**)|Unknown|Unknown|
-|**Variant** (with **Error** sub-type)|Unknown|Unknown|
-|**[User-defined](../../How-to/user-defined-data-type.md)** (using **Type** or other means) |Number required by elements|The range of each element is the same as the range of its data type.|
+|**Variant** (with [user-defined type](../../How-to/user-defined-data-type.md))|Unknown|Same range as non-instrinsic **User-defined** data type|
+|**Variant** (with special values [**Empty**](../../Glossary/vbe-glossary.md#empty) or [**Null**](../../Glossary/vbe-glossary.md#null))|Unknown|Unknown|
+|**Variant** (with [**Error** sub-type](../../reference/user-interface-help/cverr-function.md))|Unknown|Unknown|
 
 
 <br/>
@@ -66,10 +74,21 @@ See [Type conversion functions](../../concepts/getting-started/type-conversion-f
 
 The [**Fix**, and **Int** functions](int-fix-functions.md) provide other forms of integeric conversion.
 
-**[CVErr](cverr-function.md)** can be used to create values of the **Variant** sub-type **Error**.
+**[CVErr](cverr-function.md)** can be used to create values of the **Variant** sub-type **Error** from an error number.
 
 > [!NOTE] 
 > **CLngLng** is valid on 64-bit platforms only.
+
+### Returns for CStr
+
+|If _expression_ is|CStr returns|
+|:-----------------|:-----------|
+|**Boolean**|A string containing **True** or **False**.|
+|**Date**|A string containing a date in the short date format of your system.|
+|[Empty](../../Glossary/vbe-glossary.md#empty)|A zero-length string ("").|
+|**Error**|A string containing the word **Error** followed by the [error number](../../Glossary/vbe-glossary.md#error-number).|
+|[Null](../../Glossary/vbe-glossary.md#null)|A [run-time error](../../Glossary/vbe-glossary.md#run-time-error).|
+|Other numeric|A string containing the number.|
 
 ## Verify data types
 
@@ -85,17 +104,6 @@ To verify data types, see the following functions:
 - [IsObject](isobject-function.md)
 - [VarType](vartype-function.md)
 - [TypeName](typename-function)
-
-## Returns for CStr
-
-|If _expression_ is|CStr returns|
-|:-----------------|:-----------|
-|**Boolean**|A string containing **True** or **False**.|
-|**Date**|A string containing a date in the short date format of your system.|
-|[Empty](../../Glossary/vbe-glossary.md#empty)|A zero-length string ("").|
-|**Error**|A string containing the word **Error** followed by the [error number](../../Glossary/vbe-glossary.md#error-number).|
-|[Null](../../Glossary/vbe-glossary.md#null)|A [run-time error](../../Glossary/vbe-glossary.md#run-time-error).|
-|Other numeric|A string containing the number.|
 
 ## See also
 
