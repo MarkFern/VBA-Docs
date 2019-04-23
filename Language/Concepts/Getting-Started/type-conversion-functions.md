@@ -50,7 +50,7 @@ The function name determines the return type as shown in the following:
 |**CLngLng**|[LongLong](../../reference/user-interface-help/longlong-data-type.md)|-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807; fractions are rounded. (Valid on 64-bit platforms only.)|
 |**CLngPtr**|[LongPtr](../../reference/user-interface-help/longptr-data-type.md)|-2,147,483,648 to 2,147,483,647 on 32-bit systems, -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 on 64-bit systems; fractions are rounded for 32-bit and 64-bit systems.|
 |**CSng**|[Single](../../reference/user-interface-help/single-data-type.md)|-3.402823E38 to -1.401298E-45 for negative values; 1.401298E-45 to 3.402823E38 for positive values.|
-|**CStr**|[String](../../reference/user-interface-help/string-data-type.md)|Returns for CStr depend on the _expression_ argument.|
+|**CStr**|[String](../../reference/user-interface-help/string-data-type.md)|Probably same range as **Double** for numerics.|
 |**CVar**|[Variant](../../reference/user-interface-help/variant-data-type.md)|Same range as **Double** for numerics. Same range as **String** for non-numerics.|
 
 ## Remarks
@@ -64,9 +64,9 @@ In general, you can document your code using the data-type conversion functions 
 
 You should use the data-type conversion functions instead of **Val** to provide internationally aware conversions from one data type to another. For example, when you use **CCur**, different decimal separators, different thousand separators, and various currency options are properly recognized depending on the locale setting of your computer.
 
-When the fractional part is exactly 0.5, **CInt** and **CLng** always round it to the nearest even number. For example, 0.5 rounds to 0, and 1.5 rounds to 2. **CInt** and **CLng** differ from the [**Fix** and **Int** functions]((../../Reference/User-Interface-Help/int-fix-functions.md), which truncate, rather than round, the fractional part of a number. Also, **Fix** and **Int** always return a value of the same type as is passed in.
+When the fractional part is exactly 0.5, **CInt** and **CLng** always round it to the nearest even number. For example, 0.5 rounds to 0, and 1.5 rounds to 2. **CInt** and **CLng** differ from the [**Fix** and **Int** functions](../../Reference/User-Interface-Help/int-fix-functions.md), which truncate, rather than round, the fractional part of a number. Also, **Fix** and **Int** always return a value of the same type as is passed in.
 
-Use the **IsDate** function to determine if _date_ can be converted to a date or time. **CDate** recognizes date literals and time literals as well as some numbers that fall within the range of acceptable dates. When converting a number to a date, the whole number portion is converted to a date. Any fractional part of the number is converted to a time of day, starting at midnight.
+Use the [**IsDate**](../../reference/user-interface-help/isdate-function.md) function to determine if _date_ can be converted to a date or time. **CDate** recognizes date literals and time literals as well as some numbers that fall within the range of acceptable dates. When converting a number to a date, the whole number portion is converted to a date. Any fractional part of the number is converted to a time of day, starting at midnight.
 
 **CDate** recognizes date formats according to the locale setting of your system. The correct order of day, month, and year may not be determined if it is provided in a format other than one of the recognized date settings. In addition, a long date format is not recognized if it also contains the day-of-the-week string.
  
@@ -78,17 +78,32 @@ A **CVDate** function is also provided for compatibility with previous versions 
 
 ## CBool function example
 
-This example uses the **CBool** function to convert an expression to a **Boolean**. If the expression evaluates to a nonzero value, **CBool** returns **True**, otherwise, it returns **False**.
+This example uses the **CBool** function to convert expressions to **Boolean**s. If the expression evaluates to a nonzero value, **CBool** returns **True**, otherwise, it returns **False**.
 
 
 
-```vb
-Dim A, B, Check 
-A = 5: B = 5 ' Initialize variables. 
-Check = CBool(A = B) ' Check contains True. 
+```vbDim A, B, Check
+A = 5: B = 5            ' Initialize variables.
+Check = CBool(A = B)    ' Check contains True.
  
-A = 0 ' Define variable. 
-Check = CBool(A) ' Check contains False. 
+A = 0                   ' Define variable.
+Check = CBool(A)        ' Check contains False.
+
+A = Array(1, 2)         ' Define variable.
+
+' CBool after bit-wise comparison can be useful.
+B = VarType(A) And VbVarType.vbArray
+' In binary,
+'   VarType(A)          is 10000000001100 &
+'   VbVarType.vbArray   is 10000000000000.
+Check = CBool(B)        ' Check contains True
+                        ' indicating A is an array.
+
+B = VarType(A) And VbVarType.vbInteger
+Check = CBool(B)        ' Check contains False
+                        ' indicating A is not an
+                        ' integer array.
+
 
 ```
 
@@ -115,8 +130,8 @@ This example uses the **CCur** function to convert an expression to a **Currency
 Dim MyDouble, MyCurr 
 MyDouble = 543.214588 ' MyDouble is a Double. 
 MyCurr = CCur(MyDouble * 2) ' Convert result of MyDouble * 2 
- ' (1086.429176) to a 
- ' Currency (1086.4292). 
+                            ' [1086.429176] to a 
+                            ' Currency value (1086.4292). 
 
 ```
 
@@ -205,15 +220,21 @@ MySingle2 = CSng(MyDouble2) ' MySingle2 contains 75.34216.
 
 ## CStr function example
 
-This example uses the **CStr** function to convert a numeric value to a **String**.
+This example uses the **CStr** function to convert numeric values to **String** values.
 
 
 
 ```vb
-Dim MyDouble, MyString 
-MyDouble = 437.324 ' MyDouble is a Double. 
-MyString = CStr(MyDouble) ' MyString contains "437.324". 
+Dim MyDouble#, MyString$, MyInteger%
+MyDouble = 437.324
+MyString = CStr(MyDouble) ' MyString contains "437.324".
 
+MyDouble = 3 - 0.000000000000001
+MyString = CStr(MyDouble) ' MyString contains "3".
+MyInteger = Int(3)        ' `Int(3)` returns exactly 3.
+MyInteger = Int(MyDouble) ' `Int(MyDouble)` returns 2 so
+                          ' CStr must have rounded
+                          ' MyDouble up to 3.
 
 ```
 
@@ -227,7 +248,7 @@ This example uses the **CVar** function to convert an expression to a **Variant*
 Dim MyInt, MyVar 
 MyInt = 4534 ' MyInt is an Integer. 
 MyVar = CVar(MyInt & 000) ' MyVar contains the string 
- ' 4534000. 
+                          ' "4534000". 
 
 ```
 
