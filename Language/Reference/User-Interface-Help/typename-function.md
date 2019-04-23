@@ -39,12 +39,12 @@ The string returned by **TypeName** can be any one of the following:
 |"String"|[String](../../Glossary/vbe-glossary.md#string-data-type)|
 |"Boolean"|[Boolean](../../Glossary/vbe-glossary.md#boolean-data-type) value|
 |"Error"|An [**Error**](../../reference/user-interface-help/cverr-function.md) value|
-|"Empty"|[**Empty**](../../Glossary/vbe-glossary.md#empty) (variable uninitialized) (Variant special value)|
-|"Null"|[**Null**](../../Glossary/vbe-glossary.md#null) (no valid data) (Variant special value)|
+|"Empty"|[**Empty**](../../Glossary/vbe-glossary.md#empty) value (variable uninitialized) \*\*|
+|"Null"|[**Null**](../../Glossary/vbe-glossary.md#null) value (no valid data) \*\*|
 |"Unknown"|An [object](../../glossary/vbe-glossary.md#object) whose type is unknown|
-|"Nothing"|[**Nothing**](nothing-keyword.md) (object variable that doesn't refer to an object) (special value)|
+|"Nothing"|[**Nothing**](nothing-keyword.md) value (object variable that doesn't refer to an object) \*|
 
-<br>
+<sup>* Special value. ** Variant special value.</sup>
 
 If _varname_ is an [array](../../Glossary/vbe-glossary.md#array), the returned string is a string from the above table (indicating the array type) with empty parentheses appended to it. For example, if _varname_ is an array of integers, **TypeName** returns "Integer()".
 
