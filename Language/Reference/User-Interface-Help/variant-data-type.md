@@ -16,7 +16,7 @@ The **Variant** data type is the [data type](../../Glossary/vbe-glossary.md#data
 
 The **Variant** data type has no [type-declaration character](../../Glossary/vbe-glossary.md#type-declaration-character).
 
-A **Variant** is a special data type that can contain any kind of data except fixed-length [String](../../Glossary/vbe-glossary.md#string-data-type) data. (**Variant** types now support [user-defined types](../../Glossary/vbe-glossary.md#user-defined-type).) A **Variant** can also contain the special values [**Empty**](../../Glossary/vbe-glossary.md#empty), [**Nothing**](../../reference/user-interface-help/nothing-keyword.md), and [**Null**](../../Glossary/vbe-glossary.md#null). It can also contain the special [**Error** sub-type](../../reference/user-interface-help/cverr-function.md). You can determine how the data in a **Variant** is treated by using the [**VarType** function](../../reference/user-interface-help/vartype-function.md) in conjunction with the [**IsObject** function](../../reference/user-interface-help/isobject-function.md). The [**TypeName** function](../../reference/user-interface-help/typename-function.md), when used together with **IsObject** & **VarType**, can increase clarity of determination for user-defined types & object types (by being able to get the name of the specific type used, when these types are used).
+A **Variant** is a special data type that can contain any kind of data except fixed-length [String](../../Glossary/vbe-glossary.md#string-data-type) data, and data of a [**user-defined type**](../../Glossary/vbe-glossary.md#user-defined-type) where the type is declared in the VBE using VBA's [**Type**](../../reference/user-interface-help/type-statement.md) statement. The **Variant** type supports other kinds of **user-defined types**. A **Variant** can also contain the special values [**Empty**](../../Glossary/vbe-glossary.md#empty), [**Nothing**](../../reference/user-interface-help/nothing-keyword.md), and [**Null**](../../Glossary/vbe-glossary.md#null). It can also contain the special [**Error** sub-type](../../reference/user-interface-help/cverr-function.md). You can determine how the data in a **Variant** is treated by using the [**VarType** function](../../reference/user-interface-help/vartype-function.md) in conjunction with the [**IsObject** function](../../reference/user-interface-help/isobject-function.md). The [**TypeName** function](../../reference/user-interface-help/typename-function.md), when used together with **IsObject** & **VarType**, can increase clarity of determination for user-defined types & object types (by being able to get the name of the specific type used, when these types are used).
 
 Numeric data can be any integer or real number value ranging from -1.797693134862315E308 to -4.94066E-324 for negative values and from 4.94066E-324 to 1.797693134862315E308 for positive values. 
 
@@ -24,7 +24,7 @@ Generally, numeric **Variant** data is maintained in its original data type with
 
 An error occurs when **Variant** variables containing [Currency](../../Glossary/vbe-glossary.md#currency-data-type), [Decimal](../../Glossary/vbe-glossary.md#decimal-data-type), and **Double** values exceed their respective ranges.
 
-You can use the **Variant** data type in place of any data type to work with data in a more flexible way. If the contents of a **Variant** variable are digits, they may be either the string representation of the digits or their actual value, depending on the context. For example:
+You can use the **Variant** data type in place of almost any data type to work with data in a more flexible way. If the contents of a **Variant** variable are digits, they may be either the string representation of the digits or their actual value, depending on the context. For example:
 
 ```vb
 Dim MyVar As Variant 
@@ -32,7 +32,7 @@ MyVar = 98052
 
 ```
 
-In the preceding example, `MyVar` contains a numeric representation—the actual value `98052`. Arithmetic operators work as expected on **Variant** variables that contain numeric values or string data that can be interpreted as numbers. If you use the **+** operator to add `MyVar` to another **Variant** containing a number or to a variable of a [numeric type](../../Glossary/vbe-glossary.md#numeric-type), the result is an arithmetic sum.
+In the preceding example, `MyVar` contains a numeric representation - the actual value `98052`. Arithmetic operators work as expected on **Variant** variables that contain numeric values or string data that can be interpreted as numbers. If you use the **+** operator to add `MyVar` to another **Variant** containing a number or to a variable of a [numeric type](../../Glossary/vbe-glossary.md#numeric-type), the result is an arithmetic sum.
 
 The value [Empty](../../Glossary/vbe-glossary.md#empty) denotes a **Variant** variable that hasn't been initialized (assigned an initial value). A **Variant** containing **Empty** is 0 if it is used in a numeric context, and a zero-length string ("") if it is used in a string context.
 
