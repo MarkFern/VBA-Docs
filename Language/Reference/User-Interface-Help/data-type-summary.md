@@ -47,7 +47,7 @@ The following table shows the supported intrinsic [data types](../../Glossary/vb
 |**[Variant](variant-data-type.md)** (with numbers)|16 bytes|Any numeric value up to the range of a **Double**|
 |**Variant** (with characters)|22 bytes + string length (24 bytes on 64-bit systems)|Same range as for variable-length **String**|
 |**Variant** (with objects)|Unknown|Same range as **Object**|
-|**Variant** (with [user-defined type](../../How-to/user-defined-data-type.md))|Unknown|Same range as non-instrinsic **User-defined** data type|
+|**Variant** (with [user-defined type](../../How-to/user-defined-data-type.md))|Unknown|Only data of a **user-defined type** accessed through a [VBE library reference](../../reference/user-interface-help/references-dialog-box.md)|
 |**Variant** (with special values [**Empty**](../../Glossary/vbe-glossary.md#empty) or [**Null**](../../Glossary/vbe-glossary.md#null))|Unknown|Unknown|
 |**Variant** (with [**Error** sub-type](../../reference/user-interface-help/cverr-function.md))|Unknown|Unknown|
 
