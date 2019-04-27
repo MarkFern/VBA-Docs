@@ -12,23 +12,21 @@ Exports a chart in a graphic file format.
 
 ## Syntax
 
-_expression_. `Export` _(bstr,_? _varFilterName,_? _varInteractive)_
+_expression_.**Export** (_bstr_, _varFilterName_, _varInteractive_)
 
- _expression_ A variable that represents a 'Chart' object.
+_expression_ A variable that represents a **[Chart](Project.Chart.md)** object.
 
 
 ## Parameters
-
-
 
 |Name|Required/Optional|Data type|Description|
 |:-----|:-----|:-----|:-----|
 | _bstr_|Required|**String**|The path and name of the exported file.|
 | _varFilterName_|Optional|**Variant**|The language-independent name of the graphic filter as it appears in the registry ( `HKLM\\SOFTWARE\Wow6432Node\Microsoft\Shared Tools\Graphics Filters`).|
 | _varInteractive_|Optional|**Variant**|**True** to display the dialog box that contains the filter-specific options, if any. If _varInteractive_ is **False**, Project uses the default values for the filter. The default value is  **False**.|
-| _bstr_|Required|STRING||
-| _varFilterName_|Optional|VARIANT||
-| _varInteractive_|Optional|VARIANT||
+| _bstr_|Required|**String**||
+| _varFilterName_|Optional|**Variant**||
+| _varInteractive_|Optional|**Variant**||
 
 ## Return value
 

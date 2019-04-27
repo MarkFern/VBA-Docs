@@ -14,14 +14,14 @@ localization_priority: Normal
 
 # Worksheet.VPageBreaks property (Excel)
 
-Returns a  **[VPageBreaks](Excel.Worksheet.VPageBreaks.md)** collection that represents the vertical page breaks on the sheet. Read-only.
+Returns a **[VPageBreaks](excel.vpagebreaks.md)** collection that represents the vertical page breaks on the sheet. Read-only.
 
 
 ## Syntax
 
 _expression_.**VPageBreaks**
 
-_expression_ A variable that represents a [Worksheet](Excel.Worksheet.md) object.
+_expression_ A variable that represents a **[Worksheet](Excel.Worksheet.md)** object.
 
 
 ## Example

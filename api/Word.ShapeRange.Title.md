@@ -21,15 +21,15 @@ Returns or sets a  **String** that contains a title for the shapes in the specif
 
 _expression_.**Title**
 
- _expression_ A variable that represents a '[ShapeRange](Word.shaperange.md)' object.
+ _expression_ A variable that represents a **[ShapeRange](Word.shaperange.md)** object.
 
 
 ## Remarks
 
 Use the  **Title** property to provide an alternative text title for a shape. This property adds title text to the **Title** text box on the **Alt Text** pane of the **Format Shape** dialog in Word.
 
-
- **Note**  Web browsers display alternative text while tables are loading or if they are missing. Web search engines use the alternative text to help find Web pages. Alternative text is also used to assist disabilities.
+> [!NOTE] 
+> Web browsers display alternative text while tables are loading or if they are missing. Web search engines use the alternative text to help find Web pages. Alternative text is also used to assist disabilities.
 
 
 ## Example

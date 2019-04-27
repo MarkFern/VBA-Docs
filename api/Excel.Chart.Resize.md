@@ -7,7 +7,7 @@ ms.prod: excel
 api_name:
 - Excel.Chart.Resize
 ms.assetid: d1b7d0bb-d190-18f2-83f9-b91b637d80aa
-ms.date: 06/08/2017
+ms.date: 04/16/2019
 localization_priority: Normal
 ---
 
@@ -19,15 +19,14 @@ Occurs when the chart is resized.
 
 ## Syntax
 
-_expression_. `Resize`
+_expression_.**Resize**
 
-_expression_ A variable that returns a '[Chart](Excel.Chart(object).md)' object.
+_expression_ A variable that returns a **[Chart](Excel.Chart(object).md)** object.
 
 
 ## Example
 
 The following code example keeps the upper-left corner of the chart at the same location when the chart is resized.
-
 
 ```vb
 Private Sub myChartClass_Resize() 
@@ -39,9 +38,6 @@ End Sub
 ```
 
 
-## See also
 
-
-[Chart Object](Excel.Chart(object).md)
 
 [!include[Support and feedback](~/includes/feedback-boilerplate.md)]

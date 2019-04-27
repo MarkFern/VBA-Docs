@@ -19,14 +19,14 @@ Returns the sheet name for the specified  **[PublishObject](Excel.PublishObject.
 
 ## Syntax
 
-_expression_. `Sheet`
+_expression_.**Sheet**
 
 _expression_ A variable that represents a [PublishObject](Excel.PublishObject.md) object.
 
 
 ## Remarks
 
-This example determines the name of the worksheet that contains the first  **PublishObject** object that is saved as static HTML in the web page. The example then sets the **Boolean** variable `blnSheetFound` to **True**. If no items in the document have been saved as static HTML, `blnSheetFound` is **False**.
+This example determines the name of the worksheet that contains the first  **PublishObject** object that is saved as static HTML on the webpage. The example then sets the **Boolean** variable `blnSheetFound` to **True**. If no items in the document have been saved as static HTML, `blnSheetFound` is **False**.
 
 
 ## Example

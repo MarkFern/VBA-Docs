@@ -8,13 +8,13 @@ localization_priority: Normal
 
 
 # Chart.RefreshPivotTable method (Project)
-Gets updated values from a pivot table data source.
+Gets updated values from a PivotTable data source.
 
 ## Syntax
 
 _expression_. `RefreshPivotTable`
 
- _expression_ A variable that represents a 'Chart' object.
+_expression_ A variable that represents a **[Chart](Project.Chart.md)** object.
 
 
 ## Return value

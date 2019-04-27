@@ -21,7 +21,7 @@ Creates a new PivotTable report. This method doesn't display the PivotTable Wiza
 
 _expression_. `PivotTableWizard`( `_SourceType_` , `_SourceData_` , `_TableDestination_` , `_TableName_` , `_RowGrand_` , `_ColumnGrand_` , `_SaveData_` , `_HasAutoFormat_` , `_AutoPage_` , `_Reserved_` , `_BackgroundQuery_` , `_OptimizeCache_` , `_PageFieldOrder_` , `_PageFieldWrapCount_` , `_ReadData_` , `_Connection_` )
 
-_expression_ A variable that represents a [Worksheet](Excel.Worksheet.md) object.
+_expression_ A variable that represents a **[Worksheet](Excel.Worksheet.md)** object.
 
 
 ## Parameters
@@ -45,7 +45,7 @@ _expression_ A variable that represents a [Worksheet](Excel.Worksheet.md) object
 | _PageFieldOrder_|Optional| **Variant**|The order in which page fields are added to the PivotTable report?s layout. Can be one of the following  **xlOrder** constants: **xlDownThenOver** or **xlOverThenDown**. The default value is **xlDownThenOver**.|
 | _PageFieldWrapCount_|Optional| **Variant**|The number of page fields in each column or row in the PivotTable report. The default value is 0 (zero).|
 | _ReadData_|Optional| **Variant**| **True** to create a PivotTable cache that contains all records from the external database; this cache can be very large. If _ReadData_ is **False**, you can set some of the fields as server-based page fields before the data is actually read.|
-| _Connection_|Optional| **Variant**|A string that contains ODBC settings that allow Excel to connect to an ODBC data source. The connection string has the form "ODBC;<connection string>". This argument overrides any previous setting for the  **[PivotCache](Excel.PivotCache.md)** object?s **[Connection](Excel.PivotCache.Connection.md)** property.|
+| _Connection_|Optional| **Variant**|A string that contains ODBC settings that allow Excel to connect to an ODBC data source. The connection string has the form `"ODBC;<connection string>"`. This argument overrides any previous setting for the  **[PivotCache](Excel.PivotCache.md)** object's **[Connection](Excel.PivotCache.Connection.md)** property.|
 
 ## Return value
 
@@ -62,9 +62,6 @@ ActiveSheet.PivotTableWizard xlDatabase, Range("A1:C100")
 ```
 
 
-## See also
 
-
-[Worksheet Object](Excel.Worksheet.md)
 
 [!include[Support and feedback](~/includes/feedback-boilerplate.md)]

@@ -17,7 +17,7 @@ Returns the collection of all the series in the specified chart, or the specifie
 
 ## Syntax
 
-_expression_. `FullSeriesCollection`_(Index)_
+_expression_.**FullSeriesCollection** (_Index_)
 
 _expression_ A variable that represents a [Chart](./PowerPoint.Chart.md) object.
 
@@ -29,7 +29,7 @@ _expression_ A variable that represents a [Chart](./PowerPoint.Chart.md) object.
 |Name|Required/Optional|Data type|Description|
 |:-----|:-----|:-----|:-----|
 | _Index_|Optional|**Variant**|The index number in the series collection of the series to return.|
-| _Index_|Optional|VARIANT||
+| _Index_|Optional|**Variant**||
 
 ## Return value
 

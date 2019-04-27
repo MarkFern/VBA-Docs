@@ -21,12 +21,12 @@ Returns a Long value that represents the type for the specified object.
 
 _expression_. `ID`
 
-_expression_ A variable that represents a [ShapeRange](Excel.ShapeRange.md) object.
+_expression_ A variable that represents a **[ShapeRange](Excel.shaperange.md)** object.
 
 
 ## Remarks
 
-You can use an ID label as a hyperlink reference in other HTML documents or on the same web page.
+You can use an ID label as a hyperlink reference in other HTML documents or on the same webpage.
 
 
 ## See also

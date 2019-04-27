@@ -14,7 +14,7 @@ Applies a custom chart type to a chart.
 
 _expression_. `ApplyCustomType` _(ChartType,_ _TypeName)_
 
- _expression_ A variable that represents a 'Chart' object.
+_expression_ A variable that represents a **[Chart](Project.Chart.md)** object.
 
 
 ## Parameters
@@ -26,7 +26,7 @@ _expression_. `ApplyCustomType` _(ChartType,_ _TypeName)_
 | _ChartType_|Required|**Office.XlChartType**|The type of chart.|
 | _TypeName_|Optional|**Variant**|The name of the chart type.|
 | _ChartType_|Required|XLCHARTTYPE||
-| _TypeName_|Optional|VARIANT||
+| _TypeName_|Optional|**Variant**||
 
 ## Return value
 

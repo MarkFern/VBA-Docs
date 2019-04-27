@@ -17,7 +17,7 @@ Updates the specified Project data on a chart.
 
 _expression_. `UpdateChartData` _(Task,_? _Timephased,_? _GroupName,_? _FilterName,_? _LabelField,_? _OutlineLevel,_? _SafeArrayOfPjField,_? _SafeArrayOfPjTimescaledData,_? _TimeScaleUnit,_? _TimescaleUnitCount,_? _StartDate,_? _FinishDate)_
 
- _expression_ A variable that represents a 'Chart' object.
+_expression_ A variable that represents a **[Chart](Project.Chart.md)** object.
 
 
 ## Parameters
@@ -40,16 +40,16 @@ _expression_. `UpdateChartData` _(Task,_? _Timephased,_? _GroupName,_? _FilterNa
 | _FinishDate_|Optional|**Variant**|Specifies the finish date for the update.|
 | _Task_|Required|BOOL||
 | _Timephased_|Required|BOOL||
-| _GroupName_|Optional|STRING||
-| _FilterName_|Optional|STRING||
+| _GroupName_|Optional|**String**||
+| _FilterName_|Optional|**String**||
 | _LabelField_|Optional|PJFIELD||
 | _OutlineLevel_|Optional|INT||
-| _SafeArrayOfPjField_|Optional|VARIANT||
-| _SafeArrayOfPjTimescaledData_|Optional|VARIANT||
+| _SafeArrayOfPjField_|Optional|**Variant**||
+| _SafeArrayOfPjTimescaledData_|Optional|**Variant**||
 | _TimeScaleUnit_|Optional|PJTIMESCALEUNIT||
 | _TimescaleUnitCount_|Optional|INT||
-| _StartDate_|Optional|VARIANT||
-| _FinishDate_|Optional|VARIANT||
+| _StartDate_|Optional|**Variant**||
+| _FinishDate_|Optional|**Variant**||
 
 ## Return value
 

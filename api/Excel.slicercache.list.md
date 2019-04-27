@@ -12,12 +12,12 @@ localization_priority: Normal
 
 # SlicerCache.List property (Excel)
 
- **True** if the slicer cache is for a slicer on a table. **False** otherwise. **Boolean** Read-only
+ **True** if the slicer cache is for a slicer on a table. **False** otherwise. Read-only **Boolean**.
 
 
 ## Syntax
 
-_expression_. `List`
+_expression_.**List**
 
 _expression_ A variable that represents a [SlicerCache](Excel.SlicerCache.md) object.
 

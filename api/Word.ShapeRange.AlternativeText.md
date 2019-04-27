@@ -14,14 +14,14 @@ localization_priority: Normal
 
 # ShapeRange.AlternativeText property (Word)
 
-Returns or sets the alternative text associated with a shape in a Web page. Read/write  **String**.
+Returns or sets the alternative text associated with a shape in a webpage. Read/write  **String**.
 
 
 ## Syntax
 
 _expression_. `AlternativeText`
 
- _expression_ A variable that represents a '[ShapeRange](Word.shaperange.md)' object.
+ _expression_ A variable that represents a **[ShapeRange](Word.shaperange.md)** object.
 
 
 ## Example

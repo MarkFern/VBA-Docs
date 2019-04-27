@@ -19,9 +19,9 @@ Returns or sets the format code for the object as a string in the language of th
 
 ## Syntax
 
-_expression_. `NumberFormatLocal`
+_expression_.**NumberFormatLocal**
 
- _expression_ A variable that represents a '[DataLabels](Word.DataLabels.md)' object.
+ _expression_ A variable that represents a **[DataLabels](Word.DataLabels.md)** object.
 
 
 ## Remarks

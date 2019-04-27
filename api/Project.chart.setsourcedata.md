@@ -17,7 +17,7 @@ Sets a source data range from Excel for a chart.
 
 _expression_. `SetSourceData` _(Source,_? _PlotBy)_
 
- _expression_ A variable that represents a 'Chart' object.
+_expression_ A variable that represents a **[Chart](Project.Chart.md)** object.
 
 
 ## Parameters
@@ -28,8 +28,8 @@ _expression_. `SetSourceData` _(Source,_? _PlotBy)_
 |:-----|:-----|:-----|:-----|
 | _Source_|Required|**String**|The source data range.|
 | _PlotBy_|Optional|**Variant**|Specifies the way the data is plotted. Can be one of the following  **Office.XlRowCol** constants: **xlColumns** or **xlRows**.|
-| _Source_|Required|STRING||
-| _PlotBy_|Optional|VARIANT||
+| _Source_|Required|**String**||
+| _PlotBy_|Optional|**Variant**||
 
 ## Return value
 

@@ -1,8 +1,12 @@
-# [Office VBA Reference](overview/Index.md) 
-## [Access](overview/Access.md)
-### [Concepts](../access/Concepts/Miscellaneous/concepts-access-vba-reference.md)
+# Office VBA Reference
+## [Overview](overview/Index.md)
+## Access
+### [Overview](overview/Access.md)
+### Concepts
+#### [Overview](../access/Concepts/Miscellaneous/concepts-access-vba-reference.md)
 #### ActiveX Data Objects (ADO)
-##### [ADO for Visual C++ syntax index for COM](../access/concepts/miscellaneous/ado-for-visual-c-plus-plus-syntax-index-for-com.md)
+##### ADO for Visual C++ syntax index for COM
+###### [Overview](../access/concepts/miscellaneous/ado-for-visual-c-plus-plus-syntax-index-for-com.md)
 ###### [Collections](../access/concepts/miscellaneous/collections-ado-for-visual-c-plus-plus-syntax.md) 
 ###### [Command](../access/concepts/miscellaneous/command-ado-for-visual-c-plus-plus-syntax.md) 
 ###### [Connection](../access/concepts/miscellaneous/connection-ado-for-visual-c-plus-plus-syntax.md) 
@@ -12,7 +16,8 @@
 ###### [Record](../access/concepts/miscellaneous/record-ado-for-visual-c-plus-plus-syntax.md) 
 ###### [Recordset](../access/concepts/miscellaneous/recordset-ado-for-visual-c-plus-plus-syntax.md) 
 ###### [Stream](../access/concepts/miscellaneous/stream-ado-for-visual-c-plus-plus-syntax.md)
-##### [ADO for Visual C++ syntax index with import](../access/concepts/miscellaneous/ado-for-visual-c-plus-plus-syntax-index-with-import.md)
+##### ADO for Visual C++ syntax index with import
+###### [Overview](../access/concepts/miscellaneous/ado-for-visual-c-plus-plus-syntax-index-with-import.md)
 ###### [Collections](../access/concepts/miscellaneous/collections-visual-c-plus-plus-syntax-index-with-import.md)
 ###### [Command](../access/concepts/miscellaneous/command-visual-c-plus-plus-syntax-index-with-import.md)
 ###### [Connection](../access/concepts/miscellaneous/connection-visual-c-plus-plus-syntax-index-with-import.md)
@@ -25,7 +30,8 @@
 ###### [Recordset](../access/concepts/miscellaneous/recordset-visual-c-plus-plus-syntax-index-with-import.md)
 ###### [RecordsetEvents](../access/concepts/miscellaneous/recordsetevents-visual-c-plus-plus-syntax-index-with-import.md)
 ###### [Stream](../access/concepts/miscellaneous/stream-visual-c-plus-plus-syntax-index-with-import.md)
-##### [ADO/WFC syntax index](../access/concepts/miscellaneous/ado-wfc-syntax-index.md)
+##### ADO/WFC syntax index
+###### [Overview](../access/concepts/miscellaneous/ado-wfc-syntax-index.md)
 ###### [Collections](../access/concepts/miscellaneous/collections-ado-wfc-syntax.md)
 ###### [Command](../access/concepts/miscellaneous/command-ado-wfc-syntax.md)
 ###### [Connection](../access/concepts/miscellaneous/connection-ado-wfc-syntax.md)
@@ -89,7 +95,8 @@
 ##### [Use transactions in a DAO Recordset](../access/Concepts/Data-Access-Objects/use-transactions-in-a-dao-recordset.md)
 ##### [Work with attachments in DAO](../access/Concepts/Data-Access-Objects/work-with-attachments-in-dao.md)
 #### Data types
-##### [Date/Time](Access.format.propertydate.time.md)
+##### Date/Time
+###### [Date/time settings](Access.format.propertydate.time.md)
 ###### [Calculate age](../access/Concepts/Date-Time/calculate-age.md)
 ###### [Calculate and display specific date values](../access/Concepts/Date-Time/calculate-and-display-specific-date-values.md)
 ###### [Calculate elapsed time](../access/Concepts/Date-Time/calculate-elapsed-time.md)
@@ -314,7 +321,8 @@
 ##### [Use the SetOption method from DAO](../access/concepts/miscellaneous/using-the-setoption-method-from-dao.md)
 ##### [Use the status bar progress meter](../access/Concepts/Miscellaneous/use-the-status-bar-progress-meter.md)
 ##### [Write your own customized handler](../access/concepts/miscellaneous/writing-your-own-customized-handler.md)
-### [Object model](overview/Access/object-model.md)
+### Object model
+#### [Overview](overview/Access/object-model.md)
 #### [AccessObject object](Access.AccessObject.md)
 ##### Methods
 ###### [GetDependencyInfo](Access.AccessObject.GetDependencyInfo.md)
@@ -4149,8 +4157,10 @@
 ##### [AcWebUserDisplay](Access.AcWebUserDisplay.md)
 ##### [AcWebUserGroupsDisplay](Access.AcWebUserGroupsDisplay.md)
 ##### [AcWindowMode](Access.AcWindowMode.md)
-## [Excel](overview/Excel.md)
-### [Concepts](../excel/Concepts/Miscellaneous/concepts-excel-vba-reference.md)
+## Excel
+### [Overview](overview/Excel.md)
+### Concepts
+#### [Overview](../excel/Concepts/Miscellaneous/concepts-excel-vba-reference.md)
 #### [About the PowerPivot Model object in Excel](../excel/Concepts/about-the-powerpivot-model-object-in-excel.md)
 #### [About coauthoring](../excel/Concepts/about-coauthoring-in-excel.md)
 #### [Language-specific properties, methods, and functions](../excel/Concepts/Language-specific-properties-methods-and-functions.md)
@@ -4183,7 +4193,7 @@
 ##### [Refer to sheets by name](../excel/Concepts/Workbooks-and-Worksheets/refer-to-sheets-by-name.md)
 ##### [Sort worksheets alphanumerically by name](../excel/Concepts/Workbooks-and-Worksheets/sort-worksheets-alphanumerically-by-name.md)
 ##### [Open a workbook](../excel/Concepts/Workbooks-and-Worksheets/opening-a-workbook.md)
-##### [Save documents as web pages](../excel/Concepts/Workbooks-and-Worksheets/saving-documents-as-web-pages.md)
+##### [Save documents as webpages](../excel/Concepts/Workbooks-and-Worksheets/saving-documents-as-web-pages.md)
 ##### [Formatting and VBA codes for headers and footers](../excel/Concepts/Workbooks-and-Worksheets/formatting-and-vba-codes-for-headers-and-footers.md)
 ##### [Return an object from a collection](../excel/Concepts/Workbooks-and-Worksheets/returning-an-object-from-a-collection-excel.md)
 #### Cells and ranges
@@ -4194,7 +4204,8 @@
 ##### [Highlight the active cell, row, or column](../excel/Concepts/Cells-and-Ranges/highlight-the-active-cell-row-or-column.md)
 ##### [Make a cell blink](../excel/Concepts/Cells-and-Ranges/make-a-cell-blink.md)
 ##### [Prevent duplicate entries in a range](../excel/Concepts/Cells-and-Ranges/prevent-duplicate-entries-in-a-range.md)
-##### [Reference cells and ranges](../excel/Concepts/Cells-and-Ranges/reference-cells-and-ranges.md)
+##### Reference cells and ranges
+###### [Overview](../excel/Concepts/Cells-and-Ranges/reference-cells-and-ranges.md)
 ###### [Refer to all the cells on the worksheet](../excel/Concepts/Cells-and-Ranges/refer-to-all-the-cells-on-the-worksheet.md)
 ###### [Refer to cells and ranges by using A1 notation](../excel/Concepts/Cells-and-Ranges/refer-to-cells-and-ranges-by-using-a1-notation.md)
 ###### [Refer to cells by using a Range object](../excel/Concepts/Cells-and-Ranges/refer-to-cells-by-using-a-range-object.md)
@@ -4255,7 +4266,8 @@
 ##### [Improve calculation performance](../excel/Concepts/Excel-Performance/excel-improving-calcuation-performance.md)
 ##### [Performance and limit improvements](../excel/Concepts/Excel-Performance/excel-performance-and-limit-improvements.md)
 ##### [Tips for optimizing performance obstructions](../excel/Concepts/Excel-Performance/excel-tips-for-optimizing-performance-obstructions.md)
-### [Object model](overview/Excel/object-model.md)
+### Object model
+#### [Overview](overview/Excel/object-model.md)
 #### [AboveAverage object](Excel.AboveAverage.md)
 ##### Methods
 ###### [Delete](Excel.AboveAverage.Delete.md)
@@ -5442,6 +5454,7 @@
 #### [CustomProperties object](Excel.CustomProperties.md)
 ##### Methods
 ###### [Add](Excel.CustomProperties.Add.md)
+##### Properties
 ###### [Application](Excel.CustomProperties.Application.md)
 ###### [Count](Excel.CustomProperties.Count.md)
 ###### [Creator](Excel.CustomProperties.Creator.md)
@@ -5467,41 +5480,41 @@
 ###### [Count](Excel.CustomViews.Count.md)
 ###### [Creator](Excel.CustomViews.Creator.md)
 ###### [Parent](Excel.CustomViews.Parent.md)
-#### [Databar object](Excel.Databar.md)
+#### [DataBar object](Excel.DataBar.md)
 ##### Methods
-###### [Delete](Excel.Databar.Delete.md)
-###### [ModifyAppliesToRange](Excel.Databar.ModifyAppliesToRange.md)
-###### [SetFirstPriority](Excel.Databar.SetFirstPriority.md)
-###### [SetLastPriority](Excel.Databar.SetLastPriority.md)
+###### [Delete](Excel.DataBar.Delete.md)
+###### [ModifyAppliesToRange](Excel.DataBar.ModifyAppliesToRange.md)
+###### [SetFirstPriority](Excel.DataBar.SetFirstPriority.md)
+###### [SetLastPriority](Excel.DataBar.SetLastPriority.md)
 ##### Properties
-###### [Application](Excel.Databar.Application.md)
-###### [AppliesTo](Excel.Databar.AppliesTo.md)
-###### [AxisColor](Excel.Databar.AxisColor.md)
-###### [AxisPosition](Excel.Databar.AxisPosition.md)
-###### [BarBorder](Excel.Databar.BarBorder.md)
-###### [BarColor](Excel.Databar.BarColor.md)
-###### [BarFillType](Excel.Databar.BarFillType.md)
-###### [Creator](Excel.Databar.Creator.md)
-###### [Direction](Excel.Databar.Direction.md)
-###### [Formula](Excel.Databar.Formula.md)
-###### [MaxPoint](Excel.Databar.MaxPoint.md)
-###### [MinPoint](Excel.Databar.MinPoint.md)
-###### [NegativeBarFormat](Excel.Databar.NegativeBarFormat.md)
-###### [Parent](Excel.Databar.Parent.md)
-###### [PercentMax](Excel.Databar.PercentMax.md)
-###### [PercentMin](Excel.Databar.PercentMin.md)
-###### [Priority](Excel.Databar.Priority.md)
-###### [PTCondition](Excel.Databar.PTCondition.md)
-###### [ScopeType](Excel.Databar.ScopeType.md)
-###### [ShowValue](Excel.Databar.ShowValue.md)
-###### [StopIfTrue](Excel.Databar.StopIfTrue.md)
-###### [Type](Excel.Databar.Type.md)
-#### [DataBarBorder object](Excel.databarBorder.md)
+###### [Application](Excel.DataBar.Application.md)
+###### [AppliesTo](Excel.DataBar.AppliesTo.md)
+###### [AxisColor](Excel.DataBar.AxisColor.md)
+###### [AxisPosition](Excel.DataBar.AxisPosition.md)
+###### [BarBorder](Excel.DataBar.BarBorder.md)
+###### [BarColor](Excel.DataBar.BarColor.md)
+###### [BarFillType](Excel.DataBar.BarFillType.md)
+###### [Creator](Excel.DataBar.Creator.md)
+###### [Direction](Excel.DataBar.Direction.md)
+###### [Formula](Excel.DataBar.Formula.md)
+###### [MaxPoint](Excel.DataBar.MaxPoint.md)
+###### [MinPoint](Excel.DataBar.MinPoint.md)
+###### [NegativeBarFormat](Excel.DataBar.NegativeBarFormat.md)
+###### [Parent](Excel.DataBar.Parent.md)
+###### [PercentMax](Excel.DataBar.PercentMax.md)
+###### [PercentMin](Excel.DataBar.PercentMin.md)
+###### [Priority](Excel.DataBar.Priority.md)
+###### [PTCondition](Excel.DataBar.PTCondition.md)
+###### [ScopeType](Excel.DataBar.ScopeType.md)
+###### [ShowValue](Excel.DataBar.ShowValue.md)
+###### [StopIfTrue](Excel.DataBar.StopIfTrue.md)
+###### [Type](Excel.DataBar.Type.md)
+#### [DataBarBorder object](Excel.DataBarBorder.md)
 ##### Properties
-###### [Application](Excel.databarBorder.Application.md)
-###### [Color](Excel.databarBorder.Color.md)
-###### [Creator](Excel.databarBorder.Creator.md)
-###### [Parent](Excel.databarBorder.Parent.md)
+###### [Application](Excel.DataBarBorder.Application.md)
+###### [Color](Excel.DataBarBorder.Color.md)
+###### [Creator](Excel.DataBarBorder.Creator.md)
+###### [Parent](Excel.DataBarBorder.Parent.md)
 ###### [Type](Excel.DataBarBorder.Type.md)
 #### [DataFeedConnection object](Excel.datafeedconnection.md)
 ##### Methods
@@ -5911,7 +5924,7 @@
 ###### [Add](Excel.FormatConditions.Add.md)
 ###### [AddAboveAverage](Excel.FormatConditions.AddAboveAverage.md)
 ###### [AddColorScale](Excel.FormatConditions.AddColorScale.md)
-###### [AddDatabar](Excel.FormatConditions.AddDatabar.md)
+###### [AddDataBar](Excel.FormatConditions.AddDatabar.md)
 ###### [AddIconSetCondition](Excel.FormatConditions.AddIconSetCondition.md)
 ###### [AddTop10](Excel.FormatConditions.AddTop10.md)
 ###### [AddUniqueValues](Excel.FormatConditions.AddUniqueValues.md)
@@ -8154,6 +8167,7 @@
 ###### [Fill](Excel.Shape.Fill.md)
 ###### [FormControlType](Excel.Shape.FormControlType.md)
 ###### [Glow](Excel.Shape.Glow.md)
+###### [GraphicStyle](Excel.Shape.GraphicStyle.md)
 ###### [GroupItems](Excel.Shape.GroupItems.md)
 ###### [HasChart](Excel.Shape.HasChart.md)
 ###### [HasSmartArt](Excel.Shape.HasSmartArt.md)
@@ -8254,6 +8268,7 @@
 ###### [Creator](Excel.ShapeRange.Creator.md)
 ###### [Fill](Excel.ShapeRange.Fill.md)
 ###### [Glow](Excel.ShapeRange.Glow.md)
+###### [GraphicStyle](Excel.ShapeRange.GraphicStyle.md)
 ###### [GroupItems](Excel.ShapeRange.GroupItems.md)
 ###### [HasChart](Excel.ShapeRange.HasChart.md)
 ###### [Height](Excel.ShapeRange.Height.md)
@@ -10387,7 +10402,8 @@
 ##### [XlXmlImportResult](Excel.XlXmlImportResult.md)
 ##### [XlXmlLoadOption](Excel.XlXmlLoadOption.md)
 ##### [XlYesNoGuess](Excel.XlYesNoGuess.md)
-### [Excel Graph Visual Basic reference](overview/Excel/graph-visual-basic-reference.md)
+### Excel Graph Visual Basic reference
+#### [Overview](overview/Excel/graph-visual-basic-reference.md)
 #### Collections
 ##### [Axes collection](Excel.Axes-graph-collection.md)
 ##### [ChartGroups collection](Excel.chartgroups(collection).md)
@@ -10713,15 +10729,18 @@
 ##### [Width](Excel.width.md)
 ##### [WindowState](Excel.WindowState.md)
 #### [Enumerations](overview/Excel/enumerations-graph-visual-basic-reference.md)
-## [Office for Mac](overview/Office-Mac.md)
+## Office for Mac
+### [Overview](overview/Office-Mac.md)
 ### [Request access to multiple files](../Office-Mac/GrantAccessToMultipleFiles.md)
 ### [Run an AppleScript with VB](../Office-Mac/AppleScriptTask.md)
 ### [Differentiate between Office for Mac versions at compile time](../Office-Mac/MacOfficeVersion.md)
 ### [idMSOs supported in Excel for Mac](../Office-Mac/idMSOExcelMac.md) 
 ### [idMSOs supported in PowerPoint for Mac](../Office-Mac/idMSOPowerPointMac.md) 
 ### [idMSOs supported in Word for Mac](../Office-Mac/idMSOWordMac.md) 
-## [Outlook](overview/Outlook.md)
-### [Concepts](../outlook/Concepts/Getting-Started/concepts-outlook-vba-reference.md)
+## Outlook
+### [Overview](overview/Outlook.md)
+### Concepts
+#### [Overview](../outlook/Concepts/Getting-Started/concepts-outlook-vba-reference.md)
 #### Getting started
 ##### [Add custom property pages](../outlook/Concepts/Getting-Started/adding-custom-property-pages.md)
 ##### [Automate Outlook from a Visual Basic application](../outlook/Concepts/Getting-Started/automating-outlook-from-a-visual-basic-application.md)
@@ -10773,7 +10792,8 @@
 ##### [Share contact information including the business card](../outlook/Concepts/Electronic-Business-Cards/share-contact-information-including-the-business-card.md)
 ##### [Use events with automation](../outlook/Concepts/Electronic-Business-Cards/using-events-with-automation.md)
 ##### [Work with Outlook events](../outlook/Concepts/Electronic-Business-Cards/working-with-outlook-events.md)
-#### [Forms and message classes](../outlook/Concepts/Forms/forms-and-message-classes.md)
+#### Forms and message classes
+##### [Overview](../outlook/Concepts/Forms/forms-and-message-classes.md)
 ##### [Appointment forms overview](../outlook/Concepts/Forms/appointment-forms-overview.md)
 ##### [Best practices to migrate Outlook 97-2003 custom forms](../outlook/Concepts/Forms/best-practices-to-migrate-outlook-97-2003-custom-forms.md)
 ##### [Changing the form used by existing items in a folder](../outlook/Concepts/Forms/changing-the-form-used-by-existing-items-in-a-folder.md)
@@ -10791,7 +10811,8 @@
 ##### [Selecting the item on which to base a form](../outlook/Concepts/Forms/selecting-the-item-on-which-to-base-a-form.md)
 ##### [Task forms overview](../outlook/Concepts/Forms/task-forms-overview.md)
 ##### [Understanding the forms cache](../outlook/Concepts/Forms/understanding-the-forms-cache.md)
-#### [Fields and controls](../outlook/Concepts/Forms/fields-and-controls.md)
+#### Fields and controls
+##### [Overview](../outlook/Concepts/Forms/fields-and-controls.md)
 ##### [Active controls and selected controls](../outlook/Concepts/Forms/active-controls-and-selected-controls-outlook.md)
 ##### [Adding custom controls to the Control Toolbox](../outlook/Concepts/Forms/adding-custom-controls-to-the-control-toolbox.md)
 ##### [Binding a control to a field](../outlook/Concepts/Forms/binding-a-control-to-a-field.md)
@@ -10809,7 +10830,8 @@
 ##### [Use fields with controls](../outlook/Concepts/Forms/using-fields-with-controls.md)
 ##### [Use the field chooser](../outlook/Concepts/Forms/using-the-field-chooser.md)
 ##### [Validating user input to a field](../outlook/Concepts/Forms/validating-user-input-to-a-field.md)
-#### [Outlook controls](../outlook/Concepts/Forms/outlook-controls.md)
+#### Outlook controls
+##### [Overview](../outlook/Concepts/Forms/outlook-controls.md)
 ##### [Extra Members for Outlook controls](../outlook/Concepts/Outlook-Controls/extra-members-for-outlook-controls.md)
 ##### Methods
 ###### [Move](../outlook/Concepts/Outlook-Controls/move-method-outlook-controls.md)
@@ -10910,7 +10932,8 @@
 ##### [Show or hide fields when printing and saving a form](../outlook/Concepts/Specifying-Form-Behavior/show-or-hide-fields-when-printing-and-saving-a-form.md)
 ##### [Show or hide the Control Toolbox](../outlook/Concepts/Specifying-Form-Behavior/show-or-hide-the-control-toolbox.md)
 ##### [Specify whether a form prompts the user, opens, or is sent](../outlook/Concepts/Specifying-Form-Behavior/specify-whether-a-form-prompts-the-user-opens-or-is-sent.md)
-#### [Basic control tasks](../outlook/Concepts/Specifying-Form-Behavior/basic-control-tasks.md)
+#### Basic control tasks
+##### [Overview](../outlook/Concepts/Specifying-Form-Behavior/basic-control-tasks.md)
 ##### [Add a control to a form](../outlook/Concepts/Specifying-Form-Behavior/add-a-control-to-a-form.md)
 ##### [Add or remove controls on a form](../outlook/Concepts/Specifying-Form-Behavior/add-or-remove-controls-on-a-form.md)
 ##### [Adjust spacing for controls](../outlook/Concepts/Specifying-Form-Behavior/adjust-spacing-for-controls.md)
@@ -10922,7 +10945,8 @@
 ##### [Hide or show a control](../outlook/Concepts/Specifying-Form-Behavior/hide-or-show-a-control.md)
 ##### [Set properties for controls](../outlook/Concepts/Specifying-Form-Behavior/set-properties-for-controls.md)
 ##### [Size controls](../outlook/Concepts/Specifying-Form-Behavior/size-controls.md)
-#### [Secondary control tasks](../outlook/Concepts/Specifying-Form-Behavior/secondary-control-tasks.md)
+#### Secondary control tasks
+##### [Overview](../outlook/Concepts/Specifying-Form-Behavior/secondary-control-tasks.md)
 ##### [Add items to a list in design mode](../outlook/Concepts/Specifying-Form-Behavior/add-items-to-a-list-in-design-mode.md)
 ##### [Add items to a list](../outlook/Concepts/Specifying-Form-Behavior/adding-items-to-a-list.md)
 ##### [Align a picture on a control](../outlook/Concepts/Specifying-Form-Behavior/align-a-picture-on-a-control.md)
@@ -11023,13 +11047,15 @@
 #### Using Visual Basic to customize Outlook forms
 ##### [Use Visual Basic with Outlook](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/using-visual-basic-with-outlook.md)
 ##### [Run in Developer mode in Outlook](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/run-in-developer-mode-in-outlook.md)
-##### [Use Visual Basic Scripting Edition](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/using-visual-basic-scripting-edition.md)
+##### Use Visual Basic Scripting Edition
+###### [Overview](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/using-visual-basic-scripting-edition.md)
 ###### [About using VBScript in Outlook](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/about-using-vbscript-in-outlook.md)
 ###### [How can I prevent the VBScript code from running?](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/how-can-i-prevent-the-vbscript-code-from-running.md)
 ###### [Variants supported in VBScript](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/variants-supported-in-vbscript.md)
 ###### [Tools for programming with Visual Basic Scripting Edition](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/tools-for-programming-with-visual-basic-scripting-edition.md)
 ###### [Test tips for using Visual Basic Scripting Edition in Outlook](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/test-tips-for-using-visual-basic-scripting-edition-in-outlook.md)
-###### [Form events](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/form-events.md)
+###### Form events
+####### [Overview](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/form-events.md)
 ####### [Item-level events](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/item-level-events.md)
 ####### [Control events](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/control-events.md)
 ####### [Field events](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/field-events.md)
@@ -11041,12 +11067,14 @@
 ##### [About the Outlook Object Browser](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/about-the-outlook-object-browser.md)
 ##### [Common things you can do with VBScript](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/common-things-you-can-do-with-vbscript.md)
 ##### [Referencing controls on an Outlook form](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/referencing-controls-on-an-outlook-form.md)
-##### [Test tips for using VBScript in Outlook](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/test-tips-for-using-vbscript-in-outlook.md)
+##### Test tips for using VBScript in Outlook
+###### [Overview](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/test-tips-for-using-vbscript-in-outlook.md)
 ###### [Go to a line of code in the Script Editor](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/go-to-a-line-of-code-in-the-script-editor.md)
 ###### [Use message boxes to return values](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/use-message-boxes-to-return-values.md)
 ###### [Set global variables for a form](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/set-global-variables-for-a-form.md)
 ###### [Use the PropertyChange event to test procedures](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/use-the-propertychange-event-to-test-procedures.md)
-##### [Use the Outlook Object Model](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/using-the-outlook-object-model.md)
+##### Use the Outlook Object Model
+###### [Overview](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/using-the-outlook-object-model.md)
 ###### [About the object environment](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/about-the-object-environment.md)
 ###### [Use the Outlook Object Browser](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/use-the-outlook-object-browser.md)
 ###### [Use the Outlook Object Browser in the Script Editor](../outlook/How-to/Using-Visual-Basic-to-Customize-Outlook-Forms/use-the-outlook-object-browser-in-the-script-editor.md)
@@ -11118,7 +11146,8 @@
 ##### [Default properties displayed in a Table object](../outlook/How-to/Search-and-Filter/default-properties-displayed-in-a-table-object.md)
 ##### [Factors affecting property value representation in the Table and View classes](../outlook/How-to/Search-and-Filter/factors-affecting-property-value-representation-in-the-table-and-view-classes.md)
 ##### [Unsupported properties in a Table object or Table filter](../outlook/How-to/Search-and-Filter/unsupported-properties-in-a-table-object-or-table-filter.md)
-##### [Filtering](../outlook/How-to/Search-and-Filter/filtering.md)
+##### Filtering
+###### [Overview](../outlook/How-to/Search-and-Filter/filtering.md)
 ###### [Filter items](../outlook/How-to/Search-and-Filter/filtering-items.md)
 ###### [Filter a custom field](../outlook/How-to/Search-and-Filter/filtering-a-custom-field.md)
 ###### [Filter items using a Boolean comparison](../outlook/How-to/Search-and-Filter/filtering-items-using-a-boolean-comparison.md)
@@ -11162,7 +11191,8 @@
 ##### [Outlook views](../outlook/How-to/Views/outlook-views.md)
 ##### [Filtering and specifying fields in a view](../outlook/How-to/Views/filtering-and-specifying-fields-in-a-view.md)
 ##### [Sorting fields in a view](../outlook/How-to/Views/sorting-fields-in-a-view.md)
-### [Object model](overview/Outlook/object-model.md)
+### Object model
+#### [Overview](overview/Outlook/object-model.md)
 #### [Account object](Outlook.Account.md)
 ##### Methods
 ###### [GetAddressEntryFromID](Outlook.Account.GetAddressEntryFromID.md)
@@ -15987,8 +16017,10 @@
 ####### [TripleState](Outlook.togglebutton.triplestate.md)
 ####### [Value](Outlook.togglebutton.value.md)
 ####### [WordWrap](Outlook.togglebutton.wordwrap.md)
-## [PowerPoint](overview/PowerPoint.md)
-### [Concepts](../powerpoint/Concepts/concepts-powerpoint-vba-reference.md)
+## PowerPoint
+### [Overview](overview/PowerPoint.md)
+### Concepts
+#### [Overview](../powerpoint/Concepts/concepts-powerpoint-vba-reference.md)
 #### [Control and dialog box events](../powerpoint/Concepts/control-and-dialog-box-events-powerpoint.md)
 #### [Language-specific properties and methods](../powerpoint/Concepts/Language-specific-properties-and-methods-powerpoint.md)
 #### [Learn about language-specific information](../powerpoint/Concepts/learn-about-language-specific-information-powerpoint.md)
@@ -16010,7 +16042,8 @@
 #### [Work with panes and views](../powerpoint/How-to/work-with-panes-and-views.md)
 #### [Work with shapes](../powerpoint/How-to/work-with-shapes-drawing-objects.md)
 #### [Work with tables](../powerpoint/How-to/work-with-tables.md)
-### [Object model](overview/PowerPoint/object-model.md)
+### Object model
+#### [Overview](overview/PowerPoint/object-model.md)
 #### [ActionSetting object](PowerPoint.ActionSetting.md)
 ##### Properties
 ###### [Action](PowerPoint.ActionSetting.Action.md)
@@ -18168,6 +18201,7 @@
 ###### [CustomerData](PowerPoint.Shape.CustomerData.md)
 ###### [Fill](PowerPoint.Shape.Fill.md)
 ###### [Glow](PowerPoint.Shape.Glow.md)
+###### [GraphicStyle](PowerPoint.Shape.GraphicStyle.md)
 ###### [GroupItems](PowerPoint.Shape.GroupItems.md)
 ###### [HasChart](PowerPoint.Shape.HasChart.md)
 ###### [HasInkXML](PowerPoint.shape.hasinkxml.md)
@@ -18283,6 +18317,7 @@
 ###### [CustomerData](PowerPoint.ShapeRange.CustomerData.md)
 ###### [Fill](PowerPoint.ShapeRange.Fill.md)
 ###### [Glow](PowerPoint.ShapeRange.Glow.md)
+###### [GraphicStyle](PowerPoint.ShapeRange.GraphicStyle.md)
 ###### [GroupItems](PowerPoint.ShapeRange.GroupItems.md)
 ###### [HasChart](PowerPoint.ShapeRange.HasChart.md)
 ###### [HasInkXML](PowerPoint.shaperange.hasinkxml.md)
@@ -19130,7 +19165,8 @@
 ##### [XlTrendlineType](PowerPoint.XlTrendlineType.md)
 ##### [XlUnderlineStyle](PowerPoint.XlUnderlineStyle.md)
 ##### [XlVAlign](PowerPoint.XlVAlign.md)
-## [Project](overview/Project.md)
+## Project
+### [Overview](overview/Project.md)
 ### Concepts
 #### [Use events with Application and Project objects](../project/Concepts/using-events-with-application-and-project-objects.md)
 #### [OLE programmatic identifiers, late binding, and early binding](../project/Concepts/ole-programmatic-identifiers-late-binding-and-early-binding-project.md)
@@ -19139,7 +19175,8 @@
 ##### [Calendars object map](../project/Concepts/calendars-object-map-project.md)
 ##### [Resources object map](../project/Concepts/resources-object-map-project.md)
 ##### [Tasks object map](../project/Concepts/tasks-object-map-project.md)
-### [Object model](Project.object.md)
+### Object model
+#### [Overview](Project.object.md)
 #### [ActualStartDrivers object](Project.actualstartdrivers.md)
 ##### Properties
 ###### [Application](Project.ActualStartDrivers.Application.md)
@@ -22584,12 +22621,15 @@
 ##### [PjWindowState](Project.PjWindowState.md)
 ##### [PjWorkContourType](Project.PjWorkContourType.md)
 ##### [PjYesNoAutomatic](Project.PjYesNoAutomatic.md)
-## [Publisher](overview/Publisher.md)
-### [Concepts](../publisher/Concepts/concepts-publisher-vba-reference.md)
+## Publisher
+### [Overview](overview/Publisher.md)
+### Concepts
+#### [Overview](../publisher/Concepts/concepts-publisher-vba-reference.md)
 #### [Return an object from a collection](../publisher/Concepts/returning-an-object-from-a-collection-publisher.md)
 #### [Use events with the Application object](../publisher/Concepts/using-events-with-the-application-object-publisher.md)
 #### [Use events with the Document object](../publisher/Concepts/using-events-with-the-document-object-publisher.md)
-### [Object model](overview/Publisher/object-model.md)
+### Object model
+#### [Overview](overview/Publisher/object-model.md)
 #### [Adjustments object](Publisher.Adjustments.md)
 ##### Properties
 ###### [Application](Publisher.Adjustments.Application.md)
@@ -24499,8 +24539,10 @@
 ##### [PbWrapSideType](Publisher.PbWrapSideType.md)
 ##### [PbWrapType](Publisher.PbWrapType.md)
 ##### [PbZoom](Publisher.PbZoom.md)
-## [Visio](overview/Visio.md)
-### [Concepts](../visio/Concepts/concepts-visio-vba-reference.md)
+## Visio
+### [Overview](overview/Visio.md)
+### Concepts
+#### [Overview](../visio/Concepts/concepts-visio-vba-reference.md)
 #### [Automation](../visio/Concepts/about-automation-visio.md)
 #### [Connecting to data in Visio](../visio/Concepts/about-connecting-to-data-in-visio.md)
 #### [Displaying data graphically](../visio/Concepts/about-displaying-data-graphically-visio.md)
@@ -24524,7 +24566,8 @@
 #### [Start the Visual Basic Editor](../visio/How-to/start-the-visual-basic-editor-visio.md)
 #### [Use Information Rights Management for Visio](../visio/How-to/use-information-rights-management-for-visio.md)
 #### [View Visio object, property, method, event, and constant descriptions](../visio/How-to/view-visio-object-property-method-event-and-constant-descriptions.md)
-### [Object model](overview/Visio/object-model.md)
+### Object model
+#### [Overview](overview/Visio/object-model.md)
 #### [AccelItem object](Visio.AccelItem.md)
 ##### Methods
 ###### [Delete](Visio.AccelItem.Delete.md)
@@ -27387,13 +27430,16 @@
 ##### [VisWindowStates](Visio.viswindowstates.md)
 ##### [VisWinTypes](Visio.viswintypes.md)
 ##### [VisZoomBehavior](Visio.viszoombehavior.md)
-### [Visio Save as Web reference](overview/Visio/visio-save-as-web-reference.md)
-#### [Concepts](Visio.concepts.visio.save.md)
+### Visio Save as Web reference
+#### [Overview](overview/Visio/visio-save-as-web-reference.md)
+#### Concepts
+##### [Overview](Visio.concepts.visio.save.md)
 ##### [About the Save as Web Page API](Visio.about.the.save.as.web.md)
 ##### [Persist Save as Web Page settings](Visio.persisting.save.as.web.md)
 ##### [Run Save as Web Page from the command line](Visio.running.save.as.web.page.from.the.md)
 ##### [Use the Save as Web Page Object Model from Visual Basic example](Visio.using.the.save.as.web.page.object.model.from.visual.basic.md)
-#### [Objects](Visio.objects.visio.save.md)
+#### Objects
+##### [Overview](Visio.objects.visio.save.md)
 ##### [VisSaveAsWeb object](Visio.vissaveasweb.object.visio.save.md)
 ###### Methods
 ####### [AttachToVisioDoc](Visio.AttachToVisioDoc.md)
@@ -27429,9 +27475,11 @@
 ####### [ThemeName](Visio.ThemeName.md)
 ##### [Enumerations](Visio.enumerations.visio.save.md)
 ###### [VISWEB_DISP_RES](Visio.visweb_disp_res.enumeration.visio.save.md)
-### [Visio Viewer reference](overview/Visio/visio-viewer-reference.md)
+### Visio Viewer reference
+#### [Overview](overview/Visio/visio-viewer-reference.md)
 #### [Programming Visio Viewer](Visio.about.programming.md)
-#### [Object model](overview/Visio/object-model-visio-viewer-reference.md)
+#### Object model
+##### [Overview](overview/Visio/object-model-visio-viewer-reference.md)
 ##### [Viewer object](Visio.viewer.object.md)
 ###### Events
 ####### [OnDocumentLoaded](Visio.OnDocumentLoaded.md)
@@ -27511,8 +27559,10 @@
 ####### [ToolbarCustomizable](Visio.ToolbarCustomizable.md)
 ####### [ToolbarVisible](Visio.ToolbarVisible.md)
 ####### [Zoom](Visio.viewer.zoom.property.md)
-## [Word](overview/Word.md)
-### [Concepts](../word/Concepts/Miscellaneous/concepts-word-vba-reference.md)
+## Word
+### [Overview](overview/Word.md)
+### Concepts
+#### [Overview](../word/Concepts/Miscellaneous/concepts-word-vba-reference.md)
 #### Customizing Word
 ##### [Add controls to a document](../word/Concepts/Customizing-Word/adding-controls-to-a-document.md)
 ##### [Add controls to a UserForm](../word/Concepts/Customizing-Word/adding-controls-to-a-userform.md)
@@ -27587,7 +27637,8 @@
 ##### [Return text from a document](../word/Concepts/Miscellaneous/returning-text-from-a-document.md)
 ##### [Set control properties](../word/Concepts/Miscellaneous/setting-control-properties-word.md)
 ##### [Store values when a macro ends](../word/Concepts/Miscellaneous/storing-values-when-a-macro-ends.md)
-### [Object model](overview/Word/object-model.md)
+### Object model
+#### [Overview](overview/Word/object-model.md)
 #### [AddIn object](Word.AddIn.md)
 ##### Methods
 ###### [Delete](Word.AddIn.Delete.md)
@@ -32809,6 +32860,7 @@
 ###### [Creator](Word.Shape.Creator.md)
 ###### [Fill](Word.Shape.Fill.md)
 ###### [Glow](Word.Shape.Glow.md)
+###### [GraphicStyle](Word.Shape.GraphicStyle.md)
 ###### [GroupItems](Word.Shape.GroupItems.md)
 ###### [HasChart](Word.Shape.HasChart.md)
 ###### [HasSmartArt](Word.Shape.HasSmartArt.md)
@@ -32917,6 +32969,7 @@
 ###### [Creator](Word.ShapeRange.Creator.md)
 ###### [Fill](Word.ShapeRange.Fill.md)
 ###### [Glow](Word.ShapeRange.Glow.md)
+###### [GraphicStyle](Word.ShapeRange.GraphicStyle.md)
 ###### [GroupItems](Word.ShapeRange.GroupItems.md)
 ###### [Height](Word.ShapeRange.Height.md)
 ###### [HeightRelative](Word.ShapeRange.HeightRelative.md)
@@ -34400,9 +34453,11 @@
 ##### [XlTrendlineType](Word.xltrendlinetype.md)
 ##### [XlUnderlineStyle](Word.xlunderlinestyle.md)
 ##### [XlVAlign](Word.xlvalign.md)
-## [Language reference](overview/Language-Reference.md)
+## Language reference
+### [Overview](overview/Language-Reference.md)
 ### Concepts
-#### [Visual Basic](../Language/Reference/User-Interface-Help/visual-basic-conceptual-topics.md)
+#### Visual Basic
+##### [Overview](../Language/Reference/User-Interface-Help/visual-basic-conceptual-topics.md)
 ##### [64-bit Visual Basic for Applications overview](../Language/Concepts/Getting-Started/64-bit-visual-basic-for-applications-overview.md)
 ##### [Avoid naming conflicts](../Language/Concepts/Getting-Started/avoiding-naming-conflicts.md)
 ##### [Call procedures with the same name](../Language/Concepts/Getting-Started/calling-procedures-with-the-same-name.md)
@@ -34451,7 +34506,8 @@
 ##### [Write declaration statements](../Language/Concepts/Getting-Started/writing-declaration-statements.md)
 ##### [Write executable statements](../Language/Concepts/Getting-Started/writing-executable-statements.md)
 ##### [Write Visual Basic statements](../Language/Concepts/Getting-Started/writing-visual-basic-statements.md)
-#### [Microsoft Forms](../Language/Reference/User-Interface-Help/concepts-microsoft-forms.md)
+#### Microsoft Forms
+##### [Overview](../Language/Reference/User-Interface-Help/concepts-microsoft-forms.md)
 ##### [Active controls and selected controls](../Language/Concepts/Forms/active-controls-and-selected-controls.md)
 ##### [Add a control to a form](../Language/Concepts/Forms/add-a-control-to-a-form.md)
 ##### [Add a control to the Toolbox](../Language/Concepts/Forms/add-a-control-to-the-toolbox.md) 
@@ -34533,7 +34589,8 @@
 ##### [What is a ToolTip?](../Language/Concepts/Forms/what-is-a-tooltip.md)
 ##### [What is the difference between the DataObject and the Clipboard?](../Language/Concepts/Forms/what-is-the-difference-between-the-dataobject-and-the-clipboard.md) 
 ##### [What is the Toolbox?](../Language/Concepts/Forms/what-is-the-toolbox.md)
-### [How-to topics](../Language/Reference/User-Interface-Help/visual-basic-how-to-topics.md)
+### How-to topics
+#### [Overview](../Language/Reference/User-Interface-Help/visual-basic-how-to-topics.md)
 #### [Add a watch expression](../Language/Concepts/Forms/add-a-watch-expression.md)
 #### [Check or add an Object Library Reference](../Language/How-to/check-or-add-an-object-library-reference.md)
 #### [Continue code execution](../Language/How-to/continue-code-execution.md)
@@ -34563,11 +34620,14 @@
 #### [Use the Object Browser](../Language/Reference/User-Interface-Help/use-the-object-browser.md)
 #### [Use the Project Explorer](../Language/Reference/User-Interface-Help/use-the-project-explorer.md)
 #### [Use the Properties window](../Language/Reference/User-Interface-Help/use-the-properties-window.md)
-### [Reference](../Language/Reference/User-Interface-Help/visual-basic-language-reference.md)
-#### [Character sets](../Language/Reference/character-sets.md)
+### Reference
+#### [Overview](../Language/Reference/User-Interface-Help/visual-basic-language-reference.md)
+#### Character sets
+##### [Overview](../Language/Reference/character-sets.md)
 ##### [Character set (0 - 127)](../Language/Reference/User-Interface-Help/character-set-0127.md)
 ##### [Character set (128 - 255)](../Language/Reference/User-Interface-Help/character-set-128255.md)
-#### [Constants](../Language/Reference/constants-visual-basic-for-applications.md)
+#### Constants
+##### [Overview](../Language/Reference/constants-visual-basic-for-applications.md)
 ##### [Calendar](../Language/Reference/User-Interface-Help/calendar-constants.md)
 ##### [CallType](../Language/Reference/User-Interface-Help/calltype-constants.md)
 ##### [Color](../Language/Reference/User-Interface-Help/color-constants.md)
@@ -34589,7 +34649,8 @@
 ##### [StrConv](../Language/Reference/User-Interface-Help/strconv-constants.md)
 ##### [System Color](../Language/Reference/User-Interface-Help/system-color-constants.md)
 ##### [Tristate](../Language/Reference/User-Interface-Help/tristate-constants.md)
-#### [Data types](../Language/Reference/User-Interface-Help/data-type-summary.md)
+#### Data types
+##### [Overview](../Language/Reference/User-Interface-Help/data-type-summary.md)
 ##### [Type conversion functions](../Language/Concepts/Getting-Started/type-conversion-functions.md)
 ##### [Boolean](../Language/Reference/User-Interface-Help/boolean-data-type.md)
 ##### [Byte](../Language/Reference/User-Interface-Help/byte-data-type.md)
@@ -34606,21 +34667,25 @@
 ##### [String](../Language/Reference/User-Interface-Help/string-data-type.md)
 ##### [User-defined](../Language/How-to/user-defined-data-type.md)
 ##### [Variant](../Language/Reference/User-Interface-Help/variant-data-type.md)
-#### [Directives](../Language/Reference/directives.md)
+#### Directives
+##### [Overview](../Language/Reference/directives.md)
 ##### [#Const directive](../Language/Reference/User-Interface-Help/const-directive.md)
 ##### [#If...Then...#Else directive](../Language/Reference/User-Interface-Help/ifthenelse-directive.md)
-#### [Events](../Language/Reference/events-visual-basic-for-applications.md)
+#### Events
+##### [Overview](../Language/Reference/events-visual-basic-for-applications.md)
 ##### [Activate, Deactivate](../Language/Reference/User-Interface-Help/activate-deactivate-events.md)
 ##### [Initialize](../Language/Reference/User-Interface-Help/initialize-event.md)
 ##### [QueryClose](../Language/Reference/User-Interface-Help/queryclose-event.md)
 ##### [Resize](../Language/Reference/User-Interface-Help/resize-event.md)
 ##### [Terminate](../Language/Reference/User-Interface-Help/terminate-event-visual-basic-for-applications.md)
-#### [Functions](../Language/Reference/functions-visual-basic-for-applications.md)
+#### Functions
+##### [Overview](../Language/Reference/functions-visual-basic-for-applications.md)
 ##### [Array](../Language/Reference/User-Interface-Help/array-function.md)
 ##### [CallByName](../Language/Reference/User-Interface-Help/callbyname-function.md)
 ##### [Choose](../Language/Reference/User-Interface-Help/choose-function.md)
 ##### [Command](../Language/Reference/User-Interface-Help/command-function.md)
-##### [Conversion functions](../Language/Reference/User-Interface-Help/conversion-functions.md)
+##### Conversion functions
+###### [Overview](../Language/Reference/User-Interface-Help/conversion-functions.md)
 ###### [Asc](../Language/Reference/User-Interface-Help/asc-function.md)
 ###### [Chr](../Language/Reference/User-Interface-Help/chr-function.md)
 ###### [CVErr](../Language/Reference/User-Interface-Help/cverr-function.md)
@@ -34685,7 +34750,8 @@
 ##### [LTrim, RTrim, and Trim](../Language/Reference/User-Interface-Help/ltrim-rtrim-and-trim-functions.md)
 ##### [MacID](../Language/Reference/User-Interface-Help/macid-function.md)
 ##### [MacScript](../Language/Reference/User-Interface-Help/macscript-function.md)
-##### [Math functions](../Language/Reference/User-Interface-Help/math-functions.md)
+##### Math functions
+###### [Overview](../Language/Reference/User-Interface-Help/math-functions.md)
 ###### [Abs](../Language/Reference/User-Interface-Help/abs-function.md)
 ###### [Atn](../Language/Reference/User-Interface-Help/atn-function.md)
 ###### [Cos](../Language/Reference/User-Interface-Help/cos-function.md)
@@ -34742,8 +34808,10 @@
 ##### [Weekday](../Language/Reference/User-Interface-Help/weekday-function.md)
 ##### [WeekdayName](../Language/Reference/User-Interface-Help/weekdayname-function.md)
 ##### [Year](../Language/Reference/User-Interface-Help/year-function.md)
-#### [Keywords](../Language/Reference/User-Interface-Help/keywords-by-task.md)
-##### [Keyword contexts](../Language/Reference/keywords-visual-basic-for-applications.md)
+#### Keywords
+##### [Keywords by task](../Language/Reference/User-Interface-Help/keywords-by-task.md)
+##### Keyword contexts
+###### [Overview](../Language/Reference/keywords-visual-basic-for-applications.md)
 ###### [Friend](../Language/Reference/User-Interface-Help/friend-keyword.md)
 ###### [Me](../Language/Reference/User-Interface-Help/me-keyword.md)
 ###### [Nothing](../Language/Reference/User-Interface-Help/nothing-keyword.md)
@@ -34761,8 +34829,10 @@
 ##### [Registry](../Language/Reference/User-Interface-Help/registry-keyword-summary.md)
 ##### [String manipulation](../Language/Reference/User-Interface-Help/string-manipulation-keyword-summary.md)
 ##### [Variables and constants](../Language/Reference/User-Interface-Help/variables-and-constants-keyword-summary.md)
-#### [Microsoft Forms](../language/reference/user-interface-help/reference-microsoft-forms.md)
-##### [Collections, controls, and objects](../Language/Reference/User-Interface-Help/objects-microsoft-forms.md)
+#### Microsoft Forms
+##### [Overview](../language/reference/user-interface-help/reference-microsoft-forms.md)
+##### Collections, controls, and objects
+###### [Overview](../Language/Reference/User-Interface-Help/objects-microsoft-forms.md)
 ###### [CheckBox control](../Language/Reference/User-Interface-Help/checkbox-control.md)
 ###### [ComboBox control](../Language/Reference/User-Interface-Help/combobox-control.md)
 ###### [CommandButton control](../Language/Reference/User-Interface-Help/commandbutton-control.md)
@@ -34784,12 +34854,14 @@
 ###### [TabStrip control](../Language/Reference/User-Interface-Help/tabstrip-control.md)
 ###### [TextBox control](../Language/Reference/User-Interface-Help/textbox-control.md)
 ###### [ToggleButton control](../Language/Reference/User-Interface-Help/togglebutton-control.md)
-##### [Dialog boxes](../Language/Reference/User-Interface-Help/dialog-boxes-microsoft-forms.md)
+##### Dialog boxes
+###### [Overview](../Language/Reference/User-Interface-Help/dialog-boxes-microsoft-forms.md)
 ###### [Additional Controls dialog box](../Language/Reference/User-Interface-Help/the-additional-controls-dialog-box-microsoft-forms.md)
 ###### [Customize Control dialog box](../Language/Reference/User-Interface-Help/the-customize-control-dialog-box-microsoft-forms.md)
 ###### [Page Order/Tab Order dialog box](../Language/Reference/User-Interface-Help/the-page-order-tab-order-dialog-box-microsoft-forms.md)
 ###### [Rename dialog box](../Language/Reference/User-Interface-Help/the-rename-dialog-box-microsoft-forms.md)
-##### [Events](../Language/Reference/User-Interface-Help/events-microsoft-forms.md)
+##### Events
+###### [Overview](../Language/Reference/User-Interface-Help/events-microsoft-forms.md)
 ###### [AddControl](../Language/Reference/User-Interface-Help/addcontrol-event.md)
 ###### [AfterUpdate](../Language/Reference/User-Interface-Help/afterupdate-event.md)
 ###### [BeforeDragOver](../Language/Reference/User-Interface-Help/beforedragover-event.md)
@@ -34810,7 +34882,8 @@
 ###### [Scroll](../Language/Reference/User-Interface-Help/scroll-event.md)
 ###### [SpinDown, SpinUp](../Language/Reference/User-Interface-Help/spindown-spinup-events.md)
 ###### [Zoom](../Language/Reference/User-Interface-Help/zoom-event.md)
-##### [Examples](../Language/Reference/User-Interface-Help/examples-microsoft-forms.md)
+##### Examples
+###### [Overview](../Language/Reference/User-Interface-Help/examples-microsoft-forms.md)
 ###### [Add, cut, paste methods, page object, MultiPage control example](../Language/Reference/User-Interface-Help/add-cut-paste-methods-page-object-multipage-control-example.md)
 ###### [AddControl event, Add method example](../Language/Reference/User-Interface-Help/addcontrol-event-add-method-example.md)
 ###### [Alignment property example](../Language/Reference/User-Interface-Help/alignment-property-example.md)
@@ -34891,7 +34964,8 @@
 ###### [Value property example](../Language/Reference/User-Interface-Help/value-property-example.md)
 ###### [Zoom event, Zoom property, Label control example](../Language/Reference/User-Interface-Help/zoom-event-zoom-property-label-control-example.md)
 ###### [ZOrder method, TextBox control example](../Language/Reference/User-Interface-Help/zorder-method-textbox-control-example.md)
-##### [Methods](../Language/Reference/User-Interface-Help/methods-microsoft-forms.md)
+##### Methods
+###### [Overview](../Language/Reference/User-Interface-Help/methods-microsoft-forms.md)
 ###### [Add](../Language/Reference/User-Interface-Help/add-method-microsoft-forms.md)
 ###### [AddItem](../Language/Reference/User-Interface-Help/additem-method.md)
 ###### [Clear](../Language/Reference/User-Interface-Help/clear-method-microsoft-forms.md)
@@ -34916,7 +34990,8 @@
 ###### [StartDrag](../Language/Reference/User-Interface-Help/startdrag-method.md)
 ###### [UndoAction](../Language/Reference/User-Interface-Help/undoaction-method.md)
 ###### [ZOrder](../Language/Reference/User-Interface-Help/zorder-method.md)
-##### [Properties](../Language/Reference/User-Interface-Help/properties-microsoft-forms.md)
+##### Properties
+###### [Overview](../Language/Reference/User-Interface-Help/properties-microsoft-forms.md)
 ###### [Accelerator](../Language/Reference/User-Interface-Help/accelerator-property.md)
 ###### [ActiveControl](../Language/Reference/User-Interface-Help/activecontrol-property.md)
 ###### [Alignment](../Language/Reference/User-Interface-Help/alignment-property.md)
@@ -35034,7 +35109,8 @@
 ###### [Visible](../Language/Reference/User-Interface-Help/visible-property-microsoft-forms.md)
 ###### [WordWrap](../Language/Reference/User-Interface-Help/wordwrap-property.md)
 ###### [Zoom](../Language/Reference/User-Interface-Help/zoom-property.md)
-#### [Objects](../Language/Reference/objects-visual-basic-for-applications.md)
+#### Objects
+##### [Overview](../Language/Reference/objects-visual-basic-for-applications.md)
 ##### [Collection object](../Language/Reference/User-Interface-Help/collection-object.md)
 ###### [Add method](../Language/Reference/User-Interface-Help/add-method-visual-basic-for-applications.md)
 ###### [Item method](../Language/Reference/User-Interface-Help/item-method-visual-basic-for-applications.md)
@@ -35049,12 +35125,12 @@
 ####### [Exists](../Language/Reference/User-Interface-Help/exists-method.md)
 ####### [Items](../Language/Reference/User-Interface-Help/items-method.md)
 ####### [Keys](../Language/Reference/User-Interface-Help/keys-method.md)
-####### [Remove](../Language/Reference/User-Interface-Help/remove-method-filesystemobject-object.md)
+####### [Remove](../Language/Reference/User-Interface-Help/remove-method-dictionary-object.md)
 ####### [RemoveAll](../Language/Reference/User-Interface-Help/removeall-method.md)
 ###### Properties
 ####### [CompareMode](../Language/Reference/User-Interface-Help/comparemode-property.md)
-####### [Count](../Language/Reference/User-Interface-Help/count-property-filesystemobject-object.md)
-####### [Item](../Language/Reference/User-Interface-Help/item-property-filesystemobject-object.md)
+####### [Count](../Language/Reference/User-Interface-Help/count-property-dictionary-object.md)
+####### [Item](../Language/Reference/User-Interface-Help/item-property-dictionary-object.md)
 ####### [Key](../Language/Reference/User-Interface-Help/key-property.md)
 ##### [Drive object](../Language/Reference/User-Interface-Help/drive-object.md)
 ###### [Drives collection](../Language/Reference/User-Interface-Help/drives-collection.md)
@@ -35136,7 +35212,7 @@
 ###### [SubFolders property](../Language/Reference/User-Interface-Help/subfolders-property.md)
 ##### [TextStream object](../Language/Reference/User-Interface-Help/textstream-object.md)
 ###### Methods
-####### [Close](../Language/Reference/User-Interface-Help/close-method-filesystemobject-object.md)
+####### [Close](../Language/Reference/User-Interface-Help/close-method-textstream-object.md)
 ####### [Read](../Language/Reference/User-Interface-Help/read-method.md)
 ####### [ReadAll](../Language/Reference/User-Interface-Help/readall-method.md)
 ####### [ReadLine](../Language/Reference/User-Interface-Help/readline-method.md)
@@ -35164,7 +35240,8 @@
 ####### [StartUpPosition](../Language/Reference/User-Interface-Help/startupposition-property.md)
 ####### [WhatsThisButton](../Language/Reference/User-Interface-Help/whatsthisbutton-property.md)
 ####### [WhatsThisHelp](../Language/Reference/User-Interface-Help/whatsthishelp-property.md)
-#### [Operators](../Language/Reference/User-Interface-Help/operator-summary.md)
+#### Operators
+##### [Overview](../Language/Reference/User-Interface-Help/operator-summary.md)
 ##### [Operator precedence](../Language/Reference/User-Interface-Help/operator-precedence.md)
 ##### [Comparison operators](../Language/Reference/User-Interface-Help/comparison-operators.md)
 ##### [* operator](../Language/Reference/User-Interface-Help/operator.md)
@@ -35185,7 +35262,8 @@
 ##### [Not operator](../Language/Reference/User-Interface-Help/not-operator.md)
 ##### [Or operator](../Language/Reference/User-Interface-Help/or-operator.md)
 ##### [Xor operator](../Language/Reference/User-Interface-Help/xor-operator.md)
-#### [Statements](../Language/Reference/statements.md)
+#### Statements
+##### [Overview](../Language/Reference/statements.md)
 ##### [AppActivate](../Language/Reference/User-Interface-Help/appactivate-statement.md)
 ##### [Beep](../Language/Reference/User-Interface-Help/beep-statement.md)
 ##### [Call](../Language/Reference/User-Interface-Help/call-statement.md)
@@ -35262,12 +35340,14 @@
 ##### [Width #](../Language/Reference/User-Interface-Help/widthstatement.md)
 ##### [With](../Language/Reference/User-Interface-Help/with-statement.md)
 ##### [Write #](../Language/Reference/User-Interface-Help/writestatement.md)
-#### [Visual Basic Add-in Model](../Language/Reference/User-Interface-Help/visual-basic-add-in-model-reference.md)
+#### Visual Basic Add-in Model
+##### [Overview](../Language/Reference/User-Interface-Help/visual-basic-add-in-model-reference.md)
 ##### [Collections](../Language/Reference/Visual-Basic-Add-in-Model/collections-visual-basic-add-in-model.md)
 ##### [Events](../Language/Reference/Visual-Basic-Add-in-Model/events-visual-basic-add-in-model.md)
 ##### [Objects](../Language/Reference/Visual-Basic-Add-in-Model/objects-visual-basic-add-in-model.md)
 ##### [Properties](../Language/Reference/Visual-Basic-Add-in-Model/properties-visual-basic-add-in-model.md)
-##### [Methods](../Language/Reference/Visual-Basic-Add-in-Model/methods-visual-basic-add-in-model.md)
+##### Methods
+###### [Overview](../Language/Reference/Visual-Basic-Add-in-Model/methods-visual-basic-add-in-model.md)
 ###### [Add](../Language/Reference/User-Interface-Help/add-method-vba-add-in-object-model.md)
 ###### [AddCustom](../Language/Reference/User-Interface-Help/addcustom-method.md)
 ###### [AddFromFile](../Language/Reference/User-Interface-Help/addfromfile-method-vba-add-in-object-model.md)
@@ -35293,8 +35373,10 @@
 ###### [SetSelection](../Language/Reference/User-Interface-Help/setselection-method-vba-add-in-object-model.md)
 ###### [Show](../Language/Reference/User-Interface-Help/show-method-vba-add-in-object-model.md)
 ###### [Update](../Language/Reference/User-Interface-Help/update-method-vba-add-in-object-model.md)
-### [User Interface Help](../language/reference/user-interface-help/visual-basic-user-interface-help.md)
-#### [Dialog boxes](../Language/Reference/dialog-boxes.md)
+### User Interface Help
+#### [Overview](../language/reference/user-interface-help/visual-basic-user-interface-help.md)
+#### Dialog boxes
+##### [Overview](../Language/Reference/dialog-boxes.md)
 ##### [Add Procedure dialog box](../Language/Reference/User-Interface-Help/add-procedure-dialog-box.md)
 ##### [Add Watch dialog box](../Language/Reference/User-Interface-Help/add-watch-dialog-box.md)
 ##### [Add-In Manager dialog box](../Language/Reference/User-Interface-Help/add-in-manager-dialog-box.md)
@@ -35328,7 +35410,8 @@
 ##### [Security dialog box](../Language/Reference/User-Interface-Help/security-dialog-box.md)
 ##### [Select Certificate dialog box](../Language/Reference/User-Interface-Help/select-certificate-dialog-box.md)
 ##### [Tab Order dialog box](../Language/Reference/User-Interface-Help/tab-order-dialog-box.md)
-#### [Menus and commands](../Language/Reference/menus-commands.md)
+#### Menus and commands
+##### [Overview](../Language/Reference/menus-commands.md)
 ##### [Add-Ins menu](../Language/Reference/User-Interface-Help/add-ins-menu.md)
 ##### [Debug menu](../Language/Reference/User-Interface-Help/debug-menu.md)
 ##### [Edit menu](../Language/Reference/User-Interface-Help/edit-menu.md)
@@ -35341,14 +35424,17 @@
 ##### [Tools menu](../Language/Reference/User-Interface-Help/tools-menu.md)
 ##### [View menu](../Language/Reference/User-Interface-Help/view-menu.md)
 ##### [Window menu](../Language/Reference/User-Interface-Help/window-menu-commands.md)
-#### [Toolbars](../Language/Reference/toolbars.md)
+#### Toolbars
+##### [Overview](../Language/Reference/toolbars.md)
 ##### [Debug toolbar](../Language/Reference/User-Interface-Help/debug-toolbar.md)
 ##### [Editor toolbar](../Language/Reference/User-Interface-Help/editor-toolbar.md)
 ##### [Standard toolbar](../Language/Reference/User-Interface-Help/standard-toolbar.md)
 ##### [Toolbox](../Language/Reference/User-Interface-Help/toolbox.md)
 ##### [UserForm toolbar](../Language/Reference/User-Interface-Help/userform-command-bar.md)
-#### [Window elements](../Language/Reference/window-elements.md)
-##### [Code window](../Language/Reference/User-Interface-Help/code-window.md)
+#### Window elements
+##### [Overview](../Language/Reference/window-elements.md)
+##### Code window
+###### [Overview](../Language/Reference/User-Interface-Help/code-window.md)
 ###### [Code window editing keys](../Language/Reference/User-Interface-Help/code-editing-keys.md)
 ###### [Code window general use keys](../Language/Reference/User-Interface-Help/code-window-general-use-keys.md)
 ###### [Code window menu shortcut keys](../Language/Reference/User-Interface-Help/menu-shortcut-keys-available-in-the-code-window.md)
@@ -35363,7 +35449,8 @@
 ##### [UserForm window](../Language/Reference/User-Interface-Help/userform-window.md)
 ##### [Watch window](../Language/Reference/User-Interface-Help/watch-window.md)
 ##### [Global keys](../Language/Reference/User-Interface-Help/global-keys.md)
-#### [Error messages](../language/reference/error-messages.md)
+#### Error messages
+##### [Overview](../language/reference/error-messages.md)
 ##### [A compatible ActiveX component must be a Visual Basic executable or a DLL](../Language/Reference/User-Interface-Help/a-compatible-activex-component-must-be-a-visual-basic-executable-or-a-dll.md)
 ##### [A form can't be moved or sized while minimized or maximized](../Language/Reference/User-Interface-Help/a-form-can-t-be-moved-or-sized-while-minimized-or-maximized.md)
 ##### [A module is not a valid type](../Language/Reference/User-Interface-Help/a-module-is-not-a-valid-type.md)
@@ -35905,8 +35992,10 @@
 ### Glossary
 #### [VBA Glossary](../Language/Glossary/glossary-vba.md)
 #### [VBE Glossary](../Language/Glossary/vbe-glossary.md)
-## [Library reference](overview/Library-Reference.md)
-### [Concepts](../Library-Reference/Concepts/concepts-object-library-reference-for-office.md)
+## Library reference
+### [Overview](overview/Library-Reference.md)
+### Concepts
+#### [Overview](../Library-Reference/Concepts/concepts-object-library-reference-for-office.md)
 #### [Customize the Office Fluent ribbon by using a managed COM add-in](../Library-Reference/Concepts/customize-the-office-fluent-ribbon-by-using-a-managed-com-add-in.md)
 #### [Customize the Office Fluent ribbon by using an Open XML formats file](../Library-Reference/Concepts/customize-the-office-fluent-ribbon-by-using-an-open-xml-formats-file.md)
 #### [Getting help on Macintosh keywords](../Library-Reference/Concepts/getting-help-on-macintosh-keywords-office.md)
@@ -35917,7 +36006,8 @@
 #### [Security notes for Office solution developers](../Library-Reference/Concepts/security-notes-for-microsoft-office-solution-developers.md)
 #### [Use the Document Inspector](../Library-Reference/Concepts/using-the-document-inspector.md)
 #### [What's new for VBA in Office 2016](../Library-Reference/Concepts/what-s-new-for-vba-in-office-2016.md)
-### [Reference](overview/Library-Reference/reference-object-library-reference-for-office.md)
+### Reference
+#### [Overview](overview/Library-Reference/reference-object-library-reference-for-office.md)
 #### [BulletFormat2 object](Office.BulletFormat2.md)
 ##### [BulletFormat2 members](overview/Library-Reference/bulletformat2-members-office.md)
 ##### Properties 
@@ -37695,6 +37785,7 @@
 ##### [MsoFontLanguageIndex](Office.MsoFontLanguageIndex.md)
 ##### [MsoGradientColorType](Office.MsoGradientColorType.md)
 ##### [MsoGradientStyle](Office.MsoGradientStyle.md)
+##### [MsoGraphicStyleIndex](Office.MsoGraphicStyleIndex.md)
 ##### [MsoHorizontalAnchor](Office.MsoHorizontalAnchor.md)
 ##### [MsoHyperlinkType](Office.MsoHyperlinkType.md)
 ##### [MsoIconType](overview/Library-Reference/msoicontype-enumeration-office.md)

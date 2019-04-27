@@ -15,9 +15,9 @@ Returns an object that represents either one series (a  **[Series](Project.serie
 
 ## Syntax
 
-_expression_. `SeriesCollection` _(Index)_
+_expression_.**SeriesCollection** (_Index_) 
 
- _expression_ A variable that represents a 'Chart' object.
+_expression_ A variable that represents a **[Chart](Project.Chart.md)** object.
 
 
 ## Parameters
@@ -27,7 +27,7 @@ _expression_. `SeriesCollection` _(Index)_
 |Name|Required/Optional|Data type|Description|
 |:-----|:-----|:-----|:-----|
 | _Index_|Optional|**Variant**|The name or index number of the series. If  _Index_ is not specified, the **SeriesCollection** method returns all of the series in the chart.|
-| _Index_|Optional|VARIANT||
+| _Index_|Optional|**Variant**||
 
 ## Return value
 

@@ -21,7 +21,7 @@ Protects a worksheet so that it cannot be modified.
 
 _expression_. `Protect`( `_Password_` , `_DrawingObjects_` , `_Contents_` , `_Scenarios_` , `_UserInterfaceOnly_` , `_AllowFormattingCells_` , `_AllowFormattingColumns_` , `_AllowFormattingRows_` , `_AllowInsertingColumns_` , `_AllowInsertingRows_` , `_AllowInsertingHyperlinks_` , `_AllowDeletingColumns_` , `_AllowDeletingRows_` , `_AllowSorting_` , `_AllowFiltering_` , `_AllowUsingPivotTables_` )
 
-_expression_ A variable that represents a [Worksheet](Excel.Worksheet.md) object.
+_expression_ A variable that represents a **[Worksheet](Excel.Worksheet.md)** object.
 
 
 ## Parameters
@@ -45,7 +45,7 @@ _expression_ A variable that represents a [Worksheet](Excel.Worksheet.md) object
 | _AllowDeletingRows_|Optional| **Variant**| **True** allows the user to delete rows on the protected worksheet, where every cell in the row to be deleted is unlocked. The default value is **False**.|
 | _AllowSorting_|Optional| **Variant**| **True** allows the user to sort on the protected worksheet. Every cell in the sort range must be unlocked or unprotected. The default value is **False**.|
 | _AllowFiltering_|Optional| **Variant**| **True** allows the user to set filters on the protected worksheet. Users can change filter criteria but can not enable or disable an auto filter. Users can set filters on an existing auto filter. The default value is **False**.|
-| _AllowUsingPivotTables_|Optional| **Variant**| **True** allows the user to use pivot table reports on the protected worksheet. The default value is **False**.|
+| _AllowUsingPivotTables_|Optional| **Variant**| **True** allows the user to use PivotTable reports on the protected worksheet. The default value is **False**.|
 
 ## Remarks
 

@@ -14,7 +14,7 @@ Returns an object that represents either a single axis or a collection of the ax
 
 _expression_. `Axes` _(Type,_ _AxisGroup)_
 
- _expression_ A variable that represents a 'Chart' object.
+_expression_ A variable that represents a **[Chart](Project.Chart.md)** object.
 
 
 ## Parameters
@@ -25,7 +25,7 @@ _expression_. `Axes` _(Type,_ _AxisGroup)_
 |:-----|:-----|:-----|:-----|
 | _Type_|Optional|**Variant**|Specifies the axis to return. Can be one of the following  **Office.XlAxisType** constants: **xlValue**,  **xlCategory**, or  **xlSeriesAxis** (**xlSeriesAxis** is valid only for 3D charts).|
 | _AxisGroup_|Optional|**Office.XlAxisGroup**|Specifies the axis group. The default value is  **xlPrimary**; that is, if the  _AxisGroup_ argument is omitted, the primary group is used. 3D charts have only one axis group.|
-| _Type_|Optional|VARIANT||
+| _Type_|Optional|**Variant**||
 | _AxisGroup_|Optional|XLAXISGROUP||
 
 ## Return value

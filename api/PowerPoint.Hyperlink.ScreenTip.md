@@ -19,7 +19,7 @@ Returns or sets the ScreenTip text of a hyperlink. Read/write.
 
 ## Syntax
 
-_expression_. `ScreenTip`
+_expression_.**ScreenTip**
 
  _expression_ A variable that represents a [Hyperlink](./PowerPoint.Hyperlink.md) object.
 
@@ -31,7 +31,7 @@ String
 
 ## Remarks
 
-ScreenTip text appears, for example, when you save a presentation to HTML, view it in a Web browser, and rest the mouse pointer over a hyperlink. Some browsers may not support ScreenTips.
+ScreenTip text appears, for example, when you save a presentation to HTML, view it in a web browser, and rest the mouse pointer over a hyperlink. Some browsers may not support ScreenTips.
 
 
 ## Example

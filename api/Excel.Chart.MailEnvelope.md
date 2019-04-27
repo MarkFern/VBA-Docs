@@ -7,7 +7,7 @@ ms.prod: excel
 api_name:
 - Excel.Chart.MailEnvelope
 ms.assetid: b64d9f0e-6c1d-9d42-5d0e-8c408c057efc
-ms.date: 06/08/2017
+ms.date: 04/16/2019
 localization_priority: Normal
 ---
 
@@ -19,14 +19,11 @@ Represents an email header for a document.
 
 ## Syntax
 
-_expression_. `MailEnvelope`
+_expression_.**MailEnvelope**
 
 _expression_ A variable that represents a **[Chart](Excel.Chart(object).md)** object.
 
 
-## See also
 
-
-[Chart Object](Excel.Chart(object).md)
 
 [!include[Support and feedback](~/includes/feedback-boilerplate.md)]

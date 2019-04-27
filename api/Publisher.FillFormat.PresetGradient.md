@@ -19,19 +19,17 @@ Sets the specified fill to a preset gradient.
 
 ## Syntax
 
-_expression_.**PresetGradient**(**_Style_**,  **_Variant_**,  **_PresetGradientType_**)
+_expression_.**PresetGradient** (_Style_, _Variant_, _PresetGradientType_)
 
- _expression_ A variable that represents a  **FillFormat** object.
+_expression_ A variable that represents a **[FillFormat](publisher.fillformat.md)** object.
 
 
 ## Parameters
 
-
-
 |Name|Required/Optional|Data type|Description|
 |:-----|:-----|:-----|:-----|
 |Style|Required| **MsoGradientStyle**|The style of the gradient.|
-|Variant|Required| **Long**|The gradient variant. Can be a value from 1 to 4, corresponding to the four variants on the  **Gradient** tab in the **Fill Effects** dialog box. If Style is **msoGradientFromTitle** or **msoGradientFromCenter**, this argument can be either 1 or 2.|
+|**Variant**|Required| **Long**|The gradient variant. Can be a value from 1 to 4, corresponding to the four variants on the  **Gradient** tab in the **Fill Effects** dialog box. If Style is **msoGradientFromTitle** or **msoGradientFromCenter**, this argument can be either 1 or 2.|
 |PresetGradientType|Required| **MsoPresetGradientType**|The gradient type.|
 
 ## Remarks

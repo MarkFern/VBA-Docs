@@ -7,19 +7,19 @@ ms.prod: excel
 api_name:
 - Excel.Chart.Legend
 ms.assetid: 6396ca0f-63b5-3d4a-4f6b-b4e80a1911b3
-ms.date: 06/08/2017
+ms.date: 04/16/2019
 localization_priority: Normal
 ---
 
 
 # Chart.Legend property (Excel)
 
-Returns a  **[Legend](Excel.Legend(object).md)** object that represents the legend for the chart. Read-only.
+Returns a **[Legend](Excel.Legend(object).md)** object that represents the legend for the chart. Read-only.
 
 
 ## Syntax
 
-_expression_. `Legend`
+_expression_.**Legend**
 
 _expression_ A variable that represents a **[Chart](Excel.Chart(object).md)** object.
 
@@ -28,16 +28,10 @@ _expression_ A variable that represents a **[Chart](Excel.Chart(object).md)** ob
 
 This example turns on the legend for Chart1 and then sets the legend font color to blue.
 
-
 ```vb
 Charts("Chart1").HasLegend = True 
 Charts("Chart1").Legend.Font.ColorIndex = 5
 ```
 
-
-## See also
-
-
-[Chart Object](Excel.Chart(object).md)
 
 [!include[Support and feedback](~/includes/feedback-boilerplate.md)]
