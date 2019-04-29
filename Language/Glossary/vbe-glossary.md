@@ -142,12 +142,12 @@ A number that represents a particular character in a set, such as the ANSI chara
 
 ## class
 
-The formal definition of an object. The class acts as the template from which an instance of an object is created at run time. The class defines the properties of the object and the methods used to control the object's behavior.
+The formal definition of an object. The class acts as the template from which an instance of an object is created at run time. The class defines the properties of the object and the methods used to control the object's behavior. VBA classes that have the same form as [_interfaces_](#interface), can sometimes also be called _interfaces_.
 
 
 ## class module
 
-A module that contains the definition of a class, including its property and method definitions.
+A module that contains the definition of a [class](#class) or [interface](#interface), including its property and method definitions.
 
 
 ## code module
@@ -402,6 +402,9 @@ An application object that is a type of custom control, such as a Microsoft Exce
 
 A data type that holds integer variables stored as 2-byte whole numbers in the range -32,768 to 32,767. The **Integer** data type is also used to represent enumerated values. The percent sign (**%**) type-declaration character represents an **Integer** in Visual Basic. See [data type summary](../reference/user-interface-help/data-type-summary.md).
 
+## interface
+
+An _interface_ is a collection of prototypes representing the members (methods and properties) that the interface encapsulates; that is, it contains only the declarations for the member procedures. An _interface_ written using the VBE, is defined in a [class module](#class-module). Such _interfaces_ are classified as classes within the VBE, and in programming terms, can also be used as though they were classes. _Interfaces_ defined in a type-library definition specifically using the 'interface' keyword, that are accessed using library references, are also classified as classes within the VBE. If a class [implements](../Reference/User-Interface-Help/implements-statement.md) an interface, an instance of the class can be used as a parameter to a procedure when the procedure specifies that the parameter should have the type of the interface, so long as code within the procedure is 'happy' to accept such a value.
 
 ## intrinsic constants
 
