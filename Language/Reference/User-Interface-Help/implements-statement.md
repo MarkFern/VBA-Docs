@@ -11,26 +11,29 @@ localization_priority: Normal
 
 # Implements statement
 
-Specifies an interface or class that will be implemented in the [class module](../../Glossary/vbe-glossary.md#class-module) in which it appears.
+Specifies an [interface](../../Glossary/vbe-glossary.md#interface) or [class](../../Glossary/vbe-glossary.md#class) that will be implemented in the [class module](../../Glossary/vbe-glossary.md#class-module) in which it appears.
 
 ## Syntax
 
-**Implements** [ _InterfaceName_ | _Class_ ]
+**Implements** { _InterfaceName_ | _ClassName_ }
 
-The required _InterfaceName_ or _Class_ is the name of an interface or [class](../../Glossary/vbe-glossary.md#class) in a [type library](../../Glossary/vbe-glossary.md#type-library) whose methods will be implemented by the corresponding methods in the Visual Basic class.
+The required _InterfaceName_ or _ClassName_ is the name of an interface or class whose public methods & public properties will be implemented by the corresponding methods in the Visual Basic class in which the **Implements** statement has been used.
 
 ## Remarks
 
-An _interface_ is a collection of prototypes representing the members (methods and properties) that the interface encapsulates; that is, it contains only the declarations for the member procedures. A _class_ provides an implementation of all the methods and properties of one or more interfaces. Classes provide the code used when each function is called by a controller of the class. All classes implement at least one interface, which is considered the default interface of the class. In Visual Basic, any member that isn't explicitly a member of an implemented interface is implicitly a member of the default interface.
-
-When a Visual Basic class implements an interface, the Visual Basic class provides its own versions of all the **Public** [procedures](../../Glossary/vbe-glossary.md#procedure) specified in the type library of the Interface. In addition to providing a mapping between the interface prototypes and your procedures, the **Implements** statement causes the class to accept COM QueryInterface calls for the specified interface ID.
+When a Visual Basic class implements an interface or class, the implementing Visual Basic class provides its own versions of all the **Public** [procedures](../../Glossary/vbe-glossary.md#procedure) & [properties](../../Glossary/vbe-glossary.md#property) specified in the implemented interface or class. In addition to providing a mapping between the prototypes (from the implemented interface or class) and the procedures of the implementing class, the **Implements** statement causes the implementing class to accept COM QueryInterface calls for the specified interface ID of the implemented interface or implemented class.
 
 > [!NOTE] 
-> Visual Basic does not implement derived classes or interfaces.
+> In respect to object-oriented programming (OOP), Visual Basic for Applications (VBA) doesn't support implementation inheritence & also doesn't support multilevel interface inheritence. VBA supports single-level interface inheritence that can be multiple single-level interface inheritence, through the use of the **Implements** statement.
 
-When you implement an interface or class, you must include all the **Public** procedures involved. A missing member in an implementation of an interface or class causes an error. If you don't place code in one of the procedures in a class you are implementing, you can raise the appropriate error (**Const** E_NOTIMPL = &H80004001) so a user of the implementation understands that a member is not implemented.
+When you implement an interface or class, you must code for all the **Public** properties & methods. For each **Public** property of the implemented interface, you need to implement both a [**Property Get** method](../../reference/user-interface-help/property-get-statement.md) & an appropriate value-setting method (either a [**Property Let** method](../../reference/user-interface-help/property-let-statement.md) or a [**Property Set** method](../../reference/user-interface-help/property-set-statement.md)) for the property. For non-property methods, you simply code functions for functions & sub procedures for sub procedures.
 
-The **Implements** statement can't appear in a [standard module](../../Glossary/vbe-glossary.md#standard-module).
+The name of each implementing member needs to be text composed of the following three parts in the order specified: _name of the implemented interface or class_; an underscore character ('\_'); _implemented-member name_.
+
+A missing member in an implementation of an interface or class causes an error. If you don't place code in one of the procedures in a class you are implementing, you can raise the appropriate error (**Const** E_NOTIMPL = &H80004001) so a user of the implementation understands that a member is not implemented.
+
+The **Implements** statement can be used more than once in a class module, but can't be used in a [standard module](../../Glossary/vbe-glossary.md#standard-module).
+
 
 ## Example
 
@@ -78,7 +81,7 @@ Private Property Get PersonalData_Address() As String
 End Property
 
 
-'nitialize members
+'Initialize members
 Private Sub Class_Initialize()
     m_name = "[customer name]"
     m_address = "[customer address]"
