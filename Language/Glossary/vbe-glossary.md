@@ -404,7 +404,7 @@ A data type that holds integer variables stored as 2-byte whole numbers in the r
 
 ## interface
 
-An _interface_ is a collection of prototypes representing the members (methods and properties) that the interface encapsulates; that is, it contains only the declarations for the member procedures. An _interface_ written using the VBE, is defined in a [class module](#class-module). Such _interfaces_ are classified as classes within the VBE, and in programming terms, can also be used as though they were classes. _Interfaces_ defined in a type-library definition specifically using the 'interface' keyword, that are accessed using library references, are also classified as classes within the VBE. If a class [implements](../Reference/User-Interface-Help/implements-statement.md) an interface, an instance of the class can be used as a parameter to a procedure when the procedure specifies that the parameter should have the type of the interface, so long as code within the procedure is 'happy' to accept such a value.
+An _interface_ is a collection of prototypes representing the members ([methods](#method) and [properties](#property)) that the interface encapsulates; that is, it contains only the declarations for the member procedures. An _interface_ written using the VBE, is defined in a [class module](#class-module). Such _interfaces_ are classified as classes within the VBE, and in programming terms, can also be used as though they were [classes](#class). _Interfaces_ defined in a type-library definition specifically using the 'interface' keyword, that are accessed using library references, are also classified as classes within the VBE. If a class [implements](../Reference/User-Interface-Help/implements-statement.md) an interface, an instance of the class can be used as a parameter to a procedure when the procedure specifies that the parameter should have the type of the interface, so long as code within the procedure is 'happy' to accept such a value.
 
 ## intrinsic constants
 
@@ -487,7 +487,7 @@ A file that stores an image as graphical objects such as lines, circles, and pol
 
 ## method
 
-A procedure that acts on an object.
+A procedure that is an intrinsic procedure of an object. A method is defined within a class definition.
 
 
 ## module
