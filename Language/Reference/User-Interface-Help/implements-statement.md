@@ -11,26 +11,26 @@ localization_priority: Normal
 
 # Implements statement
 
-Specifies an [interface](../../Glossary/vbe-glossary.md#interface) or [class](../../Glossary/vbe-glossary.md#class) that will be implemented in the [class module](../../Glossary/vbe-glossary.md#class-module) in which it appears.
+Specifies an [interface](../../Glossary/vbe-glossary.md#interface) that will be implemented in the [class module](../../Glossary/vbe-glossary.md#class-module) in which it appears.
 
 ## Syntax
 
 **Implements** { _InterfaceName_ | _ClassName_ }
 
-The required _InterfaceName_ or _ClassName_ is the name of an interface or class whose public methods & public properties will be implemented by the corresponding methods in the Visual Basic class in which the **Implements** statement has been used.
+The required _InterfaceName_ or _ClassName_ is the name of an interface or of a class from which an interface is automatically derived, where the interface's **Public** [methods](../../Glossary/vbe-glossary.md#method) & **Public** properties will be implemented by the corresponding methods in the Visual Basic class module in which the **Implements** statement has been used.
 
 ## Remarks
 
-When a Visual Basic class implements an interface or class, the implementing Visual Basic class provides its own versions of all the **Public** [procedures](../../Glossary/vbe-glossary.md#procedure) & [properties](../../Glossary/vbe-glossary.md#property) specified in the referenced interface or class. In addition to providing a mapping between the prototypes (from the referenced interface or class) and the procedures of the implementing class, the **Implements** statement causes the implementing class to accept COM QueryInterface calls for the specified interface ID of the implemented interface or referenced class.
+When a Visual Basic class implements an interface, the implementing Visual Basic class provides its own versions of all the **Public** [procedures](../../Glossary/vbe-glossary.md#procedure) & [properties](../../Glossary/vbe-glossary.md#property) specified in the interface. An interface automatically derived from a class, in the context of the **Implements** statement, is simply an interface whose prototypes correspond to all the **Public** procedures & properties of the referenced class. In addition to providing a mapping between the prototypes of the interface and the procedures of the implementing class module, the **Implements** statement causes instances of the class represented by the class module, to accept COM QueryInterface calls for the interface ID of the implemented interface.
 
 > [!NOTE] 
-> In respect to object-oriented programming (OOP), Visual Basic for Applications (VBA) doesn't support implementation inheritence & also doesn't support multilevel interface inheritence. VBA supports single-level interface inheritence that can be multiple single-level interface inheritence, through the use of the **Implements** statement.
+> In respect to object-oriented programming (OOP), Visual Basic for Applications (VBA) doesn't support implementation inheritence & also doesn't support multilevel interface inheritence. VBA supports single-level interface inheritence including multiple single-level interface inheritence, through the use of the **Implements** statement.
 
-When you implement an interface or class, you must code for all the **Public** properties & methods. For each **Public** property of the implemented interface or referenced class, you need to implement both a [**Property Get** method](../../reference/user-interface-help/property-get-statement.md) & an appropriate value-setting method (either a [**Property Let** method](../../reference/user-interface-help/property-let-statement.md) or a [**Property Set** method](../../reference/user-interface-help/property-set-statement.md)) for the property. For non-property methods, you simply code functions for functions & sub procedures for sub procedures.
+When implementing an interface where the implementation is enforced using the **Implements** statement, you must code for all the **Public** interface properties & methods. For each **Public** property of the interface, you need to implement both a [**Property Get** method](../../reference/user-interface-help/property-get-statement.md) & an appropriate value-setting method (either a [**Property Let** method](../../reference/user-interface-help/property-let-statement.md) or a [**Property Set** method](../../reference/user-interface-help/property-set-statement.md)) for the property. For non-property methods of the interface, you simply code functions for the **Public** interface functions & sub procedures for the **Public** interface sub procedures, in the implementation.
 
-The name of each implementing member needs to be text composed of the following three parts in the order specified: _name of the referenced interface or class_; an underscore character ('\_'); _implemented-member name_.
+The name of each implementing member needs to be text composed of the following three parts in the order specified: _interface name_; an underscore character ('\_'); _name of corresponding member being implemented_. The arguments & return value of each implementing member must match those of the corresponding interface member being implemented.
 
-A missing member in an implementation of an interface or class causes an error. If you don't place code in one of the procedures in a class you are implementing, you can raise the appropriate error (**Const** E_NOTIMPL = &H80004001) so a user of the implementation understands that a member is not implemented.
+A missing member in an interface implementation causes an error. If you don't place code in one of the implementing procedures, you can raise the appropriate error (**Const** E_NOTIMPL = &H80004001) so a user of the implementation understands that a member is not properly implemented.
 
 The **Implements** statement can be used more than once in a class module, but can't be used in a [standard module](../../Glossary/vbe-glossary.md#standard-module).
 
@@ -190,7 +190,7 @@ Note how, in the data entry form, the *m_pd* variable is declared by using the P
 
 Also note that the *m_pd* variable can only access the members of the PersonalData interface. If a **Customer** object is assigned to it, the **Customer-specific member CustomerAgentId** is not available. Similarly, if a **Supplier** object is assigned to it, the Supplier-specific member **NumberOfProductLines** is not available. Assigning an object to variables declared by using different interfaces provides a polymorphic behavior.
 
-Also note that the **Customer** and **Supplier** classes, as defined earlier, do not expose the members of the PersonalData interface. The only way to access the PersonalData members is to assign a **Customer** or **Supplier** object to a variable declared as _PersonalData_. If an inheritance-like behavior is desired, with the **Customer** or **Supplier** class exposing the PersonalData members, public members must be added to the class. These can be implemented by delegating to the PersonalData interface implementations. 
+Also note that the **Customer** and **Supplier** classes, as defined earlier, do not expose the members of the PersonalData interface. The only way to access the PersonalData members is to assign a **Customer** or **Supplier** object to a variable declared as _PersonalData_. If an inheritance-like behavior is desired, with the **Customer** or **Supplier** class exposing the PersonalData members, **Public** members must be added to the class. These can be implemented by delegating to the PersonalData interface implementations. 
 
 For example, the **Customer** class could be extended with the following:
 
