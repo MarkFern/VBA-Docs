@@ -20,7 +20,7 @@ Non-intrinsic data types include those in the following table as well as all oth
  
 |Non-intrinsic data type|Storage size|Range|
 |:--------|:-----------|:----|
-|**[User-defined](../../How-to/user-defined-data-type.md)** <BR>_(using **Type** or other means)_ |Number required by elements|The range of each element is the same as the range of its data type.|
+|**[User-defined](../../How-to/user-defined-data-type.md)** <BR>_<sup>(using **Type** or other means)</sup>_ |Number required by elements|The range of each element is the same as the range of its data type.|
 |[**Collection** object](../../reference/user-interface-help/collection-object.md)|Unknown|Unknown|
 |[**Dictionary** object](../../reference/user-interface-help/dictionary-object.md)|Unknown|Unknown|
 
@@ -35,20 +35,20 @@ The following table shows the supported intrinsic [data types](../../Glossary/vb
 |**[Currency](currency-data-type.md)** _(scaled integer)_|8 bytes|-922,337,203,685,477.5808 to 922,337,203,685,477.5807|
 |**[Date](date-data-type.md)**|8 bytes|January 1, 100, to December 31, 9999|
 |**[Decimal](decimal-data-type.md)**|14 bytes|+/-79,228,162,514,264,337,593,543,950,335 with no decimal point<br/><br/>+/-7.9228162514264337593543950335 with 28 places to the right of the decimal<br/><br/>Smallest non-zero number is+/-0.0000000000000000000000000001|
-|**[Double](double-data-type.md)** _(double-precision floating-point)_|8 bytes|-1.79769313486231E308 to -4.94065645841247E-324 for negative values<br/><br/>4.94065645841247E-324 to 1.79769313486232E308 for positive values|
+|**[Double](double-data-type.md)** <BR>_(double-precision floating-point)_|8 bytes|-1.79769313486231E308 to -4.94065645841247E-324 for negative values<br/><br/>4.94065645841247E-324 to 1.79769313486232E308 for positive values|
 |**[Integer](integer-data-type.md)**|2 bytes|-32,768 to 32,767|
 |**[Long](long-data-type.md)** _(Long integer)_|4 bytes|-2,147,483,648 to 2,147,483,647|
 |**[LongLong](longlong-data-type.md)** _(LongLong integer)_|8 bytes|-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807<br/><br/>Valid on 64-bit platforms only.|
-|**[LongPtr](longptr-data-type.md)** _(Long integer on 32-bit systems, LongLong integer on 64-bit systems)_|4 bytes on 32-bit systems<br/><br/>8 bytes on 64-bit systems|-2,147,483,648 to 2,147,483,647 on 32-bit systems<br/><br/>-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 on 64-bit systems|
+|**[LongPtr](longptr-data-type.md)** <BR>_(Long integer on 32-bit systems, LongLong integer on 64-bit systems)_|4 bytes on 32-bit systems<br/><br/>8 bytes on 64-bit systems|-2,147,483,648 to 2,147,483,647 on 32-bit systems<br/><br/>-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 on 64-bit systems|
 |**[Object](object-data-type.md)**|4 bytes|Any **Object** reference|
-|**[Single](single-data-type.md)** _(single-precision floating-point)_|4 bytes|-3.402823E38 to -1.401298E-45 for negative values<br/><br/>1.401298E-45 to 3.402823E38 for positive values|
+|**[Single](single-data-type.md)** <BR>_(single-precision floating-point)_|4 bytes|-3.402823E38 to -1.401298E-45 for negative values<br/><br/>1.401298E-45 to 3.402823E38 for positive values|
 |**[String](string-data-type.md)** _(variable-length)_|10 bytes + string length|0 to approximately 2 billion|
 |**String** _(fixed-length)_|Length of string|1 to approximately 65,400|
 |**[Variant](variant-data-type.md)** _(with numbers)_|16 bytes|Any numeric value up to the range of a **Double**|
 |**Variant** _(with characters)_|22 bytes + string length (24 bytes on 64-bit systems)|Same range as for variable-length **String**|
 |**Variant** _(with objects)_|Unknown|Same range as **Object**|
 |**Variant** _(with [user-defined type](../../How-to/user-defined-data-type.md))_|Unknown|Only data of a **user-defined type** accessed through a [VBE library reference](../../reference/user-interface-help/references-dialog-box.md)|
-|**Variant** _(with special values [**Empty**](../../Glossary/vbe-glossary.md#empty) or [**Null**](../../Glossary/vbe-glossary.md#null))_|Unknown|Unknown|
+|**Variant** <BR>_(with special values [**Empty**](../../Glossary/vbe-glossary.md#empty) or [**Null**](../../Glossary/vbe-glossary.md#null))_|Unknown|Unknown|
 |**Variant** _(with [**Error** sub-type](../../reference/user-interface-help/cverr-function.md))_|Unknown|Unknown|
 
 
@@ -78,7 +78,7 @@ The following table summarizes several implicit type conversions that always tak
 
 |Variable type|Value form|
 |:--------|:-----------|
-|**Variant**|Valid **Variant** sub-type|
+|**Variant**|Type same as valid **Variant** sub-type|
 |The **Object** type|Valid object type|
 |An [interface](../../Glossary/vbe-glossary.md#interface) type|Object type defined using the [**Implements**](../../reference/user-interface-help/implements-statement.md) statement to specify implementation of the interface|
 |An object type|Object type defined using the **Implements** statement to specify implementation of the interface derived from the variable type|
