@@ -84,7 +84,7 @@ The following table summarizes several implicit type conversions that always tak
 |An object type|Object type defined using the **Implements** statement to specify implementation of the interface derived from the variable type|
 |Integral type apart from the **Boolean** type|Intrinsic numerical type; within the range of the variable type|
 |**Boolean** type|Intrinsic numerical type|
-|Integral, **Single**, **Double** or **Boolean** type|**String** textual representation of a number that parses as a value of an intrinsic numerical type, and that if put into an appropriate numerical type, would be automatically implicitly coerced to the variable type in a related variable assignment statement|
+|Integral,&nbsp;**Single**,&nbsp;**Double**&nbsp;or **Boolean** type|**String** textual representation of a number that parses as a value of an intrinsic numerical type, and that if put into an appropriate numerical type, would be automatically implicitly coerced to the variable type in a related variable assignment statement|
 |**Date** type|**String** textual representation of a valid date, that parses as a date.|
 |**Date** type|**String** textual representation of a number that parses as a value of an intrinsic numerical type, and that if put into an appropriate numerical type, would be automatically implicitly coerced to the date type in a related **Date**-variable assignment statement|
 |**Currency** type|**String** textual representation of a valid currency amount, that parses as a currency amount.|
@@ -95,14 +95,14 @@ The following table summarizes several implicit type conversions that always tak
 
 #### Procedure calls
 
-The following table summarizes known implicit type conversions that always take place in [procedure calls](../../glossary/vbe-glossary.md#procedure-call), for particular start & end types. The start type is the type of a value passed as an argument in a standard procedure call. The end type is the final type of that same argument when it is accessed by the contents of the procedure. Note that it seems unlikely that implicit type conversions other than those in the following table, exist in regard to procedure calls.
+The following table summarizes known implicit type conversions that always take place in [procedure calls](../../glossary/vbe-glossary.md#procedure-call), for particular start & end types. The start type is the type of a value passed as an [argument](../../glossary/vbe-glossary.md#argument) in a standard procedure call. The end type is the type of the [parameter](../../glossary/vbe-glossary.md#parameter) corresponding to the argument (parameters relate to access by the contents of procedures). Note that it seems unlikely that implicit type conversions other than those in the following table, exist in regard to procedure calls.
 
-|Argument type defined in procedure|Argument type at moment of standard procedure call|
-|:--------|:-----------|
+|Parameter&nbsp;type|Argument type|
+|:------------------|:-----------|
 |**Variant**|Valid **Variant** sub-type|
 |The **Object** type|Valid object type|
-|An interface type|Object type defined using the **Implements** statement to specify implementation of the interface|
-|An object type|Object type defined using the **Implements** statement to specify implementation of the interface derived from the argument type defined in the procedure definition|
+|An&nbsp;interface&nbsp;type|Object type defined using the **Implements** statement where the statement specifies implementation of the interface|
+|An object type|Object type defined using the **Implements** statement where the statement specifies implementation of the interface derived from the parameter type|
 
 
 ### Explicit conversions
