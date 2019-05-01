@@ -88,7 +88,7 @@ The following table summarizes several implicit type conversions that always tak
 |**Date** type|**String** textual representation of a valid date, that parses as a date.|
 |**Date** type|**String** textual representation of a number that parses as a value of an intrinsic numerical type, and that if put into an appropriate numerical type, would be automatically implicitly coerced to the date type in a related **Date**-variable assignment statement|
 |**Currency** type|**String** textual representation of a valid currency amount, that parses as a currency amount.|
-|**Currency** type|**String** textual representation of an integeric or rational number that parses as such a number in decimal-notation form; within range of **Currency** type|
+|**Currency** type|**String** textual representation of a rational number that parses as such a number; within range of **Currency** type|
 |**String**|Any intrinsic data type|
 |Intrinsic data type|For each variable type, the form is that required by the union of all other rules in this table that apply to the particular variable type, except that the form applies to sub-type data of a **Variant** value where the **Variant** value is the actual value assigned|
 
