@@ -74,7 +74,7 @@ A **Variant** containing an array requires 12 bytes more than the array alone.
 
 #### Assignment statements
 
-The following table summarizes several implicit type conversions that always take place in variable [assignment statements](../../Concepts/Getting-Started/writing-assignment-statements.md) of values, & that happen so that the assignments still assign values in some manner of speaking.
+The following table summarizes several implicit type conversions that always take place in variable [assignment statements](../../Concepts/Getting-Started/writing-assignment-statements.md) of values, & that happen so that the assignments still assign potentially useful values.
 
 |Variable type|Value form|
 |:--------|:-----------|
