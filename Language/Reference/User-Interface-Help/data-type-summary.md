@@ -93,11 +93,11 @@ The following table summarizes several implicit type conversions that always tak
 |Intrinsic data type|For each variable type, the form is that required by the union of all other rules in this table that apply to the particular variable type, except that the form applies to sub-type data of a **Variant** value where the **Variant** value is the actual value assigned|
 
 
-#### Procedure invocations
+#### Procedure calls
 
-The following table summarizes known implicit type conversions that always take place in procedure invocations, for particular start & end types. The start type is the type of a value passed as an argument in a standard invocation of a procedure. The end type is the final type of that same argument when it is accessed by the contents of the procedure. Note that it seems unlikely that other implicit type conversions exist in regard to procedure invocations.
+The following table summarizes known implicit type conversions that always take place in [procedure calls](../../glossary/vbe-glossary.md#procedure-call), for particular start & end types. The start type is the type of a value passed as an argument in a standard procedure call. The end type is the final type of that same argument when it is accessed by the contents of the procedure. Note that it seems unlikely that implicit type conversions other than those in the following table, exist in regard to procedure calls.
 
-|Argument type defined in procedure|Argument type at moment of standard invocation of procedure|
+|Argument type defined in procedure|Argument type at moment of standard procedure call|
 |:--------|:-----------|
 |**Variant**|Valid **Variant** sub-type|
 |The **Object** type|Valid object type|
