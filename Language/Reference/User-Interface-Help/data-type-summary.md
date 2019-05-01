@@ -68,20 +68,19 @@ A **Variant** containing an array requires 12 bytes more than the array alone.
 > Use the **StrConv** function to convert one type of string data to another.
 
 
-## Conversion between data types
+## Conversion & casting between data types
 
-### Implicit conversions
+### Implicit conversions & casts
 
-#### Assignment statements _<sup>(implicit conversions)</sup>_
+#### Assignment statements _<sup>(implicit conversions & casts)</sup>_
 
-The following table summarizes several implicit type conversions that always take place in variable [assignment statements](../../Concepts/Getting-Started/writing-assignment-statements.md) of values, & that happen so that the assignments still assign potentially useful values.
+The following two tables summarize several implicit type conversions & casts that always take place in variable [assignment statements](../../Concepts/Getting-Started/writing-assignment-statements.md) of values, & that happen so that the assignments still assign potentially useful values.
+
+##### Conversions
 
 |Variable type|Value form|
 |:--------|:-----------|
 |**Variant**|Type same as valid **Variant** sub-type|
-|The **Object** type|Valid object type|
-|An [interface](../../Glossary/vbe-glossary.md#interface) type|Object type defined using the [**Implements**](../../reference/user-interface-help/implements-statement.md) statement to specify implementation of the interface|
-|An object type|Object type defined using the **Implements** statement to specify implementation of the interface derived from the variable type|
 |Integral type apart from the **Boolean** type|Intrinsic numerical type; within the range of the variable type|
 |**Boolean** type|Intrinsic numerical type|
 |Integral,&nbsp;**Single**,&nbsp;**Double**&nbsp;or **Boolean** type|**String** textual representation of a number that parses as a value of an intrinsic numerical type, and that if put into an appropriate numerical type, would be automatically implicitly coerced to the variable type in a related variable assignment statement|
@@ -92,21 +91,38 @@ The following table summarizes several implicit type conversions that always tak
 |**String**|Any intrinsic data type|
 |Intrinsic data type|For each variable type, the form is that required by the union of all other rules in this table that apply to the particular variable type, except that the form applies to sub-type data of a **Variant** value where the **Variant** value is the actual value assigned|
 
+##### Casts
 
-#### Procedure calls except calls on left-hand side of assignment statements _<sup>(implicit conversions)</sup>_
+|Variable type|Value form|
+|:--------|:-----------|
+|The&nbsp;**Object**&nbsp;type|Valid object type|
+|An&nbsp;[interface](../../Glossary/vbe-glossary.md#interface)&nbsp;type|Object type defined using the [**Implements**](../../reference/user-interface-help/implements-statement.md) statement to specify implementation of the interface|
+|An object type|Object type defined using the **Implements** statement to specify implementation of the interface derived from the variable type|
 
-The following table summarizes known implicit type conversions that always take place in [procedure calls](../../glossary/vbe-glossary.md#procedure-call) for calls not on the left-hand side of assignment statements. For information on the implicit conversions that take place in procedure calls on the left-hand side of assignment statements (such as those that take place in **Procedure Let** & **Procedure Set** procedure calls), see the previous ['Assignment statements _(implicit conversions)_'](#assignment-statements-implicit-conversions) section.
+<BR>
 
-The implicit conversions listed, convert from start types to end types. The start type is the type of a value passed as an [argument](../../glossary/vbe-glossary.md#argument) in a standard procedure call. The end type is the type of the [parameter](../../glossary/vbe-glossary.md#parameter) corresponding to the argument (parameters relate to access by the contents of procedures). Note that it seems unlikely that implicit type conversions other than those in the following table, exist in regard to procedure calls not on the left-hand side of an assignment statement.
+#### Procedure calls except calls on left-hand side of assignment statements _<sup>(implicit conversions & casts)</sup>_
+
+The two tables below summarize known implicit type conversions & casts that always take place in [procedure calls](../../glossary/vbe-glossary.md#procedure-call) for calls not on the left-hand side of assignment statements. For information on the implicit conversions & casts that take place in procedure calls on the left-hand side of assignment statements (such as those that take place in **Procedure Let** & **Procedure Set** procedure calls), see the previous ['Assignment statements _(implicit conversions & casts)_'](#assignment-statements-implicit-conversions--casts) section.
+
+The implicit conversions & casts listed in the following two tables, convert or cast from start types to end types. The start type is the type of a value passed as an [argument](../../glossary/vbe-glossary.md#argument) in a standard procedure call. The end type is the type of the internal [parameter](../../glossary/vbe-glossary.md#parameter) for the related argument (parameters are variables accessed by the contents of procedures). Note that it seems unlikely that implicit type conversions or casts other than those in the following two tables, exist in regard to procedure calls not on the left-hand side of an assignment statement.
+
+##### Conversions
 
 |Parameter&nbsp;type|Argument type|
-|:------------------|:-----------|
+|:---------|:-----------|
 |**Variant**|Valid **Variant** sub-type|
+
+##### Casts
+
+|Parameter&nbsp;type|Argument type|
+|:---------|:-----------|
 |The **Object** type|Valid object type|
 |An&nbsp;interface&nbsp;type|Object type defined using the **Implements** statement where the statement specifies implementation of the interface|
 |An object type|Object type defined using the **Implements** statement where the statement specifies implementation of the interface derived from the parameter type|
 
-
+<BR>
+ 
 ### Explicit conversions
 
 See [Type conversion functions](../../concepts/getting-started/type-conversion-functions.md) for examples of how to use the following functions to coerce an expression to a specific data type: **CBool**, **CByte**, **CCur**, **CDate**, **CDbl**, **CDec**, **CInt**, **CLng**, **CLngLng**, **CLngPtr**, **CSng**, **[CStr](#returns-for-cstr)**, and **CVar**.
