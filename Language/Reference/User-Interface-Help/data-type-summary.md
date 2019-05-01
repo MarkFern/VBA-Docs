@@ -18,7 +18,7 @@ A data type is the characteristic of a variable that determines what kind of dat
 
 Non-intrinsic data types include those in the following table as well as all other specific types of object.
  
-|Non-intrinsic data type|Storage size|Range|
+|Non-intrinsic&nbsp;data&nbsp;type|Storage size|Range|
 |:--------|:-----------|:----|
 |**[User-defined](../../How-to/user-defined-data-type.md)** <BR>_<sup>(using **Type** or other means)</sup>_ |Number required by elements|The range of each element is the same as the range of its data type.|
 |[**Collection** object](../../reference/user-interface-help/collection-object.md)|Unknown|Unknown|
