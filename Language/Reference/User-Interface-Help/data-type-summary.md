@@ -129,7 +129,7 @@ The [**Fix**, and **Int** functions](int-fix-functions.md) provide other forms o
 
 ## Verify data types
 
-To verify data types, see the following functions: 
+To verify data types, see the following functions & operators: 
 
 - [IsArray](isarray-function.md)
 - [IsDate](isdate-function.md)
@@ -141,6 +141,7 @@ To verify data types, see the following functions:
 - [IsObject](isobject-function.md)
 - [VarType](vartype-function.md)
 - [TypeName](typename-function)
+- [TypeOf](../../reference/user-interface-help/ifthenelse-statement.md)
 
 ## See also
 
