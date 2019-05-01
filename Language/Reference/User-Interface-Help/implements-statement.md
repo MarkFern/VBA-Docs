@@ -17,7 +17,7 @@ Specifies an [interface](../../Glossary/vbe-glossary.md#interface) that will be 
 
 **Implements** { _InterfaceName_ | _ClassName_ }
 
-The required _InterfaceName_ or _ClassName_ is the name of an interface or of a class from which an interface is automatically derived, where the interface's **Public** [methods](../../Glossary/vbe-glossary.md#method) & **Public** properties will be implemented by the corresponding methods in the Visual Basic class module in which the **Implements** statement has been used.
+The required _InterfaceName_ or _ClassName_ is the name of an interface, or of a class from which an interface is automatically derived, where the interface's **Public** [methods](../../Glossary/vbe-glossary.md#method) & **Public** properties will be implemented by the corresponding methods in the Visual Basic class module in which the **Implements** statement has been used.
 
 ## Remarks
 
