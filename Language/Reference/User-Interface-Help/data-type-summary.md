@@ -72,7 +72,7 @@ A **Variant** containing an array requires 12 bytes more than the array alone.
 
 ### Implicit conversions
 
-#### Assignment statements
+#### Assignment statements _<sup>(implicit conversions)</sup>_
 
 The following table summarizes several implicit type conversions that always take place in variable [assignment statements](../../Concepts/Getting-Started/writing-assignment-statements.md) of values, & that happen so that the assignments still assign potentially useful values.
 
@@ -93,9 +93,11 @@ The following table summarizes several implicit type conversions that always tak
 |Intrinsic data type|For each variable type, the form is that required by the union of all other rules in this table that apply to the particular variable type, except that the form applies to sub-type data of a **Variant** value where the **Variant** value is the actual value assigned|
 
 
-#### Procedure calls
+#### Procedure calls except calls on left-hand side of assignment statements _<sup>(implicit conversions)</sup>_
 
-The following table summarizes known implicit type conversions that always take place in [procedure calls](../../glossary/vbe-glossary.md#procedure-call), for particular start & end types. The start type is the type of a value passed as an [argument](../../glossary/vbe-glossary.md#argument) in a standard procedure call. The end type is the type of the [parameter](../../glossary/vbe-glossary.md#parameter) corresponding to the argument (parameters relate to access by the contents of procedures). Note that it seems unlikely that implicit type conversions other than those in the following table, exist in regard to procedure calls.
+The following table summarizes known implicit type conversions that always take place in [procedure calls](../../glossary/vbe-glossary.md#procedure-call) for calls not on the left-hand side of assignment statements. For information on the implicit conversions that take place in procedure calls on the left-hand side of assignment statements (such as those that take place in **Procedure Let** & **Procedure Set** procedure calls), see the previous ['Assignment statements _(implicit conversions)_'](#assignment-statements-implicit-conversions) section.
+
+The implicit conversions listed, convert from start types to end types. The start type is the type of a value passed as an [argument](../../glossary/vbe-glossary.md#argument) in a standard procedure call. The end type is the type of the [parameter](../../glossary/vbe-glossary.md#parameter) corresponding to the argument (parameters relate to access by the contents of procedures). Note that it seems unlikely that implicit type conversions other than those in the following table, exist in regard to procedure calls not on the left-hand side of an assignment statement.
 
 |Parameter&nbsp;type|Argument type|
 |:------------------|:-----------|
