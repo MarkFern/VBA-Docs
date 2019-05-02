@@ -593,7 +593,7 @@ An object that is exposed to other applications or programming tools through Aut
 
 ## parameter
 
-Variable internal to a procedure, defined not in the procedure body, & whose value automatically corresponds to the value of an [argument](#argument) passed into the procedure. Its scope ends when the procedure ends.
+A variable internal to a procedure, defined not in the procedure body, & whose value automatically corresponds to the value of an [argument](#argument) passed into the procedure. Its scope ends when the procedure ends.
 
 
 ## path
