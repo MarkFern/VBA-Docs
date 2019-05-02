@@ -21,7 +21,7 @@ Imports XML data from a  **String** variable into cells that have been mapped to
 
 _expression_. `ImportXml`( `_XmlData_` , `_Overwrite_` )
 
-_expression_ A variable that represents a [XmlMap](Excel.XmlMap.md) object.
+_expression_ A variable that represents an **[XmlMap](Excel.XmlMap.md)** object.
 
 
 ## Parameters
@@ -49,7 +49,7 @@ _expression_ A variable that represents a [XmlMap](Excel.XmlMap.md) object.
 
 To import the contents of an XML data file into cells mapped to a specific schema map, use the  **[Import](Excel.XmlMap.Import.md)** method of the **XmlMap** object.
 
-If either of the following conditions is true, a runtime error will occur. If more than one condition is true, Excel returns a runtime error for the most severe (they are listed below with the most severe listed first):
+If either of the following conditions is true, a run-time error will occur. If more than one condition is true, Excel returns a run-time error for the most severe (they are listed below with the most severe listed first):
 
 
 - If the XML data contains syntactical errors.

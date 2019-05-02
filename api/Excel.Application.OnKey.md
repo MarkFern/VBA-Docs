@@ -7,7 +7,7 @@ ms.prod: excel
 api_name:
 - Excel.Application.OnKey
 ms.assetid: 43662d8b-19e2-2b4a-4c3a-c64be4007643
-ms.date: 04/05/2019
+ms.date: 04/30/2019
 localization_priority: Normal
 ---
 
@@ -33,7 +33,7 @@ _expression_ A variable that represents an **[Application](Excel.Application(obj
 
 ## Remarks
 
-The _Key_ argument can specify any single key combined with Alt, Ctrl, or Shift, or any combination of these keys. Each key is represented by one or more characters, such as `"a"` for the character a, or `"{ENTER}"` for the Enter key.
+The _Key_ argument can specify any single key combined with Alt, Ctrl, or Shift, or any combination of these keys. Each key is represented by one or more characters, such as `a` for the character a, or `{ENTER}` for the Enter key.
 
 To specify characters that aren't displayed when you press the corresponding key (for example: Enter or Tab), use the codes listed in the following table. Each code in the table represents one key on the keyboard.
 
@@ -65,16 +65,19 @@ To specify characters that aren't displayed when you press the corresponding key
 
 <br/>
 
-You can also specify keys combined with Shift and/or Ctrl and/or Alt. To specify a key combined with another key or keys, use the following table.
+You can also specify keys combined with Shift and/or Ctrl and/or Alt and/or Command. To specify a key combined with another key or keys, use the following table.
 
 |To combine keys with|Precede the key code by|
 |:-----|:-----|
 |Shift| `+` (plus sign)|
 |Ctrl| `^` (caret)|
 |Alt| `%` (percent sign)|
+|Command|`*` (asterisk) Only applies to Mac; may only work on Excel 2011 for Mac and not later versions.|
 
 To assign a procedure to one of the special characters (+, ^, %, and so on), enclose the character in braces. For details, see the example.
 
+> [!NOTE] 
+> There is no way to currently detect the Command key in recent versions of Office VBA. Microsoft is aware of this and is looking into it.
 
 ## Example
 

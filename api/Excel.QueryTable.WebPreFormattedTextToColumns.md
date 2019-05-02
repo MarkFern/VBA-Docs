@@ -14,14 +14,14 @@ localization_priority: Normal
 
 # QueryTable.WebPreFormattedTextToColumns property (Excel)
 
-Returns or sets whether data contained within HTML <PRE> tags on the webpage is parsed into columns when you import the page into a query table. The default is  **True**. Read/write **Boolean**.
+Returns or sets whether data contained within HTML `<PRE>` tags on the webpage is parsed into columns when you import the page into a query table. The default is  **True**. Read/write **Boolean**.
 
 
 ## Syntax
 
 _expression_. `WebPreFormattedTextToColumns`
 
-_expression_ A variable that represents a [QueryTable](Excel.QueryTable.md) object.
+_expression_ A variable that represents a **[QueryTable](Excel.QueryTable.md)** object.
 
 
 ## Remarks
@@ -37,7 +37,7 @@ The  **WebPreFormattedTextToColumns** property applies only to **QueryTable** ob
 
 ## Example
 
-This example adds a new Web query table to the first worksheet in the first workbook. Note that the example doesn't parse into columns any data located between the HTML <PRE> tags.
+This example adds a new Web query table to the first worksheet in the first workbook. Note that the example doesn't parse into columns any data located between the HTML `<PRE>` tags.
 
 
 ```vb

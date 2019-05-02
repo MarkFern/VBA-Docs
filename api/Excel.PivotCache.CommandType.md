@@ -19,9 +19,9 @@ Returns or sets one of the  **[XlCmdType](Excel.XlCmdType.md)** constants listed
 
 ## Syntax
 
-_expression_. `CommandType`
+_expression_.**CommandType**
 
- _expression_ An expression that returns a [PivotCache](Excel.PivotCache.md) object.
+ _expression_ An expression that returns a **[PivotCache](Excel.PivotCache.md)** object.
 
 
 ## Remarks

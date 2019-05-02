@@ -14,14 +14,14 @@ localization_priority: Normal
 
 # QueryTable.WebConsecutiveDelimitersAsOne property (Excel)
 
- **True** if consecutive delimiters are treated as a single delimiter when you import data from HTML <PRE> tags in a webpage into a query table, and if the data is to be parsed into columns. **False** if you want to treat consecutive delimiters as multiple delimiters. The default value is **True**. Read/write **Boolean**.
+**True** if consecutive delimiters are treated as a single delimiter when you import data from HTML `<PRE>` tags in a webpage into a query table, and if the data is to be parsed into columns. **False** if you want to treat consecutive delimiters as multiple delimiters. The default value is **True**. Read/write **Boolean**.
 
 
 ## Syntax
 
 _expression_. `WebConsecutiveDelimitersAsOne`
 
-_expression_ A variable that represents a [QueryTable](Excel.QueryTable.md) object.
+_expression_ A variable that represents a **[QueryTable](Excel.QueryTable.md)** object.
 
 
 ## Remarks

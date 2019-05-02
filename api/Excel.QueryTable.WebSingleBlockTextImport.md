@@ -14,14 +14,14 @@ localization_priority: Normal
 
 # QueryTable.WebSingleBlockTextImport property (Excel)
 
- **True** if data from the HTML <PRE> tags in the specified webpage is processed all at once when you import the page into a query table. **False** if the data is imported in blocks of contiguous rows so that header rows will be recognized as such. The default value is **False**. Read/write **Boolean**.
+**True** if data from the HTML `<PRE>` tags in the specified webpage is processed all at once when you import the page into a query table. **False** if the data is imported in blocks of contiguous rows so that header rows will be recognized as such. The default value is **False**. Read/write **Boolean**.
 
 
 ## Syntax
 
 _expression_. `WebSingleBlockTextImport`
 
-_expression_ A variable that represents a [QueryTable](Excel.QueryTable.md) object.
+_expression_ A variable that represents a **[QueryTable](Excel.QueryTable.md)** object.
 
 
 ## Remarks
@@ -37,7 +37,7 @@ The  **WebSingleBlockTextImport** property applies only to **QueryTable** object
 
 ## Example
 
-This example adds a new Web query table to the first worksheet in the first workbook and then imports all of the HTML <PRE> tag data all at once.
+This example adds a new Web query table to the first worksheet in the first workbook and then imports all of the HTML `<PRE>` tag data all at once.
 
 
 ```vb
