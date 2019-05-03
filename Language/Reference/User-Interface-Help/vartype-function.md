@@ -13,7 +13,7 @@ localization_priority: Normal
 # VarType function
 
 Returns an **Integer** where the returned value will indicate one of the following things, the choice of which depending upon the parameter passed:
-1) The subtype of a [**Variant**](../../Glossary/vbe-glossary.md#variant-data-type) [variable](../../Glossary/vbe-glossary.md#variable)/[expression](../../glossary/vbe-glossary.md#expression).
+1) The subtype of a [**Variant**](../../Glossary/vbe-glossary.md#variant-data-type) [expression](../../glossary/vbe-glossary.md#expression)/[variable](../../Glossary/vbe-glossary.md#variable).
 2) The type or lack of type for an object's default member's return value where the object is one returned by the evaluation of a **Variant** expression or variable.
 3) The **Variant** special value that a **Variant** expression or variable evaluates to.
 
