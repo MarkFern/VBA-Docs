@@ -12,16 +12,16 @@ localization_priority: Normal
 
 # VarType function
 
-Returns an **Integer** where the returned value will indicate one of the following things, the choice of which depends upon the parameter passed:
-1) The subtype of a [**Variant**](../../Glossary/vbe-glossary.md#variant-data-type) [variable](../../Glossary/vbe-glossary.md#variable) or [expression](../../glossary/vbe-glossary.md#expression).
-2) The type or lack of type for an object's default member's return value where the object is one returned by the evaluation of a **Variant** variable or expression.
-3) The **Variant** special value that a **Variant** variable or expression evaluates to.
+Returns an **Integer** where the returned value will indicate one of the following things, the choice of which depends upon the [argument](../../Glossary/vbe-glossary.md#argument) passed:
+1) The subtype or type of a [variable](../../Glossary/vbe-glossary.md#variable) or [expression](../../glossary/vbe-glossary.md#expression).
+2) The type or lack of type for an object's default member's return value.
+3) The **Variant** special value that a **Variant** variable, expression or value evaluates to.
 
 ## Syntax
 
 **VarType**(_arg_)
 
-The required _arg_ [argument](../../Glossary/vbe-glossary.md#argument) must be of the **Variant** type, or be able to be coerced to it.
+The required _arg_ argument must be of the **Variant** type, or be able to be coerced to it.
  
 ## Return values
 
