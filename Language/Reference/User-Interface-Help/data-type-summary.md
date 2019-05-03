@@ -82,12 +82,12 @@ The following two tables summarize several implicit type conversions & casts tha
 |:--------|:-----------|
 |**Variant**|Type same as valid **Variant** sub-type|
 | | |
-|Intrinsic numerical type apart from the **Boolean** type|Intrinsic numerical type apart from the **Date** type; within the range of the variable type|
-|**Byte** or **Integer** type|**Date** type; -32768 &le; value &le; 32767|
-|**Long**, **Single**, **Double**, or **Currency** type|**Date** type|
+|Intrinsic&nbsp;numerical&nbsp;type apart from the **Boolean**&nbsp;type|Intrinsic numerical type apart from the **Date** type; within the range of the variable type|
+|**Byte**&nbsp;or **Integer**&nbsp;type|**Date** type; -32768 &le; value &le; 32767|
+|**Long**,&nbsp;**Single**,&nbsp;**Double**,&nbsp;or **Currency**&nbsp;type|**Date** type|
 |**Boolean** type|Intrinsic numerical type|
 | | |
-|Intrinsic numerical type|**String** textual representation of a number that parses as a number, and that would be automatically implicitly coerced to the variable type in a related variable assignment statement|
+|Intrinsic&nbsp;numerical&nbsp;type|**String** textual representation of a number that parses as a number, and that would be automatically implicitly coerced to the variable type in a related variable assignment statement|
 |**Date** type|**String** textual representation of a valid date, that parses as a date.|
 |**Currency** type|**String** textual representation of a valid currency amount, that parses as a currency amount.|
 |**String**|Any intrinsic data type|
