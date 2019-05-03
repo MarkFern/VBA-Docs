@@ -57,6 +57,8 @@ ActiveCell.Font.Bold = True
 
 ```
 
+If the type of the left-hand side of an assignment statement is not the same type as the right-hand side, an implicit type conversion or cast may occur on the right-hand side in order that the assignment can be executed. For more information on this, see the [Assignment statements _(implicit conversions & casts)_](../../Reference/User-Interface-Help/data-type-summary.md#assignment-statements-implicit-conversions--casts) section on the Data type summary page.
+
 ## See also
 
 - [Visual Basic conceptual topics](../../reference/user-interface-help/visual-basic-conceptual-topics.md)
