@@ -15,7 +15,7 @@ localization_priority: Normal
 Returns an **Integer** where the returned value will indicate one of the following things, the choice of which depends upon the [argument](../../Glossary/vbe-glossary.md#argument) passed:
 1) The subtype or type of a [variable](../../Glossary/vbe-glossary.md#variable) or [expression](../../glossary/vbe-glossary.md#expression).
 2) The type or lack of type for an object's default member's return value.
-3) The **Variant** special value that a **Variant** variable, expression or value evaluates to.
+3) The [**Variant**](../../Glossary/vbe-glossary.md#variant-data-type) special value that a **Variant** variable, expression or value evaluates to.
 
 ## Syntax
 
