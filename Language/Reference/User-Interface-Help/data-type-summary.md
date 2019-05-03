@@ -81,14 +81,17 @@ The following two tables summarize several implicit type conversions & casts tha
 |Variable type|Value form|
 |:--------|:-----------|
 |**Variant**|Type same as valid **Variant** sub-type|
-|Integral type apart from the **Boolean** type|Intrinsic numerical type; within the range of the variable type|
+| | |
+|Intrinsic numerical type apart from the **Boolean** type|Intrinsic numerical type apart from the **Date** type; within the range of the variable type|
+|**Byte** or **Integer** type|**Date** type; greater than or equal to -32768; less than or equal to 32767|
+|**Long**, **Single**, **Double**, or **Currency** type|**Date** type|
 |**Boolean** type|Intrinsic numerical type|
-|Integral,&nbsp;**Single**,&nbsp;**Double**&nbsp;or **Boolean** type|**String** textual representation of a number that parses as a value of an intrinsic numerical type, and that if put into an appropriate numerical type, would be automatically implicitly coerced to the variable type in a related variable assignment statement|
+| | |
+|Intrinsic numerical type|**String** textual representation of a number that parses as a number, and that would be automatically implicitly coerced to the variable type in a related variable assignment statement|
 |**Date** type|**String** textual representation of a valid date, that parses as a date.|
-|**Date** type|**String** textual representation of a number that parses as a value of an intrinsic numerical type, and that if put into an appropriate numerical type, would be automatically implicitly coerced to the date type in a related **Date**-variable assignment statement|
 |**Currency** type|**String** textual representation of a valid currency amount, that parses as a currency amount.|
-|**Currency** type|**String** textual representation of a rational number that parses as such a number; within range of **Currency** type|
 |**String**|Any intrinsic data type|
+| | |
 |Intrinsic data type|For each variable type, the form is that required by the union of all other rules in this table that apply to the particular variable type, except that the form applies to sub-type data of a **Variant** value where the **Variant** value is the actual value assigned|
 
 ##### Casts
@@ -103,10 +106,11 @@ The following two tables summarize several implicit type conversions & casts tha
 
 #### Procedure calls _<sup>(implicit conversions & casts)</sup>_
 
-The two tables below summarize known implicit type conversions & casts that always take place for all arguments apart from the last one, in [procedure calls](../../glossary/vbe-glossary.md#procedure-call). The tables also summarize known implicit type conversions & casts
-that always take place for the last argument in procedure calls, for calls not on the left-hand side of assignment statements. For type conversions & casts that always take place for the last argument in procedure calls for calls on the left-hand side of assignment statements (such as those that take place in **Procedure Let** & **Procedure Set** procedure calls), see the previous ['Assignment statements _(implicit conversions & casts)_'](#assignment-statements-implicit-conversions--casts) section.
+The two tables below summarize known implicit type conversions & casts that always take place for all arguments apart from the last argument, in [procedure calls](../../glossary/vbe-glossary.md#procedure-call). The tables also summarize known implicit type conversions & casts that always take place for the last argument in procedure calls, for calls not on the left-hand side of assignment statements. For type conversions & casts that always take place for the last argument in procedure calls for calls on the left-hand side of assignment statements (such as those that take place in **Procedure Let** & **Procedure Set** procedure calls), see the previous ['Assignment statements _(implicit conversions & casts)_'](#assignment-statements-implicit-conversions--casts) section.
 
-The implicit conversions & casts listed in the following two tables, convert or cast from start types to end types. The start type is the type of a value passed as an [argument](../../glossary/vbe-glossary.md#argument) in a standard procedure call. The end type is the type of the internal [parameter](../../glossary/vbe-glossary.md#parameter) for the related argument (parameters are variables accessed by the contents of procedures). Note that it seems unlikely that implicit type conversions or casts other than those in the following two tables, exist in regard to the arguments & procedure calls they cover. Also note that arguments that are passed ['by reference'](../../glossary/vbe-glossary.md#by-reference) will maintain their 'by reference' functionality even though they be converted or cast in the way described in this section (doesn't apply to last argument of **Procedure Let** & **Procedure Set** procedure calls).
+For procedure arguments that aren't variables (such as for constants, literals, & expressions), as well as for procedure arguments ['passed by value'](../../glossary/vbe-glossary.md#by-value), additional implicit type conversions can take place. The reason for this appears to be because no ['by reference'](../../glossary/vbe-glossary.md#by-reference) functionality needs to be maintained in such cases. The implicit type conversions for such arguments seem likely to be exactly those implicit type conversions that take place in assignment statements, where the procedure parameter is represented by the assignment-statement variable & the procedure argument is represented by the assignment-statement value. See the previous ['Assignment statements _(implicit conversions & casts)_'](#assignment-statements-implicit-conversions--casts) section for details on the implicit type conversions that take place in assignment statements.
+
+The implicit conversions & casts listed in the following two tables, convert or cast from start types to end types. The start type is the type of a value passed as an [argument](../../glossary/vbe-glossary.md#argument) in a standard procedure call. The end type is the type of the internal [parameter](../../glossary/vbe-glossary.md#parameter) for the related argument (parameters are variables accessed by the contents of procedures). Note that arguments that are passed 'by reference' will maintain their 'by reference' functionality even though they be converted or cast in the ways described in the following tables (doesn't apply to last argument of **Procedure Let** & **Procedure Set** procedure calls).
 
 ##### Conversions
 
