@@ -83,7 +83,7 @@ The following two tables summarize several implicit type conversions & casts tha
 |**Variant**|Type same as valid **Variant** sub-type|
 | | |
 |Intrinsic numerical type apart from the **Boolean** type|Intrinsic numerical type apart from the **Date** type; within the range of the variable type|
-|**Byte** or **Integer** type|**Date** type; greater than or equal to -32768; less than or equal to 32767|
+|**Byte** or **Integer** type|**Date** type; -32768 &le; value &le; 32767|
 |**Long**, **Single**, **Double**, or **Currency** type|**Date** type|
 |**Boolean** type|Intrinsic numerical type|
 | | |
