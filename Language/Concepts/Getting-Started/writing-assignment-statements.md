@@ -12,7 +12,7 @@ localization_priority: Normal
 
 # Writing assignment statements
 
-Assignment statements assign a value or [expression](../../Glossary/vbe-glossary.md#expression) to a [variable](../../Glossary/vbe-glossary.md#variable) or [constant](../../Glossary/vbe-glossary.md#constant). Assignment statements always include an equal sign (**=**). 
+Assignment statements assign a value (of a literal, [constant](../../Glossary/vbe-glossary.md#constant), [variable](../../glossary/vbe-glossary.md#variable) evaluation, or [expression](../../Glossary/vbe-glossary.md#expression) evaluation) to a variable or constant. Assignment statements always include an equal sign (**=**).
 
 The following example assigns the return value of the **InputBox** function to the variable.
 
