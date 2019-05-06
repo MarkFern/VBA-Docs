@@ -27,8 +27,8 @@ The required _arg_ argument must be of the **Variant** type, or be able to be co
 
 Return value is either:
 
-- just one of the following constants excluding the `vbArray` constant & the `vbVariant` constant, _or_
-- the `vbArray` constant added to any of the other constants from the following list.
+- just one of the following constants excluding the **vbArray** constant & the **vbVariant** constant, _or_
+- the **vbArray** constant added to any of the other constants from the following list.
 
 |Constant|Value|Description|
 |:-----|:-----|:-----|
