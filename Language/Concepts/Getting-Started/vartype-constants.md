@@ -29,7 +29,7 @@ The following [constants](../../Glossary/vbe-glossary.md#constant) specified in 
 |**vbError**|10|An [**Error**](../../reference/user-interface-help/cverr-function.md) value|VT_ERROR|
 |**vbBoolean**|11|[Boolean](../../Glossary/vbe-glossary.md#boolean-data-type) value|VT_BOOL|
 |**vbVariant**|12|[**Variant**](../../Glossary/vbe-glossary.md#variant-data-type) _(used for return value only when added to **vbArray** constant to signify an [array](../../Glossary/vbe-glossary.md#array) of variants)_|VT_VARIANT|
-|**vbDataObject**|13|A (VBA) object not represented by the **vbObject** constant documented in this table. Not to be confused with [ActiveX Data Objects (ADO)](../../../access/concepts/activex-data-objects/set-properties-of-activex-data-objects-in-visual-basic.md) which is a database technology. &Dagger;|VT_UNKNOWN|
+|**vbDataObject**|13|A (VBA) object not represented by the **vbObject** constant documented in this table. Such an object, like all VBA objects, is still a COM object. Like all COM objects and interfaces, such an object exposes the **IUnknown** interface. Not to be confused with [ActiveX Data Objects (ADO)](../../../access/concepts/activex-data-objects/set-properties-of-activex-data-objects-in-visual-basic.md) which is a database technology. &Dagger;|VT_UNKNOWN|
 |**vbDecimal**|14|[Decimal](../../Glossary/vbe-glossary.md#decimal-data-type) value|VT_DECIMAL|
 |**vbByte**|17|[Byte](../../Glossary/vbe-glossary.md#byte-data-type) integer|VT_UI1|
 |**vbLongLong**|20|[LongLong](../../reference/User-Interface-Help/long-data-type.md) integer _(valid on 64-bit platforms only)_|VT_I8|
