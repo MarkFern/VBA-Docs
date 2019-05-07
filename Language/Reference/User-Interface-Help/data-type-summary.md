@@ -99,7 +99,7 @@ The following two tables summarize several implicit type conversions & casts tha
 
 |Variable type|Value form|
 |:--------|:-----------|
-|The&nbsp;**Object**&nbsp;type|[An Object data type](../../glossary/vbe-glossary.md#object-data-type) (must derive from **Object** type)|
+|The&nbsp;**Object**&nbsp;type|An [Object data type](../../glossary/vbe-glossary.md#object-data-type) (must derive from **Object** type)|
 |An&nbsp;[interface](../../Glossary/vbe-glossary.md#interface)&nbsp;type|Object type defined using the [**Implements**](../../reference/user-interface-help/implements-statement.md) statement to specify implementation of the interface|
 |A specific object type (not **Object**)|Object type defined using the **Implements** statement to specify implementation of the interface derived from the variable type|
 
@@ -123,7 +123,7 @@ The implicit conversions & casts listed in the following two tables, convert or 
 
 |Parameter&nbsp;type|Argument type|
 |:---------|:-----------|
-|The&nbsp;**Object**&nbsp;type|[An Object data type](../../glossary/vbe-glossary.md#object-data-type) (must derive from **Object** type)|
+|The&nbsp;**Object**&nbsp;type|An [Object data type](../../glossary/vbe-glossary.md#object-data-type) (must derive from **Object** type)|
 |An&nbsp;interface&nbsp;type|Object type defined using the **Implements** statement to specify implementation of the interface|
 |A specific object type (not **Object**)|Object type defined using the **Implements** statement where the statement specifies implementation of the interface derived from the parameter type|
 
