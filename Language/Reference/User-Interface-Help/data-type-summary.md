@@ -46,10 +46,11 @@ The following table shows the supported intrinsic [data types](../../Glossary/vb
 |**String** _(fixed-length)_|Length of string|1 to approximately 65,400|
 |**[Variant](variant-data-type.md)** _(with numbers)_|16 bytes|Any numeric value up to the range of a **Double**|
 |**Variant** _(with characters)_|22 bytes + string length (24 bytes on 64-bit systems)|Same range as for variable-length **String**|
-|**Variant** _(with objects)_|Unknown|Same range as **Object**|
-|**Variant** _(with [user-defined type](../../How-to/user-defined-data-type.md))_|Unknown|Only data of a **user-defined type** accessed through a [VBE library reference](../../reference/user-interface-help/references-dialog-box.md)|
-|**Variant** <BR>_(with special values [**Empty**](../../Glossary/vbe-glossary.md#empty) or [**Null**](../../Glossary/vbe-glossary.md#null))_|Unknown|Unknown|
-|**Variant** _(with [**Error** sub-type](../../reference/user-interface-help/cverr-function.md))_|Unknown|Unknown|
+|**Variant** <br>_(with **Object** objects)_|Unknown|Same range as **Object**|
+|**Variant** <br>_(with objects not directly of the **Object** type)_|Unknown|Specified by object type|
+|**Variant** _(with [user-defined type](../../How-to/user-defined-data-type.md))_|Unknown|**User-defined type** must be accessed through a [VBE library reference](../../reference/user-interface-help/references-dialog-box.md); range specified for the non-intrinsic **user-defined type** data type (in previous table) also applies.|
+|**Variant** <BR>_(with special values [**Empty**](../../Glossary/vbe-glossary.md#empty) or [**Null**](../../Glossary/vbe-glossary.md#null))_|Unknown|Just the two special values.|
+|**Variant** <br>_(with [**Error** sub-type](../../reference/user-interface-help/cverr-function.md))_|Unknown|Corresponds to valid error numbers|
 
 
 <br/>
@@ -98,9 +99,9 @@ The following two tables summarize several implicit type conversions & casts tha
 
 |Variable type|Value form|
 |:--------|:-----------|
-|The&nbsp;**Object**&nbsp;type|Valid object type|
+|The&nbsp;**Object**&nbsp;type|[An Object data type](../../glossary/vbe-glossary.md#object-data-type) (must derive from **Object** type)|
 |An&nbsp;[interface](../../Glossary/vbe-glossary.md#interface)&nbsp;type|Object type defined using the [**Implements**](../../reference/user-interface-help/implements-statement.md) statement to specify implementation of the interface|
-|An object type|Object type defined using the **Implements** statement to specify implementation of the interface derived from the variable type|
+|A specific object type (not **Object**)|Object type defined using the **Implements** statement to specify implementation of the interface derived from the variable type|
 
 <BR>
 
@@ -122,9 +123,9 @@ The implicit conversions & casts listed in the following two tables, convert or 
 
 |Parameter&nbsp;type|Argument type|
 |:---------|:-----------|
-|The **Object** type|Valid object type|
-|An&nbsp;interface&nbsp;type|Object type defined using the **Implements** statement where the statement specifies implementation of the interface|
-|An object type|Object type defined using the **Implements** statement where the statement specifies implementation of the interface derived from the parameter type|
+|The&nbsp;**Object**&nbsp;type|[An Object data type](../../glossary/vbe-glossary.md#object-data-type) (must derive from **Object** type)|
+|An&nbsp;interface&nbsp;type|Object type defined using the **Implements** statement to specify implementation of the interface|
+|A specific object type (not **Object**)|Object type defined using the **Implements** statement where the statement specifies implementation of the interface derived from the parameter type|
 
 <BR>
  
