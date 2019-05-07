@@ -38,7 +38,7 @@ The following [constants](../../Glossary/vbe-glossary.md#constant) specified in 
 
 <sup>* Default.</sup><BR>
 <sup>&#8224; **Variant** special value.</sup><BR>
-<sup>&Dagger; The glossary definition of [ActiveX object](../../Glossary/vbe-glossary.md#activex-object) in the VBA documentation on 7th April 2019 (current date), indicates that ActiveX objects are Automation objects. However, various developers instead use ActiveX as a synonym for the COM technology, meaning that those developers also class non-Automation VT_UI2 objects as being a certain type of ActiveX object.</sup>
+<sup>&Dagger; The glossary definition of [ActiveX object](../../Glossary/vbe-glossary.md#activex-object) in the VBA documentation on 7th April 2019 (current date), indicates that ActiveX objects are Automation objects. However, various developers instead use ActiveX as a synonym for the COM technology, meaning that those developers also class non-Automation COM objects as being a certain type of ActiveX object.</sup>
   
 ## See also
 
