@@ -24,7 +24,7 @@ An object that you place on a form to enable or enhance a user's interaction wit
 
 ## ActiveX object
 
-An object that is exposed to other applications or programming tools through Automation interfaces.
+An object that is exposed to other applications or programming tools through Automation interfaces. Please note that various developers instead use ActiveX as a synonym for the COM technology, meaning that those developers also class non-Automation COM objects as being a certain type of ActiveX object.
 
 
 ## add-in
@@ -64,7 +64,7 @@ A feature that automatically formats code as you enter it by capitalizing the fi
 
 ## Automation object
 
-An object that is exposed to other applications or programming tools through Automation interfaces.
+An object that is exposed to other applications or programming tools through Automation interfaces. Strictly speaking, all [**Object**](../reference/user-interface-help/object-data-type.md) objects & [**Object** data type](#Object-data-type) objects are Automation objects because they support the **IDispatch** interface.
 
 
 ## base class
@@ -557,7 +557,7 @@ A dialog box in which you can examine the contents of an object library to get i
 
 ## Object data type
 
-A data type that represents any **Object** reference. **Object** variables are stored as 32-bit (4-byte) addresses that refer to objects. See [data type summary](../reference/user-interface-help/data-type-summary.md).
+A data type storing objects that derive from, & are able to be cast to, VBA's intrinsic [**Object**](../reference/user-interface-help/object-data-type.md) type. **Object** variables are stored as 32-bit (4-byte) addresses that refer to [Automation objects](#Automation-object). See [data type summary](../reference/user-interface-help/data-type-summary.md). Note that there are VBA objects that are not **Object** objects.
 
 
 ## object expression
@@ -577,17 +577,12 @@ A module that contains code specific to an object, for example, class module, fo
 
 ## object type
 
-A type of object exposed by an application through Automation, for example, **Application**, **File**, **Range**, and **Sheet**. Use the **Object Browser** or refer to the application's documentation for a complete listing of available objects.
+The type corresponding to a specific [class](#class) from which certain objects are instantiated. Examples of [Automation object](#Automation-object) types are: **Application**, **File**, **Range**, and **Sheet**. Note that not all object types are [**Object** data types](#Object-data-type) (i.e. can be cast to VBA's intrinisic [**Object**](../reference/user-interface-help/object-data-type.md) type). Use the **Object Browser** or refer to the application's documentation for a complete listing of available objects.
 
 
 ## object variable
 
 A variable that contains a reference to an object.
-
-
-## Automation object
-
-An object that is exposed to other applications or programming tools through Automation interfaces.
 
 
 ## parameter
@@ -803,7 +798,7 @@ A character appended to a variable name indicating the variable's data type. By 
 
 ## type library
 
-A file or component within another file that contains standard descriptions of exposed objects, properties, and methods that are available for Automation. Object library files (.olb) contain type libraries.
+A file or component within another file that contains standard descriptions of exposed objects, properties, and methods. Object library files (.olb) contain type libraries.
 
 
 ## Unicode
