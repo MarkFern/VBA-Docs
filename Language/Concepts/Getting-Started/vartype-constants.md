@@ -12,7 +12,7 @@ localization_priority: Normal
 
 # VarType constants
 
-The following [constants](../../Glossary/vbe-glossary.md#constant) can be used anywhere in your code in place of the actual values.
+The following [constants](../../Glossary/vbe-glossary.md#constant) specified in VBA's **VbVarType** [enumeration](../../reference/user-interface-help/enum-statement.md), can be used anywhere in your code in place of the actual values.
 
 |Constant|Value|Description|
 |:-----|:-----|:-----|
