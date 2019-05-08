@@ -415,7 +415,7 @@ An _interface_ definition created using the VBE, is defined in a [class module](
 
 When handling an object reference for an object that implements a specific _interface_, the object reference must expose the _interface_, in order to be able to use the _interface_ directly on the object reference. If the object reference isn't as such, casting the object reference to another type that exposes the _interface_, will enable the _interface_ to be used on the cast object reference & so ultimately on the object.
 
-If a class _implements_ (whether by use of the [Implements](../Reference/User-Interface-Help/implements-statement.md) statement or as explicitly specified in a type-library definition) an _interface_, an instance of the class can be used as an [argument](#argument) to a procedure when the procedure specifies that the corresponding internal [parameter](#parameter) should have the type of the _interface_, so long as code within the procedure body is 'happy' to accept such a value. In such cases, a cast of the argument or a copy of the argument, to the parameter type, occurs.
+If a class _implements_ an _interface_ (whether by use of the [Implements](../Reference/User-Interface-Help/implements-statement.md) statement or as explicitly specified in a type-library definition), an instance of the class can be used as an [argument](#argument) to a procedure when the procedure specifies that the corresponding internal [parameter](#parameter) should have the type of the _interface_, so long as code within the procedure body is 'happy' to accept such a value. In such cases, a cast of the argument or a copy of the argument, to the parameter type, occurs.
 
 
 ## intrinsic constants
