@@ -405,7 +405,7 @@ A data type that holds integer variables stored as 2-byte whole numbers in the r
 
 ## interface
 
-An _interface_ is a collection of prototypes representing the members ([methods](#method) and [properties](#property)) that the _interface_ encapsulates; that is, it contains only the declarations for the member procedures.
+An _interface_ is a collection of prototypes representing the members ([methods](#method) and [properties](#property)) that the _interface_ encapsulates; it contains only the declarations for the member procedures.
 
 An _interface_ written using the VBE, is defined in a [class module](#class-module). Such _interfaces_ are classified as classes within the VBE, and in programming terms, can also be used as though they were [classes](#class). _Interfaces_ defined in a type-library definition specifically using the 'interface' keyword of the Interface Definition Language (IDL), that are accessed using library references, are also classified as classes within the VBE but cannot be instantiated.
 
