@@ -407,7 +407,7 @@ A data type that holds integer variables stored as 2-byte whole numbers in the r
 
 An _interface_ is a collection of prototypes representing the members ([methods](#method) and [properties](#property)) that the interface encapsulates; that is, it contains only the declarations for the member procedures.
 
-An _interface_ written using the VBE, is defined in a [class module](#class-module). Such _interfaces_ are classified as classes within the VBE, and in programming terms, can also be used as though they were [classes](#class). _Interfaces_ defined in a type-library definition specifically using the 'interface' keyword of the Interface Definition Language (IDL), that are accessed using library references, are also classified as classes within the VBE.
+An _interface_ written using the VBE, is defined in a [class module](#class-module). Such _interfaces_ are classified as classes within the VBE, and in programming terms, can also be used as though they were [classes](#class). _Interfaces_ defined in a type-library definition specifically using the 'interface' keyword of the Interface Definition Language (IDL), that are accessed using library references, are also classified as classes within the VBE but cannot be instantiated.
 
 If a class [implements](../Reference/User-Interface-Help/implements-statement.md) an interface, an instance of the class can be used as an [argument](#argument) to a procedure when the procedure specifies that the corresponding internal [parameter](#parameter) should have the type of the interface, so long as code within the procedure body is 'happy' to accept such a value. In such cases, a cast of the argument or a copy of the argument, to the parameter type, occurs.
 
