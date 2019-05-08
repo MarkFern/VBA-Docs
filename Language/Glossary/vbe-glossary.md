@@ -147,7 +147,7 @@ The formal definition of an object. The class acts as the template from which an
 
 ## class module
 
-A module that contains the definition of a [class](#class) or [interface](#interface), including its property and method definitions.
+A module that contains the definition of a [class](#class) or [interface](#interface), including its [property](#property), [method](#method) & prototype definitions. Prototype definitions are written in the same way as the property & method definitions that they represent, except that in the case of procedures, prototype definitions do not supply implementations of the procedures (i.e. do not have procedure bodies.) 
 
 
 ## code module
@@ -405,11 +405,17 @@ A data type that holds integer variables stored as 2-byte whole numbers in the r
 
 ## interface
 
-An _interface_ is a collection of prototypes representing the members ([methods](#method) and [properties](#property)) that the _interface_ encapsulates; it contains only the declarations for the member procedures.
+An _interface_ specifies a specific way in which one can interact with an object, provided that the object implements the _interface_. 
 
-An _interface_ written using the VBE, is defined in a [class module](#class-module). Such _interfaces_ are classified as classes within the VBE, and in programming terms, can also be used as though they were [classes](#class). _Interfaces_ defined in a type-library definition specifically using the 'interface' keyword of the Interface Definition Language (IDL), that are accessed using library references, are also classified as classes within the VBE but cannot be instantiated.
+An _interface_'s definition specifies a particular set of [method](#method) headers & [property](#property) access definitions (both termed prototypes), that in turn specify the method calls & property references that can be used on objects implementing the _interface_. When it said that a particular _interface_ of an object is being used, it is meant that such method calls & property references specified by the _interface_, & in the context of the _interface_, are being used on the object.
 
-If a class [implements](../Reference/User-Interface-Help/implements-statement.md) an _interface_, an instance of the class can be used as an [argument](#argument) to a procedure when the procedure specifies that the corresponding internal [parameter](#parameter) should have the type of the _interface_, so long as code within the procedure body is 'happy' to accept such a value. In such cases, a cast of the argument or a copy of the argument, to the parameter type, occurs.
+The prototypes of an _interface_ are said to represent the members that the _interface_ encapsulates. _Interfaces_ never supply procedure implementations (i.e. procedure bodies in _interface_ definitions are absent.) 
+
+An _interface_ definition created using the VBE, is defined in a [class module](#class-module). Such _interfaces_ are classified as classes within the VBE, and in programming terms, can also be used as though they were [classes](#class).
+
+_Interfaces_ defined in a [type-library](#type-library) definition specifically using the 'interface' keyword of the Interface Definition Language (IDL), that are accessed using library references, are also classified as classes within the VBE but cannot be instantiated. When handling an object reference for objects that implement this kind of type-library _interface_, the object reference must have the _interface_ chosen in it, in order to directly use the _interface_ on the object reference. If the object reference isn't as such, casting the object reference to another type that exposes the _interface_, will enable the _interface_ to be used on the cast object reference & so ultimately on the object.
+
+If a class _implements_ (whether by use of the [Implements](../Reference/User-Interface-Help/implements-statement.md) statement or as explicitly specified in a type-library definition) an _interface_, an instance of the class can be used as an [argument](#argument) to a procedure when the procedure specifies that the corresponding internal [parameter](#parameter) should have the type of the _interface_, so long as code within the procedure body is 'happy' to accept such a value. In such cases, a cast of the argument or a copy of the argument, to the parameter type, occurs.
 
 
 ## intrinsic constants
