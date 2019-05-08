@@ -407,7 +407,7 @@ A data type that holds integer variables stored as 2-byte whole numbers in the r
 
 An _interface_ specifies a specific way in which one can interact with an object, provided that the object implements the _interface_. 
 
-An _interface_'s definition specifies a particular set of [method](#method) headers & [property](#property) access definitions (both termed prototypes), that in turn specify the method calls & property references that can be used on objects implementing the _interface_. When it said that a particular _interface_ of an object is being used, it is meant that such method calls & property references specified by the _interface_, & in the context of the _interface_, are being used on the object.
+An _interface_'s definition specifies a particular set of [method](#method) headers & [property](#property) access definitions (both termed prototypes), that in turn specify the method calls & property references that can be used on objects implementing the _interface_. When it is said that a particular _interface_ of an object is being used, it is meant that such method calls & property references specified by the _interface_, & in the context of the _interface_, are being used on the object.
 
 The prototypes of an _interface_ are said to represent the members that the _interface_ encapsulates. _Interfaces_ never supply procedure implementations (i.e. procedure bodies in _interface_ definitions are absent.) 
 
