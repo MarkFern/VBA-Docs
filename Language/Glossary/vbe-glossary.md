@@ -487,7 +487,7 @@ A file that stores an image as graphical objects such as lines, circles, and pol
 
 ## method
 
-A procedure that is an intrinsic procedure of an object. A method is defined within a class definition.
+A procedure that is an intrinsic procedure of an object. When composed using the VBE, its composition is contained within a [class module](#class-module). Methods are always [class](#class) procedures.
 
 
 ## module
