@@ -97,6 +97,8 @@ The following two tables summarize several implicit type conversions & casts tha
 
 ##### Casts
 
+Even though strictly speaking these casts always take place between object types, the style of casting is a kind of interface casting (not object casting.) [*](#asteriskfootnote)
+
 |Variable type|Value form|
 |:--------|:-----------|
 |The&nbsp;**Object**&nbsp;type|An [Object data type](../../glossary/vbe-glossary.md#object-data-type) (must derive from **Object** type)|
@@ -121,6 +123,8 @@ The implicit conversions & casts listed in the following two tables, convert or 
 
 ##### Casts
 
+Even though strictly speaking these casts always take place between object types, the style of casting is a kind of interface casting (not object casting.) [*](#asteriskfootnote)
+
 |Parameter&nbsp;type|Argument type|
 |:---------|:-----------|
 |The&nbsp;**Object**&nbsp;type|An [Object data type](../../glossary/vbe-glossary.md#object-data-type) (must derive from **Object** type)|
@@ -128,7 +132,7 @@ The implicit conversions & casts listed in the following two tables, convert or 
 |A specific object type (not **Object**)|Object type defined using the **Implements** statement where the statement specifies implementation of the interface derived from the parameter type|
 
 <BR>
- 
+  
 ### Explicit conversions
 
 See [Type conversion functions](../../concepts/getting-started/type-conversion-functions.md) for examples of how to use the following functions to coerce an expression to a specific data type: **CBool**, **CByte**, **CCur**, **CDate**, **CDbl**, **CDec**, **CInt**, **CLng**, **CLngLng**, **CLngPtr**, **CSng**, **[CStr](#returns-for-cstr)**, and **CVar**.
@@ -166,6 +170,11 @@ To verify data types, see the following functions & operators:
 - [VarType](vartype-function.md)
 - [TypeName](typename-function)
 - [TypeOf](../../reference/user-interface-help/ifthenelse-statement.md)
+
+
+
+|<sup><a name="asteriskfootnote">\*</a> VBA doesn't provide object inheritance as a standard mechanism, meaning that conventional object-oriented programming (OOP) object casting isn't fundamentally supported.</sup> |
+|:-----------------|
 
 ## See also
 
