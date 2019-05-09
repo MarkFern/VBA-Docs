@@ -64,7 +64,7 @@ A feature that automatically formats code as you enter it by capitalizing the fi
 
 ## Automation object
 
-An object that is exposed to other applications or programming tools through Automation interfaces. Strictly speaking, all [**Object** data type](#Object-data-type) objects are (OLE) Automation objects because they expose COM's **IDispatch** interface and because they are, like all VBA objects, COM objects.
+An object that is exposed to other applications or programming tools through Automation interfaces. Strictly speaking, all [**Object** data type](#Object-data-type) objects are (OLE) Automation objects because they implement COM's **IDispatch** interface and because they are, like all VBA objects, COM objects.
 
 
 ## base class
