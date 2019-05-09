@@ -64,7 +64,7 @@ A feature that automatically formats code as you enter it by capitalizing the fi
 
 ## Automation object
 
-An object that is exposed to other applications or programming tools through Automation interfaces. Strictly speaking, all [**Object**](../reference/user-interface-help/object-data-type.md) objects & [**Object** data type](#Object-data-type) objects are Automation objects because they support the **IDispatch** interface.
+An object that is exposed to other applications or programming tools through Automation interfaces. Strictly speaking, all [**Object** data type](#Object-data-type) objects are (OLE) Automation objects because they expose the **IDispatch** interface and because they are, like all VBA objects, COM objects.
 
 
 ## base class
@@ -557,7 +557,11 @@ A dialog box in which you can examine the contents of an object library to get i
 
 ## Object data type
 
-A special data type that can store any Automation-compatible object reference. A variable of the [**Object**](../reference/user-interface-help/object-data-type.md) data type, is stored as a 32-bit (4-byte) address that refers to an Automation-compatible interface attached to an object. See [data type summary](../reference/user-interface-help/data-type-summary.md). Note that objects/instances of certain classes, where the classes are made available through [library references](../reference/user-interface-help/references-dialog-box.md), can't be cast to the **Object** data type.
+A special data type that can store any Automation-compatible object reference (i. e. an object reference that exposes the **IDispatch** interface, & that is, as is always the case in VBA, for a COM object). A variable of the [**Object**](../reference/user-interface-help/object-data-type.md) data type, is stored as a 32-bit (4-byte) address that refers to an Automation-compatible interface attached to an object.
+
+All objects/instances of classes defined in VBA [class modules](#class-module), can be cast to the **Object** data type. Objects/instances of certain classes, where the classes are made available through [library references](../reference/user-interface-help/references-dialog-box.md), can't be cast to the **Object** data type because of the classes not implementing the **IDispatch** interface.
+
+See [data type summary](../reference/user-interface-help/data-type-summary.md). 
 
 
 ## object expression
@@ -577,7 +581,7 @@ A module that contains code specific to an object, for example, class module, fo
 
 ## object type
 
-The type corresponding to a specific [class](#class) from which certain objects are instantiated. Examples of [Automation object](#Automation-object) types are: **Application**, **File**, **Range**, and **Sheet**. Note that not all object types are [**Object** data types](#Object-data-type) (i.e. can be cast to VBA's intrinisic [**Object**](../reference/user-interface-help/object-data-type.md) type). Use the **Object Browser** or refer to the application's documentation for a complete listing of available objects.
+The type corresponding to a specific [class](#class) from which certain objects are instantiated. Examples of [Automation object](#Automation-object) types are: **Application**, **File**, **Range**, and **Sheet**. Note that not all object types can be cast to the [**Object** data type](#Object-data-type). Use the **Object Browser** or refer to the application's documentation for a complete listing of available objects.
 
 
 ## object variable
