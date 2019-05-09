@@ -101,7 +101,7 @@ Even though strictly speaking these casts always take place between object types
 
 |Variable type|Value form|
 |:--------|:-----------|
-|The&nbsp;**Object**&nbsp;type|An [Object data type](../../glossary/vbe-glossary.md#object-data-type) (must derive from **Object** type)|
+|The&nbsp;**Object**&nbsp;type|Automation-compatible object reference, or can be downcast to such a reference|
 |An&nbsp;[interface](../../Glossary/vbe-glossary.md#interface)&nbsp;type|Object type defined using the [**Implements**](../../reference/user-interface-help/implements-statement.md) statement to specify implementation of the interface|
 |A specific object type (not **Object**)|Object type defined using the **Implements** statement to specify implementation of the interface derived from the variable type|
 
@@ -113,11 +113,11 @@ The two tables below summarize known implicit type conversions & casts that alwa
 
 For procedure arguments that aren't variables (such as for constants, literals, & expressions), as well as for procedure arguments ['passed by value'](../../glossary/vbe-glossary.md#by-value), more implicit type conversions than those in the following two tables, can take place. The reason for this appears to be because no ['by reference'](../../glossary/vbe-glossary.md#by-reference) functionality needs to be maintained in such cases. The implicit type conversions for such arguments seem likely to be exactly those implicit type conversions that take place in assignment statements, where the procedure parameter is represented by the assignment-statement variable & the procedure argument is represented by the assignment-statement value. See the previous ['Assignment statements _(implicit conversions & casts)_'](#assignment-statements-implicit-conversions--casts) section for details on the implicit type conversions that take place in assignment statements.
 
-The implicit conversions & casts listed in the following two tables, convert or cast from start types to end types. The start type is the type of a value passed as an [argument](../../glossary/vbe-glossary.md#argument) in a standard procedure call. The end type is the type of the internal [parameter](../../glossary/vbe-glossary.md#parameter) for the related argument (parameters are variables accessed by the contents of procedures). Note that arguments that are passed 'by reference' will maintain their 'by reference' functionality even though they be converted or cast in the ways described in the following tables (doesn't apply to last argument of **Procedure Let** & **Procedure Set** procedure calls).
+The implicit conversions & casts listed in the following two tables, convert or cast from start forms to end types. The start form is the form of a value passed as an [argument](../../glossary/vbe-glossary.md#argument) in a standard procedure call. The end type is the type of the internal [parameter](../../glossary/vbe-glossary.md#parameter) for the related argument (parameters are variables accessed by the contents of procedures). Note that arguments that are passed 'by reference' will maintain their 'by reference' functionality even though they be converted or cast in the ways described in the following tables (doesn't apply to last argument of **Procedure Let** & **Procedure Set** procedure calls).
 
 ##### Conversions
 
-|Parameter&nbsp;type|Argument type|
+|Parameter&nbsp;type|Argument form|
 |:---------|:-----------|
 |**Variant**|Valid **Variant** sub-type|
 
@@ -125,9 +125,9 @@ The implicit conversions & casts listed in the following two tables, convert or 
 
 Even though strictly speaking these casts always take place between object types or between an object type & the **Object** type, the style of casting is a kind of interface casting (not object casting.) [*](#asteriskfootnote)
 
-|Parameter&nbsp;type|Argument type|
+|Parameter&nbsp;type|Argument form|
 |:---------|:-----------|
-|The&nbsp;**Object**&nbsp;type|An [Object data type](../../glossary/vbe-glossary.md#object-data-type) (must derive from **Object** type)|
+|The&nbsp;**Object**&nbsp;type|Automation-compatible object reference, or can be downcast to such a reference|
 |An&nbsp;interface&nbsp;type|Object type defined using the **Implements** statement to specify implementation of the interface|
 |A specific object type (not **Object**)|Object type defined using the **Implements** statement where the statement specifies implementation of the interface derived from the parameter type|
 
