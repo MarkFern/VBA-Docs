@@ -557,7 +557,7 @@ A dialog box in which you can examine the contents of an object library to get i
 
 ## Object data type
 
-A data type storing objects that derive from, & are able to be cast to, VBA's intrinsic [**Object**](../reference/user-interface-help/object-data-type.md) type. **Object** variables are stored as 32-bit (4-byte) addresses that refer to [Automation objects](#Automation-object). See [data type summary](../reference/user-interface-help/data-type-summary.md). Note that there are VBA objects that are not **Object** objects.
+A special data type that can store any Automation-compatible object reference. A variable of the [**Object**](../reference/user-interface-help/object-data-type.md) data type, is stored as a 32-bit (4-byte) address that refers to an Automation-compatible interface attached to an object. See [data type summary](../reference/user-interface-help/data-type-summary.md). Note that objects/instances of certain classes, where the classes are made available through [library references](../reference/user-interface-help/references-dialog-box.md), can't be cast to the **Object** data type.
 
 
 ## object expression
