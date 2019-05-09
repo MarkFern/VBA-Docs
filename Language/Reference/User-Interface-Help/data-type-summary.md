@@ -155,9 +155,13 @@ The [**Fix**, and **Int** functions](int-fix-functions.md) provide other forms o
 |[Null](../../Glossary/vbe-glossary.md#null)|A [run-time error](../../Glossary/vbe-glossary.md#run-time-error).|
 |Other numeric|A string containing the number.|
 
+<br>
+
 ### Explicit casts
 
 Explicit casts are not supported in the grammar of the VBA language.
+
+<br>
 
 ## Verify data types
 
