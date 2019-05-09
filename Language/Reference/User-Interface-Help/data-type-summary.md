@@ -105,6 +105,10 @@ Even though strictly speaking these casts always take place between object types
 |An&nbsp;[interface](../../Glossary/vbe-glossary.md#interface)&nbsp;type|Object type defined using the [**Implements**](../../reference/user-interface-help/implements-statement.md) statement to specify implementation of the interface|
 |A specific object type (not **Object**)|Object type defined using the **Implements** statement to specify implementation of the interface derived from the variable type|
 
+##### Operations involving a cast & a conversion
+
+If **Variant** data containing an object reference is assigned to a variable having either an object data type or the **Object** data type, both a cast & a conversion can occur together.
+
 <BR>
 
 #### Procedure calls _<sup>(implicit conversions & casts)</sup>_
@@ -130,6 +134,10 @@ Even though strictly speaking these casts always take place between object types
 |The&nbsp;**Object**&nbsp;type|Automation-compatible object reference, or can be downcast to such a reference|
 |An&nbsp;interface&nbsp;type|Object type defined using the **Implements** statement to specify implementation of the interface|
 |A specific object type (not **Object**)|Object type defined using the **Implements** statement where the statement specifies implementation of the interface derived from the parameter type|
+
+##### Operations involving a cast & a conversion
+
+If **Variant** argument containing an object reference is assigned to a parameter having either an object data type or the **Object** data type, both a cast & a conversion can occur together.
 
 <BR>
   
