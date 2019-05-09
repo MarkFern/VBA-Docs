@@ -559,7 +559,7 @@ A dialog box in which you can examine the contents of an object library to get i
 
 A special data type that can store any Automation-compatible object reference (i. e. an object reference that exposes the **IDispatch** interface, & that is, as is always the case in VBA, for a COM object). A variable of the [**Object**](../reference/user-interface-help/object-data-type.md) data type, is stored as a 32-bit (4-byte) address that refers to an Automation-compatible interface attached to an object.
 
-All objects/instances of classes defined in VBA [class modules](#class-module), can be cast to the **Object** data type. Objects/instances of certain classes, where the classes are made available through [library references](../reference/user-interface-help/references-dialog-box.md), can't be cast to the **Object** data type because of the classes not implementing the **IDispatch** interface.
+All objects/instances of classes defined through VBA [class modules](#class-module), can be cast to the **Object** data type. Objects/instances of certain classes, where the classes are made available through [library references](../reference/user-interface-help/references-dialog-box.md), can't be cast to the **Object** data type because of the classes not implementing the **IDispatch** interface.
 
 See [data type summary](../reference/user-interface-help/data-type-summary.md). 
 
