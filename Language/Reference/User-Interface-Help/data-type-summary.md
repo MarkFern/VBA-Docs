@@ -137,7 +137,7 @@ Even though strictly speaking these casts always take place between object types
 
 ##### Operations involving a cast & a conversion
 
-If **Variant** argument containing an object reference is assigned to a parameter having either an object data type or the **Object** data type, both a cast & a conversion can occur together.
+If a **Variant** argument containing an object reference is assigned to a parameter having either an object data type or the **Object** data type, both a cast & a conversion can occur together.
 
 <BR>
   
