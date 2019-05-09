@@ -16,7 +16,7 @@ A data type is the characteristic of a variable that determines what kind of dat
 
 ## Non-intrinsic data types
 
-Non-intrinsic data types include those in the following table as well as all other specific types of object.
+Non-intrinsic data types include those in the following table as well as all other specific types of object (which includes all VBA compatible interface types through their representation using object types).
  
 |Non&#8209;intrinsic&nbsp;data&nbsp;type|Storage size|Range|
 |:--------|:-----------|:----|
