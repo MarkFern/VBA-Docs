@@ -798,7 +798,7 @@ A character appended to a variable name indicating the variable's data type. By 
 
 ## type library
 
-A file or component within another file that contains standard descriptions of exposed objects, properties, and methods. Object library files (.olb) contain type libraries.
+A file, or component within another file, that contains standard descriptions of exposed objects, properties, and methods. 'Object library' files (.olb) & 'type library' files (.tlb) contain type libraries. 'Dynamic-link library' files (.dll), 'OLE control extension' files (.ocx) & .exe executable files can also sometimes contain type libraries.
 
 
 ## Unicode
