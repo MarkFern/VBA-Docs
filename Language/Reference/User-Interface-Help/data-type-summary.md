@@ -97,7 +97,7 @@ The following two tables summarize several implicit type conversions & casts tha
 
 ##### Casts
 
-Even though strictly speaking these casts always take place between object types, the style of casting is a kind of interface casting (not object casting.) [*](#asteriskfootnote)
+Even though strictly speaking these casts always take place between object types or between an object type & the **Object** type, the style of casting is a kind of interface casting (not object casting.) [*](#asteriskfootnote)
 
 |Variable type|Value form|
 |:--------|:-----------|
@@ -123,7 +123,7 @@ The implicit conversions & casts listed in the following two tables, convert or 
 
 ##### Casts
 
-Even though strictly speaking these casts always take place between object types, the style of casting is a kind of interface casting (not object casting.) [*](#asteriskfootnote)
+Even though strictly speaking these casts always take place between object types or between an object type & the **Object** type, the style of casting is a kind of interface casting (not object casting.) [*](#asteriskfootnote)
 
 |Parameter&nbsp;type|Argument type|
 |:---------|:-----------|
