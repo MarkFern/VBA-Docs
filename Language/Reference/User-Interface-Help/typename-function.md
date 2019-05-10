@@ -40,7 +40,7 @@ The rules for what string is returned by **TypeName**, are shown in the followin
 |[Date](../../Glossary/vbe-glossary.md#date-data-type) value|"Date"|
 |[String](../../Glossary/vbe-glossary.md#string-data-type)|"String"|
 |[Boolean](../../Glossary/vbe-glossary.md#boolean-data-type) value|"Boolean"|
-|Argument can have either of the following forms:<br><table><tr><td>i) An [**Error**](../../reference/user-interface-help/cverr-function.md) value.</td></tr><tr><td>ii) A value indicating that the passed argument<br>corresponds to a [_missing_](../../reference/user-interface-help/ismissing-function.md) [_optional_](/language/concepts/getting-started/understanding-named-arguments-and-optional-arguments.md) **Variant** argument<br>of some procedure. <sup>\*\*</sup></td></tr></table>|"Error"|
+|Argument can have either of the following forms:<br><table><tr><td>i) An [**Error**](../../reference/user-interface-help/cverr-function.md) value.</td></tr><tr><td>ii) A value indicating that the passed argument<br>corresponds to a [_missing_](../../reference/user-interface-help/ismissing-function.md) [_optional_](../../concepts/getting-started/understanding-named-arguments-and-optional-arguments.md) **Variant** argument<br>of some procedure. <sup>\*\*</sup></td></tr></table>|"Error"|
 |[**Empty**](../../Glossary/vbe-glossary.md#empty) value <sup>_(represents uninitialized variable)_</sup> <sup>\*\*</sup>|"Empty"|
 |[**Null**](../../Glossary/vbe-glossary.md#null) value <sup>_(represents no valid data)_</sup> <sup>\*\*</sup>|"Null"|
 |An [object](../../glossary/vbe-glossary.md#object) whose type name cannot be determined<br>with this function <sup>&dagger;</sup>|"Unknown"|
