@@ -13,15 +13,15 @@ localization_priority: Normal
 # VarType function
 
 Returns an **Integer** where the returned value will indicate one of the following things, the choice of which depends upon the [argument](../../Glossary/vbe-glossary.md#argument) passed:
-1) The subtype or type of a [variable](../../Glossary/vbe-glossary.md#variable) or [expression](../../glossary/vbe-glossary.md#expression).
+1) The subtype or type of a [variable](../../Glossary/vbe-glossary.md#variable), [expression](../../glossary/vbe-glossary.md#expression) or other kind of value.
 2) The type or lack of type for an object's default member's return value.
-3) The [**Variant**](../../Glossary/vbe-glossary.md#variant-data-type) special value that a **Variant** variable, expression or value evaluates to.
+3) The [**Variant**](../../Glossary/vbe-glossary.md#variant-data-type) special value that a **Variant** variable, expression or other kind of value, evaluates to.
 
 ## Syntax
 
 **VarType**(_arg_)
 
-The required _arg_ argument must be of the **Variant** type, or be able to be coerced to it.
+The required _arg_ argument must be of the **Variant** type, or be able to be [coerced](../../Reference/User-Interface-Help/data-type-summary.md#implicit-conversions--casts) to it.
  
 ## Return values
 
@@ -32,27 +32,41 @@ Return value is either:
 
 |Constant|Value|Description|
 |:-----|:-----|:-----|
-|**vbEmpty**|0|[**Empty**](../../Glossary/vbe-glossary.md#empty) value (variable uninitialized) \*|
-|**vbNull**|1|[**Null**](../../Glossary/vbe-glossary.md#null) value (no valid data) \*|
+|**vbEmpty**|0|[**Empty**](../../Glossary/vbe-glossary.md#empty) value <sup>_(represents uninitialized variable)_</sup> \*|
+|**vbNull**|1|[**Null**](../../Glossary/vbe-glossary.md#null) value <sup>_(represents no valid data)_</sup> \*|
 |**vbInteger**|2|Integer of data type [**Integer**](../../Glossary/vbe-glossary.md#integer-data-type)|
 |**vbLong**|3|[Long](../../Glossary/vbe-glossary.md#long-data-type) integer|
-|**vbSingle**|4|[Single](../../Glossary/vbe-glossary.md#single-data-type) value (single-precision floating-point number)|
-|**vbDouble**|5|[Double](../../Glossary/vbe-glossary.md#double-data-type) value (double-precision floating-point number)|
+|**vbSingle**|4|[Single](../../Glossary/vbe-glossary.md#single-data-type) value <sup>_(single-precision floating-point number)_</sup>|
+|**vbDouble**|5|[Double](../../Glossary/vbe-glossary.md#double-data-type) value <sup>_(double-precision floating-point number)_</sup>|
 |**vbCurrency**|6|[Currency](../../Glossary/vbe-glossary.md#currency-data-type) value|
 |**vbDate**|7|[Date](../../Glossary/vbe-glossary.md#date-data-type) value|
 |**vbString**|8|[String](../../Glossary/vbe-glossary.md#string-data-type)|
-|**vbObject**|9|A (VBA) [object](../../glossary/vbe-glossary.md#object) with a particular interface chosen, where the chosen interface directly exposes COM's **IDispatch** interface. That the object implements **IDispatch** means that the VBA COM object that encompasses the passed object reference, is an (OLE) [Automation object](../../Glossary/vbe-glossary.md#automation-object-1). That the **chosen** interface exposes **IDispatch** means that the particular object reference that has been passed, can be directly used with (OLE) Automation technology. **<BR>If this constant is returned, it is possible to cast the argument to the [**Object**](../../reference/user-interface-help/object-data-type.md) data type.|
-|**vbError**|10|An [**Error**](../../reference/user-interface-help/cverr-function.md) value|
+|**vbObject**|9|A (VBA) [object](../../glossary/vbe-glossary.md#object) with a particular interface chosen, where the chosen interface directly exposes COM's **IDispatch** interface. &dagger;|
+|**vbError**|10|Has either of the following forms:<br><table><tr><td>i) An [**Error**](../../reference/user-interface-help/cverr-function.md) value.</td></tr><tr><td>ii) A value indicating a [_missing_](../../reference/user-interface-help/ismissing-function.md) [_optional_](/language/concepts/getting-started/understanding-named-arguments-and-optional-arguments.md) **Variant** argument of some procedure. \*</td></tr></table>|
 |**vbBoolean**|11|[Boolean](../../Glossary/vbe-glossary.md#boolean-data-type) value|
 |**vbVariant**|12|**Variant** (used for return value only when added to **vbArray** constant)|
-|**vbDataObject**|13|A (VBA) object not represented by the **vbObject** constant documented in this table. Such an object, like all VBA objects, is still a COM object. Like all COM objects and interfaces, such an object exposes COM's **IUnknown** interface. Not to be confused with [ActiveX Data Objects (ADO)](../../../access/concepts/activex-data-objects/set-properties-of-activex-data-objects-in-visual-basic.md) which is a database technology. **|
+|**vbDataObject**|13|A (VBA) object not represented by the **vbObject** constant documented in this table. &Dagger;|
 |**vbDecimal**|14|[Decimal](../../Glossary/vbe-glossary.md#decimal-data-type) value|
 |**vbByte**|17|[Byte](../../Glossary/vbe-glossary.md#byte-data-type) value|
-|**vbLongLong**|20|[LongLong](longlong-data-type.md) integer (valid on 64-bit platforms only)|
+|**vbLongLong**|20|[LongLong](longlong-data-type.md) integer <sup>_(valid on 64-bit platforms only)_</sup>|
 |**vbUserDefinedType**|36|A value of a [user-defined type](../../Glossary/vbe-glossary.md#user-defined-type)|
-|**vbArray**|8192|[Array](../../Glossary/vbe-glossary.md#array) (always added to another constant when returned by this function)|
+|**vbArray**|8192|[Array](../../Glossary/vbe-glossary.md#array) <sup>_(always added to another constant when returned by this function)_</sup>|
 
-<sup>* **Variant** special value.</sup> <BR><sup>** The glossary definition of [ActiveX object](../../Glossary/vbe-glossary.md#activex-object) in the VBA documentation on 7th April 2019 (current date), indicates that ActiveX objects are Automation objects. However, various developers instead use ActiveX as a synonym for the COM technology, meaning that those developers also class non-Automation COM objects as being a certain type of ActiveX object.</sup>
+
+<table>
+ <tr><td><sup>*</sup></td><td>
+  
+  **Variant** special value.</td></tr>
+ <tr><td><sup> &dagger;</sup></td><td>
+ 
+ That the object implements **IDispatch** means that the VBA COM object that encompasses the passed object reference, is an (OLE) [Automation object](../../Glossary/vbe-glossary.md#automation-object-1). That the **chosen** interface exposes **IDispatch** means that the particular object reference that has been passed, can be directly used with (OLE) Automation technology. <sup>&sect;</sup><BR>If this constant is returned, it is possible to cast the argument to the [**Object**](../../reference/user-interface-help/object-data-type.md) data type.</td></tr>
+ <tr><td><sup>&Dagger;</sup></td><td>
+ 
+ Such an object, like all VBA objects, is still a COM object. Like all COM objects and interfaces, such an object exposes COM's **IUnknown** interface. Not to be confused with [ActiveX Data Objects (ADO)](../../../access/concepts/activex-data-objects/set-properties-of-activex-data-objects-in-visual-basic.md) which is a database technology. <sup>&sect;</sup></td></tr>
+ <tr><td><sup>&sect;</sup></td><td>
+ 
+ The glossary definition of [ActiveX object](../../Glossary/vbe-glossary.md#activex-object) in the VBA documentation on 7th April 2019 (current date), indicates that ActiveX objects are Automation objects. However, various developers instead use ActiveX as a synonym for the COM technology, meaning that those developers also class non-Automation COM objects as being a certain type of ActiveX object.</td></tr>
+</table>
 
 > [!NOTE] 
 > These [constants](../../Glossary/vbe-glossary.md#constant) are specified by Visual Basic for Applications. The names can be used anywhere in your code in place of the actual values.
