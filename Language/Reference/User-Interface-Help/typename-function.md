@@ -27,7 +27,7 @@ The rules for what string is returned by **TypeName**, are shown in the followin
 
 |Argument|String returned|
 |:-----|:-----|
-|An [object](../../glossary/vbe-glossary.md#object) whose [object type](../../Glossary/vbe-glossary.md#object-type) is _objecttype_|_objecttype_|
+|An [object](../../glossary/vbe-glossary.md#object) whose [object type](../../Glossary/vbe-glossary.md#object-type) has been determined<br>by this function as being _objecttype_|_objecttype_|
 |A value of a [user-defined type](../../Glossary/vbe-glossary.md#user-defined-type) where the type<br>has name _udtype_|_udtype_|
 |[Byte](../../Glossary/vbe-glossary.md#byte-data-type) integer|"Byte"|
 |Integer of data-type [**Integer**](../../Glossary/vbe-glossary.md#integer-data-type)|"Integer"|
@@ -47,7 +47,7 @@ The rules for what string is returned by **TypeName**, are shown in the followin
 |[**Nothing**](nothing-keyword.md) value <sup>_(object-based argument not referring to an object)_</sup> <sup>\*</sup>|"Nothing"|
 
 <sup>*</sup> Special value. <sup>**</sup> Variant special value.<br>
-<sup>&dagger;</sup> Such objects include all non-Automation objects because non-Automation objects do not implement COM's **IDispatch** interface which is at least partly needed for this function.
+<sup>&dagger;</sup> Such objects include all objects that do not implement the **GetTypeInfo** function from COM's **IDispatch** interface.
 
 If _arg_ is an [array](../../Glossary/vbe-glossary.md#array), the returned string is a string from the above table (indicating the array type) with empty parentheses appended to it. For example, if _arg_ is an array of integers, **TypeName** returns "Integer()".
 
