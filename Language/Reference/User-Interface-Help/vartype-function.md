@@ -42,7 +42,7 @@ Return value is either:
 |**vbDate**|7|[Date](../../Glossary/vbe-glossary.md#date-data-type) value|
 |**vbString**|8|[String](../../Glossary/vbe-glossary.md#string-data-type)|
 |**vbObject**|9|A (VBA) [object](../../glossary/vbe-glossary.md#object) with a particular interface chosen, where the chosen interface directly exposes COM's **IDispatch** interface. &dagger;|
-|**vbError**|10|Has either of the following forms:<br><table><tr><td>i) An [**Error**](../../reference/user-interface-help/cverr-function.md) value.</td></tr><tr><td>ii) A value indicating a [_missing_](../../reference/user-interface-help/ismissing-function.md) [_optional_](../../concepts/getting-started/understanding-named-arguments-and-optional-arguments.md) **Variant** argument of some procedure. \*</td></tr></table>|
+|**vbError**|10|Has either of the following forms:<br><table><tr><td>i) An [**Error**](../../reference/user-interface-help/cverr-function.md) value.</td></tr><tr><td>ii) A value indicating a [_missing_](../../reference/user-interface-help/ismissing-function.md) [_optional_](../../concepts/getting-started/understanding-named-arguments-and-optional-arguments.md) **Variant** argument of some procedure, that hasn't yet had a conventional value assignment (the "missing" flag bit will have been set). \*</td></tr></table>|
 |**vbBoolean**|11|[Boolean](../../Glossary/vbe-glossary.md#boolean-data-type) value|
 |**vbVariant**|12|**Variant** (used for return value only when added to **vbArray** constant)|
 |**vbDataObject**|13|A (VBA) object not represented by the **vbObject** constant documented in this table. &Dagger;|
