@@ -12,41 +12,44 @@ localization_priority: Normal
 
 # TypeName function
 
-Returns a **String** that provides information about a [variable](../../Glossary/vbe-glossary.md#variable).
+Returns a **String** that provides type & data-status information concerning the passed [argument](../../Glossary/vbe-glossary.md#argument).
 
 ## Syntax
 
-**TypeName**(_varname_) 
+**TypeName**(_arg_) 
 
-The required _varname_ [argument](../../Glossary/vbe-glossary.md#argument) is any [Variant](../../Glossary/vbe-glossary.md#variant-data-type).
+The required _arg_ argument must be of the [**Variant**](../../Glossary/vbe-glossary.md#variant-data-type) type, or be able to be [coerced](../../Reference/User-Interface-Help/data-type-summary.md#implicit-conversions--casts) to it.
+
 
 ## Remarks
 
-The string returned by **TypeName** can be any one of the following:
+The rules for what string is returned by **TypeName**, are shown in the following table:
 
-|String returned|Variable|
+|Argument|String returned|
 |:-----|:-----|
-|_objecttype_|An [object](../../glossary/vbe-glossary.md#object) whose [object type](../../Glossary/vbe-glossary.md#object-type) is _objecttype_|
-|_udtype_|A value of a [user-defined type](../../Glossary/vbe-glossary.md#user-defined-type) where the type has name _udtype_|
-|"Byte"|[Byte](../../Glossary/vbe-glossary.md#byte-data-type) value|
-|"Integer"|Integer of data-type [**Integer**](../../Glossary/vbe-glossary.md#integer-data-type)|
-|"Long"|[Long](../../Glossary/vbe-glossary.md#long-data-type) integer|
-|"Single"|[Single](../../Glossary/vbe-glossary.md#single-data-type) value (single-precision floating-point number)|
-|"Double"|[Double](../../Glossary/vbe-glossary.md#double-data-type) value (double-precision floating-point number)|
-|"Currency"|[Currency](../../Glossary/vbe-glossary.md#currency-data-type) value|
-|"Decimal"|[Decimal](../../Glossary/vbe-glossary.md#decimal-data-type) value|
-|"Date"|[Date](../../Glossary/vbe-glossary.md#date-data-type) value|
-|"String"|[String](../../Glossary/vbe-glossary.md#string-data-type)|
-|"Boolean"|[Boolean](../../Glossary/vbe-glossary.md#boolean-data-type) value|
-|"Error"|An [**Error**](../../reference/user-interface-help/cverr-function.md) value|
-|"Empty"|[**Empty**](../../Glossary/vbe-glossary.md#empty) value (variable uninitialized) \*\*|
-|"Null"|[**Null**](../../Glossary/vbe-glossary.md#null) value (no valid data) \*\*|
-|"Unknown"|An [object](../../glossary/vbe-glossary.md#object) whose type is unknown|
-|"Nothing"|[**Nothing**](nothing-keyword.md) value (object variable that doesn't refer to an object) \*|
+|An [object](../../glossary/vbe-glossary.md#object) whose [object type](../../Glossary/vbe-glossary.md#object-type) is _objecttype_|_objecttype_|
+|A value of a [user-defined type](../../Glossary/vbe-glossary.md#user-defined-type) where the type<br>has name _udtype_|_udtype_|
+|[Byte](../../Glossary/vbe-glossary.md#byte-data-type) integer|"Byte"|
+|Integer of data-type [**Integer**](../../Glossary/vbe-glossary.md#integer-data-type)|"Integer"|
+|[Long](../../Glossary/vbe-glossary.md#long-data-type) integer|"Long"|
+|[LongLong](../../reference/user-interface-help/longlong-data-type.md) integer|"LongLong"|
+|[Single](../../Glossary/vbe-glossary.md#single-data-type) value <sup>_(single-precision floating-point number)_</sup>|"Single"|
+|[Double](../../Glossary/vbe-glossary.md#double-data-type) value <sup>_(double-precision floating-point number)_</sup>|"Double"|
+|[Currency](../../Glossary/vbe-glossary.md#currency-data-type) value|"Currency"|
+|[Decimal](../../Glossary/vbe-glossary.md#decimal-data-type) value|"Decimal"|
+|[Date](../../Glossary/vbe-glossary.md#date-data-type) value|"Date"|
+|[String](../../Glossary/vbe-glossary.md#string-data-type)|"String"|
+|[Boolean](../../Glossary/vbe-glossary.md#boolean-data-type) value|"Boolean"|
+|Argument can have either of the following forms:<br><table><tr><td>i) An [**Error**](../../reference/user-interface-help/cverr-function.md) value.</td></tr><tr><td>ii) A value indicating that the passed argument<br>corresponds to a [_missing_](../../reference/user-interface-help/ismissing-function.md) [_optional_](/language/concepts/getting-started/understanding-named-arguments-and-optional-arguments.md) **Variant** argument<br>of some procedure. <sup>\*\*</sup></td></tr></table>|"Error"|
+|[**Empty**](../../Glossary/vbe-glossary.md#empty) value <sup>_(represents uninitialized variable)_</sup> <sup>\*\*</sup>|"Empty"|
+|[**Null**](../../Glossary/vbe-glossary.md#null) value <sup>_(represents no valid data)_</sup> <sup>\*\*</sup>|"Null"|
+|An [object](../../glossary/vbe-glossary.md#object) whose type name cannot be determined<br>with this function <sup>&dagger;</sup>|"Unknown"|
+|[**Nothing**](nothing-keyword.md) value <sup>_(object-based argument not referring to an object)_</sup> <sup>\*</sup>|"Nothing"|
 
-<sup>* Special value. ** Variant special value.</sup>
+<sup>*</sup> Special value. <sup>**</sup> Variant special value.<br>
+<sup>&dagger;</sup> Such objects include all non-Automation objects because non-Automation objects do not implement COM's **IDispatch** interface which is at least partly needed for this function.
 
-If _varname_ is an [array](../../Glossary/vbe-glossary.md#array), the returned string is a string from the above table (indicating the array type) with empty parentheses appended to it. For example, if _varname_ is an array of integers, **TypeName** returns "Integer()".
+If _arg_ is an [array](../../Glossary/vbe-glossary.md#array), the returned string is a string from the above table (indicating the array type) with empty parentheses appended to it. For example, if _arg_ is an array of integers, **TypeName** returns "Integer()".
 
 ## Example
 
