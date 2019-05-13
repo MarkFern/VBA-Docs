@@ -50,7 +50,7 @@ The following table shows the supported intrinsic [data types](../../Glossary/vb
 |**Variant** <br>_(with objects not directly of the **Object** type)_|Unknown|Specified by object type|
 |**Variant** _(with [user-defined type](../../How-to/user-defined-data-type.md))_|Unknown|**User-defined type** must be accessed through a [VBE library reference](../../reference/user-interface-help/references-dialog-box.md); range specified for the non-intrinsic **user-defined type** data type (in previous table) also applies.|
 |**Variant** <BR>_(with special values [**Empty**](../../Glossary/vbe-glossary.md#empty) or [**Null**](../../Glossary/vbe-glossary.md#null))_|Unknown|Just the two special values.|
-|**Variant** <br>_(with special [**Error** sub&#x2011;type](../../reference/user-interface-help/cverr-function.md) values)_|Unknown|Corresponds to valid error numbers|
+|**Variant** <br>_(with special [**Error** sub&#x2011;type](../../reference/user-interface-help/cverr-function.md) values)_|Unknown|Corresponds to valid [error numbers](../../glossary/vbe-glossary.md#error-number)|
 
 
 <br/>
