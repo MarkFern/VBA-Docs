@@ -39,7 +39,7 @@ The following table shows the supported intrinsic [data types](../../Glossary/vb
 |**[Integer](integer-data-type.md)**|2 bytes|-32,768 to 32,767|
 |**[Long](long-data-type.md)** <sup>_(Long integer)_<sup>|4 bytes|-2,147,483,648 to 2,147,483,647|
 |**[LongLong](longlong-data-type.md)** <sup>_(LongLong integer)_<sup>|8 bytes|-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807<br/><br/>Valid on 64-bit platforms only.|
-|**[LongPtr](longptr-data-type.md)** <BR><sup>_(Long integer on 32-bit systems, LongLong integer on 64-bit systems)_<sup>|4 bytes on 32-bit systems<br/><br/>8 bytes on 64-bit systems|-2,147,483,648 to 2,147,483,647 on 32-bit systems<br/><br/>-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 on 64-bit systems|
+|**[LongPtr](longptr-data-type.md)** <BR><sup>_(Long integer on 32-bit systems,<BR>LongLong integer on 64-bit systems)_<sup>|4 bytes on 32-bit systems<br/><br/>8 bytes on 64-bit systems|-2,147,483,648 to 2,147,483,647 on 32-bit systems<br/><br/>-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 on 64-bit systems|
 |**[Object](object-data-type.md)**|4 bytes|Any **Object** reference|
 |**[Single](single-data-type.md)** <BR><sup>_(single-precision floating-point)_</sup>|4 bytes|-3.402823E38 to -1.401298E-45 for negative values<br/><br/>1.401298E-45 to 3.402823E38 for positive values|
 |**[String](string-data-type.md)** _(variable-length)_|10 bytes + string length|0 to approximately 2 billion|
@@ -103,7 +103,7 @@ Even though strictly speaking these casts always take place between object types
 |:--------|:-----------|
 |The&nbsp;**Object**&nbsp;type|Automation-compatible object reference, or can be downcast to such a reference|
 |An&nbsp;[interface](../../Glossary/vbe-glossary.md#interface)&nbsp;type|Object type defined using the [**Implements**](../../reference/user-interface-help/implements-statement.md) statement to specify implementation of the interface|
-|A specific object type<BR><sup>_(not the **Object** type)_</sup>|Object type defined using the **Implements** statement to specify implementation of the interface derived from the variable type|
+|A&nbsp;specific&nbsp;object&nbsp;type<BR><sup>_(not the **Object** type)_</sup>|Object type defined using the **Implements** statement to specify implementation of the interface derived from the variable type|
 
 ##### Operations involving a cast & a conversion
 
