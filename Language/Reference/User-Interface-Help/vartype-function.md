@@ -152,6 +152,7 @@ MyCheck = varType(NullVar)   ' Returns 1 (vbNull).
 
 ## See also
 
+- [VarType constants](../../Concepts/Getting-Started/vartype-constants.md)
 - [Functions (Visual Basic for Applications)](../functions-visual-basic-for-applications.md)
 
 [!include[Support and feedback](~/includes/feedback-boilerplate.md)]
