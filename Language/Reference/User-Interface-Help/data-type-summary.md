@@ -32,16 +32,16 @@ The following table shows the supported intrinsic [data types](../../Glossary/vb
 |:--------|:-----------|:----|
 |**[Boolean](boolean-data-type.md)**|2 bytes|**True** or **False**|
 |**[Byte](byte-data-type.md)**|1 byte|0 to 255|
-|**[Currency](currency-data-type.md)** _(scaled integer)_|8 bytes|-922,337,203,685,477.5808 to 922,337,203,685,477.5807|
+|**[Currency](currency-data-type.md)** <sup>_(scaled integer)_</sup>|8 bytes|-922,337,203,685,477.5808 to 922,337,203,685,477.5807|
 |**[Date](date-data-type.md)**|8 bytes|January 1, 100, to December 31, 9999|
 |**[Decimal](decimal-data-type.md)**|14 bytes|+/-79,228,162,514,264,337,593,543,950,335 with no decimal point<br/><br/>+/-7.9228162514264337593543950335 with 28 places to the right of the decimal<br/><br/>Smallest non-zero number is+/-0.0000000000000000000000000001|
-|**[Double](double-data-type.md)** <BR>_(double-precision floating-point)_|8 bytes|-1.79769313486231E308 to -4.94065645841247E-324 for negative values<br/><br/>4.94065645841247E-324 to 1.79769313486232E308 for positive values|
+|**[Double](double-data-type.md)** <BR><sup>_(double-precision floating-point)_</sup>|8 bytes|-1.79769313486231E308 to -4.94065645841247E-324 for negative values<br/><br/>4.94065645841247E-324 to 1.79769313486232E308 for positive values|
 |**[Integer](integer-data-type.md)**|2 bytes|-32,768 to 32,767|
-|**[Long](long-data-type.md)** _(Long integer)_|4 bytes|-2,147,483,648 to 2,147,483,647|
-|**[LongLong](longlong-data-type.md)** _(LongLong integer)_|8 bytes|-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807<br/><br/>Valid on 64-bit platforms only.|
-|**[LongPtr](longptr-data-type.md)** <BR>_(Long integer on 32-bit systems, LongLong integer on 64-bit systems)_|4 bytes on 32-bit systems<br/><br/>8 bytes on 64-bit systems|-2,147,483,648 to 2,147,483,647 on 32-bit systems<br/><br/>-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 on 64-bit systems|
+|**[Long](long-data-type.md)** <sup>_(Long integer)_<sup>|4 bytes|-2,147,483,648 to 2,147,483,647|
+|**[LongLong](longlong-data-type.md)** <sup>_(LongLong integer)_<sup>|8 bytes|-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807<br/><br/>Valid on 64-bit platforms only.|
+|**[LongPtr](longptr-data-type.md)** <BR><sup>_(Long integer on 32-bit systems, LongLong integer on 64-bit systems)_<sup>|4 bytes on 32-bit systems<br/><br/>8 bytes on 64-bit systems|-2,147,483,648 to 2,147,483,647 on 32-bit systems<br/><br/>-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 on 64-bit systems|
 |**[Object](object-data-type.md)**|4 bytes|Any **Object** reference|
-|**[Single](single-data-type.md)** <BR>_(single-precision floating-point)_|4 bytes|-3.402823E38 to -1.401298E-45 for negative values<br/><br/>1.401298E-45 to 3.402823E38 for positive values|
+|**[Single](single-data-type.md)** <BR><sup>_(single-precision floating-point)_</sup>|4 bytes|-3.402823E38 to -1.401298E-45 for negative values<br/><br/>1.401298E-45 to 3.402823E38 for positive values|
 |**[String](string-data-type.md)** _(variable-length)_|10 bytes + string length|0 to approximately 2 billion|
 |**String** _(fixed-length)_|Length of string|1 to approximately 65,400|
 |**[Variant](variant-data-type.md)** _(with numbers)_|16 bytes|Any numeric value up to the range of a **Double**|
@@ -103,7 +103,7 @@ Even though strictly speaking these casts always take place between object types
 |:--------|:-----------|
 |The&nbsp;**Object**&nbsp;type|Automation-compatible object reference, or can be downcast to such a reference|
 |An&nbsp;[interface](../../Glossary/vbe-glossary.md#interface)&nbsp;type|Object type defined using the [**Implements**](../../reference/user-interface-help/implements-statement.md) statement to specify implementation of the interface|
-|A specific object type (not **Object**)|Object type defined using the **Implements** statement to specify implementation of the interface derived from the variable type|
+|A specific object type<BR><sup>_(not the **Object** type)_</sup>|Object type defined using the **Implements** statement to specify implementation of the interface derived from the variable type|
 
 ##### Operations involving a cast & a conversion
 
@@ -133,7 +133,7 @@ Even though strictly speaking these casts always take place between object types
 |:---------|:-----------|
 |The&nbsp;**Object**&nbsp;type|Automation-compatible object reference, or can be downcast to such a reference|
 |An&nbsp;interface&nbsp;type|Object type defined using the **Implements** statement to specify implementation of the interface|
-|A specific object type (not **Object**)|Object type defined using the **Implements** statement where the statement specifies implementation of the interface derived from the parameter type|
+|A&nbsp;specific&nbsp;object&nbsp;type<BR><sup>_(not the **Object** type)_</sup>|Object type defined using the **Implements** statement where the statement specifies implementation of the interface derived from the parameter type|
 
 ##### Operations involving a cast & a conversion
 
