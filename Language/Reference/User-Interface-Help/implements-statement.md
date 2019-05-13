@@ -17,7 +17,7 @@ Specifies an [interface](../../Glossary/vbe-glossary.md#interface) that will be 
 
 **Implements** { _InterfaceName_ | _ClassName_ }
 
-The required _InterfaceName_ or _ClassName_ is the name of an interface, or of a class from which an interface is automatically derived, where the interface's **Public** prototypes for determining [methods](../../Glossary/vbe-glossary.md#method) & [properties](../../Glossary/vbe-glossary.md#property), will be implemented by the corresponding methods in the Visual Basic class module in which the **Implements** statement has been used.
+The required _InterfaceName_ or _ClassName_ is the name of an interface, or of a class from which an interface is automatically derived, where the interface's [**Public**](../../reference/keywords-visual-basic-for-applications.md#PublicKeyword) prototypes for determining [methods](../../Glossary/vbe-glossary.md#method) & [properties](../../Glossary/vbe-glossary.md#property), will be implemented by the corresponding [procedures](../../glossary/vbe-glossary.md#procedure) in the Visual Basic class module in which the **Implements** statement has been used.
 
 ## Remarks
 
@@ -30,7 +30,7 @@ When a Visual Basic class implements an interface, the implementing Visual Basic
 >
 > Interface inheritance can, of a sort, be mimicked using the VBA language through the use of the **Implements** statement (although strictly speaking it is interface implementation rather than interface inheritance). 
 
-When implementing an interface where the implementation is enforced using the **Implements** statement, you must code for all the **Public** interface prototypes that determine properties & methods. For each **Public** property prototype of the interface, you need to implement both a [**Property Get** method](../../reference/user-interface-help/property-get-statement.md) & an appropriate value-setting method (either a [**Property Let** method](../../reference/user-interface-help/property-let-statement.md) or a [**Property Set** method](../../reference/user-interface-help/property-set-statement.md)) for the related property. For **Public** method prototypes of the interface, you simply code functions for the interface's **Public** function prototypes, sub procedures for the interface's **Public** sub-procedure prototypes, & corresponding property procedures for the interface's **Public** property-procedure prototypes, in the implementation.
+When implementing an interface where the implementation is enforced using the **Implements** statement, you must code for all the **Public** interface prototypes that determine properties & methods. For each [**Public** variable](../../reference/user-interface-help/public-statement.md) prototype of the interface, you need to implement a [**Property Get** method](../../reference/user-interface-help/property-get-statement.md) & one or more appropriate value-setting methods (a [**Property Let** method](../../reference/user-interface-help/property-let-statement.md), a [**Property Set** method](../../reference/user-interface-help/property-set-statement.md), or both) for the related property. For **Public** procedure prototypes of the interface, you simply code functions for the interface's **Public** function prototypes, sub procedures for the interface's **Public** sub-procedure prototypes, & corresponding property procedures for the interface's **Public** property-procedure prototypes, in the implementation.
 
 The name of each implementing member needs to be text composed of the following three parts in the order specified: _interface name_; an underscore character ('\_'); _name of corresponding prototype member being implemented_. The parameter definitions & return-value type of each implementing member must match those of the corresponding interface prototype member being implemented.
 
@@ -220,6 +220,7 @@ End Property
 
 ## See also
 
+- [Implements Directive in VBA Language Specification](https://docs.microsoft.com/en-gb/openspecs/microsoft_general_purpose_programming_languages/ms-vbal/da526020-9b41-44a6-a5f3-47a7ac255a9e)
 - [Data types](data-type-summary.md)
 - [Statements](../statements.md)
 
