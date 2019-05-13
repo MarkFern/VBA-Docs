@@ -409,7 +409,7 @@ An _interface_ specifies a specific way in which one can interact with an object
 
 An _interface_'s definition specifies a particular set of [method](#method) headers & [property](#property) access definitions (both termed prototypes), that in turn specify the method calls & property references that can be used on objects implementing the _interface_. When it is said that a particular _interface_ of an object is being used, it is meant that such method calls & property references specified by the _interface_, & in the context of the _interface_, are being used on the object.
 
-The prototypes of an _interface_ are said to represent the members that the _interface_ encapsulates. _Interfaces_ never supply procedure implementations (i.e. procedure bodies in _interface_ definitions are absent.) 
+The prototypes of an _interface_ are said to represent the members that the _interface_ encapsulates. _Interfaces_ never supply procedure implementations (i.e. procedure bodies in _interface_ definitions are either absent or not applicable.) 
 
 An _interface_ definition created using the VBE, is defined in a [class module](#class-module). Such _interfaces_ are classified as classes within the VBE, and in programming terms, can also be used as though they were [classes](#class). _Interfaces_ defined in a [type-library](#type-library) definition specifically using the 'interface' keyword of the Interface Definition Language (IDL), that are accessed using [library references](../reference/user-interface-help/references-dialog-box.md), are also classified as classes within the VBE but cannot be instantiated.
 
