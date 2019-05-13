@@ -40,14 +40,14 @@ The rules for what string is returned by **TypeName**, are shown in the followin
 |[Date](../../Glossary/vbe-glossary.md#date-data-type) value|"Date"|
 |[String](../../Glossary/vbe-glossary.md#string-data-type)|"String"|
 |[Boolean](../../Glossary/vbe-glossary.md#boolean-data-type) value|"Boolean"|
-|Argument can have either of the following forms:<br><table><tr><td>i) An [**Error**](../../reference/user-interface-help/cverr-function.md) value.</td></tr><tr><td>ii) The [parameter](../../glossary/vbe-glossary.md#parameter) for a [_missing_](../../reference/user-interface-help/ismissing-function.md) [_optional_](../../concepts/getting-started/understanding-named-arguments-and-optional-arguments.md) **Variant**<br>argument of some procedure, that hasn't yet had<br>a conventional value assignment (the "missing"<br>flag bit will have been set), or a variable holding<br>the value of such a parameter. <sup>\*\*</sup></td></tr></table>|"Error"|
-|[**Empty**](../../Glossary/vbe-glossary.md#empty) value <sup>_(represents uninitialized variable)_</sup> <sup>\*\*</sup>|"Empty"|
-|[**Null**](../../Glossary/vbe-glossary.md#null) value <sup>_(represents no valid data)_</sup> <sup>\*\*</sup>|"Null"|
-|An [object](../../glossary/vbe-glossary.md#object) whose type name cannot be determined<br>with this function <sup>&dagger;</sup>|"Unknown"|
-|[**Nothing**](nothing-keyword.md) value <sup>_(object-based argument not referring to an object)_</sup> <sup>\*</sup>|"Nothing"|
+|Argument can have either of the following forms:<br><table><tr><td>i) An [**Error**](../../reference/user-interface-help/cverr-function.md) value.</td></tr><tr><td>ii) The [parameter](../../glossary/vbe-glossary.md#parameter) for a [_missing_](../../reference/user-interface-help/ismissing-function.md) [_optional_](../../concepts/getting-started/understanding-named-arguments-and-optional-arguments.md) **Variant**<br>argument of some procedure, that hasn't yet had<br>a conventional value assignment (the "missing"<br>flag bit will have been set), or a variable holding<br>the value of such a parameter. <sup>[\*\*](#doubleasteriskfootnote "Variant special value.")</sup></td></tr></table>|"Error"|
+|[**Empty**](../../Glossary/vbe-glossary.md#empty) value <sup>_(represents uninitialized variable)_</sup> <sup>[\*\*](#doubleasteriskfootnote "Variant special value.")</sup>|"Empty"|
+|[**Null**](../../Glossary/vbe-glossary.md#null) value <sup>_(represents no valid data)_</sup> <sup>[\*\*](#doubleasteriskfootnote "Variant special value.")</sup>|"Null"|
+|An [object](../../glossary/vbe-glossary.md#object) whose type name cannot be determined<br>with this function <sup>[&dagger;](#daggerfootnote "Such objects include all objects that do not implement the GetTypeInfo function from COM's IDispatch interface.")</sup>|"Unknown"|
+|[**Nothing**](nothing-keyword.md) value <sup>_(object-based argument not referring to an object)_</sup> <sup>[\*](#asteriskfootnote "Special value.")</sup>|"Nothing"|
 
-<sup>*</sup> Special value. <sup>**</sup> Variant special value.<br>
-<sup>&dagger;</sup> Such objects include all objects that do not implement the **GetTypeInfo** function from COM's **IDispatch** interface.
+<a name="asteriskfootnote"><sup>*</sup></a> Special value. <a name="doubleasteriskfootnote"><sup>**</sup></a> **Variant** special value.<br>
+<a name="daggerfootnote"><sup>&dagger;</sup></a> Such objects include all objects that do not implement the **GetTypeInfo** function from COM's **IDispatch** interface.
 
 If _arg_ is an [array](../../Glossary/vbe-glossary.md#array), the returned string is a string from the above table (indicating the array type) with empty parentheses appended to it. For example, if _arg_ is an array of integers, **TypeName** returns "Integer()".
 
