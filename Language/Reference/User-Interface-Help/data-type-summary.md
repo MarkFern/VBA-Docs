@@ -97,7 +97,7 @@ The following two tables summarize several implicit type conversions & casts tha
 
 ##### Casts
 
-Even though strictly speaking these casts always take place between object types or between an object type & the **Object** type, the style of casting is a kind of interface casting (not object casting.) [*](#asteriskfootnote)
+Even though strictly speaking these casts always take place between object types or between an object type & the **Object** type, the style of casting is a kind of interface casting (not object casting.) [*](#asteriskfootnote "VBA doesn't provide object inheritance as a standard mechanism, meaning that conventional object-oriented programming (OOP) object casting isn't fundamentally supported.")
 
 |Variable type|Value form|
 |:--------|:-----------|
@@ -127,7 +127,7 @@ The implicit conversions & casts listed in the following two tables, convert or 
 
 ##### Casts
 
-Even though strictly speaking these casts always take place between object types or between an object type & the **Object** type, the style of casting is a kind of interface casting (not object casting.) [*](#asteriskfootnote)
+Even though strictly speaking these casts always take place between object types or between an object type & the **Object** type, the style of casting is a kind of interface casting (not object casting.) [*](#asteriskfootnote "VBA doesn't provide object inheritance as a standard mechanism, meaning that conventional object-oriented programming (OOP) object casting isn't fundamentally supported.")
 
 |Parameter&nbsp;type|Argument form|
 |:---------|:-----------|
