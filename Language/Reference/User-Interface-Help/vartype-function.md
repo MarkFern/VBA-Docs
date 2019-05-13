@@ -32,8 +32,8 @@ Return value is either:
 
 |Constant|Value|Description|
 |:-----|:-----|:-----|
-|**vbEmpty**|0|[**Empty**](../../Glossary/vbe-glossary.md#empty) value <sup>_(represents uninitialized variable)_</sup> \*|
-|**vbNull**|1|[**Null**](../../Glossary/vbe-glossary.md#null) value <sup>_(represents no valid data)_</sup> \*|
+|**vbEmpty**|0|[**Empty**](../../Glossary/vbe-glossary.md#empty) value <sup>_(represents uninitialized variable)_</sup> [\*](#asteriskfootnote "Variant special value.")|
+|**vbNull**|1|[**Null**](../../Glossary/vbe-glossary.md#null) value <sup>_(represents no valid data)_</sup> [\*](#asteriskfootnote  "Variant special value.")|
 |**vbInteger**|2|Integer of data type [**Integer**](../../Glossary/vbe-glossary.md#integer-data-type)|
 |**vbLong**|3|[Long](../../Glossary/vbe-glossary.md#long-data-type) integer|
 |**vbSingle**|4|[Single](../../Glossary/vbe-glossary.md#single-data-type) value <sup>_(single-precision floating-point number)_</sup>|
@@ -41,11 +41,11 @@ Return value is either:
 |**vbCurrency**|6|[Currency](../../Glossary/vbe-glossary.md#currency-data-type) value|
 |**vbDate**|7|[Date](../../Glossary/vbe-glossary.md#date-data-type) value|
 |**vbString**|8|[String](../../Glossary/vbe-glossary.md#string-data-type)|
-|**vbObject**|9|A (VBA) [object](../../glossary/vbe-glossary.md#object) with a particular interface chosen, where the chosen interface directly exposes COM's **IDispatch** interface. &dagger;|
-|**vbError**|10|Has either of the following forms:<br><table><tr><td>i) An [**Error**](../../reference/user-interface-help/cverr-function.md) value.</td></tr><tr><td>ii) The [parameter](../../glossary/vbe-glossary.md#parameter) for a [_missing_](../../reference/user-interface-help/ismissing-function.md) [_optional_](../../concepts/getting-started/understanding-named-arguments-and-optional-arguments.md) **Variant** argument of some procedure, that hasn't yet had a conventional value assignment (the "missing" flag bit will have been set), or a variable holding the value of such a parameter. \*</td></tr></table>|
+|**vbObject**|9|A (VBA) [object](../../glossary/vbe-glossary.md#object) with a particular interface chosen, where the chosen interface directly exposes COM's **IDispatch** interface. [&dagger;](#singledagger "That the object implements IDispatch means that the VBA COM object that encompasses the passed object reference, is an (OLE) Automation object. That the chosen interface exposes IDispatch means that the particular object reference that has been passed, can be directly used with (OLE) Automation technology. If this constant is returned, it is possible to cast the argument to the Object data type.")|
+|**vbError**|10|Has either of the following forms:<br><table><tr><td>i) An [**Error**](../../reference/user-interface-help/cverr-function.md) value.</td></tr><tr><td>ii) The [parameter](../../glossary/vbe-glossary.md#parameter) for a [_missing_](../../reference/user-interface-help/ismissing-function.md) [_optional_](../../concepts/getting-started/understanding-named-arguments-and-optional-arguments.md) **Variant** argument of some procedure, that hasn't yet had a conventional value assignment (the "missing" flag bit will have been set), or a variable holding the value of such a parameter. [\*](#asteriskfootnote "Variant special value.")</td></tr></table>|
 |**vbBoolean**|11|[Boolean](../../Glossary/vbe-glossary.md#boolean-data-type) value|
 |**vbVariant**|12|**Variant** (used for return value only when added to **vbArray** constant)|
-|**vbDataObject**|13|A (VBA) object not represented by the **vbObject** constant documented in this table. &Dagger;|
+|**vbDataObject**|13|A (VBA) object not represented by the **vbObject** constant documented in this table. [&Dagger;](#doubledaggerfootnote "Such an object, like all VBA objects, is still a COM object. Like all COM objects and interfaces, such an object exposes COM's IUnknown interface. Not to be confused with ActiveX Data Objects (ADO) which is a database technology.")|
 |**vbDecimal**|14|[Decimal](../../Glossary/vbe-glossary.md#decimal-data-type) value|
 |**vbByte**|17|[Byte](../../Glossary/vbe-glossary.md#byte-data-type) value|
 |**vbLongLong**|20|[LongLong](longlong-data-type.md) integer <sup>_(valid on 64-bit platforms only)_</sup>|
@@ -54,16 +54,16 @@ Return value is either:
 
 
 <table>
- <tr><td><sup>*</sup></td><td>
+ <tr><td><a name="asteriskfootnote"><sup>*</sup></a></td><td>
   
   **Variant** special value.</td></tr>
- <tr><td><sup> &dagger;</sup></td><td>
+ <tr><td><a name="singledagger"><sup>&dagger;</sup></a></td><td>
  
- That the object implements **IDispatch** means that the VBA COM object that encompasses the passed object reference, is an (OLE) [Automation object](../../Glossary/vbe-glossary.md#automation-object-1). That the **chosen** interface exposes **IDispatch** means that the particular object reference that has been passed, can be directly used with (OLE) Automation technology. <sup>&sect;</sup><BR>If this constant is returned, it is possible to cast the argument to the [**Object**](../../reference/user-interface-help/object-data-type.md) data type.</td></tr>
- <tr><td><sup>&Dagger;</sup></td><td>
+ That the object implements **IDispatch** means that the VBA COM object that encompasses the passed object reference, is an (OLE) [Automation object](../../Glossary/vbe-glossary.md#automation-object-1). That the **chosen** interface exposes **IDispatch** means that the particular object reference that has been passed, can be directly used with (OLE) Automation technology. <sup>[&sect;](#sectionfootnote)</sup><BR>If this constant is returned, it is possible to cast the argument to the [**Object**](../../reference/user-interface-help/object-data-type.md) data type.</td></tr>
+ <tr><td><a name="doubledaggerfootnote"><sup>&Dagger;</sup></a></td><td>
  
- Such an object, like all VBA objects, is still a COM object. Like all COM objects and interfaces, such an object exposes COM's **IUnknown** interface. Not to be confused with [ActiveX Data Objects (ADO)](../../../access/concepts/activex-data-objects/set-properties-of-activex-data-objects-in-visual-basic.md) which is a database technology. <sup>&sect;</sup></td></tr>
- <tr><td><sup>&sect;</sup></td><td>
+ Such an object, like all VBA objects, is still a COM object. Like all COM objects and interfaces, such an object exposes COM's **IUnknown** interface. Not to be confused with [ActiveX Data Objects (ADO)](../../../access/concepts/activex-data-objects/set-properties-of-activex-data-objects-in-visual-basic.md) which is a database technology. <sup>[&sect;](#sectionfootnote)</sup></td></tr>
+ <tr><td><a name="sectionfootnote"><sup>&sect;</sup></a></td><td>
  
  The glossary definition for [ActiveX object](../../Glossary/vbe-glossary.md#activex-object) in the VBA documentation on 7th April 2019 (current date), indicates that ActiveX objects are Automation objects. However, various developers instead use ActiveX as a synonym for the COM technology, meaning that those developers also class non-Automation COM objects as being a certain type of ActiveX object.</td></tr>
 </table>
