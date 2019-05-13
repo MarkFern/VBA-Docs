@@ -829,8 +829,10 @@ Variable names must begin with an alphabetic character, must be unique within th
 
 ## Variant data type
 
-A special data type that can contain numeric, string, or date data as well as user-defined types accessed through [VBE library references](../reference/user-interface-help/references-dialog-box.md), all object types, the **Variant** special value **Empty**, and the **Variant** special value **Null**. The **Variant** data type has a numeric storage size of 16 bytes and can contain data up to the range of a **Decimal**, or a character storage size of 22 bytes (plus string length), and can store any character text. The [**VarType** function](../reference/user-interface-help/vartype-function.md) in conjunction with the [**IsObject** function](../reference/user-interface-help/isobject-function.md), can be used to find out how the data in a **Variant** is treated. All variables become **Variant** data types if not explicitly declared as some other data type. See [Variant data type page](../reference/user-interface-help/variant-data-type.md).
-
+A special data type that can contain numeric, string, or date data, as well as user-defined types accessed through [VBE library references](../reference/user-interface-help/references-dialog-box.md), all object types, the **Variant** special values **Empty** & **Null**, and **Error** values (currently **Error** values are also considered to be **Variant** special values, they can only be used when 'wrapped' as **Variant** data).<BR>
+The **Variant** data type has a numeric storage size of 16 bytes and can contain data up to the range of a **Decimal**, or a character storage size of 22 bytes (plus string length), and can store any character text.<BR>
+The [**VarType** function](../reference/user-interface-help/vartype-function.md) in conjunction with the [**IsObject** function](../reference/user-interface-help/isobject-function.md), can be used to find out how the data in a **Variant** is treated.<BR>
+All variables become **Variant** data types if not explicitly declared as some other data type. See [Variant data type page](../reference/user-interface-help/variant-data-type.md).
 
 
 ## variant expression
