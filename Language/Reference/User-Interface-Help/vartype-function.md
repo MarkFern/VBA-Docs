@@ -73,11 +73,17 @@ Return value is either:
 
 ## Remarks
 
+#### Objects
+
 If an object represented by the **vbObject** constant (constant documented in the above table) is passed, and has a parameterless default member (either a default property or default function), **VarType**(_object_) returns a value indicating the type of the default member's return value in the case that there is a return value, and the value of the **vbEmpty** constant when there is no return value. If an object is passed that doesn't fulfill this criteria, the constant **vbObject** or the constant **vbDataObject** is returned, the constant representing the object type.
 
 When passing the default object reference for objects/instances of [classes](../../Glossary/vbe-glossary.md#class) defined through [class modules](../../Glossary/vbe-glossary.md#class-module), **VarType** returns **vbObject** - this means such references directly support (OLE) Automation. Such references use the default interface of the respective object.
 
+#### Arrays
+
 The **VarType** function never returns the value for **vbArray** by itself. It is always added to some other value to indicate an array of a particular type. For example, the value returned for an array of integers is calculated as **vbInteger** + **vbArray**, or 8194. 
+
+#### Variant data
 
 The constant **vbVariant** is only returned in conjunction with **vbArray** to indicate that the argument to the **VarType** function is an array of type **Variant**.
 
