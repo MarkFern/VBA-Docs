@@ -47,7 +47,7 @@ Return value is either:
 |**vbVariant**|12|**Variant** (used for return value only when added to **vbArray** constant)|
 |**vbDataObject**|13|A (VBA) object not represented by the **vbObject** constant documented in this table. [&Dagger;](#doubledaggerfootnote "Such an object, like all VBA objects, is still a COM object. Like all COM objects and interfaces, such an object exposes COM's IUnknown interface. Not to be confused with ActiveX Data Objects (ADO) which is a database technology.")|
 |**vbDecimal**|14|[Decimal](../../Glossary/vbe-glossary.md#decimal-data-type) value|
-|**vbByte**|17|[Byte](../../Glossary/vbe-glossary.md#byte-data-type) value|
+|**vbByte**|17|[Byte](../../Glossary/vbe-glossary.md#byte-data-type) integer|
 |**vbLongLong**|20|[LongLong](longlong-data-type.md) integer <sup>_(valid on 64-bit platforms only)_</sup>|
 |**vbUserDefinedType**|36|A value of a [user-defined type](../../Glossary/vbe-glossary.md#user-defined-type)|
 |**vbArray**|8192|[Array](../../Glossary/vbe-glossary.md#array) <sup>_(always added to another constant when returned by this function)_</sup>|
