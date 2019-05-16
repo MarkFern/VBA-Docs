@@ -12,7 +12,7 @@ localization_priority: Normal
 
 # VarType constants
 
-The following [constants](../../Glossary/vbe-glossary.md#constant) specified in VBA's **VbVarType** [enumeration](../../reference/user-interface-help/enum-statement.md), can be used anywhere in your code in place of the actual values.
+The following [constants](../../Glossary/vbe-glossary.md#constant) specified in VBA's **VbVarType** [enumeration](../../reference/user-interface-help/enum-statement.md), can be used anywhere in your code in place of the actual values. At the time of writing, all of them are used by the [**VarType**](../../Reference/User-Interface-Help/vartype-function.md) function.
 
 |Constant|Value|Description|Corresponding [VARENUM](https://docs.microsoft.com/en-us/windows/desktop/api/wtypes/ne-wtypes-varenum)&nbsp;constant in [OLE Automation Protocol specification](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-oaut/3fe7db9f-5803-4dc4-9d14-5425d3f5461f)|
 |:-----|:-----|:-----|:-----|
@@ -56,7 +56,6 @@ The following [constants](../../Glossary/vbe-glossary.md#constant) specified in 
   
 ## See also
 
-- [VarType function](../../Reference/User-Interface-Help/vartype-function.md)
 - [Data type summary](../../reference/user-interface-help/data-type-summary.md)
 - [Visual Basic conceptual topics](../../reference/user-interface-help/visual-basic-conceptual-topics.md)
 
