@@ -56,6 +56,7 @@ The following [constants](../../Glossary/vbe-glossary.md#constant) specified in 
   
 ## See also
 
+- [VarType function](../../Reference/User-Interface-Help/vartype-function.md)
 - [Data type summary](../../reference/user-interface-help/data-type-summary.md)
 - [Visual Basic conceptual topics](../../reference/user-interface-help/visual-basic-conceptual-topics.md)
 
