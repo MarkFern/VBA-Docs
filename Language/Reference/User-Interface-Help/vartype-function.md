@@ -45,7 +45,7 @@ Return value is either:
 |**vbError**|10|Has either of the following forms:<br><table><tr><td>i) An [**Error**](../../reference/user-interface-help/cverr-function.md) value.</td></tr><tr><td>ii) The [parameter](../../glossary/vbe-glossary.md#parameter) for a [_missing_](../../reference/user-interface-help/ismissing-function.md) [_optional_](../../concepts/getting-started/understanding-named-arguments-and-optional-arguments.md) **Variant** argument of some procedure, that hasn't yet had a conventional value assignment (the "missing" flag bit will have been set), or a variable holding the value of such a parameter. At the time of writing, such values are also **Error** values of the [error number 448](../../reference/user-interface-help/named-argument-not-found-error-448.md).</td></tr></table>[\*](#asteriskfootnote "Variant special value.")|
 |**vbBoolean**|11|[Boolean](../../Glossary/vbe-glossary.md#boolean-data-type) value|
 |**vbVariant**|12|**Variant** <sup>_(used for return value only when added to **vbArray** constant)_</sup>|
-|**vbDataObject**|13|A (VBA) object not represented by the **vbObject** constant documented in this table. [&Dagger;](#doubledaggerfootnote "Such an object, like all VBA objects, is still a COM object. Like all COM objects and interfaces, such an object exposes COM's IUnknown interface. Not to be confused with ActiveX Data Objects (ADO) which is a database technology.")|
+|**vbDataObject**|13|A (VBA) object with a particular interface chosen, that is not represented by the **vbObject** constant documented in this table. [&Dagger;](#doubledaggerfootnote "Such an object, like all VBA objects, is still a COM object. Like all COM objects and interfaces, such an object exposes COM's IUnknown interface. Not to be confused with ActiveX Data Objects (ADO) which is a database technology.")|
 |**vbDecimal**|14|[Decimal](../../Glossary/vbe-glossary.md#decimal-data-type) value|
 |**vbByte**|17|[Byte](../../Glossary/vbe-glossary.md#byte-data-type) integer|
 |**vbLongLong**|20|[LongLong](longlong-data-type.md) integer <sup>_(valid on 64-bit platforms only)_</sup>|
@@ -75,7 +75,7 @@ Return value is either:
 
 #### Objects
 
-If an object represented by the **vbObject** constant (constant documented in the above table) is passed, and has a parameterless default member (either a default property or default function), **VarType**(_object_) returns a value indicating the type of the default member's return value in the case that there is a return value, and the value of the **vbEmpty** constant when there is no return value. If an object is passed that doesn't fulfill this criteria, the constant **vbObject** or the constant **vbDataObject** is returned, the constant representing the object type.
+If an object with a particular interface chosen, represented by the **vbObject** constant (constant documented in the above table) is passed, and has a parameterless default member (either a default property or default function), **VarType**(_object_) returns a value indicating the type of the default member's return value in the case that there is a return value, and the value of the **vbEmpty** constant when there is no return value. If an object with a particular interface chosen, is passed that doesn't fulfill this criteria, the constant **vbObject** or the constant **vbDataObject** is returned, the constant representing the object type.
 
 When passing the default object reference for objects/instances of [classes](../../Glossary/vbe-glossary.md#class) defined through [class modules](../../Glossary/vbe-glossary.md#class-module), **VarType** returns **vbObject** - this means such references directly support (OLE) Automation. Such references use the default interface of the respective object.
 
@@ -114,7 +114,7 @@ Dim ObjectVarWithInterfaceNotCompatibleWithAutomation
 
 ' Casting the Workbook object to an IUnknown object means that the 
 ' object reference is changed such that a different interface is chosen
-' (fundamentally it is still the same object.)
+' (fundamentally it is still the same COM object.)
 Set IUnknownVar = WorkbookVar
 Set ObjectVarWithInterfaceNotCompatibleWithAutomation = IUnknownVar
 
