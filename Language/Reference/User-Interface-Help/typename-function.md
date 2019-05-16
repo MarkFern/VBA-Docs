@@ -27,8 +27,8 @@ The rules for what string is returned by **TypeName**, are shown in the followin
 
 |Argument|String returned|
 |:-----|:-----|
-|An [object](../../glossary/vbe-glossary.md#object) whose [object type](../../Glossary/vbe-glossary.md#object-type) has been determined<br>by this function as being _objecttype_|_objecttype_|
-|A value of a [user-defined type](../../Glossary/vbe-glossary.md#user-defined-type) where the type<br>has name _udtype_|_udtype_|
+|An [object](../../glossary/vbe-glossary.md#object) whose [object type](../../Glossary/vbe-glossary.md#object-type) has been determined by this function as being _objecttype_|_objecttype_|
+|A value of a [user-defined type](../../Glossary/vbe-glossary.md#user-defined-type) where the type has name _udtype_|_udtype_|
 |[Byte](../../Glossary/vbe-glossary.md#byte-data-type) integer|"Byte"|
 |Integer of data-type [**Integer**](../../Glossary/vbe-glossary.md#integer-data-type)|"Integer"|
 |[Long](../../Glossary/vbe-glossary.md#long-data-type) integer|"Long"|
@@ -40,10 +40,10 @@ The rules for what string is returned by **TypeName**, are shown in the followin
 |[Date](../../Glossary/vbe-glossary.md#date-data-type) value|"Date"|
 |[String](../../Glossary/vbe-glossary.md#string-data-type)|"String"|
 |[Boolean](../../Glossary/vbe-glossary.md#boolean-data-type) value|"Boolean"|
-|Argument can have either of the following forms:<br><table><tr><td>i) An [**Error**](../../reference/user-interface-help/cverr-function.md) value.</td></tr><tr><td>ii) The [parameter](../../glossary/vbe-glossary.md#parameter) for a [_missing_](../../reference/user-interface-help/ismissing-function.md) [_optional_](../../concepts/getting-started/understanding-named-arguments-and-optional-arguments.md) **Variant**<br>argument of some procedure, that hasn't yet had<br>a conventional value assignment (the "missing"<br>flag bit will have been set), or a variable holding<br>the value of such a parameter. At the time of<br>writing, such values are also **Error** values of the<br>[error number 448](../../reference/user-interface-help/named-argument-not-found-error-448.md).</td></tr></table><sup>[\*\*](#doubleasteriskfootnote "Variant special value.")</sup>|"Error"|
+|Argument can have either of the following forms:<br><table><tr><td>i) An [**Error**](../../reference/user-interface-help/cverr-function.md) value.</td></tr><tr><td>ii) The [parameter](../../glossary/vbe-glossary.md#parameter) for a [_missing_](../../reference/user-interface-help/ismissing-function.md) [_optional_](../../concepts/getting-started/understanding-named-arguments-and-optional-arguments.md) **Variant** argument of some procedure, that hasn't yet had a conventional value assignment (the "missing" flag bit will have been set), or a variable holding the value of such a parameter. At the time of writing, such values are also **Error** values of the [error number 448](../../reference/user-interface-help/named-argument-not-found-error-448.md).</td></tr></table><sup>[\*\*](#doubleasteriskfootnote "Variant special value.")</sup>|"Error"|
 |[**Empty**](../../Glossary/vbe-glossary.md#empty) value<br><sup>_(represents uninitialized variable)_</sup> <sup>[\*\*](#doubleasteriskfootnote "Variant special value.")</sup>|"Empty"|
 |[**Null**](../../Glossary/vbe-glossary.md#null) value<br><sup>_(represents no valid data)_</sup> <sup>[\*\*](#doubleasteriskfootnote "Variant special value.")</sup>|"Null"|
-|An [object](../../glossary/vbe-glossary.md#object) whose type name cannot be determined<br>with this function <sup>[&dagger;](#daggerfootnote "Such objects include all objects that do not implement the GetTypeInfo function from COM's IDispatch interface.")</sup>|"Unknown"|
+|An [object](../../glossary/vbe-glossary.md#object) whose type name cannot be determined with this function <sup>[&dagger;](#daggerfootnote "Such objects include all objects that do not implement the GetTypeInfo function from COM's IDispatch interface.")</sup>|"Unknown"|
 |[**Nothing**](nothing-keyword.md) value<br><sup>_(object-based argument not referring to an object)_</sup> <sup>[\*](#asteriskfootnote "Special value.")</sup>|"Nothing"|
 |An [array](../../Glossary/vbe-glossary.md#array)|The returned string is the string obtained by this function when it is passed data of the base type of the array, with empty parentheses appended to it. <sup>[&Dagger;](#doubledaggerfootnote "For example, if arg is an array of integers, TypeName returns \"Integer()\"")</sup>|
 
