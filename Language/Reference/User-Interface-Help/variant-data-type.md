@@ -18,7 +18,37 @@ The **Variant** data type has no [type-declaration character](../../Glossary/vbe
 
 A **Variant** is a special data type that can contain any kind of data except fixed-length [String](../../Glossary/vbe-glossary.md#string-data-type) data, and data of [**user-defined types**](../../Glossary/vbe-glossary.md#user-defined-type) declared in the VBE using VBA's [**Type**](../../reference/user-interface-help/type-statement.md) statement. The **Variant** type supports **user-defined types** accessed through [VBE library references](../../how-to/set-reference-to-a-type-library.md). A **Variant** can also contain the special values [**Empty**](../../Glossary/vbe-glossary.md#empty), [**Nothing**](../../reference/user-interface-help/nothing-keyword.md), and [**Null**](../../Glossary/vbe-glossary.md#null). It can also contain values of the special [**Error** sub-type](../../reference/user-interface-help/cverr-function.md), as well as the **Variant** special value corresponding to the argument that the [**IsMissing**](../Reference/User-Interface-Help/ismissing-function.md) function returns **True** for. Currently, **Error** values are also considered to be **Variant** special values, and can only be used when 'wrapped' as **Variant** data.
 
-You can determine how the data in a **Variant** is treated by using the [**VarType** function](../../reference/user-interface-help/vartype-function.md) in conjunction with the [**IsObject** function](../../reference/user-interface-help/isobject-function.md). The [**TypeName** function](../../reference/user-interface-help/typename-function.md), when used together with **IsObject** & **VarType**, can increase clarity of determination for user-defined types & object types (by being able to get the name of the specific type used, when these types are used).
+You can determine how the data in a **Variant** is treated by using the [**VarType** function](../../reference/user-interface-help/vartype-function.md) in conjunction with the [**IsObject** function](../../reference/user-interface-help/isobject-function.md). The [**TypeName** function](../../reference/user-interface-help/typename-function.md), when used together with **IsObject** & **VarType**, can increase clarity of determination for user-defined types & object types (by being able to get the name of the specific type used, when these types are used). The following function demonstrates how you can use these functions to obtain such information:
+
+```vb
+Function VariantInformation(argument) As Variant()
+ Dim ReturnValue(1 To 2) As Variant
+ If IsObject(argument) Then
+  ' IsObject only returns true for vbObject types.
+  ' For vbDataObject types, varType will return right value.
+  ReturnValue(1) = vbObject
+ Else
+  ReturnValue(1) = varType(argument)
+ End If
+        
+ ' TypeName is only used when it helps.
+ Select Case ReturnValue(1)
+ Case vbUserDefinedType, _
+      vbArray + vbUserDefinedType, _
+      vbArray + vbObject, _
+      vbArray + vbDataObject
+  ReturnValue(2) = TypeName(argument)
+ Case vbObject, vbDataObject
+  If Not (argument Is Nothing) Then
+   ReturnValue(2) = TypeName(argument)
+  End If
+  ' Better to not run TypeName if no object, as the string
+  ' 'Nothing' could be the name of a class.
+ End Select
+    
+ VariantInformation = ReturnValue
+End Function
+```
 
 Numeric data can be any integer or real number value ranging from -1.797693134862315E308 to -4.94066E-324 for negative values and from 4.94066E-324 to 1.797693134862315E308 for positive values. 
 
