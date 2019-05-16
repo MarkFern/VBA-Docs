@@ -45,11 +45,12 @@ The rules for what string is returned by **TypeName**, are shown in the followin
 |[**Null**](../../Glossary/vbe-glossary.md#null) value <sup>_(represents no valid data)_</sup> <sup>[\*\*](#doubleasteriskfootnote "Variant special value.")</sup>|"Null"|
 |An [object](../../glossary/vbe-glossary.md#object) whose type name cannot be determined<br>with this function <sup>[&dagger;](#daggerfootnote "Such objects include all objects that do not implement the GetTypeInfo function from COM's IDispatch interface.")</sup>|"Unknown"|
 |[**Nothing**](nothing-keyword.md) value <sup>_(object-based argument not referring to an object)_</sup> <sup>[\*](#asteriskfootnote "Special value.")</sup>|"Nothing"|
+|An [array](../../Glossary/vbe-glossary.md#array)|The returned string is the string obtained by this function when it is passed data of the base type of the array, with empty parentheses appended to it. <sup>[&Dagger;](#doubledaggerfootnote "For example, if arg is an array of integers, TypeName returns \"Integer()\"")</sup>|
 
 <a name="asteriskfootnote"><sup>*</sup></a> Special value. <a name="doubleasteriskfootnote"><sup>**</sup></a> **Variant** special value.<br>
-<a name="daggerfootnote"><sup>&dagger;</sup></a> Such objects include all objects that do not implement the **GetTypeInfo** function from COM's **IDispatch** interface.
+<a name="daggerfootnote"><sup>&dagger;</sup></a> Such objects include all objects that do not implement the **GetTypeInfo** function from COM's **IDispatch** interface.<br>
+<a name="doubledaggerfootnote"><sup>&Dagger;</sup></a> For example, if _arg_ is an array of integers, **TypeName** returns "Integer()". 
 
-If _arg_ is an [array](../../Glossary/vbe-glossary.md#array), the returned string is a string from the above table (indicating the array type) with empty parentheses appended to it. For example, if _arg_ is an array of integers, **TypeName** returns "Integer()".
 
 ## Example
 
