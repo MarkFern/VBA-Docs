@@ -91,7 +91,7 @@ The following two tables summarize several implicit type conversions & casts tha
 |Intrinsic&nbsp;numerical&nbsp;type|**String** textual representation of a number that parses as a number, and that would be automatically implicitly coerced to the variable type in a related variable assignment statement|
 |**Date** type|**String** textual representation of a valid date, that parses as a date.|
 |**Currency** type|**String** textual representation of a valid currency amount, that parses as a currency amount.|
-|**String**|Any intrinsic data type|
+|**String**|Any intrinsic non-object data type; not having **Error** sub-type; not special values **Null**, **Nothing**, an object or an array.|
 | | |
 |Intrinsic data type|For each variable type, the form is that required by the union of all other rules in this table that apply to the particular variable type, except that the form applies to sub-type data of a **Variant** value where the **Variant** value is the actual value assigned|
 
