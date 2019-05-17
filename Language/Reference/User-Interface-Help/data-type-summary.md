@@ -107,7 +107,7 @@ Even though strictly speaking these casts always take place between object types
 
 ##### Operations involving a cast & a conversion
 
-If **Variant** data containing an object reference is assigned to a variable having either an object data type or the **Object** data type, both a cast & a conversion can occur together.
+If **Variant** data containing an object reference is assigned to a variable having either an object data type or the **Object** data type, a conversion & then a cast can occur together.
 
 <BR>
 
@@ -137,13 +137,13 @@ Even though strictly speaking these casts always take place between object types
 
 ##### Operations involving a cast & a conversion
 
-If a **Variant** argument containing an object reference is assigned to a parameter having either an object data type or the **Object** data type, both a cast & a conversion can occur together.
+If a **Variant** argument containing an object reference is assigned to a parameter having either an object data type or the **Object** data type, a conversion & then a cast can occur together.
 
 <BR>
   
 ### Explicit conversions
 
-See [Type conversion functions](../../concepts/getting-started/type-conversion-functions.md) for examples of how to use the following functions to coerce an expression to a specific data type: **CBool**, **CByte**, **CCur**, **CDate**, **CDbl**, **CDec**, **CInt**, **CLng**, **CLngLng**, **CLngPtr**, **CSng**, **[CStr](#returns-for-cstr)**, and **CVar**.
+See [Type conversion functions](../../concepts/getting-started/type-conversion-functions.md) for examples of how to use the following functions to convert an expression to a specific data type: **CBool**, **CByte**, **CCur**, **CDate**, **CDbl**, **CDec**, **CInt**, **CLng**, **CLngLng**, **CLngPtr**, **CSng**, **[CStr](#returns-for-cstr)**, and **CVar**.
 
 The [**Fix**, and **Int** functions](int-fix-functions.md) provide other forms of integeric conversion.
 
