@@ -16,7 +16,7 @@ A data type is the characteristic of a variable that determines what kind of dat
 
 ## Non-intrinsic data types
 
-Non-intrinsic data types include those in the following table as well as all other specific types of object (which includes all VBA compatible interface types through their representation using object types).
+Non-intrinsic data types include those in the following table as well as all other specific [object types](../../Glossary/vbe-glossary.md#object-type) (which includes all VBA compatible [interface](../../Glossary/vbe-glossary.md#interface) types through their representation using object types).
  
 |Non&#8209;intrinsic&nbsp;data&nbsp;type|Storage size|Range|
 |:--------|:-----------|:----|
@@ -47,7 +47,7 @@ The following table shows the supported intrinsic [data types](../../Glossary/vb
 |**[Variant](variant-data-type.md)** _(with numbers)_|16 bytes|Any numeric value up to the range of a **Double**|
 |**Variant** _(with characters)_|22 bytes + string length (24 bytes on 64-bit systems)|Same range as for variable-length **String**|
 |**Variant** <br>_(with **Object** objects)_|Unknown|Same range as **Object**|
-|**Variant** <br>_(with objects not directly of the **Object** type)_|Unknown|Specified by object type|
+|**Variant** <br>_(with objects not of the **Object** type)_|Unknown|Specified by object type|
 |**Variant** _(with [user-defined type](../../How-to/user-defined-data-type.md))_|Unknown|**User-defined type** must be accessed through a [VBE library reference](../../reference/user-interface-help/references-dialog-box.md); range specified for the non-intrinsic **user-defined type** data type (in previous table) also applies.|
 |**Variant** <BR>_(with special values [**Empty**](../../Glossary/vbe-glossary.md#empty), [**Null**](../../Glossary/vbe-glossary.md#null), [**Nothing**](../../Reference/User-Interface-Help/nothing-keyword.md), & the special value representing a [missing procedure argument](../../Reference/User-Interface-Help/ismissing-function.md))_|Unknown|Just the four special values.|
 |**Variant** <br>_(with special [**Error** sub&#x2011;type](../../reference/user-interface-help/cverr-function.md) values)_|Unknown|Corresponds to valid [error numbers](../../glossary/vbe-glossary.md#error-number)|
