@@ -167,7 +167,7 @@ The [**Fix**, and **Int** functions](int-fix-functions.md) provide other forms o
 
 ### Explicit casts
 
-Explicit casts are not supported in the grammar of the VBA language.
+Explicit casts are not fundamentally supported in the grammar of the VBA language.
 
 <br>
 
