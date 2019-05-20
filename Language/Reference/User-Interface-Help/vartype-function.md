@@ -65,7 +65,7 @@ Return value is either:
  An object of such an object type, like all VBA objects, is still a COM object. Like all COM objects and _interfaces_, such objects expose COM's **IUnknown** interface. Not to be confused with [ActiveX Data Objects (ADO)](../../../access/concepts/activex-data-objects/set-properties-of-activex-data-objects-in-visual-basic.md) which is a database technology. <sup>[&sect;](#sectionfootnote)</sup></td></tr>
  <tr><td><a name="sectionfootnote"><sup>&sect;</sup></a></td><td>
  
- The glossary definition for [ActiveX object](../../Glossary/vbe-glossary.md#activex-object) in the VBA documentation on 7th April 2019 (current date), indicates that ActiveX objects are Automation objects. However, various developers instead use ActiveX as a synonym for the COM technology, meaning that those developers also class non-Automation COM objects as being a certain type of ActiveX object.</td></tr>
+ The glossary definition for [ActiveX object](../../Glossary/vbe-glossary.md#activex-object) in the VBA documentation on 7th April 2019 (current date), indicates that ActiveX objects are (OLE) Automation objects. However, various developers instead use ActiveX as a synonym for the COM technology, meaning that those developers also class non-OLE-Automation COM objects as being a certain type of ActiveX object.</td></tr>
 </table>
 
 > [!NOTE] 
@@ -110,13 +110,13 @@ Set WorkbookVar = ActiveWorkbook       ' Workbook object.
 ' interfaces in the interface order of a COM object. It was used before 
 ' (OLE) Automation was available.
 Dim IUnknownVar As stdole.IUnknown
-Dim ObjectVarWithNonAutomationInterfaceChosen
+Dim ObjectVarWithNonOLEAutomationInterfaceChosen
 
 ' Casting the Workbook object to an IUnknown object means that the 
 ' object reference is changed such that a different interface is chosen
 ' (fundamentally it is still the same COM object.)
 Set IUnknownVar = WorkbookVar
-Set ObjectVarWithNonAutomationInterfaceChosen = IUnknownVar
+Set ObjectVarWithNonOLEAutomationInterfaceChosen = IUnknownVar
 
 ArrayVar = Array("1st Element", "2nd Element")
 
@@ -132,17 +132,17 @@ MyCheck = varType(AppVar)              ' Returns 8 (vbString) even
 MyCheck = varType(WorkbookVar)         ' Returns 9 (vbObject) because 
                                        ' it's an object without a
                                        ' default member, & because the
-                                       ' interface chosen is an Automation 
-                                       ' interface.
+                                       ' interface chosen is an (OLE)
+                                       ' Automation interface.
 
-MyCheck = varType(ObjectVarWithNonAutomationInterfaceChosen)
+MyCheck = varType(ObjectVarWithNonOLEAutomationInterfaceChosen)
                                        ' Returns 13 (vbDataObject) even
                                        ' though object when considered
                                        ' as the broader object that
                                        ' encompasses this object reference, 
-                                       ' does actually support Automation
-                                       ' late-binding technology via the 
-                                       ' Workbook interface.
+                                       ' does actually support (OLE) 
+                                       ' Automation late-binding technology
+                                       ' via the Workbook interface.
                                        
 MyCheck = varType(IUnknownVar)         ' Returns 13 (vbDataObject)
                                        ' in respect of a non-Variant 
