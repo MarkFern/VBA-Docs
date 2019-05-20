@@ -78,7 +78,7 @@ A **CVDate** function is also provided for compatibility with previous versions 
 
 ## CBool function example
 
-This example uses the **CBool** function to convert expressions to **Boolean**s. If the expression evaluates to a nonzero value, **CBool** returns **True**, otherwise, it returns **False**.
+This example uses the **CBool** function to convert expressions to **Boolean**s. If the expression evaluates to a non-zero value, **CBool** returns **True**, otherwise, it returns **False**.
 
 
 
