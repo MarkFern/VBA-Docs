@@ -23,11 +23,13 @@ The **=** operator syntax has these parts:
 |Part|Description|
 |:-----|:-----|
 | _variable_|Any variable or any writable property.|
-| _value_|Any numeric or string literal, [constant](../../Glossary/vbe-glossary.md#constant), or [expression](../../Glossary/vbe-glossary.md#expression).|
+| _value_|Any numeric or string literal, [constant](../../Glossary/vbe-glossary.md#constant), [expression](../../Glossary/vbe-glossary.md#expression), variable or readable property.|
 
 ## Remarks
 
 The name on the left side of the equal sign can be a simple scalar variable or an element of an [array](../../Glossary/vbe-glossary.md#array). Properties on the left side of the equal sign can only be those properties that are writable at [run time](../../Glossary/vbe-glossary.md#run-time).
+
+This operator is more full documented under the [Let statement](../../Reference/User-Interface-Help/let-statement.md) documentation.
 
 ## See also
 
