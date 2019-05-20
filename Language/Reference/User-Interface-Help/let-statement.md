@@ -12,7 +12,7 @@ localization_priority: Normal
 
 # Let statement
 
-Assigns or coerces a value to a [variable](../../Glossary/vbe-glossary.md#variable) or [property](../../Glossary/vbe-glossary.md#property).
+Assigns or coerces a value to a [variable](../../Glossary/vbe-glossary.md#variable) or writable [property](../../Glossary/vbe-glossary.md#property).
 
 ## Syntax
 
@@ -25,8 +25,8 @@ The **Let** statement syntax has these parts:
 |Part|Description|
 |:-----|:-----|
 |**Let**|Optional. Explicit use of the **Let** [keyword](../../Glossary/vbe-glossary.md#keyword) is a matter of style, but it is usually omitted.|
-| _varname_|Required. Name of the variable or property; follows standard variable naming conventions.|
-| _value_|Required. Literal, variable, property, [constant](../../glossary/vbe-glossary.md#constant), or [expression](../../glossary/vbe-glossary.md#expression), that evaluates to a value directly assigned or coerced to the variable or property.|
+| _varname_|Required. Name of the variable or writable property; follows standard variable naming conventions.|
+| _value_|Required. Literal, variable, readble property, [constant](../../glossary/vbe-glossary.md#constant), or [expression](../../glossary/vbe-glossary.md#expression), that evaluates to a value directly assigned or coerced to the variable or writable property.|
 
 ## Remarks
 
