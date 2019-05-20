@@ -32,7 +32,7 @@ theVar = "This is some text."
 The last statement does not explicitly declare the variable, but rather declares the variable implicitly, or automatically. Variables that are declared implicitly are specified as the **Variant** data type.
 
 > [!TIP] 
-> If you specify a data type for a variable or argument, and then use the wrong data type, a data type error will occur. To avoid data type errors, either use only implicit variables (the **Variant** data type) or explicitly declare all your variables and specify a data type. The latter method is preferred.
+> If you specify the wrong data type for a variable or argument, a data type error can occur. To avoid data type errors, either use only implicit variables (the **Variant** data type) or explicitly declare all your variables with the correct data type. The latter method is preferred.
 
 
 ## See also
