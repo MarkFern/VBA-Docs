@@ -12,7 +12,7 @@ localization_priority: Priority
 
 # Data type summary
 
-A data type is the characteristic of a variable that determines what kind of data it can hold.
+A data type is the characteristic of a [variable](../../glossary/vbe-glossary.md#variable) that determines what kind of data it can hold.
 
 ## Non-intrinsic data types
 
@@ -75,39 +75,39 @@ A **Variant** containing an array requires 12 bytes more than the array alone.
 
 #### Assignment statements _<sup>(implicit conversions & casts)</sup>_
 
-The following two tables summarize several implicit type conversions & casts that always take place in variable [assignment statements](../../Concepts/Getting-Started/writing-assignment-statements.md) of values, & that happen so that the assignments still assign potentially useful values.
+The following two tables summarize several implicit type conversions & casts that always take place in variable, [property](../../glossary/vbe-glossary.md#property), & [constant](../../glossary/vbe-glossary.md#constant) [assignment statements](../../Concepts/Getting-Started/writing-assignment-statements.md) of values, whenever [by reference](../../glossary/vbe-glossary.md#by-reference) functionality hasn't been established for the identifier meant to be assigned a value in the statement, & that happen so that the assignments still assign potentially useful values.
 
 ##### Conversions
 
-|Variable type|Value form|
+|Variable/property/constant type|Value form|
 |:--------|:-----------|
 |**Variant**|Type same as valid **Variant** sub-type|
 | | |
-|Intrinsic&nbsp;numerical&nbsp;type apart from the **Boolean**&nbsp;type|Intrinsic numerical type apart from the **Date** type; within the range of the variable type|
+|Intrinsic&nbsp;numerical&nbsp;type apart from the **Boolean**&nbsp;type|Intrinsic numerical type apart from the **Date** type; within the range of the variable/property/constant type|
 |**Byte**&nbsp;or **Integer**&nbsp;type|**Date** type; -32768 &le; value &le; 32767|
 |**Long**,&nbsp;**Single**,&nbsp;**Double**,&nbsp;or **Currency**&nbsp;type|**Date** type|
 |**Boolean** type|Intrinsic numerical type|
 | | |
-|Intrinsic&nbsp;numerical&nbsp;type|**String** textual representation of a number that parses as a number, and that would be automatically implicitly coerced to the variable type in a related variable assignment statement|
+|Intrinsic&nbsp;numerical&nbsp;type|**String** textual representation of a number that parses as a number, and that would be automatically implicitly coerced to the variable/property/constant type in a related variable/property/constant assignment statement|
 |**Date** type|**String** textual representation of a valid date, that parses as a date.|
 |**Currency** type|**String** textual representation of a valid currency amount, that parses as a currency amount.|
 |**String**|Any intrinsic non-object data type; not having **Error** sub-type; not special values **Null**, **Nothing**, an object or an array.|
 | | |
-|Intrinsic data type|For each variable type, the form is that required by the union of all other rules in this table that apply to the particular variable type, except that the form applies to sub-type data of a **Variant** value where the **Variant** value is the actual value assigned|
+|Intrinsic data type|For each variable/property/constant type, the form is that required by the union of all other rules in this table that apply to the particular variable/property/constant type, except that the form applies to sub-type data of a **Variant** value where the **Variant** value is the actual value assigned|
 
 ##### Casts
 
 Even though strictly speaking these casts always take place between object types or between an object type & the **Object** type, the style of casting is a kind of interface casting (not object casting.) [*](#asteriskfootnote "VBA doesn't provide object inheritance as a standard mechanism, meaning that conventional object-oriented programming (OOP) object casting isn't fundamentally supported.")
 
-|Variable type|Value form|
+|Variable/property type|Value form|
 |:--------|:-----------|
 |The&nbsp;**Object**&nbsp;type|(OLE) Automation-interface object reference, or can be downcast to such a reference|
 |An&nbsp;[interface](../../Glossary/vbe-glossary.md#interface)&nbsp;type|Object type defined using the [**Implements**](../../reference/user-interface-help/implements-statement.md) statement to specify implementation of the interface|
-|A&nbsp;specific&nbsp;object&nbsp;type<BR><sup>_(not the **Object** type)_</sup>|Object type defined using the **Implements** statement to specify implementation of the interface derived from the variable type|
+|A&nbsp;specific&nbsp;object&nbsp;type<BR><sup>_(not the **Object** type)_</sup>|Object type defined using the **Implements** statement to specify implementation of the interface derived from the variable/property type|
 
 ##### Operations involving a cast & a conversion
 
-If **Variant** data containing an object reference is assigned to a variable having either an object data type or the **Object** data type, a conversion & then a cast can occur together.
+If **Variant** data containing an object reference is assigned to a variable or property having either an object data type or the **Object** data type, a conversion & then a cast can occur together.
 
 <BR>
 
@@ -115,7 +115,7 @@ If **Variant** data containing an object reference is assigned to a variable hav
 
 The two tables below summarize known implicit type conversions & casts that always take place for all arguments apart from the last argument, in [procedure calls](../../glossary/vbe-glossary.md#procedure-call). The tables also summarize known implicit type conversions & casts that always take place for the last argument in procedure calls, for calls not on the left-hand side of assignment statements. For type conversions & casts that always take place for the last argument in procedure calls for calls on the left-hand side of assignment statements (such as those that take place in **Procedure Let** & **Procedure Set** procedure calls), see the previous ['Assignment statements _(implicit conversions & casts)_'](#assignment-statements-implicit-conversions--casts) section.
 
-For procedure arguments that aren't variables (such as for constants, literals, & expressions), as well as for procedure arguments ['passed by value'](../../glossary/vbe-glossary.md#by-value), more implicit type conversions than those in the following two tables, can take place. The reason for this appears to be because no ['by reference'](../../glossary/vbe-glossary.md#by-reference) functionality needs to be maintained in such cases. The implicit type conversions for such arguments seem likely to be exactly those implicit type conversions that take place in assignment statements, where the procedure parameter is represented by the assignment-statement variable & the procedure argument is represented by the assignment-statement value. See the previous ['Assignment statements _(implicit conversions & casts)_'](#assignment-statements-implicit-conversions--casts) section for details on the implicit type conversions that take place in assignment statements.
+For procedure arguments that aren't variables (such as for constants, literals, properties & [expressions](../../glossary/vbe-glossary.md#expression)), as well as for procedure arguments ['passed by value'](../../glossary/vbe-glossary.md#by-value), more implicit type conversions than those in the following two tables, can take place. The reason for this appears to be because no ['by reference'](../../glossary/vbe-glossary.md#by-reference) functionality needs to be maintained in such cases. The implicit type conversions for such arguments seem likely to be exactly those implicit type conversions that take place in assignment statements, where the procedure parameter is represented by the assignment-statement variable/property/constant & the procedure argument is represented by the assignment-statement value. See the previous ['Assignment statements _(implicit conversions & casts)_'](#assignment-statements-implicit-conversions--casts) section for details on the implicit type conversions that take place in assignment statements.
 
 The implicit conversions & casts listed in the following two tables, convert or cast from start forms to end types. The start form is the form of a value passed as an [argument](../../glossary/vbe-glossary.md#argument) in a standard procedure call. The end type is the type of the internal [parameter](../../glossary/vbe-glossary.md#parameter) for the related argument (parameters are variables accessed by the contents of procedures). Note that arguments that are passed 'by reference' will maintain their 'by reference' functionality even though they be converted or cast in the ways described in the following tables (doesn't apply to last argument of **Procedure Let** & **Procedure Set** procedure calls).
 
