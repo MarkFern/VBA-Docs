@@ -12,7 +12,7 @@ localization_priority: Normal
 
 # If...Then...Else statement
 
-Conditionally executes a group of [statements](../../Glossary/vbe-glossary.md#statement), depending on the value of an [expression](../../Glossary/vbe-glossary.md#expression).
+Conditionally executes a group of [statements](../../Glossary/vbe-glossary.md#statement), depending on the value of a [constant](../../glossary/vbe-glossary.md#constant), [variable](../../glossary/vbe-glossary.md#variable), literal, [property](../../glossary/vbe-glossary.md#property), or [expression](../../Glossary/vbe-glossary.md#expression).
 
 ## Syntax
 
@@ -36,7 +36,7 @@ The **If...Then...Else** statement syntax has these parts.
 
 |Part|Description|
 |:-----|:-----|
-| _condition_|Required. An expression that evaluates to **True** or **False**. If _condition_ is Null, _condition_ is treated as **False**.<br/><br/>The expression can have the form **TypeOf** _varname_ **Is** _objectorudtype_. The _varname_ can be any object reference or value of a [user-defined type](../../glossary/vbe-glossary#user-defined-type.md) (UDT). The _objectorudtype_ is any valid object type or UDT. The expression is **True** if _varname_ is of the type specified by _objectorudtype_; otherwise it is **False**.| 
+| _condition_|Required. A constant, variable, literal, property, or expression that evaluates to **True** or **False**. If _condition_ is Null, _condition_ is treated as **False**.<br/><br/>The expression can have the form **TypeOf** _varname_ **Is** _objectorudtype_. The _varname_ can be any object reference or value of a [user-defined type](../../glossary/vbe-glossary#user-defined-type.md) (UDT). The _objectorudtype_ is any valid object type or UDT. The expression is **True** if _varname_ is of the type specified by _objectorudtype_; otherwise it is **False**.| 
 | _statements_|Optional in block form; required in single-line form that has no **Else** clause. In single-line form, must be one or more statements separated by colons; executed if _condition_ is **True**.|
 | _condition-n_|Optional. Same as  _condition_.|
 | _elseifstatements_|Optional. One or more statements executed if associated  _condition-n_ is **True**.|
