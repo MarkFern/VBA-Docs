@@ -57,7 +57,7 @@ For example, in a drawing application you might have multiple layers to a drawin
 Set LayerObject = GetObject("C:\CAD\SCHEMA.CAD!Layer3")
 ```
 
-If you don't specify the object's _class_, automation determines the application to start and the object to activate, based on the file name you provide. Some files, however, may support more than one class of object. For example, a drawing might support three different types of objects: an **Application** object, a **Drawing** object, and a **Toolbar** object, all of which are part of the same file. To specify which object in a file you want to activate, use the optional _class_ argument. For example:
+If you don't specify the object's _class_, [(OLE) Automation](../../concepts/getting-started/understanding-automation.md) determines the application to start and the object to activate, based on the file name you provide. Some files, however, may support more than one class of object. For example, a drawing might support three different types of objects: an **Application** object, a **Drawing** object, and a **Toolbar** object, all of which are part of the same file. To specify which object in a file you want to activate, use the optional _class_ argument. For example:
 
 ```vb
 Dim MyObject As Object
@@ -65,7 +65,7 @@ Set MyObject = GetObject("C:\DRAWINGS\SAMPLE.DRW", "FIGMENT.DRAWING")
 ```
 
 In the example, `FIGMENT` is the name of a drawing application and `DRAWING` is one of the object types it supports.
-After an object is activated, you reference it in code by using the object variable you defined. In the preceding example, you access [properties](../../Glossary/vbe-glossary.md#property) and [methods](../../Glossary/vbe-glossary.md#method) of the new object by using the object variable `MyObject`. For example:
+After an object is activated, you reference it in code by using the object variable you defined. In the preceding example, you access [properties](../../Glossary/vbe-glossary.md#property) and [methods](../../Glossary/vbe-glossary.md#method) of the new object by using the [**Object**](../../glossary/vbe-glossary.md#object-data-type) variable `MyObject`. For example:
 
 ```vb
 MyObject.Line 9, 90
