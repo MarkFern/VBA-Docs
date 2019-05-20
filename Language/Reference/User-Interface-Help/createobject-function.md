@@ -38,7 +38,7 @@ The _class_ [argument](../../Glossary/vbe-glossary.md#argument) uses the syntax 
 
 ## Remarks
 
-Every application that supports Automation provides at least one type of object. For example, a word processing application may provide an **Application** object, a **Document** object, and a **Toolbar** object.
+Every application that supports (OLE) Automation provides at least one type of object. For example, a word processing application may provide an **Application** object, a **Document** object, and a **Toolbar** object.
 
 To create an ActiveX object, assign the object returned by **CreateObject** to an [object variable](../../Glossary/vbe-glossary.md#object-variable).
 
@@ -69,7 +69,7 @@ Set ExcelSheet = Nothing
 
 <br/>
 
-Declaring an object variable with the  `As Object` clause creates a variable that can contain a reference to any type of object. However, access to the object through that variable is late bound; that is, the binding occurs when your program is run. To create an object variable that results in early binding, that is, binding when the program is compiled, declare the object variable with a specific class ID. For example, you can declare and create the following Microsoft Excel references:
+Declaring an object variable with the  `As Object` clause creates a variable that can contain a reference to any type of (OLE) [Automation object](../../glossary/vbe-glossary.md#automation-object). However, access to the object through that variable is late bound; that is, the binding occurs when your program is run. To create an object variable that results in early binding, that is, binding when the program is compiled, declare the object variable with a specific class ID. For example, you can declare and create the following Microsoft Excel references:
 
 ```vb
 Dim xlApp As Excel.Application 
