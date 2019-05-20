@@ -64,7 +64,7 @@ A feature that automatically formats code as you enter it by capitalizing the fi
 
 ## Automation object
 
-An object that is exposed to other applications or programming tools through (OLE) Automation interfaces. Strictly speaking, all [**Object** data type](#Object-data-type) objects are (OLE) Automation objects because they implement COM's **IDispatch** interface and because they are, like all VBA objects, COM objects.
+An object that is exposed to other applications or programming tools through (OLE) Automation interfaces. Strictly speaking, all [**Object** data type](#object-data-type) objects are (OLE) Automation objects because they implement COM's **IDispatch** interface and because they are, like all VBA objects, COM objects.
 
 
 ## base class
@@ -581,7 +581,7 @@ A module that contains code specific to an object, for example, class module, fo
 
 ## object type
 
-The type corresponding to a specific [class](#class) from which certain objects are instantiated. Examples of [(OLE)-Automation-object](#Automation-object) types are: **Application**, **File**, **Range**, and **Sheet**. Note that not all object types can be cast to the [**Object** data type](#Object-data-type). Use the **Object Browser** or refer to the application's documentation for a complete listing of available objects.
+The type corresponding to a specific [class](#class) from which certain objects are instantiated. Examples of [(OLE)-Automation-object](#automation-object) types are: **Application**, **File**, **Range**, and **Sheet**. Note that not all object types can be cast to the [**Object** data type](#object-data-type). Use the **Object Browser** or refer to the application's documentation for a complete listing of available objects.
 
 
 ## object variable
