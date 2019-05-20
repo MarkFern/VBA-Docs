@@ -26,7 +26,7 @@ The **Let** statement syntax has these parts:
 |:-----|:-----|
 |**Let**|Optional. Explicit use of the **Let** [keyword](../../Glossary/vbe-glossary.md#keyword) is a matter of style, but it is usually omitted.|
 | _varname_|Required. Name of the variable or property; follows standard variable naming conventions.|
-| _value_|Required. Literal, variable, [constant](../../glossary/vbe-glossary.md#constant), or [expression](../../glossary/vbe-glossary.md#expression), that evaluates to a value directly assigned or coerced to the variable or property.|
+| _value_|Required. Literal, variable, property, [constant](../../glossary/vbe-glossary.md#constant), or [expression](../../glossary/vbe-glossary.md#expression), that evaluates to a value directly assigned or coerced to the variable or property.|
 
 ## Remarks
 
@@ -44,7 +44,7 @@ If execution of the statement fails, a [run-time error](../../glossary/vbe-gloss
 
 ## Example
 
-This example assigns the values of expressions to variables by using the explicit **Let** statement.
+This example assigns the values of literals to variables by using the explicit **Let** statement.
 
 ```vb
 Dim MyStr, MyInt 
