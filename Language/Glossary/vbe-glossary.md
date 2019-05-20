@@ -817,7 +817,7 @@ The universal date format is  `#yyyy-mm-dd hh:mm:ss#`. However, both the date co
 
 ## user-defined type
 
-Any data type defined using the **Type** statement, or available in a [VBA-project library reference](../Reference/User-Interface-Help/references-dialog-box.md) as a non-object type. User-defined data types can contain one or more elements of any data type. Arrays of user-defined and other data types are created using the **Dim** statement. Arrays of any type can be included within user-defined types. See [User-defined data type](../how-to/user-defined-data-type.md).
+Any data type defined using the **Type** statement, or available in a [VBA-project library reference](../Reference/User-Interface-Help/references-dialog-box.md) as a non-object type. User-defined data types can contain one or more elements of any data type. Arrays of any type can be included within user-defined types. See [User-defined data type](../how-to/user-defined-data-type.md).
 
 
 ## variable
@@ -829,10 +829,15 @@ Variable names must begin with an alphabetic character, must be unique within th
 
 ## Variant data type
 
-A special data type that can contain numeric, string, or date data, as well as user-defined types accessed through [VBE library references](../reference/user-interface-help/references-dialog-box.md), all object types, the **Variant** special values **Empty** & **Null**, **Error** values, and the **Variant** special value corresponding to the argument that the [**IsMissing**](../Reference/User-Interface-Help/ismissing-function.md) function returns **True** for. Currently, **Error** values are also considered to be **Variant** special values, they can only be used when 'wrapped' as **Variant** data.<BR>
+A special data type that can contain numeric, string, or date data, as well as [user-defined types](#user-defined-type) accessed through [VBE library references](../reference/user-interface-help/references-dialog-box.md), all object types, the **Variant** special values [**Empty**](#empty) & [**Null**](#null), **Error** values, the special value **Nothing**, and the **Variant** special value corresponding to the argument that the [**IsMissing**](../Reference/User-Interface-Help/ismissing-function.md) function returns **True** for. Currently, **Error** values are also considered to be **Variant** special values, they can only be used when 'wrapped' as **Variant** data.<BR>
+
 The **Variant** data type has a numeric storage size of 16 bytes and can contain data up to the range of a **Decimal**, or a character storage size of 22 bytes (plus string length), and can store any character text.<BR>
+
 The [**VarType** function](../reference/user-interface-help/vartype-function.md) in conjunction with the [**IsObject** function](../reference/user-interface-help/isobject-function.md), can be used to find out how the data in a **Variant** is treated.<BR>
-All variables become **Variant** data types if not explicitly declared as some other data type. See [Variant data type page](../reference/user-interface-help/variant-data-type.md).
+
+All variables become **Variant** data types if not explicitly declared as some other data type.
+    
+See [Variant data type page](../reference/user-interface-help/variant-data-type.md).
 
 
 ## variant expression
