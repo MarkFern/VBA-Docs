@@ -42,6 +42,9 @@ In a **Variant**, an **Error** value is a special value used to indicate that an
 
 If the **IsMissing** function returns **True** for a particular argument, it means that the argument holds the **Variant** special value that represents a missing procedure argument.
 
+ > [!NOTE] 
+	> The **Variant** data type cannot itself be used as a sub-type of the **Variant** data type (even though the COM [VARIANT type](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-oaut/3fe7db9f-5803-4dc4-9d14-5425d3f5461f) {that VBA's **Variant** type maps to} allows such things for its type). However, **Variant** data can be assigned to **Variant** variables.
+
 ## Examples
 
 ### Determining how the data in a Variant is treated
