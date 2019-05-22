@@ -64,7 +64,7 @@ A feature that automatically formats code as you enter it by capitalizing the fi
 
 ## Automation object
 
-An object that is exposed to other applications or programming tools through (OLE) Automation interfaces. Strictly speaking, all [**Object** data type](#object-data-type) objects are (OLE) Automation objects because they implement COM's **IDispatch** interface and because they are, like all VBA objects, COM objects.
+An object that is exposed to other applications or programming tools through (OLE) Automation interfaces.
 
 
 ## base class
@@ -557,7 +557,7 @@ A dialog box in which you can examine the contents of an object library to get i
 
 ## Object data type
 
-A special data type that can store any OLE-Automation-interface object reference (i. e. an object reference that exposes COM's **IDispatch** interface, & that is, as is always the case in VBA, for a COM object). A variable of the [**Object**](../reference/user-interface-help/object-data-type.md) data type, is stored as a 32-bit (4-byte) address that refers to an (OLE) Automation interface attached to an object.
+A special data type that can store any object reference that exposes COM's **IDispatch** interface (& so can be directly used with [OLE] Automation's late-binding technology). A variable of the [**Object**](../reference/user-interface-help/object-data-type.md) data type, is stored as a 32-bit (4-byte) address that refers to an **IDispatch**-exposing interface attached to an object.
 
 All objects/instances of classes defined through VBA [class modules](#class-module), can be cast to the **Object** data type. Objects/instances of library classes can't be cast to the **Object** data type if the classes do not implement COM's **IDispatch** interface. Library here is meant to signify a library made available through [_library references_](../reference/user-interface-help/references-dialog-box.md).
 
