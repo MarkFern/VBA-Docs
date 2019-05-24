@@ -32,21 +32,21 @@ Let yourName = InputBox("What is your name?")
 
 ```
 
-The **[Set](../../reference/user-interface-help/set-statement.md)** statement is used to assign an object to a variable or writable property that has been declared as an object or variant. The **Set** keyword is required. In the following example, the **Set** statement assigns a range on `Sheet1` first to the [object variable](../../glossary/vbe-glossary.md#object-variable) `myCell`, and then secondly to the variant variable `myVariantVariable`. Finally, the example shows an assignment of a value that is again a computation of `Worksheets("Sheet1").Range("A1")` however, because **Set** is not used, the value assigned is not the range object (the value assigned is probably the value returned by the default member of the range object).
+The **[Set](../../reference/user-interface-help/set-statement.md)** statement is used to assign an object to a variable or writable property that has been declared as an object or variant. The **Set** keyword is required. In the following example, the **Set** statement assigns a range on `Sheet1` first to the [object variable](../../glossary/vbe-glossary.md#object-variable) `myCell`, and then secondly to the variant variable `myVariant`. Finally, the example shows an assignment of a value that is again a computation of `Worksheets("Sheet1").Range("A1")` however, because **Set** is not used, the value assigned is not the range object (the value assigned is probably the value returned by the default member of the range object).
 
 ```vb
 Sub SetExample() 
  Dim myCell As Range 
- Set myCell = Worksheets("Sheet1").Range("A1")            ' Object assignment.
+ Set myCell = Worksheets("Sheet1").Range("A1")      ' Object assignment.
  With myCell.Font 
  .Bold = True 
  .Italic = True 
  End With
- Dim myVariantVariable as Variant
- Set myVariantVariable = Worksheets("Sheet1").Range("A1") ' Object assignment.
+ Dim myVariant as Variant
+ Set myVariant = Worksheets("Sheet1").Range("A1")   ' Object assignment.
 
 ' The following line doesn't assign the range object!
- myVariantVariable = Worksheets("Sheet1").Range("A1")     ' Assignment of non-object value.
+ myVariant = Worksheets("Sheet1").Range("A1")       ' Assignment of non-object value.
 End Sub
 ```
 
