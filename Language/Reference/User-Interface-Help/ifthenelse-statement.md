@@ -16,18 +16,18 @@ Conditionally executes a group of [statements](../../Glossary/vbe-glossary.md#st
 
 ## Syntax
 
-**If** _condition_ **Then** [ _statements_ ] [ **Else** _elsestatements_ ]
+**If** _condition_ **Then** {&nbsp;&nbsp;&nbsp;&nbsp;_statement(s)_&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;_statement(s)_  **Else** _elsestatement(s)_&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;**Else** _elsestatement(s)_&nbsp;&nbsp;&nbsp;&nbsp;}
 
 <br/>
 
 Or, you can use the block form syntax:
 
 **If** _condition_ **Then** <br/>
-[ _statements_ ] <br/>
+[ _statement(s)_ ] <br/>
 [ **ElseIf** _condition-n_ **Then** <br/>
-[ _elseifstatements_ ]] <br/>
+[ _elseifstatement(s)_ ]] <br/>
 [ **Else** <br/>
-[ _elsestatements_ ]] <br/>
+[ _elsestatement(s)_ ]] <br/>
 **End If** <br/>
 
 <br/>
@@ -37,10 +37,10 @@ The **If...Then...Else** statement syntax has these parts.
 |Part|Description|
 |:-----|:-----|
 | _condition_|Required. A constant, variable, literal, property, or expression that evaluates to **True** or **False**. If _condition_ is Null, _condition_ is treated as **False**.<br/><br/>The expression can have the form **TypeOf** _varname_ **Is** _objectorudtype_. The _varname_ can be any object reference or value of a [user-defined type](../../glossary/vbe-glossary#user-defined-type.md) (UDT). The _objectorudtype_ is any valid object type or UDT. The expression is **True** if _varname_ is of the type specified by _objectorudtype_; otherwise it is **False**.| 
-| _statements_|Optional in block form; required in single-line form that has no **Else** clause. In single-line form, must be one or more statements separated by colons; executed if _condition_ is **True**.|
+| _statement(s)_|Optional in block form; required in single-line form that has no **Else** clause. In single-line form, must be one or more statements separated by colons; executed if _condition_ is **True**.|
 | _condition-n_|Optional. Same as  _condition_.|
-| _elseifstatements_|Optional. One or more statements executed if associated  _condition-n_ is **True**.|
-| _elsestatements_|Optional. One or more statements executed if no previous  _condition_ or _condition-n_ expression is **True**.|
+| _elseifstatement(s)_|Optional. One or more statements executed if associated  _condition-n_ is **True**.|
+| _elsestatement(s)_|Optional. One or more statements executed if no previous  _condition_ or _condition-n_ expression is **True**.|
 
 ## Remarks
 
