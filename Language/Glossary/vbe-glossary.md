@@ -333,7 +333,7 @@ A Windows-based application that can run outside the development environment. An
 
 ## expression
 
-A combination of keywords, operators, variables, and constants that yields a string, number, or object. An expression can be used to perform a calculation, manipulate characters, or test data.
+A combination of keywords, operators, variables, and constants that evaluates to a string, number, object or other value. An expression can be used to perform a calculation, manipulate characters, or test data.
 
 
 ## file number
@@ -842,7 +842,7 @@ See [Variant data type page](../reference/user-interface-help/variant-data-type.
 
 ## variant expression
 
-Any expression that can evaluate to numeric, string, or date data, as well as the special values **Empty** and **Null**.
+Any expression that is evaluated to either a **Variant** value, or a value [coercible](../Reference/User-Interface-Help/data-type-summary.md#implicit-conversions--casts) to the **Variant** type, as well as the special values **Empty** and **Null**.
 
 
 ## watch expression
