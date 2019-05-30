@@ -16,7 +16,7 @@ Conditionally executes a group of [statements](../../Glossary/vbe-glossary.md#st
 
 ## Syntax
 
-**If** _condition_ **Then** {&nbsp;&nbsp;&nbsp;&nbsp;_statement(s)_&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;_statement(s)_  **Else** _elsestatement(s)_&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;**Else** _elsestatement(s)_&nbsp;&nbsp;&nbsp;&nbsp;}
+**If** _condition_ **Then** ___{___&nbsp;&nbsp;&nbsp;&nbsp;_statement(s)_&nbsp;&nbsp;&nbsp;&nbsp;___|___&nbsp;&nbsp;&nbsp;&nbsp;_statement(s)_  **Else** _elsestatement(s)_&nbsp;&nbsp;&nbsp;&nbsp;___|___&nbsp;&nbsp;&nbsp;&nbsp;**Else** _elsestatement(s)_&nbsp;&nbsp;&nbsp;&nbsp;___}___
 
 <br/>
 
