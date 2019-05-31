@@ -30,6 +30,7 @@ The following table shows the supported intrinsic [data types](../../Glossary/vb
 
 |Intrinsic data type|Storage size|Range|
 |:--------|:-----------|:----|
+|[Array](../../concepts/getting-started/using-arrays.md)|{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16 **+**<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_**LongPtr**&nbsp;storage&nbsp;byte&nbsp;size_ **+**<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(8 **&times;** _no.&nbsp;of&nbsp;array&nbsp;dimensions_) **+**<BR>&nbsp;&nbsp;&nbsp;&nbsp;**&Sigma;**&nbsp;(_each&nbsp;element's&nbsp;storage&nbsp;byte&nbsp;size_) <br>}<br>bytes.<sup>[*](#asteriskfootnote "Read this footnote for an example showing calculation of the storage size for a particular array: the data in a single-dimension array consisting of 4 Integer data elements of 2 bytes each occupies 8 bytes; the 8 bytes required for the data plus the 24 bytes of overhead in 32-bit environments brings the total memory requirement for the array to 32 bytes in 32-bit environments.")</sup>|Each element must have the same data type. The data type in VBA, is chosen when executing the [variable's declaration](../../concepts/getting-started/declaring-variables.md). Once chosen, another cannot be chosen whilst the code is running. Each element has the same range as the chosen data type. The element configuration can have up to 60 dimensions, and has a maximum size limited by your operating system & amount of available RAM. The index range for each dimension is some contiguous set of integers or just one particular integer, specified in the element configuration.<BR><BR>Variable must be declared as either a fixed-size array or a dynamic (re-sizeable) array. During execution, a fixed-size array cannot become a dynamic array, & vice versa. Dynamic arrays have no initial element configuration, & their element configurations can be re-specified during run-time as many times as is needed. Fixed-size arrays on the other hand, have for their entire run-time life-times, immutable element configurations. The element configuration is programatically specified within VBA, through VBA variable declarations for fixed-size arrays, & through [**ReDim**](../../reference/user-interface-help/redim-statement.md) statements for dynamic arrays.|
 |**[Boolean](boolean-data-type.md)**|2 bytes|**True** or **False**|
 |**[Byte](byte-data-type.md)**|1 byte|0 to 255|
 |**[Currency](currency-data-type.md)** <sup>_(scaled integer)_</sup>|8 bytes|-922,337,203,685,477.5808 to 922,337,203,685,477.5807|
@@ -42,25 +43,21 @@ The following table shows the supported intrinsic [data types](../../Glossary/vb
 |**[LongPtr](longptr-data-type.md)** <BR><sup>_(Long integer on 32-bit systems,<BR>LongLong integer on 64-bit systems)_<sup>|4 bytes on 32-bit systems<br/><br/>8 bytes on 64-bit systems|-2,147,483,648 to 2,147,483,647 on 32-bit systems<br/><br/>-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 on 64-bit systems|
 |**[Object](object-data-type.md)**|4 bytes|Any **Object** reference|
 |**[Single](single-data-type.md)** <BR><sup>_(single-precision floating-point)_</sup>|4 bytes|-3.402823E38 to -1.401298E-45 for negative values<br/><br/>1.401298E-45 to 3.402823E38 for positive values|
-|**[String](string-data-type.md)** _(variable-length)_|10 bytes + string length|0 to approximately 2 billion|
-|**String** _(fixed-length)_|Length of string|1 to approximately 65,400|
-|**[Variant](variant-data-type.md)** _(with numbers)_|16 bytes|Any numeric value up to the range of a **Double**|
-|**Variant** _(with characters)_|22 bytes + string length (24 bytes on 64-bit systems)|Same range as for variable-length **String**|
-|**Variant** <br>_(with **Object** objects)_|Unknown|Same range as **Object**|
-|**Variant** <br>_(with objects not of the **Object** type)_|Unknown|Specified by object type|
-|**Variant** _(with [user-defined type](../../How-to/user-defined-data-type.md))_|Unknown|**User-defined type** must be accessed through a [VBE library reference](../../reference/user-interface-help/references-dialog-box.md); range specified for the non-intrinsic **user-defined type** data type (in previous table) also applies.|
-|**Variant** <BR>_(with special values [**Empty**](../../Glossary/vbe-glossary.md#empty), [**Null**](../../Glossary/vbe-glossary.md#null), [**Nothing**](../../Reference/User-Interface-Help/nothing-keyword.md), & the special value representing a [missing procedure argument](../../Reference/User-Interface-Help/ismissing-function.md))_|Unknown|Just the four special values.|
-|**Variant** <br>_(with special [**Error** sub&#x2011;type](../../reference/user-interface-help/cverr-function.md) values)_|Unknown|Corresponds to valid [error numbers](../../glossary/vbe-glossary.md#error-number)|
+|**[String](string-data-type.md)**<BR>_(variable-length)_|{4 + _**LongPtr**&nbsp;storage&nbsp;byte&nbsp;size_ + ((_string length_ + 1) &times; 2)} bytes|Each character can be any unicode character; length of string can be changed to any non-negative integer up to approximately 2 billion.|
+|**String**<BR>_(fixed-length)_|{_Length of string_ &times; 2} bytes|Each character can be any unicode character; length of string can be set to any positive integer up to approximately 65,400; string length can only be set during execution of the variable's declaration|
+|**Variant**<BR>_(with arrays)_|Unknown;<BR>probably > size required by array-data-type version of array.|Any array-data-type array.|
+|**Variant**<BR>_(with characters)_|{22 + (_string length_ &times; 2)} bytes.|Same range as for variable-length **String**|
+|**[Variant](variant-data-type.md)**<BR>_(with numbers)_|16 bytes|Any numeric value up to the range of a **Double**|
+|**Variant**<br>_(with **Object** objects)_|Unknown|Same range as **Object**|
+|**Variant**<br>_(with objects not of the **Object** type)_|Unknown|Specified by object type|
+|**Variant**<BR>_(with [user-defined type](../../How-to/user-defined-data-type.md))_|Unknown|**User-defined type** must be accessed through a [VBE library reference](../../reference/user-interface-help/references-dialog-box.md); range specified for the non-intrinsic **user-defined type** data type (in previous table) also applies.|
+|**Variant**<br>_(with special [**Error** sub&#x2011;type](../../reference/user-interface-help/cverr-function.md) values)_|Unknown|Corresponds to valid [error numbers](../../glossary/vbe-glossary.md#error-number)|
+|**Variant**<BR>_(with special values [**Empty**](../../Glossary/vbe-glossary.md#empty), [**Null**](../../Glossary/vbe-glossary.md#null), [**Nothing**](../../Reference/User-Interface-Help/nothing-keyword.md), & the special value representing a [missing procedure argument](../../Reference/User-Interface-Help/ismissing-function.md))_|Unknown|Just the four special values.|
 
 
 <br/>
 
 A **Variant** containing an array requires 12 bytes more than the array alone.
-
-> [!NOTE] 
-> [Arrays](../../Glossary/vbe-glossary.md#array) of any data type require 20 bytes of memory plus 4 bytes for each array dimension plus the number of bytes occupied by the data itself. The memory occupied by the data can be calculated by multiplying the number of data elements by the size of each element.
-> 
-> For example, the data in a single-dimension array consisting of 4 **Integer** data elements of 2 bytes each occupies 8 bytes. The 8 bytes required for the data plus the 24 bytes of overhead brings the total memory requirement for the array to 32 bytes. On 64-bit platforms, SAFEARRAY's take up 24-bits (plus 4 bytes per Dim statement). The pvData member is an 8-byte pointer and it must be aligned on 8 byte boundaries.
 
 > [!NOTE] 
 > [LongPtr](longptr-data-type.md) is not a true data type because it transforms to a [Long](long-data-type.md) in 32-bit environments, or a [LongLong](longlong-data-type.md) in 64-bit environments. **LongPtr** should be used to represent pointer and handle values in [Declare statements](declare-statement.md) and enables writing portable code that can run in both 32-bit and 64-bit environments.
@@ -97,7 +94,7 @@ The following two tables summarize several implicit type conversions & casts tha
 
 ##### Casts
 
-Even though strictly speaking these casts always take place between object types or between an object type & the **Object** type, the style of casting is a kind of interface casting (not object casting.) [*](#asteriskfootnote "VBA doesn't provide object inheritance as a standard mechanism, meaning that conventional object-oriented programming (OOP) object casting isn't fundamentally supported.")
+Even though strictly speaking these casts always take place between object types or between an object type & the **Object** type, the style of casting is a kind of interface casting (not object casting.) [&dagger;](#daggerfootnote "VBA doesn't provide object inheritance as a standard mechanism, meaning that conventional object-oriented programming (OOP) object casting isn't fundamentally supported.")
 
 |Variable/property type|Value form|
 |:--------|:-----------|
@@ -127,7 +124,7 @@ The implicit conversions & casts listed in the following two tables, convert or 
 
 ##### Casts
 
-Even though strictly speaking these casts always take place between object types or between an object type & the **Object** type, the style of casting is a kind of interface casting (not object casting.) [*](#asteriskfootnote "VBA doesn't provide object inheritance as a standard mechanism, meaning that conventional object-oriented programming (OOP) object casting isn't fundamentally supported.")
+Even though strictly speaking these casts always take place between object types or between an object type & the **Object** type, the style of casting is a kind of interface casting (not object casting.) [&dagger;](#daggerfootnote "VBA doesn't provide object inheritance as a standard mechanism, meaning that conventional object-oriented programming (OOP) object casting isn't fundamentally supported.")
 
 |Parameter&nbsp;type|Argument form|
 |:---------|:-----------|
@@ -187,10 +184,10 @@ To verify data types, see the following functions & operators:
 - [TypeName](typename-function)
 - [TypeOf](../../reference/user-interface-help/ifthenelse-statement.md)
 
-
-
-|<sup><a name="asteriskfootnote">\*</a> VBA doesn't provide object inheritance as a standard mechanism, meaning that conventional object-oriented programming (OOP) object casting isn't fundamentally supported.</sup> |
+|Footnotes|
 |:-----------------|
+|<sup><a name="asteriskfootnote">\*</a> Read this footnote for an example showing calculation of the storage size for a particular array: the data in a single-dimension array consisting of 4 **Integer** data elements of 2 bytes each occupies 8 bytes; the 8 bytes required for the data plus the 24 bytes of overhead in 32-bit environments, brings the total memory requirement for the array to 32 bytes in 32-bit environments.</sup>|
+|<sup><a name="daggerfootnote">&dagger;</a> VBA doesn't provide object inheritance as a standard mechanism, meaning that conventional object-oriented programming (OOP) object casting isn't fundamentally supported.</sup> |
 
 ## See also
 
