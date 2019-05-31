@@ -21,8 +21,8 @@ Non-intrinsic data types include those in the following table as well as all oth
 |Non&#8209;intrinsic&nbsp;data&nbsp;type|Storage size <sup>_(in bytes)_</sup>|Range|
 |:--------|:-----------|:----|
 |**[User-defined](../../How-to/user-defined-data-type.md)** <BR>_<sup>(using **Type** or other means)</sup>_ |Number required by elements|The range of each element is the same as the range of its data type.|
-|[**Collection** object](../../reference/user-interface-help/collection-object.md)|<hr>|<hr>|
-|[**Dictionary** object](../../reference/user-interface-help/dictionary-object.md)|<hr>|<hr>|
+|[**Collection** object](../../reference/user-interface-help/collection-object.md)|||
+|[**Dictionary** object](../../reference/user-interface-help/dictionary-object.md)|||
 
 ## Intrinsic data types
 
@@ -48,11 +48,11 @@ The following table shows the supported intrinsic [data types](../../Glossary/vb
 |**Variant**<BR>_(with arrays)_|12 more than the array-data-type version of array.|Any array-data-type array.|
 |**Variant**<BR>_(with characters)_|22 + (_string length_ &times; 2)|Same range as for variable-length **String**|
 |**[Variant](variant-data-type.md)**<BR>_(with numbers)_|16|Any numeric value up to the range of a **Double**|
-|**Variant**<br>_(with **Object** objects)_|<hr>|Same range as **Object**|
-|**Variant**<br>_(with objects not of the **Object** type)_|<hr>|Specified by object type|
-|**Variant**<BR>_(with [user-defined type](../../How-to/user-defined-data-type.md))_|<hr>|**User-defined type** must be accessed through a [VBE library reference](../../reference/user-interface-help/references-dialog-box.md); range specified for the non-intrinsic **user-defined type** data type (in previous table) also applies.|
-|**Variant**<br>_(with special [**Error** sub&#x2011;type](../../reference/user-interface-help/cverr-function.md) values)_|<hr>|Corresponds to valid [error numbers](../../glossary/vbe-glossary.md#error-number)|
-|**Variant**<BR>_(with special values [**Empty**](../../Glossary/vbe-glossary.md#empty), [**Null**](../../Glossary/vbe-glossary.md#null), [**Nothing**](../../Reference/User-Interface-Help/nothing-keyword.md), & the special value representing a [missing procedure argument](../../Reference/User-Interface-Help/ismissing-function.md))_|<hr>|Just the four special values.|
+|**Variant**<br>_(with **Object** objects)_||Same range as **Object**|
+|**Variant**<br>_(with objects not of the **Object** type)_||Specified by object type|
+|**Variant**<BR>_(with [user-defined type](../../How-to/user-defined-data-type.md))_||**User-defined type** must be accessed through a [VBE library reference](../../reference/user-interface-help/references-dialog-box.md); range specified for the non-intrinsic **user-defined type** data type (in previous table) also applies.|
+|**Variant**<br>_(with special [**Error** sub&#x2011;type](../../reference/user-interface-help/cverr-function.md) values)_||Corresponds to valid [error numbers](../../glossary/vbe-glossary.md#error-number)|
+|**Variant**<BR>_(with special values [**Empty**](../../Glossary/vbe-glossary.md#empty), [**Null**](../../Glossary/vbe-glossary.md#null), [**Nothing**](../../Reference/User-Interface-Help/nothing-keyword.md), & the special value representing a [missing procedure argument](../../Reference/User-Interface-Help/ismissing-function.md))_||Just the four special values.|
 
 
 <br/>
