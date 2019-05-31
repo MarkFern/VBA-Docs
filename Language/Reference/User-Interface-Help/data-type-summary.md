@@ -45,7 +45,7 @@ The following table shows the supported intrinsic [data types](../../Glossary/vb
 |**[Single](single-data-type.md)** <BR><sup>_(single-precision floating-point)_</sup>|4 bytes|-3.402823E38 to -1.401298E-45 for negative values<br/><br/>1.401298E-45 to 3.402823E38 for positive values|
 |**[String](string-data-type.md)**<BR>_(variable-length)_|{4 + _**LongPtr**&nbsp;storage&nbsp;byte&nbsp;size_ + ((_string length_ + 1) &times; 2)} bytes|Each character can be any unicode character; length of string can be changed to any non-negative integer up to approximately 2 billion.|
 |**String**<BR>_(fixed-length)_|{_Length of string_ &times; 2} bytes|Each character can be any unicode character; length of string can be set to any positive integer up to approximately 65,400; string length can only be set during execution of the variable's declaration|
-|**Variant**<BR>_(with arrays)_|Unknown;<BR>probably > size required by array-data-type version of array.|Any array-data-type array.|
+|**Variant**<BR>_(with arrays)_|12 bytes more than the array-data-type version of array.|Any array-data-type array.|
 |**Variant**<BR>_(with characters)_|{22 + (_string length_ &times; 2)} bytes.|Same range as for variable-length **String**|
 |**[Variant](variant-data-type.md)**<BR>_(with numbers)_|16 bytes|Any numeric value up to the range of a **Double**|
 |**Variant**<br>_(with **Object** objects)_|Unknown|Same range as **Object**|
@@ -56,8 +56,6 @@ The following table shows the supported intrinsic [data types](../../Glossary/vb
 
 
 <br/>
-
-A **Variant** containing an array requires 12 bytes more than the array alone.
 
 > [!NOTE] 
 > [LongPtr](longptr-data-type.md) is not a true data type because it transforms to a [Long](long-data-type.md) in 32-bit environments, or a [LongLong](longlong-data-type.md) in 64-bit environments. **LongPtr** should be used to represent pointer and handle values in [Declare statements](declare-statement.md) and enables writing portable code that can run in both 32-bit and 64-bit environments.
