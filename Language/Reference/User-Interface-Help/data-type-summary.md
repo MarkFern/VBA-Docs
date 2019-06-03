@@ -21,10 +21,10 @@ Non-intrinsic data types include those in the following table. Note that a VBA c
 |Non&#8209;intrinsic&nbsp;data&nbsp;type|Storage size <sup>_(in bytes)_</sup>|Range|
 |:--------|:-----------|:----|
 |**[User-defined](../../How-to/user-defined-data-type.md)** <BR>_<sup>(using **Type** or other means)</sup>_ |Number required by elements|The range of each element is the same as the range of its data type.|
-|[**Collection** object](../../reference/user-interface-help/collection-object.md)|See&nbsp;'specific&nbsp;object&nbsp;type'.|Range for 'specific&nbsp;object&nbsp;type' applies.|
-|[**Dictionary** object](../../reference/user-interface-help/dictionary-object.md)|See&nbsp;'specific&nbsp;object&nbsp;type'.|Range for 'specific&nbsp;object&nbsp;type' applies.|
 |Specific object type<BR><sup>_(any object type that isn't the intrinsic [**Object**](object-data-type.md) type)_</sup>|≥&nbsp;**LongPtr**&nbsp;storage&nbsp;size|Any [object](../../glossary/vbe-glossary.md#object) of the specific object type, object that _implements_ the public _interface_ of the object-type [class](../../glossary/vbe-glossary.md#class), or the object-based special value [**Nothing**](../../reference/user-interface-help/nothing-keyword.md).|
-
+|[**Collection** object](../../reference/user-interface-help/collection-object.md)<BR><sup>_(example&nbsp;of&nbsp;specific&nbsp;object&nbsp;type)_</sup>|See&nbsp;'specific&nbsp;object&nbsp;type'.|See 'specific&nbsp;object&nbsp;type'.|
+|[**Dictionary** object](../../reference/user-interface-help/dictionary-object.md)<BR><sup>_(example&nbsp;of&nbsp;specific&nbsp;object&nbsp;type)_</sup>|See&nbsp;'specific&nbsp;object&nbsp;type'.|See 'specific&nbsp;object&nbsp;type'.|
+ 
 ## Intrinsic data types
 
 The following two tables list the supported intrinsic [data types](../../Glossary/vbe-glossary.md#data-type), & includes information on data-type storage sizes and ranges. The first table lists the intrinsic non-[**Variant**](variant-data-type.md) [data types](../../Glossary/vbe-glossary.md#data-type). The second table documents the intrinsic **Variant** data type.
