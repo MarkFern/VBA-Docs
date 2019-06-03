@@ -57,8 +57,8 @@ The following two tables list the supported intrinsic [data types](../../Glossar
 |Objects of the intrinsic [**Object**](object-data-type.md) data type|(16&nbsp;-&nbsp;_**LongPtr**&nbsp;storage&nbsp;size_) more than when stored in **Object**&#8209;data&#8209;type variable.|Same range as **Object** data type.|
 |'Specific&nbsp;object&nbsp;type'&nbsp;objects<BR><sup>_(objects not of the **Object** type)_</sup>|(16&nbsp;-&nbsp;_**LongPtr**&nbsp;storage&nbsp;size_) more than when stored in 'specific&nbsp;object&nbsp;type' variable.|Range for 'specific object type' from previous section applies.|
 |[User-defined type](../../How-to/user-defined-data-type.md)|16 more than when stored in 'user-defined type' variable.|**User-defined type** must be accessed through a [VBE library reference](../../reference/user-interface-help/references-dialog-box.md); range specified for the non-intrinsic **user-defined type** data type (in previous section) also applies.|
-|Special [**Error** sub&#x2011;type](../../reference/user-interface-help/cverr-function.md) values||Corresponds to valid [error numbers](../../glossary/vbe-glossary.md#error-number)|
-|Special values [**Empty**](../../Glossary/vbe-glossary.md#empty), [**Null**](../../Glossary/vbe-glossary.md#null), [**Nothing**](../../Reference/User-Interface-Help/nothing-keyword.md), & the special value representing a [missing procedure argument](../../Reference/User-Interface-Help/ismissing-function.md)||Just the four special values.|
+|Special [**Error** sub&#x2011;type](../../reference/user-interface-help/cverr-function.md) values|16|Corresponds to valid [error numbers](../../glossary/vbe-glossary.md#error-number)|
+|Special values [**Empty**](../../Glossary/vbe-glossary.md#empty), [**Null**](../../Glossary/vbe-glossary.md#null), [**Nothing**](../../Reference/User-Interface-Help/nothing-keyword.md), & the special value representing a [missing procedure argument](../../Reference/User-Interface-Help/ismissing-function.md)|16|Just the four special values.|
 
 <br/>
 
