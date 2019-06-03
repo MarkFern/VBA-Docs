@@ -47,6 +47,8 @@ The following two tables list the supported intrinsic [data types](../../Glossar
 |**[String](string-data-type.md)**<BR>_(variable-length)_|4 + _**LongPtr**&nbsp;storage&nbsp;size_ + ((_string length_ + 1) &times; 2)|Each character can be any Unicode character; length of string can be changed to any non-negative integer up to approximately 2 billion.|
 |**String**<BR>_(fixed-length)_|_Length of string_ &times; 2|Each character can be any Unicode character; length of string can be set to any positive integer up to approximately 65,400; string length can only be set during execution of the variable's declaration|
 
+<BR><BR>
+
 |Kind of '**Variant**&nbsp;data&#8209;type'&nbsp;data|Storage&nbsp;size&nbsp;<sup>_(in&nbsp;bytes)_</sup>|Range|
 |:--------|:-----------|:----|
 |Arrays|12 more than the array&#8209;data&#8209;type&nbsp;version of array.|Any array-data-type array.|
