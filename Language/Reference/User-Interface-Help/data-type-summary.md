@@ -51,12 +51,12 @@ The following two tables list the supported intrinsic [data types](../../Glossar
 
 |Kind of '**Variant**&nbsp;data&#8209;type'&nbsp;data|Storage&nbsp;size&nbsp;<sup>_(in&nbsp;bytes)_</sup>|Range|
 |:--------|:-----------|:----|
-|Arrays|12 more than the array&#8209;data&#8209;type&nbsp;version of array.|Any array-data-type array.|
+|Arrays|(16&nbsp;-&nbsp;_**LongPtr**&nbsp;storage&nbsp;size_) more than the array&#8209;data&#8209;type&nbsp;version of array.|Any array-data-type array.|
 |Characters|22 + (_string&nbsp;length_&nbsp;&times;&nbsp;2)|Same range as for variable-length **String**|
 |Numbers|16|Any numeric value up to the range of a **Double**|
-|Objects of the intrinsic [**Object**](object-data-type.md) data type||Same range as **Object** data type.|
-|'Specific&nbsp;object&nbsp;type'&nbsp;objects<BR><sup>_(objects not of the **Object** type)_</sup>||Range for 'specific object type' from previous section applies.|
-|[User-defined type](../../How-to/user-defined-data-type.md)||**User-defined type** must be accessed through a [VBE library reference](../../reference/user-interface-help/references-dialog-box.md); range specified for the non-intrinsic **user-defined type** data type (in previous section) also applies.|
+|Objects of the intrinsic [**Object**](object-data-type.md) data type|(16&nbsp;-&nbsp;_**LongPtr**&nbsp;storage&nbsp;size_) more than when stored in **Object**&#8209;data&#8209;type variable.|Same range as **Object** data type.|
+|'Specific&nbsp;object&nbsp;type'&nbsp;objects<BR><sup>_(objects not of the **Object** type)_</sup>|(16&nbsp;-&nbsp;_**LongPtr**&nbsp;storage&nbsp;size_) more than when stored in 'specific&nbsp;object&nbsp;type' variable.|Range for 'specific object type' from previous section applies.|
+|[User-defined type](../../How-to/user-defined-data-type.md)|16 more than when stored in 'user-defined type' variable.|**User-defined type** must be accessed through a [VBE library reference](../../reference/user-interface-help/references-dialog-box.md); range specified for the non-intrinsic **user-defined type** data type (in previous section) also applies.|
 |Special [**Error** sub&#x2011;type](../../reference/user-interface-help/cverr-function.md) values||Corresponds to valid [error numbers](../../glossary/vbe-glossary.md#error-number)|
 |Special values [**Empty**](../../Glossary/vbe-glossary.md#empty), [**Null**](../../Glossary/vbe-glossary.md#null), [**Nothing**](../../Reference/User-Interface-Help/nothing-keyword.md), & the special value representing a [missing procedure argument](../../Reference/User-Interface-Help/ismissing-function.md)||Just the four special values.|
 
