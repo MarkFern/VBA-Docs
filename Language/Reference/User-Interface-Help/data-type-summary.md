@@ -44,7 +44,7 @@ The following two tables list the supported intrinsic [data types](../../Glossar
 |**[LongPtr](longptr-data-type.md)** <BR><sup>_(Long integer on 32-bit systems,<BR>LongLong integer on 64-bit systems)_<sup>|4 on 32-bit systems<br/><br/>8 on 64-bit systems|-2,147,483,648 to 2,147,483,647 on 32-bit systems<br/><br/>-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 on 64-bit systems|
 |**[Object](object-data-type.md)**|**LongPtr**&nbsp;storage&nbsp;size|Any **Object** reference (including object-based special value [**Nothing**](../../reference/user-interface-help/nothing-keyword.md).)|
 |**[Single](single-data-type.md)** <BR><sup>_(single-precision floating-point)_</sup>|4|-3.402823E38 to -1.401298E-45 for negative values<br/><br/>1.401298E-45 to 3.402823E38 for positive values|
-|**[String](string-data-type.md)**<BR>_(variable-length)_|4 + _**LongPtr**&nbsp;storage&nbsp;size_ + ((_string length_ + 1) &times; 2)|Each character can be any Unicode character; length of string can be changed to any non-negative integer up to approximately 2 billion.|
+|**[String](string-data-type.md)**<BR>_(variable-length)_|4 + _**LongPtr**&nbsp;storage&nbsp;size_ + ((_string&nbsp;length_&nbsp;+&nbsp;1)&nbsp;&times;&nbsp;2)|Each character can be any Unicode character; length of string can be changed to any non-negative integer up to approximately 2 billion.|
 |**String**<BR>_(fixed-length)_|_Length of string_ &times; 2|Each character can be any Unicode character; length of string can be set to any positive integer up to approximately 65,400; string length can only be set during execution of the variable's declaration|
 
 <BR><BR>
