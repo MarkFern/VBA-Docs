@@ -29,6 +29,8 @@ Non-intrinsic data types include those in the following table. Note that a VBA c
 
 The following two tables list the supported intrinsic [data types](../../Glossary/vbe-glossary.md#data-type), & includes information on data-type storage sizes and ranges. The first table lists the intrinsic non-[**Variant**](variant-data-type.md) [data types](../../Glossary/vbe-glossary.md#data-type). The second table documents the intrinsic **Variant** data type.
 
+### Non-**Variant**
+
 |Intrinsic non-**Variant** data type|Storage size <sup>_(in bytes)_</sup>|Range|
 |:--------|:-----------|:----|
 |[Array](../../concepts/getting-started/using-arrays.md)|&nbsp;&nbsp;&nbsp;16 **+**<BR>&nbsp;&nbsp;&nbsp;_**LongPtr**&nbsp;storage&nbsp;byte&nbsp;size_ **+**<BR>&nbsp;&nbsp;&nbsp;(8 **&times;** _no.&nbsp;of&nbsp;array&nbsp;dimensions_) **+**<BR>**&Sigma;**&nbsp;(_each&nbsp;element's&nbsp;storage&nbsp;byte&nbsp;size_)<br><sup>[*](#asteriskfootnote "Read this footnote for an example showing calculation of the storage size for a particular array: the data in a single-dimension array consisting of 4 Integer data elements of 2 bytes each occupies 8 bytes; the 8 bytes required for the data plus the 24 bytes of overhead in 32-bit environments brings the total memory requirement for the array to 32 bytes in 32-bit environments.")</sup>|Each element must have the same data type. The data type in VBA, is chosen when executing the [variable's declaration](../../concepts/getting-started/declaring-variables.md)&mdash;any data type can be chosen. Once chosen, another cannot be chosen whilst the code is running. Each element has the same range as the chosen data type. The element configuration can have up to 60 dimensions, and has a maximum size limited by your operating system & amount of available RAM. The index range for each dimension is some contiguous set of integers or just one particular integer, specified in the element configuration.<BR><BR>Variable must be declared as either a fixed-size array or a dynamic (re-sizeable) array. During execution, if the variable is a fixed-size array, the variable cannot accommodate a dynamic array, & vice versa. Dynamic arrays have no initial element configuration, & their element configurations can be re-specified during run-time as many times as is needed. Fixed-size arrays on the other hand, have for their entire run-time life-times, immutable element configurations. The element configuration is programatically specified within VBA, through VBA variable declarations for fixed-size arrays, & through [**ReDim**](../../reference/user-interface-help/redim-statement.md) statements for dynamic arrays.|
@@ -49,14 +51,16 @@ The following two tables list the supported intrinsic [data types](../../Glossar
 
 <BR><BR>
 
+### **Variant**
+
 |Kind of '**Variant**&nbsp;data&#8209;type'&nbsp;data|Storage&nbsp;size&nbsp;<sup>_(in&nbsp;bytes)_</sup>|Range|
 |:--------|:-----------|:----|
 |Arrays|(16&nbsp;-&nbsp;_**LongPtr**&nbsp;storage&nbsp;size_) more than when stored in variable declared as an array.|Any array-data-type array.|
 |Characters|22 + (_string&nbsp;length_&nbsp;&times;&nbsp;2)|Same range as for variable-length **String**|
 |Numbers|16|Any numeric value up to the range of a **Double**|
 |Objects of the intrinsic [**Object**](object-data-type.md) data type|(16&nbsp;-&nbsp;_**LongPtr**&nbsp;storage&nbsp;size_) more than when stored in variable declared as having **Object**&nbsp;data&nbsp;type.|Same range as **Object** data type.|
-|'Specific&nbsp;object&nbsp;type'&nbsp;objects<BR><sup>_(objects not of the **Object** type)_</sup>|(16&nbsp;-&nbsp;_**LongPtr**&nbsp;storage&nbsp;size_) more than when stored in variable declared as having 'specific&nbsp;object&nbsp;type' data type.|Range for 'specific object type' from previous section applies.|
-|[User-defined type](../../How-to/user-defined-data-type.md)|16 more than when stored in variable declared as having 'user&#8209;defined&nbsp;type' data type.|**User-defined type** must be accessed through a [VBE library reference](../../reference/user-interface-help/references-dialog-box.md); range specified for the non-intrinsic **user-defined type** data type (in previous section) also applies.|
+|'Specific&nbsp;object&nbsp;type'&nbsp;objects<BR><sup>_(objects not of the **Object** type)_</sup>|(16&nbsp;-&nbsp;_**LongPtr**&nbsp;storage&nbsp;size_) more than when stored in variable declared as having 'specific&nbsp;object&nbsp;type' data type.|Range for 'specific object type' from earlier section applies.|
+|[User-defined type](../../How-to/user-defined-data-type.md)|16 more than when stored in variable declared as having 'user&#8209;defined&nbsp;type' data type.|**User-defined type** must be accessed through a [VBE library reference](../../reference/user-interface-help/references-dialog-box.md); range specified for the non-intrinsic **user-defined type** data type (in earlier section) also applies.|
 |Special [**Error** sub&#x2011;type](../../reference/user-interface-help/cverr-function.md) values|16|Corresponds to valid [error numbers](../../glossary/vbe-glossary.md#error-number)|
 |Special values [**Empty**](../../Glossary/vbe-glossary.md#empty), [**Null**](../../Glossary/vbe-glossary.md#null), [**Nothing**](../../Reference/User-Interface-Help/nothing-keyword.md), & the special value representing a [missing procedure argument](../../Reference/User-Interface-Help/ismissing-function.md)|16|Just the four special values.|
 
