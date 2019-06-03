@@ -51,7 +51,7 @@ The following two tables list the supported intrinsic [data types](../../Glossar
 
 |Kind of '**Variant**&nbsp;data&#8209;type'&nbsp;data|Storage&nbsp;size&nbsp;<sup>_(in&nbsp;bytes)_</sup>|Range|
 |:--------|:-----------|:----|
-|Arrays|(16&nbsp;-&nbsp;_**LongPtr**&nbsp;storage&nbsp;size_) more than the array&#8209;data&#8209;type&nbsp;version of array.|Any array-data-type array.|
+|Arrays|(16&nbsp;-&nbsp;_**LongPtr**&nbsp;storage&nbsp;size_) more than when stored in variable declared as an array.|Any array-data-type array.|
 |Characters|22 + (_string&nbsp;length_&nbsp;&times;&nbsp;2)|Same range as for variable-length **String**|
 |Numbers|16|Any numeric value up to the range of a **Double**|
 |Objects of the intrinsic [**Object**](object-data-type.md) data type|(16&nbsp;-&nbsp;_**LongPtr**&nbsp;storage&nbsp;size_) more than when stored in variable declared as having **Object**&nbsp;data&nbsp;type.|Same range as **Object** data type.|
