@@ -49,6 +49,9 @@ The following two tables list the supported intrinsic [data types](../../Glossar
 |**[String](string-data-type.md)**<BR>_(variable-length)_|4 + _**LongPtr**&nbsp;storage&nbsp;size_ + ((_string&nbsp;length_&nbsp;+&nbsp;1)&nbsp;&times;&nbsp;2)|Each character can be any Unicode character; length of string can be changed to any non-negative integer up to approximately 2 billion.|
 |**String**<BR>_(fixed-length)_|_Length of string_ &times; 2|Each character can be any Unicode character; length of string can be set to any positive integer up to approximately 65,400; string length can only be set during execution of the variable's declaration|
 
+> [!NOTE] 
+> [LongPtr](longptr-data-type.md) is not a true data type because it transforms to a [Long](long-data-type.md) in 32-bit environments, or a [LongLong](longlong-data-type.md) in 64-bit environments. **LongPtr** should be used to represent pointer and handle values in [Declare statements](declare-statement.md) and enables writing portable code that can run in both 32-bit and 64-bit environments.
+
 <BR><BR>
 
 ### **Variant**
@@ -65,9 +68,6 @@ The following two tables list the supported intrinsic [data types](../../Glossar
 |Special values [**Empty**](../../Glossary/vbe-glossary.md#empty), [**Null**](../../Glossary/vbe-glossary.md#null), [**Nothing**](../../Reference/User-Interface-Help/nothing-keyword.md), & the special value representing a [missing procedure argument](../../Reference/User-Interface-Help/ismissing-function.md)|16|Just the four special values.|
 
 <br/>
-
-> [!NOTE] 
-> [LongPtr](longptr-data-type.md) is not a true data type because it transforms to a [Long](long-data-type.md) in 32-bit environments, or a [LongLong](longlong-data-type.md) in 64-bit environments. **LongPtr** should be used to represent pointer and handle values in [Declare statements](declare-statement.md) and enables writing portable code that can run in both 32-bit and 64-bit environments.
 
 > [!NOTE] 
 > Use the [**StrConv**](../../reference/user-interface-help/strconv-function.md) function to convert a string to a different string 'style' (not primarily a data-type conversion). For example, with the function you can possibly change a string to & from a Unicode string, as well as possibly to a proper-case string.
