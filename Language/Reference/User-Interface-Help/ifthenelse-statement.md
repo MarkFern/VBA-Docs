@@ -34,7 +34,7 @@ The **If...Then...Else** statement syntax has these parts.
 
 |Part|Description|
 |:-----|:-----|
-| _condition_|Required. A constant, variable, literal, property, or expression that evaluates to **True** or **False**. If _condition_ is Null, _condition_ is treated as **False**.<br/><br/>The expression can have the form **TypeOf** _varname_ **Is** _objectorudtype_. The _varname_ can be any object reference or value of a [user-defined type](../../glossary/vbe-glossary#user-defined-type.md) (UDT). The _objectorudtype_ is any valid object type or UDT. The expression is **True** if _varname_ is of the type specified by _objectorudtype_; otherwise it is **False**.| 
+| _condition_|Required. A constant, variable, literal, property, or expression that evaluates to **True** or **False**. If _condition_ is Null, _condition_ is treated as **False**.<br/><br/>The expression can have the form **TypeOf** _varname_ **Is** _objectorudtype_. The _varname_ can be any object reference or value of a [user-defined type](../../glossary/vbe-glossary#user-defined-type.md) (UDT). The _objectorudtype_ is any valid object-based type or UDT. The expression is **True** if _varname_ is of the type specified by _objectorudtype_; otherwise it is **False**.| 
 | _statement(s)_|Optional in block form; required in single-line form that has no **Else** clause. In single-line form, must be one or more statements separated by colons; executed if _condition_ is **True**.|
 | _condition-n_|Optional. Same as  _condition_.|
 | _elseifstatement(s)_|Optional. One or more statements executed if associated  _condition-n_ is **True**.|
@@ -62,10 +62,10 @@ The **Else** and **ElseIf** clauses are both optional. You can have as many **El
 When executing a block **If** (second syntax), _condition_ is tested. If _condition_ is **True**, the statements following **Then** are executed. If _condition_ is **False**, each **ElseIf** condition (if any) is evaluated in turn. When a **True** condition is found, the statements immediately following the associated **Then** are executed. If none of the **ElseIf** conditions are **True** (or if there are no **ElseIf** clauses), the statements following **Else** are executed. After executing the statements following **Then** or **Else**, execution continues with the statement following **End If**.
 
 > [!TIP] 
-> **Select Case** may be more useful when evaluating a single expression that has several possible actions. However, the **TypeOf** _objectname_ **Is** _objecttype_ clause can't be used with the **Select Case** statement.
+> **Select Case** may be more useful when evaluating a single expression that has several possible actions. However, the **TypeOf** _objectname_ **Is** _objectorudtype_ clause can't be used with the **Select Case** statement.
 
 > [!NOTE] 
-> **TypeOf** cannot be used with hard data types such as Long, Integer, and so forth other than Object.
+> **TypeOf** cannot be used with hard/intrinsic data types such as **Long**, **Integer**, and so forth other than the [**Object** data type](../../glossary/vbe-glossary.md#object-data-type).
 
 
 ## Example
