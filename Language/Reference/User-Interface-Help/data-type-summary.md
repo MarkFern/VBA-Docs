@@ -17,12 +17,41 @@ A data type is the characteristic of a [variable](../../glossary/vbe-glossary.md
 ## Non-intrinsic data types
 
 Non-intrinsic data types include those in the following table. Note that a VBA compatible [interface](../../Glossary/vbe-glossary.md#interface) type is used in VBA, by using its corresponding [object type](../../Glossary/vbe-glossary.md#object-type) (the interface's object type has the same name as the interface).
+
+<table>
+  <tr>
+   <th align="left">Non&#8209;intrinsic&nbsp;data&nbsp;type</th>
+   <th align="left">
  
-|Non&#8209;intrinsic&nbsp;data&nbsp;type|Storage size <sup>_(in bytes)_</sup>|Range
-|:--------|:-----------|:----
-|**[User-defined](../../How-to/user-defined-data-type.md)** <BR>_<sup>(using **Type** or other means)</sup>_ |Number required by elements|The range of each element is the same as the range of its data type.
-|Specific object type<BR><sup>_(any object type that isn't the intrinsic [**Object**](object-data-type.md) type)_</sup>|≥&nbsp;**LongPtr**&nbsp;storage&nbsp;size|Any [object](../../glossary/vbe-glossary.md#object) of the specific object type, object that _implements_ the public _interface_ of the object-type [class](../../glossary/vbe-glossary.md#class), or the object-based special value [**Nothing**](../../reference/user-interface-help/nothing-keyword.md).
-|[**Collection**](../../reference/user-interface-help/collection-object.md)&nbsp;or<BR>[**Dictionary**](../../reference/user-interface-help/dictionary-object.md)&nbsp;object<BR><sup>_(examples&nbsp;of&nbsp;specific&nbsp;object&nbsp;type)_</sup>|See&nbsp;'specific&nbsp;object&nbsp;type'.|See&nbsp;'specific&nbsp;object&nbsp;type'.
+ Storage size <sup>_(in bytes)_</sup></th>
+   <th align="left">Range</th>
+ </tr>
+ <tr><td>
+
+**[User-defined](../../How-to/user-defined-data-type.md)**<BR>_<sup>(using **Type** or other means)</sup>_</td>
+   <td>Number required by elements</td>
+   <td>The range of each element is the same as the range of its data type.</td>
+ </tr>
+ <tr>
+  <td>
+   
+Specific object type<BR><sup>_(any object type that isn't the intrinsic [**Object**](object-data-type.md) type)_</sup></td>
+  <td>
+
+≥&nbsp;**LongPtr**&nbsp;storage&nbsp;size</td>
+  <td>
+
+Any [object](../../glossary/vbe-glossary.md#object) of the specific object type, object that _implements_ the public _interface_ of the object-type [class](../../glossary/vbe-glossary.md#class), or the object-based special value [**Nothing**](../../reference/user-interface-help/nothing-keyword.md).</td>
+ </tr>
+ <tr>
+  <td>
+
+[**Collection**](../../reference/user-interface-help/collection-object.md)&nbsp;or<BR>[**Dictionary**](../../reference/user-interface-help/dictionary-object.md)&nbsp;object<BR><sup>_(examples&nbsp;of&nbsp;specific&nbsp;object&nbsp;type)_</sup></td>
+   <td colspan="2" align="center">
+    
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&nbsp;_See&nbsp;"specific&nbsp;object&nbsp;type"_&nbsp;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</td>
+ </tr>
+</table>
  
 ## Intrinsic data types
 
@@ -61,7 +90,7 @@ The following two tables list the supported intrinsic [data types](../../Glossar
 |Characters|22 + (_string&nbsp;length_&nbsp;&times;&nbsp;2)|Same range as for variable-length **String**|
 |Numbers|16|Any numeric value up to the range of a **Double**|
 |Objects of the intrinsic [**Object**](object-data-type.md) data type|(16&nbsp;-&nbsp;_**LongPtr**&nbsp;storage&nbsp;size_) more than when stored in variable declared as having **Object**&nbsp;data&nbsp;type.|Same range as **Object** data type.|
-|'Specific&nbsp;object&nbsp;type'&nbsp;objects<BR><sup>_(objects not of the **Object** type)_</sup>|(16&nbsp;-&nbsp;_**LongPtr**&nbsp;storage&nbsp;size_) more than when stored in variable declared as having 'specific&nbsp;object&nbsp;type' data type.|Range for 'specific object type' from earlier section applies.|
+|"Specific&nbsp;object&nbsp;type"&nbsp;objects<BR><sup>_(objects not of the **Object** type)_</sup>|(16&nbsp;-&nbsp;_**LongPtr**&nbsp;storage&nbsp;size_) more than when stored in variable declared as having "specific&nbsp;object&nbsp;type" data type.|Range for "specific object type" from earlier section applies.|
 |[User-defined type](../../How-to/user-defined-data-type.md)|16 more than when stored in variable declared as having 'user&#8209;defined&nbsp;type' data type.|**User-defined type** must be accessed through a [VBE library reference](../../reference/user-interface-help/references-dialog-box.md); range specified for the non-intrinsic **user-defined type** data type (in earlier section) also applies.|
 |Special [**Error** sub&#x2011;type](../../reference/user-interface-help/cverr-function.md) values|16|Corresponds to valid [error numbers](../../glossary/vbe-glossary.md#error-number)|
 |Special values [**Empty**](../../Glossary/vbe-glossary.md#empty), [**Null**](../../Glossary/vbe-glossary.md#null), [**Nothing**](../../Reference/User-Interface-Help/nothing-keyword.md), & the special value representing a [missing procedure argument](../../Reference/User-Interface-Help/ismissing-function.md)|16|Just the four special values.|
