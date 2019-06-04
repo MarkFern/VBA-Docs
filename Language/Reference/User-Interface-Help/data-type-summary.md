@@ -28,7 +28,7 @@ Non-intrinsic data types include those in the following table. Note that a VBA c
  </tr>
  <tr><td>
 
-**[User-defined](../../How-to/user-defined-data-type.md)**<BR>_<sup>(defined using **Type** or other means)</sup>_</td>
+**[User-defined](../../How-to/user-defined-data-type.md)**<BR>_<sup>(defined using [**Type**](../../reference/user-interface-help/type-statement.md) or other means)</sup>_</td>
    <td>Number required by elements</td>
    <td>The range of each element is the same as the range of its data type.</td>
  </tr>
@@ -84,8 +84,9 @@ The following two tables list the supported intrinsic [data types](../../Glossar
 
 ### **Variant**
 
-|Kind of '**Variant**&nbsp;data&#8209;type'&nbsp;data|Storage&nbsp;size<BR><sup>_(in&nbsp;bytes, always ≥ 16 for **Variants**)_</sup>|Range|
+|Kind of '**Variant**&nbsp;data&#8209;type'&nbsp;data|Storage&nbsp;size|Range|
 |:--------|:-----------|:----|
+|Any|≥ 16<BR>(exact amount depends on specific kind of data)|Either data of:<br><table><tr><td> - any non-**Variant** data type except the fixed-length **String** type, and user-defined types declared in the VBE using VBA's **Type** statement,</td></tr><tr><td> - the **Variant** [**Error**](../../reference/user-interface-help/cverr-function.md) sub-type, _or_</td></tr><tr><td> - the **Variant** [**Decimal**](../../reference/user-interface-help/decimal-data-type.md) sub-type,</td></tr></table>_or_ one of the following special values:<br><table><tr><td> - [**Empty**](../../Glossary/vbe-glossary.md#empty).</td></tr><tr><td> - [**Null**](../../Glossary/vbe-glossary.md#null).</td></tr><tr><td> - [**Nothing**](../../Reference/User-Interface-Help/nothing-keyword.md).</td></tr><tr><td> - the special value representing a [missing procedure argument](../../Reference/User-Interface-Help/ismissing-function.md).</td></tr></table>|
 |Arrays|(16&nbsp;-&nbsp;_**LongPtr**&nbsp;storage&nbsp;size_) more than when stored in variable declared as an array.|Any array-data-type array.|
 |Characters|22 + (_string&nbsp;length_&nbsp;&times;&nbsp;2)|Same range as for variable-length **String**|
 |Numbers|16|Any numeric value up to the range of a **Double**|
