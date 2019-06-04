@@ -22,7 +22,7 @@ Non-intrinsic data types include those in the following table. Note that a VBA c
 |:--------|:-----------|:----
 |**[User-defined](../../How-to/user-defined-data-type.md)** <BR>_<sup>(using **Type** or other means)</sup>_ |Number required by elements|The range of each element is the same as the range of its data type.
 |Specific object type<BR><sup>_(any object type that isn't the intrinsic [**Object**](object-data-type.md) type)_</sup>|≥&nbsp;**LongPtr**&nbsp;storage&nbsp;size|Any [object](../../glossary/vbe-glossary.md#object) of the specific object type, object that _implements_ the public _interface_ of the object-type [class](../../glossary/vbe-glossary.md#class), or the object-based special value [**Nothing**](../../reference/user-interface-help/nothing-keyword.md).
-|[**Collection**&nbsp;object](../../reference/user-interface-help/collection-object.md)&nbsp;or<BR>[**Dictionary**&nbsp;object](../../reference/user-interface-help/dictionary-object.md)<BR><sup>_(examples&nbsp;of&nbsp;specific&nbsp;object&nbsp;type)_</sup>|See&nbsp;'specific&nbsp;object&nbsp;type'.|See&nbsp;'specific&nbsp;object&nbsp;type'.
+|[**Collection**](../../reference/user-interface-help/collection-object.md)&nbsp;or<BR>[**Dictionary**](../../reference/user-interface-help/dictionary-object.md)&nbsp;object<BR><sup>_(examples&nbsp;of&nbsp;specific&nbsp;object&nbsp;type)_</sup>|See&nbsp;'specific&nbsp;object&nbsp;type'.|See&nbsp;'specific&nbsp;object&nbsp;type'.
  
 ## Intrinsic data types
 
