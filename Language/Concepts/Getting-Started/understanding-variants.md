@@ -16,7 +16,7 @@ The **[Variant](../../reference/user-interface-help/variant-data-type.md)** data
 
 Variables declared as the **Variant** data type can contain string, date, time, Boolean, or numeric values, and can convert the values that they contain automatically. Such variables can store almost all data types (including all [object data types](../../glossary/vbe-glossary.md#object-type) as well as all [user-defined data types](../../how-to/user-defined-data-type) accessed through [VBE library references](../../reference/user-interface-help/references-dialog-box.md)). They can also store the special values [**Empty**](../../glossary/vbe-glossary.md#empty) & [**Null**](../../glossary/vbe-glossary.md#null) that are exclusive to the **Variant** data type. **Empty** normally indicates that a variable is uninitialized & **Null** normally indicates that a variable has no valid data.
 
-Non-array numeric **Variant** values require 16 bytes of memory (which is significant only in large [procedures](../../Glossary/vbe-glossary.md#procedure) or complex [modules](../../Glossary/vbe-glossary.md#module)), and they are slower to access than explicitly typed variables of any other type. String **Variant** values require 22 bytes of memory.
+Standard scalar numeric **Variant** values require 16 bytes of memory (which is significant only in large [procedures](../../Glossary/vbe-glossary.md#procedure) or complex [modules](../../Glossary/vbe-glossary.md#module)), and they are slower to access than explicitly typed variables of any other type. String **Variant** values require 22 bytes of memory.
 
 You rarely use the **Variant** data type for a constant. 
 
