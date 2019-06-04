@@ -30,7 +30,7 @@ Each function coerces an expression to a specific data type.
 - **CStr(**_expression_**)**
 - **CVar(**_expression_**)**
 
-The required _expression_ argument is any string expression or numeric expression.
+The required _expression_ argument is any [string expression](../../glossary/vbe-glossary.md#string-expression) or [numeric expression](../../glossary/vbe-glossary.md#numeric-expression) that evaluates to a valid value.
 
 ## Return types
 
@@ -39,7 +39,7 @@ The function name determines the return type as shown in the following:
 
 |Function|Return type|Range for _expression_ argument|
 |:-----|:-----|:-----|
-|**CBool**|[Boolean](../../reference/user-interface-help/boolean-data-type.md)|Any valid **string** or numeric expression.|
+|**CBool**|[Boolean](../../reference/user-interface-help/boolean-data-type.md)|Any string expression or numeric expression that evaluates to a valid value.|
 |**CByte**|[Byte](../../reference/user-interface-help/byte-data-type.md)|0 to 255.|
 |**CCur**|[Currency](../../reference/user-interface-help/currency-data-type.md)|-922,337,203,685,477.5808 to 922,337,203,685,477.5807.|
 |**CDate**|[Date](../../reference/user-interface-help/date-data-type.md)|Any valid date expression.|
