@@ -46,7 +46,7 @@ Any [object](../../glossary/vbe-glossary.md#object) of the specific object type,
  <tr>
   <td>
 
-[**Collection**](../../reference/user-interface-help/collection-object.md)&nbsp;or<BR>[**Dictionary**](../../reference/user-interface-help/dictionary-object.md)&nbsp;object<BR><sup>_(examples&nbsp;of&nbsp;specific&nbsp;object&nbsp;type)_</sup></td>
+[**Collection**](../../reference/user-interface-help/collection-object.md)&nbsp;or<BR>[**Dictionary**](../../reference/user-interface-help/dictionary-object.md)&nbsp;object<BR><sup>_(examples&nbsp;of&nbsp;specific&nbsp;object&nbsp;types)_</sup></td>
    <td colspan="2" align="center">
     
 &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&nbsp;_See&nbsp;"specific&nbsp;object&nbsp;type"_&nbsp;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</td>
