@@ -586,7 +586,7 @@ The type corresponding to a specific [class](#class) from which certain objects 
 
 ## object variable
 
-A variable that contains a reference to an object.
+A variable that contains a reference to an object or the object-based special value [**Nothing**](../reference/user-interface-help/nothing-keyword.md).
 
 
 ## parameter
