@@ -71,7 +71,7 @@ The following two tables list the supported intrinsic [data types](../../Glossar
 |**[Integer](integer-data-type.md)**|2|-32,768 to 32,767|
 |**[Long](long-data-type.md)** <sup>_(Long integer)_<sup>|4|-2,147,483,648 to 2,147,483,647|
 |**[LongLong](longlong-data-type.md)** <sup>_(LongLong integer)_<sup>|8|-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807<br/><br/>Valid on 64-bit platforms only.|
-|**[LongPtr](longptr-data-type.md)** <BR><sup>_(Long integer on 32-bit systems,<BR>LongLong integer on 64-bit systems)_<sup>|4 on 32-bit systems<br/><br/>8 on 64-bit systems|-2,147,483,648 to 2,147,483,647 on 32-bit systems<br/><br/>-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 on 64-bit systems|
+|**[LongPtr](longptr-data-type.md)** <BR><sup>_(Long integer on 32-bit systems,<BR>LongLong integer on 64-bit systems)_<sup>|4 on 32-bit systems<br/><br/>8 on 64-bit systems|0000 0000 to FFFF FFFF on 32-bit systems<br/><br/>0000 0000 0000 0000 to FFFF FFFF FFFF FFFF on 64-bit systems|
 |**[Object](object-data-type.md)**|≥&nbsp;**LongPtr**&nbsp;storage&nbsp;size|Any **Object** reference (including object-based special value [**Nothing**](../../reference/user-interface-help/nothing-keyword.md).)|
 |**[Single](single-data-type.md)** <BR><sup>_(single-precision floating-point)_</sup>|4|-3.402823E38 to -1.401298E-45 for negative values<br/><br/>1.401298E-45 to 3.402823E38 for positive values|
 |**[String](string-data-type.md)**<BR>_(variable-length)_|4 + _**LongPtr**&nbsp;storage&nbsp;size_ + ((_string&nbsp;length_&nbsp;+&nbsp;1)&nbsp;&times;&nbsp;2)|Each character can be any Unicode character; length of string can be changed to any non-negative integer up to approximately 2 billion.|
@@ -84,7 +84,7 @@ The following two tables list the supported intrinsic [data types](../../Glossar
 
 ### **Variant**
 
-|Kind of '**Variant**&nbsp;data&#8209;type'&nbsp;data|Storage&nbsp;size&nbsp;<sup>_(in&nbsp;bytes)_</sup>|Range|
+|Kind of '**Variant**&nbsp;data&#8209;type'&nbsp;data|Storage&nbsp;size<BR><sup>_(in&nbsp;bytes, always ≥ 16 for **Variants**)_</sup>|Range|
 |:--------|:-----------|:----|
 |Arrays|(16&nbsp;-&nbsp;_**LongPtr**&nbsp;storage&nbsp;size_) more than when stored in variable declared as an array.|Any array-data-type array.|
 |Characters|22 + (_string&nbsp;length_&nbsp;&times;&nbsp;2)|Same range as for variable-length **String**|
