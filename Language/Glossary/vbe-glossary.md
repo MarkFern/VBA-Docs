@@ -829,9 +829,9 @@ Variable names must begin with an alphabetic character, must be unique within th
 
 ## Variant data type
 
-A special data type that can contain numeric, string, or date data, as well as [user-defined types](#user-defined-type) accessed through [VBE library references](../reference/user-interface-help/references-dialog-box.md), all object types, the **Variant** special values [**Empty**](#empty) & [**Null**](#null), **Error** values, the special value **Nothing**, and the **Variant** special value corresponding to the argument that the [**IsMissing**](../Reference/User-Interface-Help/ismissing-function.md) function returns **True** for. Currently, **Error** values are also considered to be **Variant** special values, they can only be used when 'wrapped' as **Variant** data.<BR>
+A special data type that can contain numeric, string, or date data, as well as [user-defined types](#user-defined-type) accessed through [VBE library references](../reference/user-interface-help/references-dialog-box.md), all [object](#object)-based types, the [array](../concepts/getting-started/using-arrays.md) data type, the **Variant** special values [**Empty**](#empty) & [**Null**](#null), **Error** values, the special value **Nothing**, and the **Variant** special value corresponding to the argument that the [**IsMissing**](../Reference/User-Interface-Help/ismissing-function.md) function returns **True** for. Currently, **Error** values are also considered to be **Variant** special values, they can only be used when 'wrapped' as **Variant** data.<BR>
 
-The **Variant** data type has a numeric storage size of 16 bytes and can contain data up to the range of a **Decimal**, or a character storage size of 22 bytes (plus string length), and can store any character text.<BR>
+The **Variant** data type has a numeric storage size of 16 bytes for non-array numbers and can contain data up to the range of a **Decimal**, or a character storage size of (22 + [2 × string length]) bytes, and can store any character text.<BR>
 
 The [**VarType** function](../reference/user-interface-help/vartype-function.md) in conjunction with the [**IsObject** function](../reference/user-interface-help/isobject-function.md), can be used to find out how the data in a **Variant** is treated.<BR>
 
