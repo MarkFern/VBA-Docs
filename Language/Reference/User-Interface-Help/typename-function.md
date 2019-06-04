@@ -44,9 +44,9 @@ The rules for what string is returned by **TypeName**, are shown in the followin
 |[**Empty**](../../Glossary/vbe-glossary.md#empty) value<br><sup>_(represents uninitialized variable)_</sup> <sup>[\*\*](#doubleasteriskfootnote "Variant special value.")</sup>|"Empty"|
 |[**Null**](../../Glossary/vbe-glossary.md#null) value<br><sup>_(represents no valid data)_</sup> <sup>[\*\*](#doubleasteriskfootnote "Variant special value.")</sup>|"Null"|
 |An [object](../../glossary/vbe-glossary.md#object) whose type name cannot be determined with this function <sup>[&dagger;](#daggerfootnote "Such objects include all objects that do not implement the GetTypeInfo function from COM's IDispatch interface.")</sup>|"Unknown"|
-|[**Nothing**](nothing-keyword.md) value<br><sup>_(default value of an unassigned object-type variable)_</sup> <sup>[\*](#asteriskfootnote "Special value.")</sup>|"Nothing"|
-|An [array](../../Glossary/vbe-glossary.md#array) of a non-object type|The string obtained by this function when it is passed data of the base type of the array, with empty parentheses appended to it. <sup>[&Dagger;](#doubledaggerfootnote "For example, if arg is an array of integers, TypeName returns \"Integer()\"")</sup>|
-|An array of an object type|If this function returns "Unknown" when it is passed an object of the base type of the array, "Unknown()", otherwise "Object()".|
+|[**Nothing**](nothing-keyword.md) value<br><sup>_(default value of an unassigned [object variable](../../glossary/vbe-glossary.md#object-variable))_</sup> <sup>[\*](#asteriskfootnote "Special value.")</sup>|"Nothing"|
+|An [array](../../Glossary/vbe-glossary.md#array) of a non-object-based type|The string obtained by this function when it is passed data of the base type of the array, with empty parentheses appended to it. <sup>[&Dagger;](#doubledaggerfootnote "For example, if arg is an array of integers, TypeName returns \"Integer()\"")</sup>|
+|An array of an object-based type|If this function returns "Unknown" when it is passed an object of the base type of the array, "Unknown()", otherwise "Object()".|
 
 <a name="asteriskfootnote"><sup>*</sup></a> Special value. <a name="doubleasteriskfootnote"><sup>**</sup></a> **Variant** special value.<br>
 <a name="daggerfootnote"><sup>&dagger;</sup></a> Such objects include all objects that do not implement the **GetTypeInfo** function from COM's **IDispatch** interface.<br>
