@@ -35,7 +35,7 @@ Non-intrinsic data types include those in the following table. Note that a VBA c
  <tr>
   <td>
    
-Specific object type<BR><sup>_(any object type that isn't the intrinsic [**Object**](object-data-type.md) type)_</sup></td>
+Specific [object type](../../glossary/vbe-glossary.md#object-type)<BR><sup>_(any object-based type that isn't the intrinsic [**Object**](object-data-type.md) data type)_</sup></td>
   <td>
 
 ≥&nbsp;**LongPtr**&nbsp;storage&nbsp;size</td>
@@ -72,7 +72,7 @@ The following two tables list the supported intrinsic [data types](../../Glossar
 |**[Long](long-data-type.md)** <sup>_(Long integer)_<sup>|4|-2,147,483,648 to 2,147,483,647|
 |**[LongLong](longlong-data-type.md)** <sup>_(LongLong integer)_<sup>|8|-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807<br/><br/>Valid on 64-bit platforms only.|
 |**[LongPtr](longptr-data-type.md)** <BR><sup>_(Long integer on 32-bit systems,<BR>LongLong integer on 64-bit systems)_<sup>|4 on 32-bit systems<br/><br/>8 on 64-bit systems|The range for bit version of number, is every possible bit combination for the bytes specified by the storage size. This range is:<BR> - **0000**0000 to **FFFF**FFFF<BR>&nbsp;&nbsp;&nbsp;on 32-bit systems, \&<BR> - **0000**0000**0000**0000 to **FFFF**FFFF**FFFF**FFFF<BR>&nbsp;&nbsp;&nbsp;on 64-bit systems.|
-|**[Object](object-data-type.md)**|≥&nbsp;**LongPtr**&nbsp;storage&nbsp;size|Any **Object** reference<BR><sup>_(includes object-based special value [**Nothing**](../../reference/user-interface-help/nothing-keyword.md))_</sup>|
+|**[Object](object-data-type.md)**|≥&nbsp;**LongPtr**&nbsp;storage&nbsp;size|Any [**Object**-data-type](../../glossary/vbe-glossary.md#object-data-type) reference<BR><sup>_(includes object-based special value [**Nothing**](../../reference/user-interface-help/nothing-keyword.md))_</sup>|
 |**[Single](single-data-type.md)** <BR><sup>_(single-precision floating-point)_</sup>|4|-3.402823E38 to -1.401298E-45 for negative values<br/><br/>1.401298E-45 to 3.402823E38 for positive values|
 |**[String](string-data-type.md)**<BR>_(variable-length)_|4 + _**LongPtr**&nbsp;storage&nbsp;size_ + ((_string&nbsp;length_&nbsp;+&nbsp;1)&nbsp;&times;&nbsp;2)|Each character can be any Unicode character; length of string can be changed to any non-negative integer up to approximately 2 billion.|
 |**String**<BR>_(fixed-length)_|_Length of string_ &times; 2|Each character can be any Unicode character; length of string can be set to any positive integer up to approximately 65,400; string length can only be set during execution of the variable's declaration|
@@ -90,8 +90,8 @@ The following two tables list the supported intrinsic [data types](../../Glossar
 |Arrays|(16&nbsp;-&nbsp;_**LongPtr**&nbsp;storage&nbsp;size_) more than when stored in variable declared as an array.|Any array-data-type array.|
 |Characters|22 + (_string&nbsp;length_&nbsp;&times;&nbsp;2)|Same range as for variable-length **String**|
 |Numbers|16|Any numeric value up to the range of a **Double**|
-|Objects of the intrinsic [**Object**](object-data-type.md) data type|(16&nbsp;-&nbsp;_**LongPtr**&nbsp;storage&nbsp;size_) more than when stored in variable declared as having **Object**&nbsp;data&nbsp;type.|Same range as **Object** data type.|
-|"Specific&nbsp;object&nbsp;type"&nbsp;objects<BR><sup>_(objects not of the **Object** type)_</sup>|(16&nbsp;-&nbsp;_**LongPtr**&nbsp;storage&nbsp;size_) more than when stored in variable declared as having "specific&nbsp;object&nbsp;type" data type.|Range for "specific object type" from earlier section applies.|
+|Objects of the intrinsic [**Object**](object-data-type.md) data type|(16&nbsp;-&nbsp;_**LongPtr**&nbsp;storage&nbsp;size_) more than when stored in variable declared as having the **Object**&nbsp;data&nbsp;type.|Same range as the **Object** data type.|
+|"Specific&nbsp;[object&nbsp;type](../../glossary/vbe-glossary.md#object-type)"&nbsp;objects<BR><sup>_(objects not of the **Object** data type)_</sup>|(16&nbsp;-&nbsp;_**LongPtr**&nbsp;storage&nbsp;size_) more than when stored in variable declared as having "specific&nbsp;object&nbsp;type" data type.|Range for "specific object type" from earlier section applies.|
 |[User-defined type](../../How-to/user-defined-data-type.md)|16 more than when stored in variable declared as having 'user&#8209;defined&nbsp;type' data type.|**User-defined type** must be accessed through a [VBE library reference](../../reference/user-interface-help/references-dialog-box.md); range specified for the non-intrinsic **user-defined type** data type (in earlier section) also applies.|
 |Special [**Error** sub&#x2011;type](../../reference/user-interface-help/cverr-function.md) values|16|Corresponds to valid [error numbers](../../glossary/vbe-glossary.md#error-number)|
 |Special values [**Empty**](../../Glossary/vbe-glossary.md#empty), [**Null**](../../Glossary/vbe-glossary.md#null), [**Nothing**](../../Reference/User-Interface-Help/nothing-keyword.md), & the special value representing a [missing procedure argument](../../Reference/User-Interface-Help/ismissing-function.md)|16|Just the four special values.|
@@ -112,35 +112,35 @@ The following two tables summarize several implicit type conversions & casts tha
 
 ##### Conversions
 
-|Variable/property/constant type|Value form|
+|Variable/property/constant data type|Value form|
 |:--------|:-----------|
 |**Variant**|Type same as valid **Variant** sub-type|
 | | |
-|Intrinsic&nbsp;numerical&nbsp;type apart from the **Boolean**&nbsp;type|Intrinsic numerical type apart from the **Date** type; within the range of the variable/property/constant type|
+|[Numeric&nbsp;data&nbsp;type](../../glossary/vbe-glossary.md#numeric-data-type) apart from the **Boolean**&nbsp;type|Numeric data type apart from the **Date** type; within the range of the variable/property/constant data type|
 |**Byte**&nbsp;or **Integer**&nbsp;type|**Date** type; -32768 &le; value &le; 32767|
 |**Long**,&nbsp;**Single**,&nbsp;**Double**,&nbsp;or **Currency**&nbsp;type|**Date** type|
-|**Boolean** type|Intrinsic numerical type|
+|**Boolean** type|Numeric data type|
 | | |
-|Intrinsic&nbsp;numerical&nbsp;type|**String** textual representation of a number that parses as a number, and that would be automatically implicitly coerced to the variable/property/constant type in a related variable/property/constant assignment statement|
+|Numeric&nbsp;data&nbsp;type|**String** textual representation of a number that parses as a number, and that would be automatically implicitly coerced to the variable/property/constant data type in a related variable/property/constant assignment statement|
 |**Date** type|**String** textual representation of a valid date, that parses as a date.|
 |**Currency** type|**String** textual representation of a valid currency amount, that parses as a currency amount.|
 |**String**|Any intrinsic non-object data type; not having **Error** sub-type; not special values **Null**, **Nothing**, an object or an array.|
 | | |
-|Intrinsic data type|For each variable/property/constant type, the form is that required by the union of all other rules in this table that apply to the particular variable/property/constant type, except that the form applies to sub-type data of a **Variant** value where the **Variant** value is the actual value assigned|
+|Intrinsic data type|For each variable/property/constant data type, the form is that required by the union of all other rules in this table that apply to the particular variable/property/constant data type, except that the form applies to sub-type data of a **Variant** value where the **Variant** value is the actual value assigned.|
 
 ##### Casts
 
-Even though strictly speaking these casts always take place between object types or between an object type & the **Object** type, the style of casting is a kind of interface casting (not object casting.) [&dagger;](#daggerfootnote "VBA doesn't provide object inheritance as a standard mechanism, meaning that conventional object-oriented programming (OOP) object casting isn't fundamentally supported.")
+Even though strictly speaking these casts always take place between [object types](../../glossary/vbe-glossary.md#object-type) or between an object type & the [**Object** data type](../../glossary/vbe-glossary.md#object-data-type), the style of casting is a kind of interface casting (not object casting.) [&dagger;](#daggerfootnote "VBA doesn't provide object inheritance as a standard mechanism, meaning that conventional object-oriented programming (OOP) object casting isn't fundamentally supported.")
 
 |Variable/property type|Value form|
 |:--------|:-----------|
-|The&nbsp;**Object**&nbsp;type|Object reference exposing COM's **IDispatch** interface, or can be downcast to such a reference|
+|The&nbsp;**Object**&nbsp;data&nbsp;type|Object reference exposing COM's **IDispatch** interface, or can be downcast to such a reference|
 |An&nbsp;[interface](../../Glossary/vbe-glossary.md#interface)&nbsp;type|Object type defined using the [**Implements**](../../reference/user-interface-help/implements-statement.md) statement to specify implementation of the interface|
-|A&nbsp;specific&nbsp;object&nbsp;type<BR><sup>_(not the **Object** type)_</sup>|Object type defined using the **Implements** statement to specify implementation of the interface derived from the variable/property type|
+|A&nbsp;specific&nbsp;object&nbsp;type<BR><sup>_(not the **Object** data type)_</sup>|Object type defined using the **Implements** statement to specify implementation of the interface derived from the variable/property type|
 
 ##### Operations involving a cast & a conversion
 
-If **Variant** data containing an object reference is assigned to a variable or property having either an object data type or the **Object** data type, a conversion & then a cast can occur together.
+If **Variant** data containing an object reference is assigned to a variable or property having either an object type or the **Object** data type, a conversion & then a cast can occur together.
 
 <BR>
 
@@ -154,23 +154,23 @@ The implicit conversions & casts listed in the following two tables, convert or 
 
 ##### Conversions
 
-|Parameter&nbsp;type|Argument form|
+|Parameter&nbsp;data&nbsp;type|Argument form|
 |:---------|:-----------|
 |**Variant**|Valid **Variant** sub-type|
 
 ##### Casts
 
-Even though strictly speaking these casts always take place between object types or between an object type & the **Object** type, the style of casting is a kind of interface casting (not object casting.) [&dagger;](#daggerfootnote "VBA doesn't provide object inheritance as a standard mechanism, meaning that conventional object-oriented programming (OOP) object casting isn't fundamentally supported.")
+Even though strictly speaking these casts always take place between [object types](../../glossary/vbe-glossary.md#object-type) or between an object type & the [**Object** data type](../../glossary/vbe-glossary.md#object-data-type), the style of casting is a kind of interface casting (not object casting.) [&dagger;](#daggerfootnote "VBA doesn't provide object inheritance as a standard mechanism, meaning that conventional object-oriented programming (OOP) object casting isn't fundamentally supported.")
 
-|Parameter&nbsp;type|Argument form|
+|Parameter&nbsp;data&nbsp;type|Argument form|
 |:---------|:-----------|
-|The&nbsp;**Object**&nbsp;type|Object reference exposing COM's **IDispatch** interface, or can be downcast to such a reference|
+|The&nbsp;**Object**&nbsp;data&nbsp;type|Object reference exposing COM's **IDispatch** interface, or can be downcast to such a reference|
 |An&nbsp;interface&nbsp;type|Object type defined using the **Implements** statement to specify implementation of the interface|
-|A&nbsp;specific&nbsp;object&nbsp;type<BR><sup>_(not the **Object** type)_</sup>|Object type defined using the **Implements** statement where the statement specifies implementation of the interface derived from the parameter type|
+|A&nbsp;specific&nbsp;object&nbsp;type<BR><sup>_(not the **Object** data type)_</sup>|Object type defined using the **Implements** statement where the statement specifies implementation of the interface derived from the parameter type|
 
 ##### Operations involving a cast & a conversion
 
-If a **Variant** argument containing an object reference is assigned to a parameter having either an object data type or the **Object** data type, a conversion & then a cast can occur together.
+If a **Variant** argument containing an object reference is assigned to a parameter having either an object type or the **Object** data type, a conversion & then a cast can occur together.
 
 <BR>
   
