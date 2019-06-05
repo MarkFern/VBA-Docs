@@ -124,7 +124,7 @@ The following two tables summarize several implicit type conversions & casts tha
 |Numeric&nbsp;data&nbsp;type|**String** textual representation of a number that parses as a number, and that would be automatically implicitly coerced to the variable/property/constant data type in a related variable/property/constant assignment statement|
 |**Date** type|**String** textual representation of a valid date, that parses as a date.|
 |**Currency** type|**String** textual representation of a valid currency amount, that parses as a currency amount.|
-|**String**|Any intrinsic non-object data type; not having **Error** sub-type; not special values **Null**, **Nothing**, an object or an array.|
+|**String**|Any intrinsic non-object & non-array data type; not having **Error** sub-type; not special values **Null**, **Nothing**, an object or an array.|
 | | |
 |Intrinsic data type|For each variable/property/constant data type, the form is that required by the union of all other rules in this table that apply to the particular variable/property/constant data type, except that the form applies to sub-type data of a **Variant** value where the **Variant** value is the actual value assigned.|
 
