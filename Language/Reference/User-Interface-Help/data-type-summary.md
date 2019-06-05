@@ -182,6 +182,8 @@ The [**Fix**, and **Int** functions](int-fix-functions.md) provide other forms o
 
 **[CVErr](cverr-function.md)** can be used to create **Variant** special values of the **Variant** sub-type **Error** from an error number.
 
+The [**LSet**](../../reference/user-interface-help/lset-statement.md) statement can be used to convert a value in one [user-defined type](../../How-to/user-defined-data-type.md), to a value of another user-defined type.
+
 > [!NOTE] 
 > **CLngLng** is valid on 64-bit platforms only.
 
