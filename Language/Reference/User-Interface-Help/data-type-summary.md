@@ -114,7 +114,7 @@ The following two tables summarize several implicit type conversions & casts tha
 
 |Variable/property/constant data type|Value form|
 |:--------|:-----------|
-|**Variant**|Type same as valid **Variant** sub-type|
+|**Variant**|Type same as valid **Variant** sub-type, or object-based special value [**Nothing**](../../Reference/User-Interface-Help/nothing-keyword.md).|
 | | |
 |[Numeric&nbsp;data&nbsp;type](../../glossary/vbe-glossary.md#numeric-data-type) apart from the **Boolean**&nbsp;type|Numeric data type apart from the **Date** type; within the range of the variable/property/constant data type|
 |**Byte**&nbsp;or **Integer**&nbsp;type|**Date** type; -32768 &le; value &le; 32767|
@@ -135,8 +135,8 @@ Even though strictly speaking these casts always take place between [object type
 |Variable/property type|Value form|
 |:--------|:-----------|
 |The&nbsp;**Object**&nbsp;data&nbsp;type|Object reference exposing COM's **IDispatch** interface, or can be downcast to such a reference|
-|An&nbsp;[interface](../../Glossary/vbe-glossary.md#interface)&nbsp;type|Object type defined using the [**Implements**](../../reference/user-interface-help/implements-statement.md) statement to specify implementation of the interface|
 |A&nbsp;specific&nbsp;object&nbsp;type<BR><sup>_(not the **Object** data type)_</sup>|Object type defined using the **Implements** statement to specify implementation of the interface derived from the variable/property type|
+|An&nbsp;[interface](../../Glossary/vbe-glossary.md#interface)&nbsp;type|Object type defined using the [**Implements**](../../reference/user-interface-help/implements-statement.md) statement to specify implementation of the interface|
 
 ##### Operations involving a cast & a conversion
 
@@ -156,7 +156,7 @@ The implicit conversions & casts listed in the following two tables, convert or 
 
 |Parameter&nbsp;data&nbsp;type|Argument form|
 |:---------|:-----------|
-|**Variant**|Valid **Variant** sub-type|
+|**Variant**|Valid **Variant** sub-type, or object-based special value [**Nothing**](../../Reference/User-Interface-Help/nothing-keyword.md).|
 
 ##### Casts
 
@@ -165,8 +165,8 @@ Even though strictly speaking these casts always take place between [object type
 |Parameter&nbsp;data&nbsp;type|Argument form|
 |:---------|:-----------|
 |The&nbsp;**Object**&nbsp;data&nbsp;type|Object reference exposing COM's **IDispatch** interface, or can be downcast to such a reference|
-|An&nbsp;interface&nbsp;type|Object type defined using the **Implements** statement to specify implementation of the interface|
 |A&nbsp;specific&nbsp;object&nbsp;type<BR><sup>_(not the **Object** data type)_</sup>|Object type defined using the **Implements** statement where the statement specifies implementation of the interface derived from the parameter type|
+|An&nbsp;interface&nbsp;type|Object type defined using the **Implements** statement to specify implementation of the interface|
 
 ##### Operations involving a cast & a conversion
 
