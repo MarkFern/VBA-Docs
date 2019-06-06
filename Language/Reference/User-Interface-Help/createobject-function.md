@@ -24,7 +24,7 @@ The **CreateObject** function syntax has these parts:
 
 |Part|Description|
 |:-----|:-----|
-| _class_|Required; **Variant** (**String**). The application name and class of the object to create.|
+| _class_|Required; **Variant** (**String**). The application name and [class](../../Glossary/vbe-glossary.md#class) of the object to create.|
 | _servername_|Optional; **Variant** (**String**). The name of the network server where the object will be created. If _servername_ is an empty string (""), the local machine is used.|
 
 <br/>
