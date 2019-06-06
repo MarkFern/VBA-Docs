@@ -55,13 +55,13 @@ Any [object](../../glossary/vbe-glossary.md#object) of the specific object type,
  
 ## Intrinsic data types
 
-The following two tables list the supported intrinsic [data types](../../Glossary/vbe-glossary.md#data-type), & includes information on data-type storage sizes and ranges. The first table lists the intrinsic non-[**Variant**](variant-data-type.md) [data types](../../Glossary/vbe-glossary.md#data-type). The second table documents the intrinsic **Variant** data type.
+The following two tables list the supported intrinsic [data types](../../Glossary/vbe-glossary.md#data-type), & includes information on data-type storage sizes and ranges. The first table lists the intrinsic [data types](../../Glossary/vbe-glossary.md#data-type) other than the [**Variant**](variant-data-type.md) type. The second table documents the intrinsic **Variant** data type.
 
-### Non-**Variant**
+### All except the **Variant** type
 
-|Intrinsic non&#8209;**Variant** data type|Storage size <sup>_(in bytes)_</sup>|Range|
+|Intrinsic data type or data-type family|Storage size <sup>_(in bytes)_</sup>|Range|
 |:--------|:-----------|:----|
-|[Array](../../concepts/getting-started/using-arrays.md)|&nbsp;&nbsp;&nbsp;16 **+**<BR>&nbsp;&nbsp;&nbsp;_**LongPtr**&#8239;storage&#8239;byte&#8239;size_ **+**<BR>&nbsp;&nbsp;&nbsp;(8 **&times;** _no.&#8239;of&#8239;array&#8239;dimensions_) **+**<BR>**&Sigma;**&nbsp;(_each&#8239;element's&#8239;storage&#8239;byte&#8239;size_)<br><sup>[*](#asteriskfootnote "Read this footnote for an example showing calculation of the storage size for a particular array: the data in a single-dimension array consisting of 4 Integer data elements of 2 bytes each occupies 8 bytes; the 8 bytes required for the data plus the 24 bytes of overhead in 32-bit environments brings the total memory requirement for the array to 32 bytes in 32-bit environments.")</sup>|Each element must have the same data type. The element data type in VBA, is chosen when executing the [variable's declaration](../../concepts/getting-started/declaring-variables.md)&mdash;any data type other than an array data type, can be chosen for the element data type. Once chosen, another cannot be chosen whilst the code is running. Each element has the same range as the chosen data type. The element configuration can have up to 60 dimensions, and has a maximum size limited by your operating system & amount of available RAM. The index range for each dimension is some contiguous set of integers or just one particular integer, specified in the element configuration.<BR><BR>Variable must be declared as either a fixed-size array or a dynamic (re-sizeable) array. During execution, if the variable is a fixed-size array, the variable cannot accommodate a dynamic array, & vice versa. Dynamic arrays have no initial element configuration, & their element configurations can be re-specified during run-time as many times as is needed. Fixed-size arrays on the other hand, have for their entire run-time life-times, immutable element configurations. The element configuration is programatically specified within VBA, through VBA variable declarations for fixed-size arrays, & through [**ReDim**](../../reference/user-interface-help/redim-statement.md) statements for dynamic arrays.|
+|Family of [array](../../concepts/getting-started/using-arrays.md) types|&nbsp;&nbsp;&nbsp;16 **+**<BR>&nbsp;&nbsp;&nbsp;_**LongPtr**&#8239;storage&#8239;byte&#8239;size_ **+**<BR>&nbsp;&nbsp;&nbsp;(8 **&times;** _no.&#8239;of&#8239;array&#8239;dimensions_) **+**<BR>**&Sigma;**&nbsp;(_each&#8239;element's&#8239;storage&#8239;byte&#8239;size_)<br><sup>[*](#asteriskfootnote "Read this footnote for an example showing calculation of the storage size for a particular array: the data in a single-dimension array consisting of 4 Integer data elements of 2 bytes each occupies 8 bytes; the 8 bytes required for the data plus the 24 bytes of overhead in 32-bit environments brings the total memory requirement for the array to 32 bytes in 32-bit environments.")</sup>|Each element must have the same data type. The element data type in VBA, is chosen when executing the [variable's declaration](../../concepts/getting-started/declaring-variables.md)&mdash;any data type other than an array data type, can be chosen for the element data type. Once chosen, another cannot be chosen whilst the code is running. Each element has the same range as the chosen data type. The element configuration can have up to 60 dimensions, and has a maximum size limited by your operating system & amount of available RAM. The index range for each dimension is some contiguous set of integers or just one particular integer, specified in the element configuration.<BR><BR>Variable must be declared as either a fixed-size array or a dynamic (re-sizeable) array. During execution, if the variable is a fixed-size array, the variable cannot accommodate a dynamic array, & vice versa. Dynamic arrays have no initial element configuration, & their element configurations can be re-specified during run-time as many times as is needed. Fixed-size arrays on the other hand, have for their entire run-time life-times, immutable element configurations. The element configuration is programatically specified within VBA, through VBA variable declarations for fixed-size arrays, & through [**ReDim**](../../reference/user-interface-help/redim-statement.md) statements for dynamic arrays.|
 |**[Boolean](boolean-data-type.md)**|2|**True** or **False**|
 |**[Byte](byte-data-type.md)**|1|0 to 255|
 |**[Currency](currency-data-type.md)**<BR><sup>_(scaled integer)_</sup>|8|-922,337,203,685,477.5808 to 922,337,203,685,477.5807|
@@ -82,11 +82,11 @@ The following two tables list the supported intrinsic [data types](../../Glossar
 
 <BR><BR>
 
-### **Variant**
+### The [**Variant**](variant-data-type.md) type
 
 |Kind of '**Variant**&nbsp;data&#8209;type'&nbsp;data|Storage&nbsp;size|Range|
 |:--------|:-----------|:----|
-|Any|≥ 16<BR>(exact amount depends on specific kind of data)|Data of:<br><table><tr><td> - any non-**Variant** & non-array data type except the fixed-length **String** type, & user-defined types declared in the VBE using VBA's **Type** statement,</td></tr><tr><td> - any array data type except if the element type is the fixed-length **String** type or a user-defined type declared in the VBE using VBA's **Type** statement,</td></tr><tr><td> - the **Variant** [**Error**](../../reference/user-interface-help/cverr-function.md) sub-type, _or_</td></tr><tr><td> - the **Variant** [**Decimal**](../../reference/user-interface-help/decimal-data-type.md) sub-type,</td></tr></table>_or_ one of the following special values:<br><table><tr><td> - [**Empty**](../../Glossary/vbe-glossary.md#empty) <sup>_(**Variant** value)_.</sup></td></tr><tr><td> - [**Null**](../../Glossary/vbe-glossary.md#null) <sup>_(**Variant** value)_.</sup></td></tr><tr><td> - [**Nothing**](../../Reference/User-Interface-Help/nothing-keyword.md) <sup>_(object-based value)._</sup></td></tr><tr><td> - the special value representing a [missing procedure argument](../../Reference/User-Interface-Help/ismissing-function.md) (a **Variant** value).</td></tr></table>|
+|Any|≥ 16<BR>(exact amount depends on specific kind of data)|Data of:<br><table><tr><td> - any non-array data type except the fixed-length **String** type & user-defined types declared in the VBE using VBA's **Type** statement,</td></tr><tr><td> - any array data type except if the element type is the fixed-length **String** type or a user-defined type declared in the VBE using VBA's **Type** statement,</td></tr><tr><td> - the **Variant** [**Error**](../../reference/user-interface-help/cverr-function.md) sub-type, _or_</td></tr><tr><td> - the **Variant** [**Decimal**](../../reference/user-interface-help/decimal-data-type.md) sub-type,</td></tr></table>_or_ one of the following special values:<br><table><tr><td> - [**Empty**](../../Glossary/vbe-glossary.md#empty) <sup>_(**Variant** value)_.</sup></td></tr><tr><td> - [**Null**](../../Glossary/vbe-glossary.md#null) <sup>_(**Variant** value)_.</sup></td></tr><tr><td> - [**Nothing**](../../Reference/User-Interface-Help/nothing-keyword.md) <sup>_(object-based value)._</sup></td></tr><tr><td> - the special value representing a [missing procedure argument](../../Reference/User-Interface-Help/ismissing-function.md) (a **Variant** value).</td></tr></table>|
 |Arrays|(16&nbsp;-&nbsp;_**LongPtr**&nbsp;storage&nbsp;size_) more than when stored in variable declared as an array.|Any array-data-type array.|
 |Characters|22 + (_string&nbsp;length_&nbsp;&times;&nbsp;2)|Same range as for variable-length **String**|
 |Standard scalar numbers|16|Any standard scalar numeric value up to the range of a **Double**|
@@ -114,7 +114,7 @@ The following two tables summarize several implicit type conversions & casts tha
 
 |Variable/property/constant data type|Value form|
 |:--------|:-----------|
-|**Variant**|Type same as valid **Variant** sub-type, or object-based special value [**Nothing**](../../Reference/User-Interface-Help/nothing-keyword.md).|
+|**Variant**|Any data not held in a **Variant**, that a **Variant** can directly hold <sup>_(see the [section above on the **Variant** type](#the-variant-type) for details on this.)_</sup>|
 | | |
 |[Numeric&nbsp;data&nbsp;type](../../glossary/vbe-glossary.md#numeric-data-type) apart from the **Boolean**&nbsp;type|Numeric data type apart from the **Date** type; within the range of the variable/property/constant data type|
 |**Byte**&nbsp;or **Integer**&nbsp;type|**Date** type; -32768 &le; value &le; 32767|
@@ -156,7 +156,7 @@ The implicit conversions & casts listed in the following two tables, convert or 
 
 |Parameter&nbsp;data&nbsp;type|Argument form|
 |:---------|:-----------|
-|**Variant**|Valid **Variant** sub-type, or object-based special value [**Nothing**](../../Reference/User-Interface-Help/nothing-keyword.md).|
+|**Variant**|Any data not held in a **Variant**, that a **Variant** can directly hold <sup>_(see the [section above on the **Variant** type](#the-variant-type) for details on this.)_</sup>|
 
 ##### Casts
 
@@ -180,7 +180,7 @@ See [Type conversion functions](../../concepts/getting-started/type-conversion-f
 
 The [**Fix**, and **Int** functions](int-fix-functions.md) provide other forms of integeric conversion.
 
-**[CVErr](cverr-function.md)** can be used to create **Variant** special values of the **Variant** sub-type **Error** from an error number.
+**[CVErr](cverr-function.md)** can be used to create **Variant** special values of the **Variant** sub-type **Error**, from an error number.
 
 The [**LSet**](../../reference/user-interface-help/lset-statement.md) statement can be used to convert a value in one [user-defined type](../../How-to/user-defined-data-type.md), to a value of another user-defined type.
 
