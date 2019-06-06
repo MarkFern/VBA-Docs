@@ -63,7 +63,7 @@ The _arglist_ argument has the following syntax and parts:
 
 If not explicitly specified by using **[Public](public-statement.md)**, **[Private](private-statement.md)**, or **[Friend](friend-keyword.md)**, **Property** procedures are public by default. If **[Static](static-statement.md)** isn't used, the value of local variables is not preserved between calls. 
 
-The **Friend** keyword can only be used in class modules. However, **Friend** procedures can be accessed by procedures in any module of a project. A **Friend** procedure doesn't appear in the [type library](../../Glossary/vbe-glossary.md#type-library) of its parent class, nor can a **Friend** procedure be late bound.
+The **Friend** keyword can only be used in class modules. However, **Friend** procedures can be accessed by procedures in any module of a project. A **Friend** procedure doesn't appear in the [type library](../../Glossary/vbe-glossary.md#type-library) of its parent [class](../../Glossary/vbe-glossary.md#class), nor can a **Friend** procedure be late bound.
 
 All executable code must be in procedures. You can't define a **Property Set** procedure inside another **Property**, **[Sub](sub-statement.md)**, or **[Function](function-statement.md)** procedure.
 
