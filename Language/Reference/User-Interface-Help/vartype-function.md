@@ -85,7 +85,7 @@ The **VarType** function never returns the value for **vbArray** by itself. It i
 
 #### Variant data
 
-The constant **vbVariant** is only returned in conjunction with **vbArray** to indicate that the argument to the **VarType** function is an array of type **Variant**.
+The constant **vbVariant** is only returned in conjunction with **vbArray** to indicate that the argument to the **VarType** function is an array whose element type is the **Variant** type.
 
 When the function's argument evaluates to a **Variant** special value, the constant associated with the special value is returned.
 
