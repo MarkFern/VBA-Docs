@@ -25,14 +25,14 @@ The **Let** statement syntax has these parts:
 |Part|Description|
 |:-----|:-----|
 |**Let**|Optional. Explicit use of the **Let** [keyword](../../Glossary/vbe-glossary.md#keyword) is a matter of style, but it is usually omitted.|
-| _varname_|Required. Name of the variable or writable property; follows standard variable naming conventions.|
-| _value_|Required. Literal, variable, readble property, [constant](../../glossary/vbe-glossary.md#constant), or [expression](../../glossary/vbe-glossary.md#expression), that evaluates to a value directly assigned or coerced to the variable or writable property.|
+| _varname_|Required. Name of the variable, a property [expression](../../glossary/vbe-glossary.md#expression) evaluating to the writable property, or an [object variable](../../glossary/vbe-glossary.md#object-variable) that has the writable property as the [object](../../glossary/vbe-glossary.md#object)'s default member; follows standard naming conventions.|
+| _value_|Required. Literal, variable, readble property, [constant](../../glossary/vbe-glossary.md#constant), or expression, that evaluates to a value directly assigned or coerced to the variable or writable property.|
 
 ## Remarks
 
 The **Let** statement will only be successful if either:
 - _value_ has the same [data type](../../Glossary/vbe-glossary.md#data-type) as _varname_, _or_
-- there exists a **Let**-coercion rule to coerce _value_ to the data type of _varname_ (**Let**-coercion is the same thing as [implicit type conversion in the context of the value assignment of an assignment statement](../../Reference/User-Interface-Help/data-type-summary.md#assignment-statements-implicit-conversions--casts)).
+- there exists a **Let**-coercion rule to coerce _value_ to the data type of _varname_ (see [here](../../Reference/User-Interface-Help/data-type-summary.md#assignment-statements-implicit-conversions--casts) for more information).
 
 Information loss can occur in **Let**-coercions.
 
