@@ -34,7 +34,7 @@ The **Let** statement will only be successful if either:
 - _value_ has the same [data type](../../Glossary/vbe-glossary.md#data-type) as _varname_, _or_
 - there exists a **Let**-coercion rule to coerce _value_ to the data type of _varname_ (click [here](../../Reference/User-Interface-Help/data-type-summary.md#assignment-statements-implicit-conversions--casts) to access a section documenting all of the **Let**-coercion rules).
 
-Information loss can occur in **Let**-coercions.
+**Let**-coercions can depreciate information content when a value is coerced.
 
 If execution of the statement fails, a [run-time error](../../glossary/vbe-glossary.md#run-time-error) will be raised. A [compile-time](../../glossary/vbe-glossary.md#compile-time) error may occur if the compiler perceives the **Let** statement as being invalid.
 
