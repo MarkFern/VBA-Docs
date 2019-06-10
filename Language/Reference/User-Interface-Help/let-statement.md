@@ -25,7 +25,7 @@ The **Let** statement syntax has these parts:
 |Part|Description|
 |:-----|:-----|
 |**Let**|Optional. Explicit use of the **Let** [keyword](../../Glossary/vbe-glossary.md#keyword) is a matter of style, but it is usually omitted.|
-| _varname_|Required. Name of the variable, a property [expression](../../glossary/vbe-glossary.md#expression) evaluating to the writable property, or an [object variable](../../glossary/vbe-glossary.md#object-variable) that has the writable property as the [object](../../glossary/vbe-glossary.md#object)'s default member; follows standard naming conventions.|
+| _varname_|Required. Name of the variable, a property [expression](../../glossary/vbe-glossary.md#expression) evaluating to the writable property, or an [object variable](../../glossary/vbe-glossary.md#object-variable) holding an [object](../../glossary/vbe-glossary.md#object) that has the writable property as its default member; follows standard naming conventions.|
 | _value_|Required. Literal, variable, readble property, [constant](../../glossary/vbe-glossary.md#constant), or expression, that evaluates to a value directly assigned or coerced to the variable or writable property.|
 
 ## Remarks
