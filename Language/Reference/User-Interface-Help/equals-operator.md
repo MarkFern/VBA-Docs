@@ -22,8 +22,8 @@ The **=** operator syntax has these parts:
 
 |Part|Description|
 |:-----|:-----|
-| _variable_|Variable or writable property; cannot be [array](../../glossary/vbe-glossary.md#array)-data-type variable; variable can be array element, [user-defined-type](../../glossary/vbe-glossary.md#user-defined-type) element, or standard variable.|
-| _value_|Any numeric or string literal, [constant](../../Glossary/vbe-glossary.md#constant), [expression](../../Glossary/vbe-glossary.md#expression), variable or readable property.|
+| _variable_|Variable or writable property; cannot be [array](../../glossary/vbe-glossary.md#array)-data-type variable; if variable, can be array element, [user-defined-type](../../glossary/vbe-glossary.md#user-defined-type) element, or standard variable; can only be variable of [object](../../glossary/vbe-glossary.md#object)-based type if variable holds object having a default writable property.|
+| _value_|A numeric or string literal, [constant](../../Glossary/vbe-glossary.md#constant), [expression](../../Glossary/vbe-glossary.md#expression), variable or readable property.|
 
 ## Remarks
 
