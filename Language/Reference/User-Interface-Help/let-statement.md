@@ -12,7 +12,7 @@ localization_priority: Normal
 
 # Let statement
 
-Assigns or coerces a value to a non-[array](../../glossary/vbe-glossary.md#array)-data-type [variable](../../Glossary/vbe-glossary.md#variable) or writable [property](../../Glossary/vbe-glossary.md#property).
+[Assigns](../../Concepts/Getting-Started/writing-assignment-statements.md) or [coerces](../../Reference/User-Interface-Help/data-type-summary.md#assignment-statements-implicit-conversions--casts) a value to a non-[array](../../glossary/vbe-glossary.md#array)-data-type [variable](../../Glossary/vbe-glossary.md#variable) or writable [property](../../Glossary/vbe-glossary.md#property).
 
 ## Syntax
 
