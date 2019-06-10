@@ -12,7 +12,7 @@ localization_priority: Normal
 
 # = operator
 
-Used to assign a value to a [variable](../../Glossary/vbe-glossary.md#variable) or [property](../../Glossary/vbe-glossary.md#property).
+Used to [assign](../../Concepts/Getting-Started/writing-assignment-statements.md) or [coerce](../../Reference/User-Interface-Help/data-type-summary.md#assignment-statements-implicit-conversions--casts) a value to a [variable](../../Glossary/vbe-glossary.md#variable) or [property](../../Glossary/vbe-glossary.md#property).
 
 ## Syntax
 
