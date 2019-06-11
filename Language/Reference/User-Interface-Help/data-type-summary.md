@@ -29,7 +29,9 @@ Non-intrinsic data types include those in the following table. Note that a VBA c
  <tr><td>
 
 **[User-defined](../../How-to/user-defined-data-type.md)**<BR>_<sup>(defined using [**Type**](../../reference/user-interface-help/type-statement.md) or other means)</sup>_</td>
-   <td>Size required by elements</td>
+   <td>
+  
+  **Σ**&nbsp;(_each&nbsp;element's&nbsp;storage&nbsp;byte&nbsp;size_)</td>
    <td>The range of each element is the same as the range of its data type.</td>
  </tr>
  <tr>
