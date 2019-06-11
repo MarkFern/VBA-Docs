@@ -93,7 +93,7 @@ The following two tables list the supported intrinsic [data types](../../Glossar
 |Characters|22 + (_string&nbsp;length_&nbsp;&times;&nbsp;2)|Same range as for variable-length **String**|
 |Number within the range of one of VBA's (non-composite) [numeric types](../../glossary/vbe-glossary.md#numeric-type)|16|Any such number.|
 |**Boolean** data-type value|16|**True** or **False**.|
-|**Date** data-type value|16|January 1, 100, to December 31, 9999.|
+|**Date** data-type value|16|Same as the **Date** data type.|
 |Objects of the intrinsic [**Object**](object-data-type.md) data type|(16&nbsp;-&nbsp;_**LongPtr**&nbsp;storage&nbsp;size_) more than when stored in variable declared as having the **Object**&nbsp;data&nbsp;type.|Same range as the **Object** data type.|
 |"Specific&nbsp;[object&nbsp;type](../../glossary/vbe-glossary.md#object-type)"&nbsp;objects<BR><sup>_(objects not of the **Object** data type)_</sup>|(16&nbsp;-&nbsp;_**LongPtr**&nbsp;storage&nbsp;size_) more than when stored in variable declared as having "specific&nbsp;object&nbsp;type" data type.|Range for "specific object type" from earlier section applies.|
 |[User-defined type](../../How-to/user-defined-data-type.md)|16 more than when stored in variable declared as having 'user&#8209;defined&nbsp;type' data type.|**User-defined type** must be accessed through a [VBE library reference](../../reference/user-interface-help/references-dialog-box.md); range specified for the non-intrinsic **user-defined type** data type (in earlier section) also applies.|
