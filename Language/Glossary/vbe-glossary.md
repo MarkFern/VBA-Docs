@@ -829,15 +829,15 @@ Variable names must begin with an alphabetic character, must be unique within th
 
 ## Variant data type
 
-A special data type that can contain numeric, string, or date data, as well as [user-defined types](#user-defined-type) accessed through [VBE library references](../reference/user-interface-help/references-dialog-box.md), all [object](#object)-based types, the [array](../concepts/getting-started/using-arrays.md) data type, the **Variant** special values [**Empty**](#empty) & [**Null**](#null), **Error** values, the special value **Nothing**, and the **Variant** special value corresponding to the argument that the [**IsMissing**](../Reference/User-Interface-Help/ismissing-function.md) function returns **True** for. Currently, **Error** values are also considered to be **Variant** special values, they can only be used when 'wrapped' as **Variant** data.
+A special [data type](#data-type) that can contain [numeric](#numeric-type), [string](#string-data-type), or [date](#date-data-type) data, as well as [user-defined types](#user-defined-type) accessed through [VBE library references](../reference/user-interface-help/references-dialog-box.md), all [object](#object)-based types, the [array](../concepts/getting-started/using-arrays.md) data type, the **Variant** special values [**Empty**](#empty) & [**Null**](#null), [**Error**](../reference/user-interface-help/cverr-function.md) values, the special value [**Nothing**](../reference/user-interface-help/nothing-keyword.md), and the **Variant** special value corresponding to the argument that the [**IsMissing**](../Reference/User-Interface-Help/ismissing-function.md) function returns **True** for. Currently, **Error** values are also considered to be **Variant** special values, they can only be used when 'wrapped' as **Variant** data.
 
-The **Variant** data type has a numeric storage size of 16 bytes for numbers within one of the ranges of VBA's non-composite numeric types, when stored in a standard way&mdash;the non-composite **Double** numeric type gives the greatest upper & lower limits, it can also store the most number of decimal places. The **Variant** data type also has a character storage size of (22 + [2 × string length]) bytes, and can store any character text.
+The **Variant** data type has a numeric storage size of 16 bytes for numbers within one of the ranges of VBA's non-composite [numeric types](#numeric-type), when stored in a standard way&mdash;the non-composite [**Double**](#double-data-type) numeric type gives the greatest upper & lower limits, it can also store the most number of decimal places. The **Variant** data type also has a character storage size of (22 + [2 × string length]) bytes, and can store any character text.
 
-The [**VarType** function](../reference/user-interface-help/vartype-function.md) in conjunction with the [**IsObject** function](../reference/user-interface-help/isobject-function.md), can be used to find out how the data in a **Variant** is treated.<BR>
+The [**VarType**](../reference/user-interface-help/vartype-function.md) function in conjunction with the [**IsObject**](../reference/user-interface-help/isobject-function.md) function, can be used to find out how the data in a **Variant** is treated.
 
-All variables become **Variant** data types if not explicitly declared as some other data type.
+All variables become **Variant** data types if not explicitly [declared](#declaration) as some other data type.
     
-See [Variant data type page](../reference/user-interface-help/variant-data-type.md).
+See [**Variant** data type page](../reference/user-interface-help/variant-data-type.md).
 
 
 ## variant expression
