@@ -32,7 +32,7 @@ MyVar = 98052
 
 ```
 
-In the preceding example, `MyVar` contains a numeric representation&mdash;the actual value `98052`. Arithmetic operators work as expected on **Variant** variables that contain numeric values or string data that can be interpreted as numbers. If you use the **+** operator to add `MyVar` to another **Variant** containing a standard scalar number or to a scalar variable of a [numeric type](../../Glossary/vbe-glossary.md#numeric-type), the result is an arithmetic sum.
+In the preceding example, `MyVar` contains a numeric representation&mdash;the actual value `98052`. Arithmetic operators work as expected on **Variant** variables that contain numeric values or string data that can be interpreted as numbers. If you use the **+** operator to add `MyVar` to another **Variant** containing a [numeric type](../../glossary/vbe-glossary#numeric-type) number, or to a variable of a [numeric data type](../../Glossary/vbe-glossary.md#numeric-data-type), the result is an arithmetic sum.
 
 The value [Empty](../../Glossary/vbe-glossary.md#empty) denotes a **Variant** variable that hasn't been initialized (assigned an initial value). A **Variant** containing **Empty** is 0 if it is used in a numeric context, and a zero-length string ("") if it is used in a string context.
 
