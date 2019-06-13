@@ -31,7 +31,7 @@ Return value is either:
 - the **vbArray** constant added to any of the other constants from the following list.
 
 |Constant|Value|Description|
-|:-----|:-----|:-----|
+|:-----|-----:|:-----|
 |**vbEmpty**|0|[**Empty**](../../Glossary/vbe-glossary.md#empty) value <sup>_(represents uninitialized variable)_ [\*](#asteriskfootnote "Variant special value.")</sup>|
 |**vbNull**|1|[**Null**](../../Glossary/vbe-glossary.md#null) value <sup>_(represents no valid data)_ [\*](#asteriskfootnote  "Variant special value.")</sup>|
 |**vbInteger**|2|Integer of data type [**Integer**](../../Glossary/vbe-glossary.md#integer-data-type)|
