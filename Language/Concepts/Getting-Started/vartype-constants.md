@@ -15,7 +15,7 @@ localization_priority: Normal
 The following [constants](../../Glossary/vbe-glossary.md#constant) specified in VBA's **VbVarType** [enumeration](../../reference/user-interface-help/enum-statement.md), can be used anywhere in your code in place of the actual values. At the time of writing, all of them are used by the [**VarType**](../../Reference/User-Interface-Help/vartype-function.md) function.
 
 |Constant|Value|Description|Corresponding [VARENUM](https://docs.microsoft.com/en-us/windows/desktop/api/wtypes/ne-wtypes-varenum)&nbsp;constant in [OLE Automation Protocol specification](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-oaut/3fe7db9f-5803-4dc4-9d14-5425d3f5461f)|
-|:-----|:-----|:-----|:-----|
+|:-----|-----:|:-----|:-----|
 |**vbEmpty**|0|[**Empty**](../../Glossary/vbe-glossary.md#empty) value <sup>_(represents uninitialized [variable](../../glossary/vbe-glossary.md#variable))_</sup> <sup>[*](#asteriskfootnote "Default.")</sup> <sup>[&dagger;](#daggerfootnote "Variant special value.")</sup>|VT_EMPTY|
 |**vbNull**|1|[**Null**](../../Glossary/vbe-glossary.md#null) value <sup>_(contains no valid data)_</sup> <sup>[&dagger;](#daggerfootnote "Variant special value.")</sup>|VT_NULL|
 |**vbInteger**|2|Integer of data type [**Integer**](../../Glossary/vbe-glossary.md#integer-data-type)|VT_I2|
