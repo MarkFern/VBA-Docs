@@ -88,17 +88,30 @@ The following tables list the supported intrinsic [data types](../../Glossary/vb
 
 <BR><BR>
 
-### Family of array data types
+### Family of [array](../../concepts/getting-started/using-arrays.md) data types
 
-|Array&nbsp;data&#8209;type&nbsp;family|Range|Storage size <sup>_(in bytes)_</sup>|
-|:--------|:-----------|----:|
-|Family of all [array](../../concepts/getting-started/using-arrays.md)&nbsp;data&nbsp;types|Each element must have the same data type. The element data type in VBA, is chosen when executing the [variable's declaration](../../concepts/getting-started/declaring-variables.md)&mdash;any data type other than an array data type, can be chosen for the element data type. Once chosen, another cannot be chosen whilst the code is running. Each element has the same range as the chosen data type. The element configuration can have up to 60 dimensions, and has a maximum size limited by your operating system & amount of available RAM. The index range for each dimension is some contiguous set of integers or just one particular integer, specified in the element configuration.<BR><BR>Variable must be declared as either a fixed-size array or a dynamic (re-sizeable) array. During execution, if the variable is a fixed-size array, the variable cannot accommodate a dynamic array, & vice versa. Dynamic arrays have no initial element configuration, & their element configurations can be re-specified during run-time as many times as is needed. Fixed-size arrays on the other hand, have for their entire run-time life-times, immutable element configurations. The element configuration is programatically specified within VBA, through VBA variable declarations for fixed-size arrays, & through [**ReDim**](../../reference/user-interface-help/redim-statement.md) statements for dynamic arrays.|16<BR>**+**&nbsp;&#8239;_**LongPtr**&#8239;storage&#8239;byte&#8239;size_<BR>**+**&nbsp;&#8239;(8&nbsp;&#8239;**&times;**&nbsp;&#8239;_no.&#8239;of&#8239;array&#8239;dimensions_)<BR>**+**&nbsp;&#8239;**&Sigma;**&nbsp;&#8239;(_each&#8239;element's&#8239;storage&#8239;byte&#8239;size_)<br><sup>[*](#asteriskfootnote "Read this footnote for an example showing calculation of the storage size for a particular array: the data in a single-dimension array consisting of 4 Integer data elements of 2 bytes each occupies 8 bytes; the 8 bytes required for the data plus the 24 bytes of overhead in 32-bit environments brings the total memory requirement for the array to 32 bytes in 32-bit environments.")</sup>|
+<table><thead><th align="left">Array<BR>data&#8209;type<BR>family</th><th colspan="2">Range</th><th align="right">
+  
+  Storage size <sup>_(in bytes)_</sup></th></thead>
+<tr><td>
+
+For<BR>fixed&#8209;size<BR>arrays</td><td>
+
+Fixed-size arrays have for their entire run-time life-times, immutable element configurations. Their element configurations are programatically specified within VBA through VBA variable declarations.</td><td rowspan="2">
+  
+Each element must have the same data type. The element data type in VBA, is chosen when executing the [variable's declaration](../../concepts/getting-started/declaring-variables.md)&mdash;any data type other than an array data type, can be chosen for the element data type. Once chosen, another cannot be chosen whilst the code is running. Each element has the same range as the chosen data type. The element configuration can have up to 60 dimensions, and has a maximum size limited by your operating system & amount of available RAM. The index range for each dimension is some contiguous set of integers or just one particular integer, specified in the element configuration.<BR><BR>Variable must be declared as either a fixed-size array or a dynamic (re-sizeable) array. During execution, if the variable is a fixed-size array, the variable cannot accommodate a dynamic array, & vice versa.
+  
+  </td><td rowspan="2">
+  
+16<BR>**+**&nbsp;&#8239;_**LongPtr**&#8239;storage&#8239;byte&#8239;size_<BR>**+**&nbsp;&#8239;(8&nbsp;&#8239;**&times;**&nbsp;&#8239;_no.&#8239;of&#8239;array&#8239;dimensions_)<BR>**+**&nbsp;&#8239;**&Sigma;**&nbsp;&#8239;(_each&#8239;element's<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8239;storage&#8239;byte&#8239;size_)<br><sup>[*](#asteriskfootnote "Read this footnote for an example showing calculation of the storage size for a particular array: the data in a single-dimension array consisting of 4 Integer data elements of 2 bytes each occupies 8 bytes; the 8 bytes required for the data plus the 24 bytes of overhead in 32-bit environments brings the total memory requirement for the array to 32 bytes in 32-bit environments.")</sup></td></tr><tr><td>
+  
+For<BR>variable&#8209;size<BR>arrays</td><td>Dynamic arrays on the other hand, have no initial element configuration, & their element configurations can be re-specified during run-time as many times as is needed. Their element configurations are programatically specified within VBA through [**ReDim**](../../reference/user-interface-help/redim-statement.md) statements.</td></tr></table>
 
 <BR><BR>
 
 ### The [**Variant**](variant-data-type.md) type
 
-|Kind of '**Variant**&nbsp;data&#8209;type'&nbsp;data|Range|Storage&nbsp;size|
+|Kind of '**Variant**&nbsp;data&#8209;type'&nbsp;data|Range|Storage&nbsp;size <sup>_(in&nbsp;bytes)_</sup>|
 |:--------|:-----------|----:|
 |Any|Data of:<br><table><tr><td> - any non-array data type except the fixed-length **String** type & user-defined types declared in the VBE using VBA's **Type** statement,</td></tr><tr><td> - any array data type except if the element type is the fixed-length **String** type or a user-defined type declared in the VBE using VBA's **Type** statement,</td></tr><tr><td> - the **Variant** [**Error**](../../reference/user-interface-help/cverr-function.md) sub-type, _or_</td></tr><tr><td> - the **Variant** [**Decimal**](../../reference/user-interface-help/decimal-data-type.md) sub-type,</td></tr></table>_or_ one of the following special values:<br><table><tr><td> - [**Empty**](../../Glossary/vbe-glossary.md#empty) <sup>_(**Variant** value)_.</sup></td></tr><tr><td> - [**Null**](../../Glossary/vbe-glossary.md#null) <sup>_(**Variant** value)_.</sup></td></tr><tr><td> - [**Nothing**](../../Reference/User-Interface-Help/nothing-keyword.md) <sup>_(object-based value)._</sup></td></tr><tr><td> - the special value representing a [missing procedure argument](../../Reference/User-Interface-Help/ismissing-function.md) (a **Variant** value).</td></tr></table>|≥ 16<BR>(exact amount depends on specific kind of data)|
 |Arrays|Any array-data-type array.|(16&nbsp;&#8239;-&nbsp;&#8239;_**LongPtr**&#8239;storage&#8239;size_)&thinsp; more than when stored in variable declared as an array.|
