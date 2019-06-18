@@ -57,7 +57,7 @@ Any [object](../../glossary/vbe-glossary.md#object) of the specific object type,
  
 ## Intrinsic data types
 
-The following tables list the supported intrinsic [data types](../../Glossary/vbe-glossary.md#data-type), & includes information on data-type storage sizes and ranges. The tables apart from the last one, list the intrinsic [data types](../../Glossary/vbe-glossary.md#data-type) other than the [**Variant**](variant-data-type.md) type. The last table documents the intrinsic **Variant** data type.
+The following tables list the supported intrinsic [data types](../../Glossary/vbe-glossary.md#data-type), & includes information on data-type storage sizes and ranges. The last table documents the intrinsic [**Variant**](../../Glossary/vbe-glossary.md#variant) data type & its sub-types. The previous tables document all the instrinsic data types that can be used without the use of the **Variant** type.
 
 ### [Numeric data types](../../glossary/vbe-glossary.md#numeric-data-type)
 
