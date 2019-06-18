@@ -61,6 +61,93 @@ The following two tables list the supported intrinsic [data types](../../Glossar
 
 ### All except the **Variant** type
 
+<table>
+  <THEAD><TH>Category</TH><TH>Intrinsic data&nbsp;type</TH><TH ALIGN="RIGHT">Storage size <sup>    
+    <i>(in bytes)</i> </sup></TH><TH>Range</TH></THEAD>
+  <TR><td rowspan="11">
+
+[Numeric](../../glossary/vbe-glossary.md#numeric-data-type)</td><td>
+  
+**[Boolean](boolean-data-type.md)**</TD><td align="right">
+    
+2</TD><TD>
+    
+**True** or **False**</TD></TR><TR><TD>
+    
+**[Byte](byte-data-type.md)**</TD><td align="right">
+  
+1</TD><TD>
+  
+Integer in range from 0 to 255</TD></TR><TR><TD>
+  
+**[Integer](integer-data-type.md)**</TD><td align="right">
+  
+2</TD><TD>
+  
+Integer in range from -_a_ to (_a_ - 1) where _a_ = 32,768</TD></TR><TR><TD>
+  
+**[Long](long-data-type.md)**<BR><sup>_(Long integer)_<sup></TD><td align="right">
+  
+4</TD><TD>
+  
+Integer in range from -_a_ to (_a_ - 1) where _a_ = 2,147,483,648</TD></TR><TR><TD>
+
+**[LongLong](longlong-data-type.md)**<BR><sup>_(LongLong integer)_<sup></TD><td align="right">
+  
+8</TD><td>
+  
+Integer in range from -_a_ to (_a_ - 1) where _a_ = 9,223,372,036,854,775,808<br/><br/>Valid on 64-bit platforms only.</TD></TR><TR><TD>
+  
+**[LongPtr](longptr-data-type.md)**<BR><sup>_(Long integer on 32&#8209;bit systems,<BR>LongLong integer on 64&#8209;bit systems)_<sup></TD><td align="right">
+  
+On 32-bit systems, 4<br/><br/>On 64-bit systems, 8</TD><TD>
+
+The range for bit version of number, is every possible bit combination for the bytes specified by the storage size. This integeric range is:<BR>&thinsp;•&nbsp;&nbsp;00&thinsp;00&thinsp;00&thinsp;00&thinsp;<sub>16</sub>&nbsp;→&nbsp;FF&thinsp;FF&thinsp;FF&thinsp;FF&thinsp;<sub>16</sub><BR>&nbsp;&nbsp;&nbsp;on 32-bit systems, \&<BR> &thinsp;•&nbsp;&nbsp;00&thinsp;00&thinsp;00&thinsp;00&thinsp;**00&thinsp;00 00&thinsp;00**&thinsp;<sub>16</sub>&nbsp;→&nbsp;FF&thinsp;FF&thinsp;FF&thinsp;FF&thinsp;**FF&thinsp;FF FF&thinsp;FF**&thinsp;<sub>16</sub><BR>&nbsp;&nbsp;&nbsp;on 64-bit systems.</TD></TR><TR><TD>
+  
+**[Single](single-data-type.md)**<BR><sup>_(single&#8209;precision floating&#8209;point)_</sup></TD><td align="right">
+  
+4</TD><TD>
+  
+The special values +∞, -∞, NaN & negative zero, plus values from -_a_ to _a_ where _a_ = 3<sub>&#8226;</sub>402823 × 10<sup>38</sup>.<BR><BR>The value mustn't have more than 24 significant binary digits & 126 binary places, when the value is a non-special value with an absolute value ≥ 2<sup>−126</sup>.<BR><BR>When 0 < &vert;_the value_&vert; < 2<sup>−126</sup>, the value must be able to be written as ±p ÷ 2<sup>(126 + 23)</sup> for some natural number _p_ for which &vert;_p_&vert; ≤ (2<sup>23</sup> - 1), except if the value is the special negative-zero value.<BR><BR>Note that all integers having no more than 6 significant decimal digits, and having absolute values no more than 3<sub>&#8226;</sub>402823 × 10<sup>38</sup>, are in the range.</TD></TR><TR><TD>
+  
+**[Double](double-data-type.md)** <BR><sup>_(double&#8209;precision floating-point)_</sup></TD><td align="right">
+  
+8</TD><TD>
+  
+-_a_ to (_a_ + 10<sup>-14</sup>) where _a_ = 1<sub>&#8226;</sub>79769313486231 × 10<sup>308</sup></TD></TR><TR><TD>
+  
+**[Decimal](decimal-data-type.md)**</TD><td align="right">
+  
+14</TD><TD>
+  
+Integer with an absolute value less than 79,228,162,514,264,337,593,543,950,336, or a number from this range after it has been scaled down by 10<sup>a</sup> where _a_ can be any natural number under 29.</TD></TR><TR><TD>
+  
+**[Date](date-data-type.md)**</TD><td align="right">
+  
+8</TD><TD>
+  
+Date & time in range from&nbsp;&nbsp;January&thinsp;1,&thinsp;100&thinsp;AD,&thinsp;00:00.00&thinsp;AM,&nbsp;&nbsp;to&nbsp;&nbsp;December&thinsp;31,&thinsp;9999&thinsp;AD,&thinsp;23:59.59&thinsp;PM&nbsp;&nbsp;excluding times that can't be expressed purely as integeric numbers of seconds after midnight.</TD></TR><TR><TD>
+
+**[Currency](currency-data-type.md)**<BR><sup>_(scaled integer)_</sup></TD><td align="right">
+  
+8</TD><TD>
+  
+-_a_&nbsp;&nbsp;to&nbsp;&nbsp;(_a_&thinsp;-&thinsp;0<sub>&#8226;</sub>0001)&nbsp;&nbsp;where<BR>&nbsp;&nbsp;&nbsp;_a_ ⪆ 9 × 10<sup>14</sup> &<BR>&nbsp;&nbsp;&nbsp;value must have no more than 4 decimal places,<p align="right">_a_ = 922,337,203,685,477<sub>&#8226;</sub>5808 (≈ 922 trillion).</p></TD></TR><TR><TD rowspan="2">
+
+[String](../../glossary/vbe-glossary.md#string-data-type)</TD><TD>
+  
+_Variable&#8209;length_<BR>**[String](string-data-type.md)**</TD><td align="right">
+  
+4<BR>+&nbsp;&#8239;_**LongPtr**&#8239;storage&#8239;size_<BR>+&nbsp;&#8239;((_length&#8239;of&#8239;string_&nbsp;&#8239;+&nbsp;&#8239;1)&nbsp;&#8239;&times;&nbsp;&#8239;2)</TD><TD>
+  
+Each character can be any Unicode character; length of string can be changed to any non-negative integer up to approximately 2 billion.</TD></TR><TR><TD>
+
+_Fixed&#8209;length_<BR>**String**</TD><td align="right">
+  
+_String&#8239;length_&nbsp;&#8239;&times;&nbsp;&#8239;2</TD><TD>
+  
+Each character can be any Unicode character; length of string can be set to any positive integer up to approximately 65,400; string length can only be set during execution of the variable's declaration</TD><TR></TABLE>
+
 |Intrinsic data&nbsp;type or data&#8209;type&nbsp;family|Storage size <sup>_(in bytes)_</sup>|Range|
 |:--------|-----------:|:----|
 |Family of [array](../../concepts/getting-started/using-arrays.md)&nbsp;types|16<BR>**+**&nbsp;&#8239;_**LongPtr**&#8239;storage&#8239;byte&#8239;size_<BR>**+**&nbsp;&#8239;(8&nbsp;&#8239;**&times;**&nbsp;&#8239;_no.&#8239;of&#8239;array&#8239;dimensions_)<BR>**+**&nbsp;&#8239;**&Sigma;**&nbsp;&#8239;(_each&#8239;element's&#8239;storage&#8239;byte&#8239;size_)<br><sup>[*](#asteriskfootnote "Read this footnote for an example showing calculation of the storage size for a particular array: the data in a single-dimension array consisting of 4 Integer data elements of 2 bytes each occupies 8 bytes; the 8 bytes required for the data plus the 24 bytes of overhead in 32-bit environments brings the total memory requirement for the array to 32 bytes in 32-bit environments.")</sup>|Each element must have the same data type. The element data type in VBA, is chosen when executing the [variable's declaration](../../concepts/getting-started/declaring-variables.md)&mdash;any data type other than an array data type, can be chosen for the element data type. Once chosen, another cannot be chosen whilst the code is running. Each element has the same range as the chosen data type. The element configuration can have up to 60 dimensions, and has a maximum size limited by your operating system & amount of available RAM. The index range for each dimension is some contiguous set of integers or just one particular integer, specified in the element configuration.<BR><BR>Variable must be declared as either a fixed-size array or a dynamic (re-sizeable) array. During execution, if the variable is a fixed-size array, the variable cannot accommodate a dynamic array, & vice versa. Dynamic arrays have no initial element configuration, & their element configurations can be re-specified during run-time as many times as is needed. Fixed-size arrays on the other hand, have for their entire run-time life-times, immutable element configurations. The element configuration is programatically specified within VBA, through VBA variable declarations for fixed-size arrays, & through [**ReDim**](../../reference/user-interface-help/redim-statement.md) statements for dynamic arrays.|
