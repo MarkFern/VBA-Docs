@@ -18,42 +18,11 @@ A data type is the characteristic of a [variable](../../glossary/vbe-glossary.md
 
 Non-intrinsic data types include those in the following table. Note that a VBA compatible [interface](../../Glossary/vbe-glossary.md#interface) type is used in VBA, by using its corresponding [object type](../../Glossary/vbe-glossary.md#object-type) (the interface's object type has the same name as the interface).
 
-<table>
-  <tr>
-   <th align="left">Non&#8209;intrinsic&nbsp;data&nbsp;type</th>
-   <th align="left">Range</th>
-   <th align="right">
- 
- Storage size <sup>_(in bytes)_</sup></th>
- </tr>
- <tr><td>
-
-**[User-defined](../../How-to/user-defined-data-type.md)**<BR>_<sup>(defined using [**Type**](../../reference/user-interface-help/type-statement.md) or other means)</sup>_</td>
-   <td>The range of each element is the same as the range of its data type.</td>
-   <td align="right">
-  
-  **Σ**&nbsp;(_each&#8239;element's&#8239;storage&#8239;byte&#8239;size_)</td>
- </tr>
- <tr>
-  <td>
-   
-Specific [object type](../../glossary/vbe-glossary.md#object-type)<BR><sup>_(any object-based type that isn't the intrinsic [**Object**](object-data-type.md) data type)_</sup></td>
-  <td>
-
-Any [object](../../glossary/vbe-glossary.md#object) of the specific object type, object that _implements_ the public _interface_ of the object-type [class](../../glossary/vbe-glossary.md#class), or the object-based special value [**Nothing**](../../reference/user-interface-help/nothing-keyword.md).</td>
-  <td align="right">
-
-≥&nbsp;_**LongPtr**&#8239;storage&#8239;size_</td>
- </tr>
- <tr>
-  <td>
-
-[**Collection**](../../reference/user-interface-help/collection-object.md)&nbsp;or<BR>[**Dictionary**](../../reference/user-interface-help/dictionary-object.md)&nbsp;object<BR><sup>_(examples&nbsp;of&nbsp;specific&nbsp;object&nbsp;types)_</sup></td>
-   <td colspan="2" align="center">
-    
-&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&nbsp;_See&nbsp;"specific&#8239;object&#8239;type"_&nbsp;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</td>
- </tr>
-</table>
+|Non&#8209;intrinsic&nbsp;data&nbsp;type|Range|Storage size <sup>_(in bytes)_</sup>|
+|:----|:----|----:|
+**[User-defined](../../How-to/user-defined-data-type.md)**<BR>_<sup>(defined using [**Type**](../../reference/user-interface-help/type-statement.md) or other means)</sup>_|The range of each element is the same as the range of its data type.|**Σ**&nbsp;(_each&#8239;element's&#8239;storage&#8239;byte&#8239;size_)|
+|Specific [object type](../../glossary/vbe-glossary.md#object-type)<BR><sup>_(any object-based type that isn't the intrinsic [**Object**](object-data-type.md) data type)_</sup>|Any [object](../../glossary/vbe-glossary.md#object) of the specific object type, object that _implements_ the public _interface_ of the object-type [class](../../glossary/vbe-glossary.md#class), or the object-based special value [**Nothing**](../../reference/user-interface-help/nothing-keyword.md).|≥&nbsp;_**LongPtr**&#8239;storage&#8239;size_|
+|[**Collection**](../../reference/user-interface-help/collection-object.md)&nbsp;or<BR>[**Dictionary**](../../reference/user-interface-help/dictionary-object.md)&nbsp;object<BR><sup>_(examples&nbsp;of&nbsp;specific&nbsp;object&nbsp;types)_</sup>|_See&nbsp;"specific&#8239;object&#8239;type"_|_See&nbsp;"specific&#8239;object&#8239;type"_|
  
 ## Intrinsic data types
 
