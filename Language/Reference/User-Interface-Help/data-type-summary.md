@@ -79,7 +79,7 @@ The following tables list the supported intrinsic [data types](../../Glossary/vb
 |**Boolean** data-type value|**True** or **False**.|16|
 |**Date** data-type value|Same as the **Date** data type.|16|
 |Objects of the intrinsic [**Object**](object-data-type.md) data type|Same range as the **Object** data type.|(16&nbsp;&#8239;-&nbsp;&#8239;_**LongPtr**&#8239;storage&#8239;size_) &thinsp;more than when stored in variable declared as having the **Object**&nbsp;data&nbsp;type.|
-|"Specific&nbsp;[object&nbsp;type](../../glossary/vbe-glossary.md#object-type)"&nbsp;objects<BR><sup>_(objects not of the **Object** data type)_</sup>|Range for "specific&#8239;object&#8239;type" from earlier section applies.|(16&nbsp;&#8239;-&nbsp;&#8239;_**LongPtr**&#8239;storage&#8239;size_) &thinsp;more than when stored in variable declared as having "specific&#8239;object&#8239;type" data type.|
+|_"Specific&nbsp;[object&nbsp;type](../../glossary/vbe-glossary.md#object-type)"_&nbsp;objects<BR><sup>_(objects not of the **Object** data type)_</sup>|Range for _"specific&#8239;object&#8239;type"_ from earlier section applies.|(16&nbsp;&#8239;-&nbsp;&#8239;_**LongPtr**&#8239;storage&#8239;size_) &thinsp;more than when stored in variable declared as having _"specific&#8239;object&#8239;type"_ data type.|
 |[User-defined type](../../How-to/user-defined-data-type.md)|**User-defined type** must be accessed through a [VBE library reference](../../reference/user-interface-help/references-dialog-box.md); range specified for the non-intrinsic **user-defined type** data type (in earlier section) also applies.|16 more than when stored in variable declared as having 'user&#8209;defined&#8239;type' data type.|
 |Special [**Error** sub&#x2011;type](../../reference/user-interface-help/cverr-function.md) values|Corresponds to valid [error numbers](../../glossary/vbe-glossary.md#error-number)|16|
 |Special values [**Empty**](../../Glossary/vbe-glossary.md#empty), [**Null**](../../Glossary/vbe-glossary.md#null), [**Nothing**](../../Reference/User-Interface-Help/nothing-keyword.md), & the special value representing a [missing procedure argument](../../Reference/User-Interface-Help/ismissing-function.md)|Just the four special values.|16|
@@ -123,7 +123,7 @@ The following tables in this section summarize several implicit type conversions
 |[Numeric&nbsp;data&nbsp;type](../../glossary/vbe-glossary.md#numeric-data-type) apart from the **Boolean**&nbsp;type|Numeric data type apart from the **Date** type; within the range of the variable/property/constant data type|
 |**Byte**&nbsp;or **Integer**&nbsp;type|**Date** type;&nbsp;&nbsp;&nbsp;-32,768 &le; _value_ &le; 32,767|
 |**Long**,&nbsp;**Single**,&nbsp;**Double**,&nbsp;or **Currency**&nbsp;type|**Date** type|
-|**Boolean** type|Numeric data type|
+|**Boolean** type|Numeric or [**Decimal**](decimal-data-type.md) data type|
 
 ##### Casts
 
