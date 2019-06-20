@@ -96,25 +96,34 @@ The following tables list the supported intrinsic [data types](../../Glossary/vb
 
 #### Assignment statements _<sup>(implicit conversions & casts)</sup>_
 
-The following two tables summarize several implicit type conversions & casts that always take place in variable, [property](../../glossary/vbe-glossary.md#property), & [constant](../../glossary/vbe-glossary.md#constant) [assignment statements](../../Concepts/Getting-Started/writing-assignment-statements.md) of values, whenever [by reference](../../glossary/vbe-glossary.md#by-reference) functionality hasn't been established for the identifier meant to be assigned a value in the statement, & that happen so that the assignments still assign potentially useful values.
+The following tables in this section summarize several implicit type conversions & casts that always take place in variable, [property](../../glossary/vbe-glossary.md#property), & [constant](../../glossary/vbe-glossary.md#constant) [assignment statements](../../Concepts/Getting-Started/writing-assignment-statements.md) of values, whenever [by reference](../../glossary/vbe-glossary.md#by-reference) functionality hasn't been established for the identifier meant to be assigned a value in the statement, & that happen so that the assignments still assign potentially useful values.
 
 ##### Conversions
+
+###### Variant related
 
 |Variable/property/constant data type|Value form|
 |:--------|:-----------|
 |**Variant**|Any data not held in a **Variant**, that a **Variant** can directly hold.<BR><sup>_(See the [section above on the **Variant** type](#the-variant-type) for details on this.)_</sup>|
-| | |
-|[Numeric&nbsp;data&nbsp;type](../../glossary/vbe-glossary.md#numeric-data-type) apart from the **Boolean**&nbsp;type|Numeric data type apart from the **Date** type; within the range of the variable/property/constant data type|
-|**Byte**&nbsp;or **Integer**&nbsp;type|**Date** type;&nbsp;&nbsp;&nbsp;-32,768 &le; _value_ &le; 32,767|
-|**Long**,&nbsp;**Single**,&nbsp;**Double**,&nbsp;or **Currency**&nbsp;type|**Date** type|
-|**Boolean** type|Numeric data type|
-| | |
+|Intrinsic data type|For each variable/property/constant data type, the form is that required by the union of all other rules in this table that apply to the particular variable/property/constant data type, except that the form applies to sub-type data of a **Variant** value where the **Variant** value is the actual value assigned.|
+
+###### String related
+
+|Variable/property/constant data type|Value form|
+|:--------|:-----------|
 |Numeric&nbsp;data&nbsp;type|**String** textual representation of a number that parses as a number, and that would be automatically implicitly coerced to the variable/property/constant data type in a related variable/property/constant assignment statement|
 |**Date** type|**String** textual representation of a valid date, that parses as a date.|
 |**Currency** type|**String** textual representation of a valid currency amount, that parses as a currency amount.|
 |**String**|Any intrinsic non-object & non-array data type; not having **Error** sub-type; not special values **Null**, **Nothing**, an object or an array.|
-| | |
-|Intrinsic data type|For each variable/property/constant data type, the form is that required by the union of all other rules in this table that apply to the particular variable/property/constant data type, except that the form applies to sub-type data of a **Variant** value where the **Variant** value is the actual value assigned.|
+
+###### 'Numeric type to numeric type' conversions
+
+|Variable/property/constant data type|Value form|
+|:--------|:-----------|
+|[Numeric&nbsp;data&nbsp;type](../../glossary/vbe-glossary.md#numeric-data-type) apart from the **Boolean**&nbsp;type|Numeric data type apart from the **Date** type; within the range of the variable/property/constant data type|
+|**Byte**&nbsp;or **Integer**&nbsp;type|**Date** type;&nbsp;&nbsp;&nbsp;-32,768 &le; _value_ &le; 32,767|
+|**Long**,&nbsp;**Single**,&nbsp;**Double**,&nbsp;or **Currency**&nbsp;type|**Date** type|
+|**Boolean** type|Numeric data type|
 
 ##### Casts
 
