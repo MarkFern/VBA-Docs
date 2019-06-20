@@ -120,7 +120,7 @@ The following tables in this section summarize several implicit type conversions
 
 |Variable/property/constant data type|Value form|
 |:--------|:-----------|
-|[Numeric&nbsp;data&nbsp;type](../../glossary/vbe-glossary.md#numeric-data-type) apart from the **Boolean**&nbsp;type|Numeric data type apart from the **Date** type; within the range of the variable/property/constant data type|
+|[Numeric&nbsp;data&nbsp;type](../../glossary/vbe-glossary.md#numeric-data-type) apart from the **Boolean**&nbsp;type|Numeric data type apart from the **Date** type; not above the upper-bound, or beneath the lower-bound, of the range of the variable/property/constant data type.|
 |**Byte**&nbsp;or **Integer**&nbsp;type|**Date** type;&nbsp;&nbsp;&nbsp;-32,768 &le; _value_ &le; 32,767|
 |**Long**,&nbsp;**Single**,&nbsp;**Double**,&nbsp;or **Currency**&nbsp;type|**Date** type|
 |**Boolean** type|Numeric or [**Decimal**](decimal-data-type.md) data type|
