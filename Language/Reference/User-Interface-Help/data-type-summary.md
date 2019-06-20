@@ -111,7 +111,7 @@ The following tables in this section summarize several implicit type conversions
 
 |Variable/property/constant data type|Value form|
 |:--------|:-----------|
-|Numeric&nbsp;data&nbsp;type|**String** textual representation of a number that parses as a number, and that would be automatically implicitly coerced to the variable/property/constant data type in a related variable/property/constant assignment statement|
+|[Numeric&nbsp;data&nbsp;type](../../glossary/vbe-glossary.md#numeric-data-type)|**String** textual representation of a number that parses as a number, and that would be automatically implicitly coerced to the variable/property/constant data type in a related variable/property/constant assignment statement|
 |**Date** type|**String** textual representation of a valid date, that parses as a date.|
 |**Currency** type|**String** textual representation of a valid currency amount, that parses as a currency amount.|
 |**String**|Any intrinsic non-object & non-array data type; not having **Error** sub-type; not special values **Null**, **Nothing**, an object or an array.|
@@ -120,10 +120,10 @@ The following tables in this section summarize several implicit type conversions
 
 |Variable/property/constant data type|Value form|
 |:--------|:-----------|
-|[Numeric&nbsp;data&nbsp;type](../../glossary/vbe-glossary.md#numeric-data-type) apart from the **Boolean**&nbsp;type|Numeric data type apart from the **Date** type; not above the upper-bound, or beneath the lower-bound, of the range of the variable/property/constant data type.|
+|Numeric&nbsp;data&nbsp;type apart from the **Boolean**&nbsp;type|Numeric data type apart from the **Date** type, or the **Variant** [**Decimal**](decimal-data-type.md) sub-type; not above the upper-bound, or beneath the lower-bound, of the range of the variable/property/constant data type.|
 |**Byte**&nbsp;or **Integer**&nbsp;type|**Date** type;&nbsp;&nbsp;&nbsp;-32,768 &le; _value_ &le; 32,767|
 |**Long**,&nbsp;**Single**,&nbsp;**Double**,&nbsp;or **Currency**&nbsp;type|**Date** type|
-|**Boolean** type|Numeric or [**Decimal**](decimal-data-type.md) data type|
+|**Boolean** type|Numeric data type or the **Variant** **Decimal** sub-type|
 
 ##### Casts
 
