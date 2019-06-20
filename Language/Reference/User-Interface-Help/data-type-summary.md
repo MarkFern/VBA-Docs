@@ -116,7 +116,7 @@ The following tables in this section summarize several implicit type conversions
 |**Currency** type|**String** textual representation of a valid currency amount, that parses as a currency amount.|
 |**String**|Any intrinsic non-object & non-array data type; not having **Error** sub-type; not special values **Null**, **Nothing**, an object or an array.|
 
-###### 'Numeric type to numeric type' conversions
+###### '[Numeric type](https://docs.microsoft.com/en-gb/office/vba/language/glossary/vbe-glossary#numeric-type) to numeric type' conversions
 
 |Variable/property/constant data type|Value form|
 |:--------|:-----------|
@@ -132,8 +132,8 @@ Even though strictly speaking these casts always take place between [object type
 |Variable/property type|Value form|
 |:--------|:-----------|
 |The&nbsp;**Object**&nbsp;data&nbsp;type|Object reference exposing COM's **IDispatch** interface, or can be downcast to such a reference|
-|A&nbsp;specific&nbsp;object&nbsp;type<BR><sup>_(not the **Object** data type)_</sup>|Object type defined using the **Implements** statement to specify implementation of the interface derived from the variable/property type|
-|An&nbsp;[interface](../../Glossary/vbe-glossary.md#interface)&nbsp;type|Object type defined using the [**Implements**](../../reference/user-interface-help/implements-statement.md) statement to specify implementation of the interface|
+|A&nbsp;specific&nbsp;object&nbsp;type<BR><sup>_(not the **Object** data type)_</sup>|Object type defined using the [**Implements**](../../reference/user-interface-help/implements-statement.md) statement to specify implementation of the interface derived from the variable/property type|
+|An&nbsp;[interface](../../Glossary/vbe-glossary.md#interface)&nbsp;type|Object type defined using the **Implements** statement to specify implementation of the interface|
 
 ##### Operations involving a cast & a conversion
 
