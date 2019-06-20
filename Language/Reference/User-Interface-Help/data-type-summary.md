@@ -23,6 +23,7 @@ Non-intrinsic data types include those in the following table. Note that a VBA c
 **[User-defined](../../How-to/user-defined-data-type.md)**<BR>_<sup>(defined using [**Type**](../../reference/user-interface-help/type-statement.md) or other means)</sup>_|The range of each element is the same as the range of its data type.|**Σ**&nbsp;(_each&#8239;element's&#8239;storage&#8239;byte&#8239;size_)|
 |Specific [object type](../../glossary/vbe-glossary.md#object-type)<BR><sup>_(any object-based type that isn't the intrinsic [**Object**](object-data-type.md) data type)_</sup>|Any [object](../../glossary/vbe-glossary.md#object) of the specific object type, object that _implements_ the public _interface_ of the object-type [class](../../glossary/vbe-glossary.md#class), or the object-based special value [**Nothing**](../../reference/user-interface-help/nothing-keyword.md).|≥&nbsp;_**LongPtr**&#8239;storage&#8239;size_|
 |[**Collection**](../../reference/user-interface-help/collection-object.md)&nbsp;or<BR>[**Dictionary**](../../reference/user-interface-help/dictionary-object.md)&nbsp;object<BR><sup>_(examples&nbsp;of&nbsp;specific&nbsp;object&nbsp;types)_</sup>|_See&nbsp;"specific&#8239;object&#8239;type"_|_See&nbsp;"specific&#8239;object&#8239;type"_|
+|[**Decimal**](../../reference/user-interface-help/decimal-data-type.md)|_See&nbsp;"Number&nbsp;of&nbsp;**Decimal**&nbsp;data&nbsp;type"_ in ['The **Variant** type'](#the-variant-type) table of the next section.|_See&nbsp;"Number&nbsp;of&nbsp;**Decimal**&nbsp;data&nbsp;type"_ in 'The **Variant** type' table of the next section.|
  
 ## Intrinsic data types
 
@@ -45,6 +46,9 @@ The following tables list the supported intrinsic [data types](../../Glossary/vb
 
 > [!NOTE] 
 > [LongPtr](longptr-data-type.md) is not a true data type because it transforms to a [Long](long-data-type.md) in 32-bit environments, or a [LongLong](longlong-data-type.md) in 64-bit environments. **LongPtr** should be used to represent pointer and handle values in [Declare statements](declare-statement.md) and enables writing portable code that can run in both 32-bit and 64-bit environments.
+
+> [!NOTE] 
+> The [Decimal](../../reference/user-interface-help/decimal-data-type.md) data type is another numeric type. It's not documented above because it is not considered to be an intrinsic data type. It can only be used when used as a **Variant** sub-type. It is partly documented on this page in [The **Variant** type](#the-variant-type) subsection below.
 
 <BR><BR>
 
