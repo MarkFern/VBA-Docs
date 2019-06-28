@@ -12,7 +12,7 @@ localization_priority: Normal
 
 # TypeName function
 
-Returns a **String** that provides type & data-status information concerning the passed [argument](../../Glossary/vbe-glossary.md#argument).
+Returns a **String** that provides type and data-status information concerning the passed [argument](../../Glossary/vbe-glossary.md#argument).
 
 ## Syntax
 
@@ -58,7 +58,7 @@ The rules for what string is returned by **TypeName**, are shown in the followin
 This example uses the **TypeName** function to return information about a variable.
 
 ```vb    
-' Declare & assign variables.
+' Declare and assign variables.
 Dim MyType
 Dim StrVar As String, IntVar As Integer, CurVar As Currency
 Dim UninitVar
