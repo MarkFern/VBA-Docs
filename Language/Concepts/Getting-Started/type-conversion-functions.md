@@ -94,7 +94,7 @@ A = Array(1, 2)         ' Define variable.
 ' CBool after bit-wise comparison can be useful.
 B = VarType(A) And VbVarType.vbArray
 ' In binary,
-'   VarType(A)          is 10000000001100 &
+'   VarType(A)          is 10000000001100 and
 '   VbVarType.vbArray   is 10000000000000.
 Check = CBool(B)        ' Check contains True
                         ' indicating A is an array.
