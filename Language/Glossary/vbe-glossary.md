@@ -147,7 +147,7 @@ The formal definition of an object. The class acts as the template from which an
 
 ## class module
 
-A module that contains the definition of a [class](#class) or [interface](#interface), including its [property](#property), [method](#method) & prototype definitions. Prototype definitions are written in the same way as the property & method definitions that they represent, except that in the case of procedures, prototype definitions do not supply implementations of the procedures (i.e. do not have procedure bodies.) 
+A module that contains the definition of a [class](#class) or [interface](#interface), including its [property](#property), [method](#method) and prototype definitions. Prototype definitions are written in the same way as the property and method definitions that they represent, except that in the case of procedures, prototype definitions do not supply implementations of the procedures (i.e. do not have procedure bodies.) 
 
 
 ## code module
@@ -407,13 +407,13 @@ A data type that holds integer variables stored as 2-byte whole numbers in the r
 
 An _interface_ specifies a specific way in which one can interact with an object, provided that the object implements the _interface_. 
 
-An _interface_'s definition specifies a particular set of [method](#method) headers & [property](#property) access definitions (both termed prototypes), that in turn specify the method calls & property references that can be used on objects implementing the _interface_. When it is said that a particular _interface_ of an object is being used, it is meant that such method calls & property references specified by the _interface_, & in the context of the _interface_, are being used on the object.
+An _interface_'s definition specifies a particular set of [method](#method) headers and [property](#property) access definitions (both termed prototypes), that in turn specify the method calls and property references that can be used on objects implementing the _interface_. When it is said that a particular _interface_ of an object is being used, it is meant that such method calls and property references specified by the _interface_, and in the context of the _interface_, are being used on the object.
 
 The prototypes of an _interface_ are said to represent the members that the _interface_ encapsulates. _Interfaces_ never supply procedure implementations (i.e. procedure bodies in _interface_ definitions are either absent or not applicable.) 
 
 An _interface_ definition created using the VBE, is defined in a [class module](#class-module). Such _interfaces_ are classified as classes within the VBE, and in programming terms, can also be used as though they were [classes](#class). _Interfaces_ defined in a [type-library](#type-library) definition specifically using the 'interface' keyword of the Interface Definition Language (IDL), that are accessed using [library references](../reference/user-interface-help/references-dialog-box.md), are also classified as classes within the VBE but cannot be instantiated.
 
-When handling an object reference for an object that implements a specific _interface_, the object reference must expose the _interface_, in order to be able to use the _interface_ directly on the object reference. If the object reference isn't as such, [casting](../Reference/User-Interface-Help/data-type-summary.md#conversion--casting-between-data-types) the object reference to another type that exposes the _interface_, will enable the _interface_ to be used on the cast object reference & so ultimately on the object.
+When handling an object reference for an object that implements a specific _interface_, the object reference must expose the _interface_, in order to be able to use the _interface_ directly on the object reference. If the object reference isn't as such, [casting](../Reference/User-Interface-Help/data-type-summary.md#conversion--casting-between-data-types) the object reference to another type that exposes the _interface_, will enable the _interface_ to be used on the cast object reference and so ultimately on the object.
 
 If a class _implements_ an _interface_ (whether by use of the [Implements](../Reference/User-Interface-Help/implements-statement.md) statement or as explicitly specified in a type-library definition), an instance of the class can be used as an [argument](#argument) to a procedure when the procedure specifies that the corresponding internal [parameter](#parameter) should have the type of the _interface_, so long as code within the procedure body is 'happy' to accept such a value. In such cases, a cast of the argument's value to the parameter type, occurs.
 
