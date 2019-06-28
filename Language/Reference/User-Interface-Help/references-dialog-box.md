@@ -14,7 +14,7 @@ localization_priority: Normal
 
 ![References dialog box](../../../images/referdia_ZA01201648.gif)
 
-Allows you to select external [classes](../../Glossary/vbe-glossary.md#class), [modules](../../Glossary/vbe-glossary.md#module), [procedures](../../Glossary/vbe-glossary.md#procedure), [user-defined types](../../Glossary/vbe-glossary.md#user-defined-type), [enumerations](../../reference/user-interface-help/enum-statement.md), & [constants](../../Glossary/vbe-glossary.md#constant) that you want available in your code, by setting a reference to an external library. The library can be an [object library](../../Glossary/vbe-glossary.md#object-library), or some other kind of library. Possible library filename extensions are listed below in the description for the _browse_ option.
+Allows you to select external [classes](../../Glossary/vbe-glossary.md#class), [modules](../../Glossary/vbe-glossary.md#module), [procedures](../../Glossary/vbe-glossary.md#procedure), [user-defined types](../../Glossary/vbe-glossary.md#user-defined-type), [enumerations](../../reference/user-interface-help/enum-statement.md), and [constants](../../Glossary/vbe-glossary.md#constant) that you want available in your code, by setting a reference to an external library. The library can be an [object library](../../Glossary/vbe-glossary.md#object-library), or some other kind of library. Possible library filename extensions are listed below in the description for the _browse_ option.
 
 The following table describes the dialog box options.
 
