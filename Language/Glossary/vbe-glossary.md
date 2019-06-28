@@ -842,7 +842,7 @@ See [**Variant** data type page](../reference/user-interface-help/variant-data-t
 
 ## variant expression
 
-Any expression that is evaluated to either a **Variant** value, or a value [coercible](../Reference/User-Interface-Help/data-type-summary.md#implicit-conversions--casts) to the **Variant** type, as well as the special values **Empty** and **Null**.
+Any expression that is evaluated to either a **Variant** value, or a value [coercible](../Reference/User-Interface-Help/data-type-summary.md#implicit-conversions-and-casts) to the **Variant** type, as well as the special values **Empty** and **Null**.
 
 
 ## watch expression
