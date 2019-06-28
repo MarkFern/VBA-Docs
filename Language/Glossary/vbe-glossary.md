@@ -557,7 +557,7 @@ A dialog box in which you can examine the contents of an object library to get i
 
 ## Object data type
 
-A special data type that can store any object reference that exposes COM's **IDispatch** interface (& so can be directly used with [OLE] Automation's late-binding technology). A variable of the [**Object**](../reference/user-interface-help/object-data-type.md) data type, is stored as a 32-bit (4-byte) address that refers to an **IDispatch**-exposing interface attached to an object.
+A special data type that can store any object reference that exposes COM's **IDispatch** interface (and so can be directly used with [OLE] Automation's late-binding technology). A variable of the [**Object**](../reference/user-interface-help/object-data-type.md) data type, is stored as a 32-bit (4-byte) address that refers to an **IDispatch**-exposing interface attached to an object.
 
 All objects/instances of [classes](../../Glossary/vbe-glossary.md#class) defined through VBA [class modules](#class-module), can be cast to the **Object** data type. Objects/instances of library classes can't be cast to the **Object** data type if the classes do not implement COM's **IDispatch** interface. Library here is meant to signify a library made available through [_library references_](../reference/user-interface-help/references-dialog-box.md).
 
@@ -804,7 +804,7 @@ A character appended to a variable name indicating the variable's data type. By 
 
 A file, or component within another file, that contains standard descriptions of exposed objects, properties, and methods.
 
-'Object library' files (.olb) & 'type library' files (.tlb) contain type libraries. 'Dynamic-link library' files (.dll), 'OLE control extension' files (.ocx) & .exe executable files can also sometimes contain type libraries.
+'Object library' files (.olb) and 'type library' files (.tlb) contain type libraries. 'Dynamic-link library' files (.dll), 'OLE control extension' files (.ocx) and .exe executable files can also sometimes contain type libraries.
 
 
 ## Unicode
