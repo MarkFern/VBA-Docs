@@ -18,7 +18,7 @@ Returns a **String** that provides type and data-status information concerning t
 
 **TypeName**(_arg_) 
 
-The required _arg_ argument must be of the [**Variant**](../../Glossary/vbe-glossary.md#variant-data-type) type, or be able to be [coerced](../../Reference/User-Interface-Help/data-type-summary.md#implicit-conversions--casts) to it.
+The required _arg_ argument must be of the [**Variant**](../../Glossary/vbe-glossary.md#variant-data-type) type, or be able to be [coerced](../../Reference/User-Interface-Help/data-type-summary.md#implicit-conversions-and-casts) to it.
 
 
 ## Remarks
