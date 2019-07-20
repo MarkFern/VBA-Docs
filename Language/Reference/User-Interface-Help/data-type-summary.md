@@ -31,18 +31,144 @@ The following tables list the supported intrinsic [data types](../../Glossary/vb
 
 ### [Numeric data types](../../glossary/vbe-glossary.md#numeric-data-type)
 
-|Intrinsic data&nbsp;type|Range|Storage size <sup>_(in bytes)_</sup>|
-|:----|:----|----:|
-|**[Boolean](boolean-data-type.md)**|**True** or **False**|2|
-|**[Byte](byte-data-type.md)**|Integer in range from 0 to 255|1|
-|**[Integer](integer-data-type.md)**|Integer in range from -_a_ to (_a_ - 1) where _a_ = 32,768|2|
-|**[Long](long-data-type.md)**<BR><sup>_(Long integer)_<sup>|Integer in range from -_a_ to (_a_ - 1) where _a_ = 2,147,483,648|4|
-|**[LongLong](longlong-data-type.md)**<BR><sup>_(LongLong integer)_<sup>|Integer in range from -_a_ to (_a_ - 1) where _a_ = 9,223,372,036,854,775,808<br/><br/>Valid on 64-bit platforms only.|8|
-|**[LongPtr](longptr-data-type.md)**<BR><sup>_(Long&nbsp;integer&nbsp;on 32&#8209;bit&nbsp;systems,<BR>LongLong&nbsp;integer&nbsp;on 64&#8209;bit&nbsp;systems)_<sup>|The range for bit version of number, is every possible bit combination for the bytes specified by the storage size. This integeric range, in terms of unsigned numbers, is:<BR>&thinsp;•&nbsp;&nbsp;00&thinsp;00&thinsp;00&thinsp;00&thinsp;<sub>16</sub>&nbsp;→&nbsp;FF&thinsp;FF&thinsp;FF&thinsp;FF&thinsp;<sub>16</sub><BR>&nbsp;&nbsp;&nbsp;on 32-bit systems, and<BR> &thinsp;•&nbsp;&nbsp;00&thinsp;00&thinsp;00&thinsp;00&thinsp;**00&thinsp;00 00&thinsp;00**&thinsp;<sub>16</sub>&nbsp;→&nbsp;FF&thinsp;FF&thinsp;FF&thinsp;FF&thinsp;**FF&thinsp;FF FF&thinsp;FF**&thinsp;<sub>16</sub><BR>&nbsp;&nbsp;&nbsp;on 64-bit systems.|On&nbsp;32&#8209;bit&nbsp;systems,&nbsp;4.<br/><br/>On&nbsp;64&#8209;bit&nbsp;systems,&nbsp;8.|
-|**[Single](single-data-type.md)**<BR><sup>_(single&#8209;precision floating&#8209;point)_</sup>|The special values +∞, -∞, NaN and negative zero, plus values from -_a_ to _a_ where _a_ = 3<sub>&#8226;</sub>402823 × 10<sup>38</sup>.<BR><BR>The value mustn't have more than 24 significant binary digits and 126 binary places, when the value is a non-special value with an absolute value ≥ 2<sup>−126</sup>.<BR><BR>When 0 < &vert;_the value_&vert; < 2<sup>−126</sup>, the value must be able to be written as ±p ÷ 2<sup>(126 + 23)</sup> for some natural number _p_ for which &vert;_p_&vert; ≤ (2<sup>23</sup> - 1), except if the value is the special negative-zero value.<BR><BR>Note that all integers having no more than 6 significant decimal digits, and having absolute values no more than 3<sub>&#8226;</sub>402823 × 10<sup>38</sup>, are in the range.|4|
-|**[Double](double-data-type.md)** <BR><sup>_(double&#8209;precision floating-point)_</sup>|-_a_ to (_a_ + 10<sup>-14</sup>) where _a_ = 1<sub>&#8226;</sub>79769313486231 × 10<sup>308</sup>|8|
-|**[Date](date-data-type.md)**|Date and time in range from&nbsp;&nbsp;January&thinsp;1,&thinsp;100&thinsp;AD,&thinsp;00:00.00&thinsp;AM,&nbsp;&nbsp;to&nbsp;&nbsp;December&thinsp;31,&thinsp;9999&thinsp;AD,&thinsp;23:59.59&thinsp;PM&nbsp;&nbsp;whenever the time can be accurately expressed purely as an integeric number of seconds after midnight; certain dates and times within the upper- and lower-bounds of this range, where the times are not expressible as such, are also within the range of this data type.|8|
-|**[Currency](currency-data-type.md)**<BR><sup>_(scaled integer)_</sup>|-_a_&nbsp;&nbsp;to&nbsp;&nbsp;(_a_&thinsp;-&thinsp;0<sub>&#8226;</sub>0001)&nbsp;&nbsp;where<BR>&nbsp;&nbsp;&nbsp;_a_ ⪆ 9 × 10<sup>14</sup> and<BR>&nbsp;&nbsp;&nbsp;value must have no more than 4 decimal places,<p align="right">_a_ = 922,337,203,685,477<sub>&#8226;</sub>5808 (≈ 922 trillion).</p>|8|
+<TABLE>
+ <THEAD><TR><TH ALIGN="LEFT" ROWSPAN="3">Intrinsic data&nbsp;type</TH><TH ALIGN="CENTER" COLSPAN="7">Range</TH><TH ALIGN="RIGHT" ROWSPAN="3">
+  
+  Storage size <sup>_(in bytes)_</sup></TH></TR>
+
+  <TR><TH ALIGN="CENTER" COLSPAN="4">Superset</TH><TH ALIGN="CENTER" COLSPAN="2">Minimum and maximum</TH><TH ALIGN="CENTER"  ROWSPAN="2">Other constraints</TH></TR>
+  
+  <TR><TH ALIGN="CENTER">𝔹</TH><TH ALIGN="CENTER">ℕ&#8239;⋃&#8239;{0}</TH>
+ 
+ <TH ALIGN="CENTER">ℤ</TH>
+ 
+ <TH ALIGN="CENTER">ℚ&#8239;⋃<BR>{+∞,<BR>&#8239;&#x2212;∞,<BR>&#8239;NaN,<BR>&#8239;negative&#8239;zero}</TH><TH ALIGN="CENTER">≈</TH><TH ALIGN="CENTER">=</TH></TR>
+
+</THEAD>
+ <TR><TD ALIGN="LEFT">
+ 
+ **[Boolean](boolean-data-type.md)**</TD><TD ALIGN="LEFT">✓</TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">
+
+0;&#8239;10<sup>0</sup>
+</TD><TD ALIGN="LEFT">
+
+FALSE; TRUE
+</TD><TD ALIGN="LEFT">
+
+
+</TD><TD ALIGN="RIGHT">
+
+2</TD></TR>
+
+
+ <TR><TD ALIGN="LEFT">
+ 
+ **[Byte](byte-data-type.md)**</TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">✓</TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">
+
+0;&#8239;10<sup>2</sup>
+</TD><TD ALIGN="LEFT">0; 255</TD><TD ALIGN="LEFT">
+
+
+</TD><TD ALIGN="RIGHT">
+ 
+ 1</TD></TR>
+ 
+ 
+ <TR><TD ALIGN="LEFT">
+ 
+ **[Integer](integer-data-type.md)**</TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">✓</TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">
+
+±10<sup>4</sup>
+</TD><TD ALIGN="LEFT">
+
+-_a_;&#8239;(_a_&#8239;-&#8239;1)&#8239;<BR>_a_&#8239;=&#8239;32,768</TD><TD ALIGN="LEFT">
+
+</TD><TD ALIGN="RIGHT">
+
+2</TD></TR>
+
+
+ <TR><TD ALIGN="LEFT">
+ 
+ **[Long](long-data-type.md)**<BR><sup>_(Long integer)_<sup></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">✓</TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">
+ 
+±10<sup>9</sup> 
+</TD><TD ALIGN="LEFT">
+ 
+-_a_;&#8239;(_a_&#8239;-&#8239;1)<BR>_a_&#8239;=&#8239;2,147,483,648</TD><TD ALIGN="LEFT">
+
+</TD><TD ALIGN="RIGHT">
+
+4</TD></TR>
+
+
+ <TR><TD ALIGN="LEFT">
+ 
+ **[LongPtr](longptr-data-type.md)**<BR><sup>_(Long&nbsp;integer&nbsp;on 32&#8209;bit&nbsp;systems,<BR>LongLong&nbsp;integer&nbsp;on 64&#8209;bit&nbsp;systems)_<sup></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">✓</TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">
+ 
+ 
+In terms of bit representation, interpreted as unsigned numbers:<BR><BR>•&#8239;00&#8239;00&#8239;00&#8239;00&#8239;<sub>16</sub>&nbsp;and<BR>&nbsp;FF&#8239;FF&#8239;FF&#8239;FF&#8239;<sub>16</sub><BR>&nbsp;on 32-bit systems;<BR><BR>•&#8239;00&#8239;00&#8239;00&#8239;00&#8239;**00&#8239;00&#8239;00&#8239;00**&#8239;<sub>16</sub>&nbsp;and<BR>&nbsp;FF&#8239;FF&#8239;FF&#8239;FF&#8239;**FF&#8239;FF&#8239;FF&#8239;FF**&#8239;<sub>16</sub><BR>&nbsp;on 64-bit systems.</TD><TD ALIGN="LEFT">
+ 
+</TD><TD ALIGN="RIGHT">
+ 
+ On&nbsp;32&#8209;bit&nbsp;systems,&nbsp;4.<br/><br/>On&nbsp;64&#8209;bit&nbsp;systems,&nbsp;8.</TD></TR>
+
+
+ <TR><TD ALIGN="LEFT">
+ 
+**[Single](single-data-type.md)**<BR><sup>_(single&#8209;precision floating&#8209;point)_</sup>
+</TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">✓</TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">
+
+
+Values from -_a_ to _a_ where _a_ = 3<sub>&#8226;</sub>402823 × 10<sup>38</sup>.<BR><BR>The value mustn't have more than 24 significant binary digits and 126 binary places, when the value is a non-special value with an absolute value ≥ 2<sup>−126</sup>.<BR><BR>When 0 < &vert;_the value_&vert; < 2<sup>−126</sup>, the value must be able to be written as ±p ÷ 2<sup>(126 + 23)</sup> for some natural number _p_ for which &vert;_p_&vert; ≤ (2<sup>23</sup> - 1), except if the value is the special negative-zero value.<BR><BR>Note that all integers having no more than 6 significant decimal digits, and having absolute values no more than 3<sub>&#8226;</sub>402823 × 10<sup>38</sup>, are in the range.</TD><TD ALIGN="RIGHT">
+ 
+ 4</TD></TR>
+
+
+ <TR><TD ALIGN="LEFT">
+ 
+ **[Double](double-data-type.md)** <BR><sup>_(double&#8209;precision floating-point)_</sup>
+</TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">✓</TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">
+
+-_a_;&#8239;(_a_&#8239;+&#8239;10<sup>-14</sup>)<BR>_a_&#8239;=&#8239;1<sub>&#8226;</sub>79,769,313,486,231&#8239;×&#8239;10<sup>308</sup>
+</TD><TD ALIGN="LEFT">
+
+</TD><TD ALIGN="RIGHT">
+
+8</TD></TR>
+
+
+ <TR><TD ALIGN="LEFT">
+ 
+ **[Currency](currency-data-type.md)**<BR><sup>_(scaled integer)_</sup>
+</TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">✓</TD><TD ALIGN="LEFT">
+
+±&#8239;10<sup>15</sup>
+</TD><TD ALIGN="LEFT">
+
+-_a_;&#8239;(_a_&thinsp;-&thinsp;10<sup>-4</sup>)<BR>_a_&#8239;=&#8239;922,337,203,685,477<sub>&#8226;</sub>5808</TD><TD ALIGN="LEFT">
+
+Must have no more than 4 decimal places.</TD><TD ALIGN="RIGHT">
+ 
+ 8</TD></TR>
+ 
+ 
+ <TR><TD ALIGN="LEFT">
+ 
+ **[Date](date-data-type.md)**
+</TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">
+
+100&#8239;AD;<BR>10,000&#8239;AD
+</TD><TD ALIGN="LEFT">
+
+January&thinsp;1,&thinsp;100&thinsp;AD,<BR>00:00.00&thinsp;AM;<BR>December&thinsp;31,&thinsp;9,999&thinsp;AD,<BR>23:59.59&thinsp;PM.
+</TD><TD ALIGN="LEFT">
+
+Generally time element must be able to be accurately expressed purely as an integeric number of seconds after midnight however, certain times not expressible as such, are also acceptable.</TD><TD ALIGN="RIGHT">
+
+8</TD></TR>
+
+</TABLE>
 
 > [!NOTE] 
 > [LongPtr](longptr-data-type.md) is not a true data type because it transforms to a [Long](long-data-type.md) in 32-bit environments, or a [LongLong](longlong-data-type.md) in 64-bit environments. **LongPtr** should be used to represent pointer and handle values in [Declare statements](declare-statement.md) and enables writing portable code that can run in both 32-bit and 64-bit environments.
