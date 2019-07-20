@@ -51,7 +51,6 @@ The following tables list the supported intrinsic [data types](../../Glossary/vb
  
  **[Boolean](boolean-data-type.md)**</TD><TD ALIGN="LEFT">✓</TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">
 
-0;&#8239;10<sup>0</sup>
 </TD><TD ALIGN="LEFT">
 
 FALSE; TRUE
