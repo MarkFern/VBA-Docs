@@ -65,7 +65,7 @@ FALSE; TRUE
  
  **[Byte](byte-data-type.md)**</TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">✓</TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">
 
-0;&#8239;10<sup>2</sup>
+0;&#8239;10<sup>2.4</sup>
 </TD><TD ALIGN="LEFT">0; 255</TD><TD ALIGN="LEFT">
 
 
@@ -78,7 +78,7 @@ FALSE; TRUE
  
  **[Integer](integer-data-type.md)**</TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">✓</TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">
 
-±10<sup>4</sup>
+±10<sup>4.5</sup>
 </TD><TD ALIGN="LEFT">
 
 -_a_;&#8239;(_a_&#8239;-&#8239;1)&#8239;<BR>_a_&#8239;=&#8239;32,768</TD><TD ALIGN="LEFT">
@@ -92,7 +92,7 @@ FALSE; TRUE
  
  **[Long](long-data-type.md)**<BR><sup>_(Long integer)_<sup></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">✓</TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">
  
-±10<sup>9</sup> 
+±10<sup>9.3</sup> 
 </TD><TD ALIGN="LEFT">
  
 -_a_;&#8239;(_a_&#8239;-&#8239;1)<BR>_a_&#8239;=&#8239;2,147,483,648</TD><TD ALIGN="LEFT">
@@ -143,7 +143,7 @@ Values from -_a_ to _a_ where _a_ = 3<sub>&#8226;</sub>402823 × 10<sup>38</sup>
  **[Currency](currency-data-type.md)**<BR><sup>_(scaled integer)_</sup>
 </TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">✓</TD><TD ALIGN="LEFT">
 
-±&#8239;10<sup>15</sup>
+±&#8239;10<sup>14.9</sup>
 </TD><TD ALIGN="LEFT">
 
 -_a_;&#8239;(_a_&thinsp;-&thinsp;10<sup>-4</sup>)<BR>_a_&#8239;=&#8239;922,337,203,685,477<sub>&#8226;</sub>5808</TD><TD ALIGN="LEFT">
