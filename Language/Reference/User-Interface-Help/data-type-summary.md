@@ -104,6 +104,20 @@ FALSE; TRUE
 4</TD></TR>
 
 
+<TR><TD ALIGN="LEFT">
+ 
+ **[LongLong](longlong-data-type.md)**<BR><sup>_(LongLong integer only available on 64&#8209;bit&nbsp;systems)_<sup></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">✓</TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">
+ 
+±10<sup>18.9</sup> 
+</TD><TD ALIGN="LEFT">
+ 
+-_a_;&#8239;(_a_&#8239;-&#8239;1)<BR>_a_&#8239;=&#8239;9,223,372,036,854,775,808</TD><TD ALIGN="LEFT">
+
+</TD><TD ALIGN="RIGHT">
+
+8</TD></TR>
+
+
  <TR><TD ALIGN="LEFT">
  
  **[LongPtr](longptr-data-type.md)**<BR><sup>_(Long&nbsp;integer&nbsp;on 32&#8209;bit&nbsp;systems,<BR>LongLong&nbsp;integer&nbsp;on 64&#8209;bit&nbsp;systems)_<sup></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">✓</TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">
