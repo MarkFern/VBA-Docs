@@ -42,7 +42,9 @@ The following tables list the supported intrinsic [data types](../../Glossary/vb
  
  <TH ALIGN="CENTER">ℤ</TH>
  
- <TH ALIGN="CENTER">ℚ&#8239;⋃<BR>{+∞,<BR>&#8239;&#x2212;∞,<BR>&#8239;NaN,<BR>&#8239;negative&#8239;zero}</TH><TH ALIGN="CENTER">≈</TH><TH ALIGN="CENTER">=</TH></TR>
+ <TH ALIGN="CENTER">ℚ&#8239;⋃<BR>{+∞,<BR>&#8239;&#x2212;∞,<BR>&#8239;NaN,<BR>&#8239;negative&#8239;zero}</TH><TH ALIGN="CENTER">
+ 
+ Approximate bounds<BR>_(contained within precise bounds)_</TH><TH ALIGN="CENTER">Precise bounds</TH></TR>
 
 </THEAD>
  <TR><TD ALIGN="LEFT">
