@@ -83,7 +83,7 @@ FALSE; TRUE
 ±10<sup>4.5</sup>
 </TD><TD ALIGN="LEFT">
 
--_a_;&#8239;(_a_&#8239;-&#8239;1)&#8239;<BR>_a_&#8239;=&#8239;32,768</TD><TD ALIGN="LEFT">
+-_a_;&nbsp;_a_&#8239;-&#8239;1<BR><BR>[_a_&#8239;=&#8239;32,768]</TD><TD ALIGN="LEFT">
 
 </TD><TD ALIGN="RIGHT">
 
@@ -97,7 +97,7 @@ FALSE; TRUE
 ±10<sup>9.3</sup> 
 </TD><TD ALIGN="LEFT">
  
--_a_;&#8239;(_a_&#8239;-&#8239;1)<BR>_a_&#8239;=&#8239;2,147,483,648</TD><TD ALIGN="LEFT">
+-_a_;&nbsp;_a_&#8239;-&#8239;1<BR><BR>[_a_&#8239;=&#8239;2<sup>31</sup>]</TD><TD ALIGN="LEFT">
 
 </TD><TD ALIGN="RIGHT">
 
@@ -111,7 +111,7 @@ FALSE; TRUE
 ±10<sup>18.9</sup> 
 </TD><TD ALIGN="LEFT">
  
--_a_;&#8239;(_a_&#8239;-&#8239;1)<BR>_a_&#8239;=&#8239;9,223,372,036,854,775,808</TD><TD ALIGN="LEFT">
+-_a_;&nbsp;_a_&#8239;-&#8239;1<BR><BR>[_a_&#8239;=&#8239;2<sup>63</sup>]</TD><TD ALIGN="LEFT">
 
 </TD><TD ALIGN="RIGHT">
 
@@ -146,9 +146,11 @@ Values from -_a_ to _a_ where _a_ = 3<sub>&#8226;</sub>402823 × 10<sup>38</sup>
  **[Double](double-data-type.md)** <BR><sup>_(double&#8209;precision floating-point)_</sup>
 </TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">✓</TD><TD ALIGN="LEFT"></TD><TD ALIGN="LEFT">
 
--_a_;&#8239;(_a_&#8239;+&#8239;10<sup>-14</sup>)<BR>_a_&#8239;=&#8239;1<sub>&#8226;</sub>79,769,313,486,231&#8239;×&#8239;10<sup>308</sup>
-</TD><TD ALIGN="LEFT">
 
+</TD><TD ALIGN="LEFT">
+ 
+-_a_;&#8239;(_a_&#8239;+&#8239;10<sup>-14</sup>)<BR>_a_&#8239;=&#8239;1<sub>&#8226;</sub>79,769,313,486,231&#8239;×&#8239;10<sup>308</sup>
+ 
 </TD><TD ALIGN="RIGHT">
 
 8</TD></TR>
@@ -162,7 +164,7 @@ Values from -_a_ to _a_ where _a_ = 3<sub>&#8226;</sub>402823 × 10<sup>38</sup>
 ±&#8239;10<sup>14.9</sup>
 </TD><TD ALIGN="LEFT">
 
--_a_;&#8239;(_a_&thinsp;-&thinsp;10<sup>-4</sup>)<BR>_a_&#8239;=&#8239;922,337,203,685,477<sub>&#8226;</sub>5808</TD><TD ALIGN="LEFT">
+-_a_;&nbsp;_a_&thinsp;-&thinsp;10<sup>-4</sup><BR><BR>[_a_&#8239;=&#8239;2<sup>63</sup>&#8239;&times;&#8239;10<sup>-3</sup>]<TD ALIGN="LEFT">
 
 Must have no more than 4 decimal places.</TD><TD ALIGN="RIGHT">
  
